@@ -1,0 +1,139 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <!-- <RelativeLayout -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="@dimen/top_bar_height" -->
+    <!-- android:background="@color/bg_top_bar" > -->
+
+
+    <!-- <TextView -->
+    <!-- style="@style/title_text" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_centerHorizontal="true" -->
+    <!-- android:layout_centerVertical="true" -->
+    <!-- android:text="会员管理" /> -->
+
+
+    <!-- <ImageView -->
+    <!-- android:visibility="gone" -->
+    <!-- android:id="@+id/ivHomeIM" -->
+    <!-- android:layout_width="22dp" -->
+    <!-- android:layout_height="22dp" -->
+    <!-- android:layout_alignParentRight="true" -->
+    <!-- android:layout_centerVertical="true" -->
+    <!-- android:layout_marginRight="@dimen/margin_normal" -->
+    <!-- android:src="@drawable/ic_im" /> -->
+    <!-- </RelativeLayout> -->
+
+    <include layout="@layout/layout_top_bar" />
+
+    <include layout="@layout/edittext_search" />
+
+    <RadioGroup
+        android:id="@+id/radio"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/btn_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/lncen_gropbtn"
+            android:button="@null"
+            android:gravity="center"
+            android:text="推荐会员"
+            android:textColor="@drawable/color_selector_b_o"
+            android:textSize="14sp"/>
+
+        <include layout="@layout/common_line_v"
+                 android:layout_width="1px"
+                 android:layout_height="match_parent"
+                 android:layout_marginTop="5dp"
+                 android:layout_marginBottom="5dp"/>
+
+        <RadioButton
+            android:id="@+id/btn_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/lncen_gropbtn"
+            android:button="@null"
+            android:gravity="center"
+            android:text="消费会员"
+            android:textColor="@drawable/color_selector_b_o"
+            android:textSize="14sp" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="@color/bg_gray_dark"
+            android:gravity="center"
+            android:text="姓名"
+            android:textColor="@color/text_black"
+            android:textSize="13sp"/>
+
+        <include layout="@layout/common_line_v"
+                 android:layout_width="1px"
+                 android:layout_height="match_parent"
+                 android:layout_marginTop="5dp"
+                 android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:background="@color/bg_gray_dark"
+            android:gravity="center"
+            android:text="手机号"
+            android:textColor="@color/text_black"
+            android:textSize="13sp" />
+
+        <include layout="@layout/common_line_v"
+                 android:layout_width="1px"
+                 android:layout_height="match_parent"
+                 android:layout_marginTop="5dp"
+                 android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:background="@color/bg_gray_dark"
+            android:gravity="center"
+            android:text="日期"
+            android:textColor="@color/text_black"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/lvData"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp" >
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+</LinearLayout>

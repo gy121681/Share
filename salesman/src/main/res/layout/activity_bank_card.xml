@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_white"
+              android:orientation="vertical">
+
+    <include layout="@layout/layout_top_bar"/>
+
+    <TextView
+        android:id="@+id/tv_pro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_gray"
+        android:padding="@dimen/margin_normal"
+        android:text="左滑可解绑银行卡"
+        android:textColor="@color/bg_top_bar"
+        android:textSize="12dp"
+        android:visibility="visible"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.daimajia.swipe.SwipeLayout
+            android:id="@+id/swipeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <LinearLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:gravity="right">
+                ete
+
+                <Button
+                    android:id="@+id/btn_unbind"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/red"
+                    android:text="解绑"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/text_28"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/img_bank_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_normal"
+                    android:layout_marginRight="@dimen/margin_normal"
+                    android:src="@drawable/ps_abc"/>
+
+                <TextView
+                    android:id="@+id/tv_bank_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/img_bank_logo"
+                    android:layout_toRightOf="@id/img_bank_logo"
+                    android:text=""
+                    android:textColor="@color/text_black_light"
+                    android:textSize="@dimen/text_28"/>
+
+                <TextView
+                    android:id="@+id/tv_bank_card_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/img_bank_logo"
+                    android:layout_toRightOf="@id/img_bank_logo"
+                    android:text=""
+                    android:textColor="@color/text_black_light"
+                    android:textSize="@dimen/text_28"/>
+
+            </RelativeLayout>
+
+        </com.daimajia.swipe.SwipeLayout>
+
+
+        <include layout="@layout/common_line_h_m_rl"/>
+
+        <TextView
+            android:id="@+id/btn_change_bank_card"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/form_bg_wihte"
+            android:drawableRight="@drawable/share_s_public_next"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/margin_normal"
+            android:paddingRight="@dimen/margin_normal"
+            android:text="银行卡变更申请"
+            android:textColor="@color/text_black_light"
+            android:textSize="@dimen/text_28"/>
+
+        <include layout="@layout/common_line_h_m_rl"/>
+
+        <TextView
+            android:id="@+id/btn_update_bank_phone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/form_bg_wihte"
+            android:drawableRight="@drawable/share_s_public_next"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/margin_normal"
+            android:paddingRight="@dimen/margin_normal"
+            android:text="预留手机号变更"
+            android:textColor="@color/text_black_light"
+            android:textSize="@dimen/text_28"/>
+
+        <include layout="@layout/common_line_h_m_rl"/>
+
+    </LinearLayout>
+
+</LinearLayout>

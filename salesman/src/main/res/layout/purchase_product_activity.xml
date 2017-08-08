@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_style_two" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="6"
+            android:paddingLeft="10dp"
+            android:text="可用余额   "
+            android:textColor="@color/txt_fg_normal"
+            android:textSize="15dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="¥  "
+                android:textColor="@color/txt_fg_normal"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/balance_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/red"
+                android:textSize="15dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/textview_style"
+            android:layout_weight="6"
+            android:gravity="center"
+            android:text="金额(¥)"
+            android:textColor="@color/txt_fg_light_gray" />
+
+        <EditText
+            android:id="@+id/et_balance"
+            style="@style/editview_style"
+            android:hint=" 0.00"
+            android:inputType="numberDecimal"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/et_order_receive_balance_error"
+            style="@style/error_style"
+            android:text="收款金额不能"
+            android:visibility="gone" />
+    </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_pro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="0"
+            android:textColor="#ffff9913"
+            android:textSize="12dp" />
+
+
+        <TextView
+            android:id="@+id/btn_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/reg_btn_next_height"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/button01_bg"
+            android:enabled="false"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/text_white"
+            android:textSize="20.0dip" />
+
+</LinearLayout>

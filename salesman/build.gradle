@@ -1,0 +1,65 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion '25.0.3'
+
+    signingConfigs {
+        debug {
+            storeFile file("../keystore/ShareSignSalesman.jks")
+            storePassword "ShareSignSalesman"
+            keyAlias "share"
+            keyPassword "ShareSignSalesman"
+        }
+    }
+
+    defaultConfig {
+        applicationId "com.shareshenghuo.app.salesman"
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 66
+        versionName "1.0.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+        signingConfig signingConfigs.debug
+//        manifestPlaceholders = [jPushName : applicationId]
+//        manifestPlaceholders = [JPUSH_APPKEY_VALUE : "951d7ad09981db665534328d"]
+
+        // 外网——正式
+        buildConfigField "String", "HTTP_BASE_URL", "\"http://api.shareshenghuo.com/xiuer-api-client-interface/\""//业务api地址
+        buildConfigField "String", "HTTP_IMAGE_BASE_URL", "\"http://file.shareshenghuo.com/\""//图片地址
+        buildConfigField "String", "HTTP_WAP_URL", "\"http://api.shareshenghuo.com/xiuer-wap/\""//网页地址
+        buildConfigField "String", "HOST", "\"http://api.shareshenghuo.com/\""
+//        // 外网——测试
+//        buildConfigField "String", "HTTP_BASE_URL", "\"http://test.shareshenghuo.com:8081/xiuer-api-client-interface/\""
+//        buildConfigField "String", "HTTP_IMAGE_BASE_URL", "\"http://test.shareshenghuo.com:8081/xiue    r_upload/\""
+//        buildConfigField "String", "HTTP_WAP_URL", "\"http://test.shareshenghuo.com:8081/xiuer-wap/\""
+//        buildConfigField "String", "HOST", "\"http://test.shareshenghuo.com:8081/\""
+        //内网
+//        buildConfigField "String", "HTTP_BASE_URL", "\"http://192.167.1.12:9000/xiuer-api-client-interface/\""
+//        buildConfigField "String", "HTTP_IMAGE_BASE_URL", "\"http://192.167.1.12:9000/xiuer_upload/\""
+//        buildConfigField "String", "HTTP_WAP_URL", "\"http://192.167.1.12:9000/xiuer-wap/\""
+//        buildConfigField "String", "HOST", "\"http://192.167.1.12:9000/\""
+    }
+    buildTypes {
+
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:22.+'
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.alibaba:fastjson:1.2.35'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.daimajia.swipelayout:library:1.2.0'
+}

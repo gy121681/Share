@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioButton xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="30dp"
+    android:layout_gravity="center_horizontal"
+    android:button="@null"
+    android:background="@drawable/radiobutton_prod_format"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:textColor="@drawable/radiobutton_prod_fotmat_text"
+    android:textSize="14sp"
+    android:text="规格" >
+    
+
+</RadioButton>

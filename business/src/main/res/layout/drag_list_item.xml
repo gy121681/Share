@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 一定要使用相对布局 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="57dp"
+    android:gravity="center_vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/form_bg_wihte" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="57dp" >
+
+            <CheckBox
+                android:id="@+id/check_del"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:focusable="false"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/drag_list_item_text"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/check_del"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textSize="18dp"
+                android:textColor="@color/text_orange"/>
+
+            <TextView
+                android:id="@+id/tv_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/drag_list_item_text"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="@dimen/margin_normal"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:textColor="@color/gray_light"
+                android:textSize="12dp" />
+
+            <RelativeLayout
+                android:id="@+id/re_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:visibility="gone"
+                android:layout_marginRight="@dimen/margin_normal">
+
+                <ImageView
+                    android:id="@+id/edit_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/del_image"
+                    android:src="@drawable/share_b_public_icon_edit" />
+
+                <ImageView
+                    android:id="@+id/del_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_toLeftOf="@+id/drag_list_item_image"
+                    android:src="@drawable/share_b_public_icon_delete" />
+
+                <ImageView
+                    android:id="@+id/drag_list_item_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/share_b_public_icon_shot" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

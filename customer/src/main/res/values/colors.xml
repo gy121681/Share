@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 透明 -->
+    <color name="transparent">#00000000</color>
+    <!-- 半透明 -->
+    <color name="translucent">#55000000</color>
+    <!-- 半透明 activity背景 -->
+    <color name="translucent_bg">#a000</color>
+    <color name="bg_top_bar">#fff</color>
+    <color name="bg_activity">#f4f4f4</color>
+    <color name="tab_text_nor">#353535</color>
+    <color name="tab_text_sel">#fa675c</color>
+    <color name="blue">#38a5ea</color>
+    <color name="blue_dark">#546893</color>x
+    <color name="blue_light">#00c0ff</color>
+    <color name="black_light">#555555</color>
+    <color name="pink_dark">#ff7d36</color>
+    <color name="pink">#eb5253</color>
+    <color name="pink_press">#DF5253</color>
+
+    <color name="orange">#FF7043</color>
+    <color name="orange_dark">#ff5a2b</color>
+    <color name="orange_light">#FF9100</color>
+    <color name="yellow_light">#FFCB17</color>
+    <color name="gray_lighter">#dddddd</color>
+    <color name="gray_light">#9d9d9d</color>
+    <color name="gray_dark">#555555</color>
+    <color name="red_dark">#fa675c</color>
+    <color name="green_dark">#72D944</color>
+    
+    <color name="green_ne">#92BF30</color>
+
+    <color name="bg_gray">#F3F3F3</color>
+    <color name="bg_white">@color/white</color>
+
+    <!-- 黑色 -->
+    <color name="black">#000000</color>
+    <!-- 白色 -->
+    <color name="white">#FFFFFF</color>
+    <!-- 灰色线 -->
+    <color name="applin"> #E8E8E8</color>
+    <!-- 深绿色 -->
+    <color name="green_h">#066C17</color>
+    <!-- 浅灰 -->
+    <color name="bgcolor">#F7F7F7</color>
+    <color name="gays_a">#EAEAEA</color>
+    <color name="gays_b">#F2F2F2</color>
+
+    <!-- 浅红 -->
+    <color name="red_y">#FCC9C3</color>
+
+    <color name="text_black_light">#585858</color>
+    <color name="text_gray">#c0c0c0</color>
+    <color name="text_orange">#ff704c</color>
+    <color name="text_white">#ffffff</color>
+    <color name="text_black">@color/black</color>
+
+            <!-- 首页标题栏 -->
+    <color name="apptitle">#244A74</color>
+    
+    <color name="apptitle_oem">#3BAFAE</color>
+    
+         <!-- 金色 -->
+    <color name="golden">#fbeca4</color>
+      <!-- 大红 -->
+    <color name="brightred">#d21539</color>
+    
+       <color name="red">#FF0000</color>
+      <color name="pro">#f74f0d</color>
+    
+  <color name="transparent_background">#40000000</color>
+  
+  
+<!--   	活体检测 -->
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="background_color">#007aff</color>
+    <color name="text_background">#66000000</color>
+    <color name="err_color">#104076</color>
+    <color name="ml_gray">#cccccc</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="divider">#C4C3C8</color>
+    
+    <color name="green_ligh">#32B16C</color>
+
+    
+      <color name="bg_color">#EDEDED</color>
+  <color name="contents_text">#ff000000</color>
+  <color name="encode_view">#ffffffff</color>
+  <color name="help_button_view">#ffcccccc</color>
+  <color name="help_view">#ff404040</color>
+  <color name="possible_result_points">#c0ffff00</color>  
+  <color name="result_image_border">#ffffffff</color>
+  <color name="result_minor_text">#ffc0c0c0</color>
+  <color name="result_points">#c000ff00</color>
+  <color name="result_text">#ffffffff</color>
+  <color name="result_view">#b0000000</color>
+  <color name="sbc_header_text">#ff808080</color>
+  <color name="sbc_header_view">#ffffffff</color>
+  <color name="sbc_list_item">#fffff0e0</color>
+  <color name="sbc_layout_view">#ffffffff</color>
+  <color name="sbc_page_number_text">#ff000000</color>
+  <color name="sbc_snippet_text">#ff4b4b4b</color>
+  <color name="share_text">#ff000000</color>
+  <color name="share_view">#ffffffff</color>
+  <color name="status_view">#50000000</color>
+  <color name="status_text">#ffffffff</color>
+  <color name="viewfinder_frame">#ff000000</color>
+  <color name="viewfinder_laser">#ffff0000</color>
+  <color name="viewfinder_mask">#60000000</color>
+  <color name="header">#58567D</color>
+  <color name="grgray">#686868</color>
+  <color name="coffee">#4b3224</color>
+  <color name="none">#00000000</color>
+
+
+</resources>

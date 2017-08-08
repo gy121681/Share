@@ -1,0 +1,188 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/layout_top_bar"/>
+    
+    <include
+        android:id="@+id/llDateFilter"
+        layout="@layout/layout_datepicker"/>
+
+    <RelativeLayout
+        android:layout_width="280dp"
+        android:layout_height="360dp"
+        android:layout_gravity="center" >
+
+        <LinearLayout
+            android:id="@+id/llTodayData"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="13dp"
+            android:layout_marginRight="@dimen/margin_normal"
+            android:orientation="vertical"
+            android:background="@drawable/bg_today" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_white"
+                android:textSize="15sp"
+                android:text="今日数据" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+                
+                <TextView
+                    android:id="@+id/tvTodayData"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textColor="@color/text_white"
+	                android:textSize="18sp"
+	                android:textStyle="bold"
+	                android:text="0" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="13sp"
+                android:textColor="@color/text_white"
+                android:text="查看明细" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/llWeekData"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="75dp"
+            android:orientation="vertical"
+            android:background="@drawable/bg_week" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_white"
+                android:textSize="15sp"
+                android:text="近一周" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+                
+                <TextView
+                    android:id="@+id/tvWeekData"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textColor="@color/text_white"
+	                android:textSize="18sp"
+	                android:textStyle="bold"
+	                android:text="0" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="13sp"
+                android:textColor="@color/text_white"
+                android:text="查看明细" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/llMonthData"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/margin_normal"
+            android:layout_marginBottom="40dp"
+            android:orientation="vertical"
+            android:background="@drawable/bg_month" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_white"
+                android:textSize="15sp"
+                android:text="本月数据" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+                
+                <TextView
+                    android:id="@+id/tvMonthData"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textColor="@color/text_white"
+	                android:textSize="18sp"
+	                android:textStyle="bold"
+	                android:text="0" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="13sp"
+                android:textColor="@color/text_white"
+                android:text="查看明细" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/llTotalData"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="@dimen/margin_normal"
+            android:layout_marginBottom="50dp"
+            android:orientation="vertical"
+            android:background="@drawable/bg_total" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_white"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:text="总数据" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+                
+                <TextView
+                    android:id="@+id/tvTotalData"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textColor="@color/text_white"
+	                android:textSize="21sp"
+	                android:textStyle="bold"
+	                android:text="0" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="13sp"
+                android:textColor="@color/text_white"
+                android:text="查看明细" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

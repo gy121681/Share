@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="cjrtype">
+        <item>成人(12岁以上)</item>
+        <item>儿童(2-12岁)</item>
+        <item>婴儿(2岁以下)</item>
+    </string-array>
+    <string-array name="idcardtype">
+        <item>身份证</item>
+        <item>护照</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="passengerslongclick">
+        <item>修改乘机人</item>
+        <item>删除乘机人</item>
+    </string-array>
+    <string-array name="clearing">
+        <item>T+0(实时到账)</item>
+        <item>T+1(第二个工作日到账)</item>
+        <item>T+5(五个工作日后到账)</item>
+    </string-array>
+    <string-array name="queryorderitem">
+        <item>查看订单明细</item>
+        <item>付款</item>
+    </string-array>
+    <string-array name="gorate">
+        <item>费率升级</item>
+    </string-array>
+    <string-array name="orderitem">
+        <item>付款</item>
+        <item>删除(暂不可用)</item>
+    </string-array>
+    <string-array name="queryorderitem1">
+        <item>  全部</item>
+        <item>  充值</item>
+        <item>  提现</item>
+        <item>  奖励</item>
+        <item>  转入</item>
+        <item>  转出</item>
+        <item>  服务购买</item>
+        <item>  紧急提现</item>
+    </string-array>
+    <string-array name="queryorder">
+        <item>查看订单明细</item>
+    </string-array>
+    
+    <string-array name="credititem">
+<!--         <item>还款</item> -->
+        <item>解绑</item>
+    </string-array>
+    
+     <string-array name="types">
+        <item>请选择车牌颜色</item>
+        <item>蓝色</item>
+        <item>白色</item>
+        <item>黄色</item>
+        <item>黑色</item>
+       
+    </string-array>
+
+</resources>

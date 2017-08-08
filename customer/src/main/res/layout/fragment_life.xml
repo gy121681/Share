@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_activity"
+    android:orientation="vertical" >
+    
+    <View android:layout_width="match_parent"
+        android:layout_height="@dimen/status_bar_height1"
+        android:background="@color/bg_top_bar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height1"
+        android:background="@color/bg_top_bar" >
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/ivAddArticle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_normal"
+            android:textColor="@color/text_white"
+            android:textSize="16sp"
+            android:text="发布" />
+
+        <ImageView
+            android:id="@+id/btnSearch"
+            android:layout_width="28dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="@dimen/margin_normal"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/share_c_homepage_search_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/topbar_title"
+            android:textColor="@color/text_white"
+            android:text="社区" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:gravity="center_vertical"
+        android:background="@color/bg_white" >
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/icon_320" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="6dp"
+            android:textColor="@color/red_dark"
+            android:text="逛圈子" />
+
+        <TextView
+            android:id="@+id/tvSwitchCircle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_281"
+            android:drawablePadding="6dp"
+            android:textColor="@color/gray_dark"
+            android:text="换一组" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1px"
+        android:padding="6dp"
+        android:background="@color/bg_white" >
+
+        <com.shareshenghuo.app.user.widget.MyGridView
+            android:id="@+id/gvCircle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:numColumns="3"
+            android:horizontalSpacing="10dp" >
+        </com.shareshenghuo.app.user.widget.MyGridView>
+
+        <ImageView
+            android:id="@+id/ivMyCircle"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="6dp"
+            android:src="@drawable/icon_350" />
+    </LinearLayout>
+    
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/lvLife"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="6dp"
+        android:divider="@null"
+        android:dividerHeight="6dp" />
+</LinearLayout>

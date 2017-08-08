@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- network_dialog -->
+    <string name="network_hint">网络连接提示</string>
+    <string name="please_open_network">请开启您的网络连接</string>
+    <string name="wifi">wifi</string>
+    <string name="network">移动网络</string>
+    <string name="close">关闭</string>
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="test_account_login">终端号查询</string>
+    <string name="app_name">秀儿</string>
+    <string name="app_namebeta">秀儿</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_warning">秀儿将配合银行共同打击无真实交易背景的虚假交易,银行卡套现或洗钱等被禁止的交易行为,请如实交易,否则款项将不能提现。</string>
+    <string name="register_prompt">温馨提示：注册必须使用本人借记卡（储蓄卡），不可使用贷记卡（信用卡）。</string>
+    <string name="update_bankcard_prompt">温馨提示：必须使用本人借记卡（储蓄卡），不可使用贷记卡（信用卡）。</string>
+    <string name="real_name_auth_point">注意：在拍摄时注意环境光线,避免拍摄的上传照片模糊不清,影响认证通过.(如需更换照片请重新点击拍照)</string>
+    <string name="balance_query_point">注意：先将刷卡防尘盖弹开，将银行卡匀速划过刷卡槽，如未成功，请多试几次。</string>
+    <string name="register_treaty"> 　　本协议是用户（仅指自然人）与成都秀儿科技有限公司（以下简称“秀儿”）之间关于“秀儿”手机客户端软件产品及其提供的服务所拟定的法律协议。秀儿公司在此特别提醒用户认真阅读、充分理解本协议各条款，特别是其中所涉及的免除、限制秀儿公司责任的条款、对用户权利限制条款、争议解决和法律实用等。一旦安装、复制或以其他方式使用本软件产品，即表示同意接受协议各项条件的约束。如果用户不同意本协议中的条款，请勿复制、下载、安装或以其他方式使用本软件。\n
+（一）关于“秀儿”服务协议的确认和接受\n
+　　1．1“秀儿”服务是由秀儿公司向用户提供的“秀儿”软件服务系统（以下简称“秀儿服务”）。为了保障用户的权益，用户在自愿注册使用本秀儿服务前，必须仔细阅读并接受本服务协议所有条款。\n
+　　1．2秀儿有权在必要时单方修改或变更本服务协议之内容，并将通过秀儿网站公布最新的服务协议，不另作个别通知。若用户于任何修改或变更本服务条款后继续使用本服务，则视为用户已阅读、了解并同意接受修改或变更，若用户不同意，则用户应主动立即停止使用秀儿服务。\n
+　　1．3如用户所属的国家或地区排除本服务条款内容的全部或部分，则用户应立即停止使用秀儿服务。\n
+(二) 关于“秀儿”服务的注册\n
+　　在使用“秀儿”服务前，用户必须是具《备中华人民共和国民法通则》规定的完全明事行为能力的自然人，或者是具有相应合法证照的实体组织。无民事行为能力人、限制明事行为能力人以及无合法证照的组织不得注册并使用“秀儿”。无明事行为能力人、限制民事行为能力人以及无合法证照的组织以不当方式注册为“秀儿”用户，其与秀儿公司之间的服务协议自始无效，一经发现，有权注销用户。\n
+　　无民事行为能力人或限制民事行为能力人以不当方式注册为“秀儿”进行交易的，无民事行为能力人所进行的交易行为自始无效。\n
+　　注册成为“秀儿”用户，用户同意以下事项：\n
+　　2.1用户确认在用户注册成为秀儿用户以接受本服务条款之前，用户已充分阅读、理解并接受本服务的全部内容，一旦用户使用本服务，即表示用户同意遵循本服务之所有约定。\n
+　　2.2用户同意秀儿公司有权随时对本服务内容进行单方面的变更，并以公告方式予以公布，无需另行通知；若用户在本服务内容公告变更后继续使用本服务的，表示用户已充分阅读、理解并接受修改后的服务内容，也将遵循修改后的服务内容使用本服务；若用户不同意修改后的服务内容，软件会自动为用户停止使用本服务。\n
+　　2.3用户同意基于运行和服务安全的需要，秀儿公司可以暂时停止提供或者限制本服务部分功能提供新的功能，在任何功能减小、增加或者变化时，如用户继续使用本服务，表示用户同意本服务及变更后的服务。\n
+　　2.4用户声明在用户同意接受本服务并成功注册为秀儿用户时，用户是具有法律规定的完全民事权利能力和民事行为能力，能够独立承担民事责任的自然人、法人或其他组织；本服务内容不受用户所属国家或地区的排斥。不具备前述条件的，用户应立即终止注册或停止使用本服务，秀儿公司有权自行终止用户所使用的所有服务。\n
+（三）关于“秀儿”服务的守法使用及用户承诺\n
+　　3.1用户在使用本服务时应遵守中华人民共和国相关法律及所在国家或地区之法令及相关国家惯例，不将本服务用于任何非法目的（包括用于禁止或限制物品的交易），也不能以任何非法方式使用本服务。\n
+　　3.2用户在使用秀儿服务时，必须遵守中华人民共和国相关法律法规的规定，用户同意将不会利用本服务从事侵害他人合法权益之行为，以及进行任何违法或不正当的活动，否则秀儿有权拒绝提供本服务，且用户应承担所有相关法律责任，因此导致秀儿或秀儿雇员受损的，用户应承担赔偿责任。上述行为包括但不限于：侵害他人名誉权、隐私权、商业秘密、商标权、著作权、专利权等合法权益。非法使用他人银行账号（包括信用卡账号）或无效银行卡账号（包括信用卡账号）。其他秀儿有正当理由认为不适当之行为。\n
+　　3.3用户违反本服务或相关的服务条款的规定，导致或产生的任何第三方主张的任何索赔、要求或损失，包括合理的律师费，用户同意赔偿秀儿与合作公司、关联公司，并使之免受损害。对此，秀儿有权视用户的行为性质，采取包括但不限于删除用户发布信息内容、暂停使用许可、终止服务、限制使用、回收秀儿账号、追究法律责任等措施。对恶意注册秀儿账号或利用秀儿账号进行违法活动、捣乱、骚扰、欺骗、其他用户以及其他违反本服务的行为，秀儿有权回收其账号。同时，秀儿会视同司法部门的要求，协助调查。\n
+　　3.4用户不得对本服务任何部分或本服务之使用或获得，进行复制、拷贝、出售、转售或用于任何其它商业目的。\n
+　　3.5用户必须对自己在使用本服务过程中的行为承担法律责任。用户承担法律责任的形式包括但不限于：对受到侵害者进行赔偿，以及在秀儿首先承担了因用户行为导致的行政处罚或侵权损害赔偿责任后，用户应给予秀儿等额的赔偿。\n
+　　3.6服务费用：当用户使用秀儿服务时，秀儿会向用户收取相关服务费用。各项服务费用请详见用户使用秀儿服务时客户端所列之收费方式说明。秀儿保留有预定及调整服务费之权利。用户同意，除非另有说明，上述服务费用秀儿有权自秀儿代收应向用户支付的款项中先行扣除。\n
+（四）暂停、拒绝或终止用户的使用\n
+　　4.1用户同意秀儿有权基于单方独立判断，包含但不限于秀儿认为用户已经违反本服务条款的规定，将暂停、中断或终止向用户提供“秀儿”服务内任何“用户资料”加以移除并删除。\n
+　　4.2用户同意秀儿发现异常交易或有疑义或有违法之虞时，不经通知有权先行暂停或终止用户的账户、密码，并拒绝用户使用“秀儿”服务之部分或全部功能。\n
+　　4.3用户同意在必要时，秀儿无需进行事先通知即得终止提供“秀儿”服务，并可能立即暂停、关闭或删除用户的账户及用户账户中所有相关资料及档案。\n
+（五）秀儿用户账户安全性\n
+　　用户了解并同意，确保密码及账户的机密安全是用户的责任。用户将对利用该密码及账户所进行的一切行动及言论，负完全的责任，并同意以下事项：\n
+　　5.1用户不可对其他任何人泄漏用户的账户和密码，亦不可使用其他任何人的账户或密码。\n
+　　5.2用户同意如发现有第三人冒用或盗用用户的账户及密码，或其他任何未经合法授权的情形，应立即以有效方式通知秀儿，同意暂停其使用本服务并采取有效的防范措施。秀儿在接受用户的有效通知前，对第三人使用该服务已发生之效力，除非可证明秀儿故意或重大过失而不知是未经合法授权之使用，否则秀儿将不承担任何责任。\n
+（六）系统服务中断或故障\n
+　　系统因下列状况无法正常运作，使用户无法使用各项服务时，秀儿对用户不负任何损害赔偿责任，包括但不限于：\n
+　　6.1秀儿系统停机维护期间。\n
+　　6.2手机设备出现故障不能进行数据传输的。\n
+　　6.3因台风、地震、海啸、洪水、停电、战争、恐怖袭击等不可抗力之因素，造成秀儿系统障碍不能执行业务的。\n
+（七）责任范围及责任限制\n
+　　7.1秀儿仅对本协议中所列明的义务承担责任。\n
+　　7.2用户明确因交易所产生的任何风险应由交易双方承担。\n
+　　7.3用户信息是由用户自行发布，秀儿无法保证用户信息的真实、及时和完整，用户应对用户的判断承担全部责任。\n
+　　7.4秀儿未对交易标的及“秀儿”服务提供任何形式的保证，包括但不限于以下事项：\n
+　　“秀儿”服务将符合用户的需求。\n
+　　“秀儿”服务将不受干扰、及时提供或免于出错。\n
+　　用户经由“秀儿”服务购买或取得之任何产品、服务、资讯或其他资料将符合用户的期望。\n
+　　7.5“秀儿”服务的合作单位，所提供的服务品质及内容由该合作单位自行负责。\n
+　　7.6用户经由“秀儿”服务的使用下载或取得任何资料，应由用户自行考量且自负风险，因资料的下载而导致用户手机系统的任何损坏或资料流失，用户应负完全责任。\n
+　　7.7用户自秀儿及公司工作人员或经由“秀儿”服务取得的建议或资讯，无论其为书面或口头，均不构成秀儿对“秀儿”服务的任何保证。\n
+　　7.8在法律允许的情况下，秀儿对于与本协议有关或由本协议引起的任何间接的、惩罚性的、特殊的、派生的损失（包括业务损失、收益损失、利润损失、使用数据或其他经济利益的损失），不论是如何产生的，也不论是由对本协议的违约（包括违反保证）还是由侵权造成的，均不负有任何责任，即使其事先已被告知此等损失的可能性。另外即使本协议规定的排他性救济没有达到其基本目的，也应排除秀儿对上述损失的责任。\n
+　　7.9除本协议另有规定外，在任何情况下，秀儿对本协议所承担的违约赔偿责任总额不超过向用户收取的当次“秀儿”服务费用总额。\n
+（八）隐私权保护\n
+　　秀儿重视对用户隐私的保护，关于用户的用户资料和其他特定资料依秀儿受到保护与规范。\n
+（九）知识产权的保护\n
+　　9.1手机客户端上所有内容、包括但不限于著作、图片、档案、资讯、资料、网站架构、网站画面的安排、网页设计，均由秀儿或其他权利人依法拥有其知识产权，包括但不限于商标权、专利权、著作权、商业秘密等。\n
+　　9.2非经秀儿或其他权利人书面同意任何人不得擅自使用、修改、复制、公开传播、改变、散布、发行或公开发表软件程序或内容。\n
+　　9.3尊重知识产权是用户应尽的义务，如有违反，用户应对秀儿承担损害赔偿责任。\n
+（十）服务条款的解释、法律适用及争端解决\n
+　　10.1秀儿对本服务条款拥有最终解释权。\n
+　　10.2本协议及其修订本的有效性、履行和与本协议及修订本效力有关的所有事宜，将受中华人民共和国法律管辖，任何争议仅适用中华人民共和国法律。\n
+　　10.3因本协议所引起的用户与秀儿的任何纠纷或争议，首先应友好协商解决，协商不成的，用户在此完全同意将纠纷或争议提交秀儿所在地人民法院诉讼解决。　　</string>
+    <!-- 手机充值 -->
+    <string name="tel_prompt">        (1) 优惠价格随地区时段差异，略有调整。具体价格以页面实际显示为准。\n
+(2) 预计到账时间15分钟，最终到账以实际时间为准，如果遇到超时未到账的情况，请及时联系客服处理或者申请退款。\n
+(3) 此项手机充值不提供发票寄送服务，如果您需要报销凭证，请与充值号码所在地移动或联通联系。 \n
+(4) 此项优惠充值仅保证参加运营商全国统一赠送话费的促销活动。 \n
+(5) 50元及以上面额充值不保证一次性到帐，但不影响总体到账金额及时间。 \n
+(6) 用户应知晓并认可用户须知中的各项条款，确认支付既被认为是自愿承担以上原因所带来的充值风险。\n</string>
+    <string name="tel_pay_notice">1、消费不支持未设置交易密码的信用卡支付。\n
+        2、转账还款不支持信用卡支付</string>
+    <!-- 杨泉找回密码 -->
+    <string name="title_activity_reget_pw">RegetPwActivity</string>
+    <string name="title_activity_reget_passwordtwo">RegetPasswordtwoActivity</string>
+    <!-- 主Activity -->
+    <string name="activity_main">activity_main</string>
+
+    <!-- Activity_menu_item_first -->
+    <string name="balance">宝币奖励</string>
+    <string name="balance_query">余额查询</string>
+    <string name="boss_receive">个人收款</string>
+    <string name="remittance">商家收款</string>
+    <string name="credit_card_payment">资料补全</string>
+    <string name="deal_records">信用卡还款</string>
+    <string name="mobile_recharge">帮助</string>
+    <string name="moreandmore">更多</string>
+    <string name="water_rate">信用卡还款</string>
+    <string name="power_rate">电费</string>
+    <string name="gas_rate">转账汇款</string>
+    <string name="rate">费率</string>
+
+    <!-- Activity_menu_item_second -->
+    <string name="plane_ticket">飞机票</string>
+    <string name="train_ticket">火车票</string>
+    <string name="lottery_ticket">运营中心</string>
+    <string name="account_manage">个人中心</string>
+    <string name="company">成都秀儿技术有限公司</string>
+
+    <string name="credit">信用卡还款</string>
+    <string name="phone_charge">手机充值</string>
+    <string name="convenience_services">场景支付</string>
+    <string name="menu_help">帮助</string>
+    <string name="express">快递查询</string>
+    <string name="robot">移动支付机器人</string>
+    <!--     <string name="pull_to_refresh_pull_label">下拉可以刷新</string> -->
+    <!--     <string name="pull_to_refresh_release_label">松开可以刷新</string> -->
+    <!--     <string name="pull_to_refresh_refreshing_label">加载中...</string> -->
+    <!--     <string name="pull_to_refresh_tap_label">下拉可以刷新</string> -->
+    <string name="pull_to_refresh_update">最近更新：</string>
+
+    <!-- 中间账户 -->
+    <string name="phonenumber">手机号</string>
+    <string name="hintPhonenumber">请输入手机号,将作为登录账号</string>
+    <string name="confirmationCode">手机验证码</string>
+    <string name="hintInputCode">请输入验证码</string>
+    <string name="getConfirmationCode">获取验证码</string>
+    <string name="setPassword">设置支付密码</string>
+    <string name="oldPassword">原支付密码</string>
+    <string name="newPassword">新支付密码</string>
+    <string name="newSecondPassword">确认新支付密码</string>
+    <string name="upHintPassword">请输入新的支付密码</string>
+    <string name="upHintNowPassword">请输入原支付密码</string>
+    <string name="upHintSecondPassword">请确认输入新的支付密码</string>
+    <string name="inputPassWord">请输入6位数字</string>
+    <string name="confirmPassword">确认支付密码</string>
+    <string name="inputSecondTime">请再次输入支付密码</string>
+    <string name="agree">同意</string>
+    <string name="disagree">不同意</string>
+    <string name="ok">确定</string>
+    <string name="next">下一步</string>
+
+    <string-array name="spins">
+        <item>网购</item>
+        <item>贷款 </item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="spins_quer">
+        <item>全部</item>
+        <item>充值</item>
+        <item>提现</item>
+        <item>奖励</item>
+        <item>转入</item>
+        <item>转出</item>
+        <item>服务购买</item>
+        <item>紧急提现</item>
+    </string-array>
+    <!--     <string-array name="queryorderitem1"> -->
+    <!--         <item>全部</item> -->
+    <!--         <item>充值</item> -->
+    <!--         <item>提现</item> -->
+    <!--         <item>奖励</item> -->
+    <!--         <item>转入</item> -->
+    <!--         <item>转出</item> -->
+    <!--         <item>服务购买</item> -->
+    <!--         <item>紧急提现</item> -->
+    <!--     </string-array> -->
+
+    <string name="introduction_name">秀儿简介</string>
+    <string name="introduction">
+“秀儿”是成都秀儿科技有限公司基于“互联网+、移动支付、互联网金融”时代响应国家号召所推出的一款最快捷、最方便、最安全的移动创业平台，为用户提供理财钱包、分销商城、话费充值等各种服务和应用系统，可根据个人及企业定位需求，灵活选择“秀儿”的角色和服务内容，“秀儿”既为个人提供移动创业系统，又为商家提供销售商圈系统，实现了个人创业与企业产品销售的完美融合。\n\n
+\u0020\u0020\u0020\u0020\u0020目前主要功能有:\n\n
+1. 方便快捷，消费随性，收付随心\n\n
+2. 扫码支付，二维码收款\n\n
+3. 提现：普通和闪电提现\n\n
+4. 实名认证确保安全\n\n
+5. 既能理财又能创业\n\n
+6. 钱包互转实时免费\n\n
+7. 创新营销，提供创业平台.
+</string>
+
+    <string name="rateintroduction">
+ \u0020什么是费率?\n\n
+秀儿充值手续费按费率来扣取,费率越低手续费越低\n
+购买费率可从秀儿直接进行费率升级,或使用费率激活码升级.\n\n
+没有费率激活码?\n\n
+可以向您的所属代理商索要!\n
+可以咨询我们客服热线!\n
+02888265063
+</string>
+
+
+    <string name="feedstr">
+感谢您使用秀儿,您的反馈能帮助我们更好、更快的解决问题.您可以与我们的客服取得联系,我们的联系方式：\n
+客服电话:02888265063\n
+</string>
+
+    <string name="ratecode">
+如何获得激活码?\n
+您可以向您的代理商购买或拨打客服电话!\n
+</string>
+    <string name="qhpro">
+ \u0020\u0020\u0020\u0020\u0020 请使用本人信用卡，若误刷他人卡，需持卡人提供具有法律效力的相关文件，方可生效!\n
+
+</string>
+
+    <string name="choosebank">
+以下银行需开通银联无卡支付业务才可充值:\n
+邮政储蓄银行、北京银行、上海银行、浦发银行、交通银行、平安银行。
+</string>
+
+
+    <string name="qhpros">
+ \n
+  如仍有疑问\n
+请咨询客服电话:02888265063
+
+</string>
+
+    <string name="spin_prompt">请选择银行</string>
+
+    <string name="head">这里是HeadView</string>
+    <string name="pull_to_refresh">下拉刷新</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="refreshing">正在刷新...</string>
+    <string name="refresh_succeed">刷新成功</string>
+    <string name="refresh_fail">刷新失败</string>
+    <string name="pullup_to_load">上拉加载更多</string>
+    <string name="release_to_load">释放立即加载</string>
+    <string name="loading">正在加载...</string>
+    <string name="load_succeed">加载成功</string>
+    <string name="load_fail">加载失败</string>
+
+    <string name="register_agreement_label">\u3000我已详细阅读并同意此项协议</string>
+    <string name="register_agreement_label2">查看协议</string>
+
+</resources>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_style_three" />
+
+    <include layout="@layout/common_line_h" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:gravity="center" >
+
+            <EditText
+                android:id="@+id/query_ed"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="30dp"
+                android:background="@drawable/shape_search_bg"
+                 android:maxLength="11"
+                android:drawableLeft="@drawable/share_s_public_search_icon"
+                android:hint="请输入商户电话或姓名"
+                android:textSize="@dimen/text_28"
+                android:paddingLeft="@dimen/margin_normal" />
+
+            <TextView
+                android:id="@+id/query_tv"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/selector_public_button2"
+                android:enabled="false"
+                android:gravity="center"
+                android:textSize="@dimen/text_28"
+                android:text="筛选"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/text_black" />
+
+            <!-- <ImageView -->
+            <!-- android:id="@+id/im_mycircle" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:background="@drawable/num_profit" -->
+            <!-- android:gravity="center" /> -->
+
+
+            <!-- <LinearLayout -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="match_parent" -->
+            <!-- android:gravity="center_horizontal" -->
+            <!-- android:orientation="horizontal" > -->
+
+
+            <!-- <TextView -->
+            <!-- android:id="@+id/tv_profit" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="match_parent" -->
+            <!-- android:gravity="center" -->
+            <!-- android:textColor="@color/text_white" -->
+            <!-- android:textSize="50dp" -->
+            <!-- android:textStyle="bold" /> -->
+
+
+            <!-- <TextView -->
+            <!-- android:id="@+id/tv_propty" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_alignParentBottom="true" -->
+            <!-- android:layout_marginBottom="10dp" -->
+            <!-- android:gravity="center_horizontal" -->
+            <!-- android:text="元" -->
+            <!-- android:visibility="gone" -->
+            <!-- android:textColor="@color/text_white" -->
+            <!-- android:textSize="16dp" /> -->
+            <!-- </LinearLayout> -->
+        </LinearLayout>
+
+        <!-- <TextView -->
+        <!-- android:layout_width="5dp" -->
+        <!-- android:layout_height="match_parent" -->
+        <!-- android:layout_gravity="center_horizontal" /> -->
+
+        <include layout="@layout/common_line_h"/>
+
+
+        <com.td.qianhai.epay.oem.views.PullToRefreshLayout
+            android:id="@+id/refresh_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <include layout="@layout/refresh_head" />
+
+            <com.td.qianhai.epay.oem.views.PullableListView
+                android:id="@+id/mylist"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@color/none"
+                android:listSelector="@color/none"
+                android:scrollbars="none" >
+            </com.td.qianhai.epay.oem.views.PullableListView>
+
+            <include layout="@layout/load_more" />
+        </com.td.qianhai.epay.oem.views.PullToRefreshLayout>
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@color/bgcolor"-->
+            <!--android:gravity="center"-->
+            <!--android:orientation="vertical" >-->
+
+            <!--<ListView-->
+                <!--android:id="@+id/mylist"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:divider="#000000"-->
+                <!--android:listSelector="#00000000"-->
+                <!--android:scrollbars="none" >-->
+            <!--</ListView>-->
+
+
+        <TextView
+            android:id="@+id/null_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:enabled="false"
+            android:gravity="center_horizontal"
+            android:text="没有更多数据"
+            android:textSize="15dp"
+            android:visibility="gone" />
+
+            <!---->
+        <!--</LinearLayout>-->
+    </LinearLayout>
+
+</LinearLayout>

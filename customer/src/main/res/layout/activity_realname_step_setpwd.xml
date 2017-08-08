@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+    android:background="@color/bg_white">
+
+    <include layout="@layout/layout_top_bar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请设置交易密码"
+        android:textSize="@dimen/text_36"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="80dp"
+        android:textColor="@color/text_black_light"/>
+
+
+    <com.shareshenghuo.app.user.widget.PasswordEditBox
+        android:id="@+id/edt_pay_password"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/transparent"
+        android:layout_marginTop="30dp"
+        android:clickable="true"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        android:cursorVisible="false"
+        android:digits="0123456789"
+        android:maxLines="6"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="该交易密码将在兑换时使用，请妥善保管"
+        android:textColor="@color/text_black_light"
+        android:textSize="@dimen/text_28"
+        android:layout_marginTop="@dimen/margin_double"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="下一步"
+        android:textSize="@dimen/text_36"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/selector_btn_pink"
+        android:textColor="@color/text_white"
+        android:layout_marginLeft="@dimen/margin_double"
+        android:layout_marginRight="@dimen/margin_double"
+        android:layout_marginBottom="@dimen/margin_normal"/>
+
+
+</LinearLayout>

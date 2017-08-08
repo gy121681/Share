@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_activity"
+    android:orientation="vertical" >
+    
+    <View android:layout_width="match_parent"
+        android:layout_height="@dimen/status_bar_height"
+        android:background="@color/bg_top_bar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:background="@color/bg_top_bar" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/topbar_title"
+            android:textColor="@color/text_white"
+            android:text="购物车" />
+
+        <Button
+            android:id="@+id/btnEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="编辑"
+            android:textColor="@color/text_white"
+            android:textSize="16sp"
+            android:background="@null" />
+    </RelativeLayout>
+    
+    <include 
+        android:id="@+id/viewEmpty"
+        layout="@layout/view_empty"/>
+
+    <ListView
+        android:id="@+id/lvData"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@null"
+        android:dividerHeight="6dp" >
+    </ListView>
+    
+    <View android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_lighter"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/pink_dark" >
+
+        <LinearLayout
+            android:id="@+id/llCartAmount"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="8dp"
+            android:gravity="center_vertical"
+            android:background="@color/bg_white" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="11sp"
+                android:textColor="@color/gray_dark"
+                android:text="合计(不含运费)：" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/pink_dark"
+                android:text="¥" />
+
+            <TextView
+                android:id="@+id/tvCartAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/pink_dark"
+                android:text="0.0" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSettle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:textColor="@color/text_white"
+            android:text="结算"
+            android:background="@color/red_dark" />
+    </LinearLayout>
+</LinearLayout>

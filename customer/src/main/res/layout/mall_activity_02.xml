@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_top_bar" />
+
+ 	<LinearLayout 
+ 	    android:layout_width="match_parent"
+ 	    android:background="@color/white"
+ 	    android:paddingLeft="30dp"
+ 	    android:paddingRight="30dp"
+ 	    android:layout_height="wrap_content"
+ 	    >
+ 	    <ImageView 
+ 	         android:layout_width="wrap_content"
+	 	    android:layout_height="wrap_content"
+	 	    android:src="@drawable/mall_img_02"
+ 	        />
+ 	</LinearLayout>
+    
+  	<LinearLayout 
+ 	    android:layout_width="match_parent"
+ 	    android:background="@color/white"
+ 	    android:layout_marginTop="1dp"
+ 	    android:layout_height="90dp"
+ 	   	android:orientation="vertical"
+ 	    android:gravity="center_vertical"
+ 	    >
+ 	   <TextView 
+ 	       android:layout_width="wrap_content"
+ 	        android:layout_margin="@dimen/margin_normal"
+ 	        android:paddingLeft="6dp"
+	 	    android:layout_height="wrap_content"
+	 	    android:text="营业执照"
+ 	       />
+ 	    
+ 	   		<LinearLayout 
+			 	    android:layout_width="match_parent"
+			 	    android:background="@color/white"
+			 	    android:layout_height="wrap_content"
+			 	     android:layout_marginLeft="@dimen/margin_normal"
+			 	     android:layout_marginTop="@dimen/margin_normal"
+			 	   	android:orientation="horizontal"
+			 	    android:gravity="center_vertical"
+		 	    	>
+	 	      <ImageView 
+	 	         android:layout_width="60dp"
+		 	    android:layout_height="wrap_content"
+		 	    android:src="@drawable/add_icon"
+	 	        />
+ 	      	</LinearLayout>
+ 	</LinearLayout>
+
+  <LinearLayout 
+ 	    android:layout_width="match_parent"
+ 	    android:background="@color/white"
+ 	    android:layout_marginTop="1dp"
+ 	    android:layout_height="90dp"
+ 	   	android:orientation="vertical"
+ 	    android:gravity="center_vertical"
+ 	    >
+ 	   <TextView 
+ 	       android:layout_width="wrap_content"
+ 	        android:layout_margin="@dimen/margin_normal"
+ 	         android:paddingLeft="6dp"
+	 	    android:layout_height="wrap_content"
+	 	    android:text="法人身份证正反面照、法人手持身份证照"
+ 	       />
+ 	    
+ 	   		<LinearLayout 
+			 	    android:layout_width="match_parent"
+			 	    android:background="@color/white"
+			 	    android:layout_height="wrap_content"
+			 	     android:layout_marginLeft="@dimen/margin_normal"
+			 	     android:layout_marginTop="@dimen/margin_normal"
+			 	   	android:orientation="horizontal"
+			 	    android:gravity="center_vertical"
+		 	    	>
+	 	      <ImageView 
+	 	         android:layout_width="60dp"
+		 	    android:layout_height="wrap_content"
+		 	    android:src="@drawable/add_icon"
+	 	        />
+	 	      <ImageView 
+	 	         android:layout_width="60dp"
+		 	    android:layout_height="wrap_content"
+		 	    android:src="@drawable/add_icon"
+	 	        />
+	 	      <ImageView 
+	 	         android:layout_width="60dp"
+		 	    android:layout_height="wrap_content"
+		 	    android:src="@drawable/add_icon"
+	 	        />
+ 	      	</LinearLayout>
+ 	</LinearLayout>
+  	
+  <LinearLayout 
+ 	    android:layout_width="match_parent"
+ 	    android:background="@color/white"
+ 	    android:layout_marginTop="1dp"
+ 	    android:layout_height="90dp"
+ 	   	android:orientation="vertical"
+ 	    android:gravity="center_vertical"
+ 	    >
+ 	   <TextView 
+ 	       android:layout_width="wrap_content"
+ 	        android:layout_margin="@dimen/margin_normal"
+ 	        android:paddingLeft="6dp"
+	 	    android:layout_height="wrap_content"
+	 	    android:text="特殊行业经营许可证"
+ 	       />
+ 	    
+ 	   		<LinearLayout 
+			 	    android:layout_width="match_parent"
+			 	    android:background="@color/white"
+			 	    android:layout_height="wrap_content"
+			 	     android:layout_marginLeft="@dimen/margin_normal"
+			 	     android:layout_marginTop="@dimen/margin_normal"
+			 	   	android:orientation="horizontal"
+			 	    android:gravity="center_vertical"
+		 	    	>
+	 	      <ImageView 
+	 	         android:layout_width="60dp"
+		 	    android:layout_height="wrap_content"
+		 	    android:src="@drawable/add_icon"
+	 	        />
+ 	      	</LinearLayout>
+ 	</LinearLayout>
+ 	
+  	<LinearLayout 
+ 	    android:layout_width="match_parent"
+ 	    android:background="@color/white"
+ 	    android:layout_height="match_parent"
+ 	    android:gravity="center_vertical"
+ 	    >
+ 	    
+ 	    
+        <Button
+            android:id="@+id/llWalletRecharge"
+            style="@style/btn_pink"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="提交资料" />
+ 	</LinearLayout>
+  	
+  	
+</LinearLayout>
+
+
+

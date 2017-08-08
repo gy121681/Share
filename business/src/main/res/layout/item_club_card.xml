@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:layout_margin="6dp"
+    android:background="@drawable/bg_vip_card"
+    android:padding="6dp" >
+
+    <TextView
+        android:id="@+id/tvCardDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="金卡"
+        android:textColor="@color/text_white" />
+
+    <TextView
+        android:id="@+id/tvCardName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="陈开开 12312379"
+        android:textColor="@color/text_white" />
+
+    <TextView
+        android:id="@+id/tvCardPoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="当前积分：1000"
+        android:textColor="@color/text_white" />
+    
+    <TextView
+        android:id="@+id/tvCardNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:text="NO.12361"
+        android:textColor="@color/text_white" />
+
+    <TextView
+        android:id="@+id/tvCardMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/text_white"
+        android:text="余额：135" />
+
+</RelativeLayout>

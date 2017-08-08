@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+<!-- <RelativeLayout -->
+<!--         android:layout_width="match_parent" -->
+<!--         android:layout_height="@dimen/top_bar_height1" -->
+<!--         android:background="@color/bg_top_bar" > -->
+
+<!--         <TextView -->
+<!--             android:visibility="gone" -->
+<!--             android:id="@+id/ivAddArticle" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_alignParentRight="true" -->
+<!--             android:layout_centerVertical="true" -->
+<!--             android:layout_marginRight="@dimen/margin_normal" -->
+<!--             android:textColor="@color/text_white" -->
+<!--             android:textSize="16sp" -->
+<!--             android:text="发布" /> -->
+
+<!--         <ImageView -->
+<!--             android:id="@+id/btnSearch" -->
+<!--             android:layout_width="28dp" -->
+<!--             android:layout_height="20dp" -->
+<!--             android:layout_marginLeft="@dimen/margin_normal" -->
+<!--             android:layout_alignParentLeft="true" -->
+<!--             android:layout_centerVertical="true" -->
+<!--             android:src="@drawable/btn_search" /> -->
+
+<!--         <TextView -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_centerInParent="true" -->
+<!--             android:textSize="@dimen/topbar_title" -->
+<!--             android:textColor="@color/text_white" -->
+<!--             android:text="" /> -->
+
+<!--     </RelativeLayout> -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layerType="software"
+            android:overScrollMode="never" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/line_style"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/layout_x_14"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@color/bg_white"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/btn_center_of_services"
+                style="@style/btn_style_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/share_s_homepage_icon_service"
+                android:text="服务中心" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@color/bg_white"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/btn_manage_member"
+                style="@style/btn_style_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/share_s_homepage_icon_member"
+                android:text="会员管理" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@color/bg_white"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/btn_business_center"
+                style="@style/btn_style_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/share_s_homepage_icon_business"
+                android:text="业务专区" />
+        </LinearLayout>
+    </LinearLayout>
+    
+    
+    
+
+    <LinearLayout
+        style="@style/line_style"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@color/bg_white"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/btn_add_commercial_tenant"
+                style="@style/btn_style_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/share_s_homepage_icon_develop_seller"
+                android:text="发展商户" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@color/bg_white"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/btn_my_commercial_tenant"
+                style="@style/btn_style_menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/share_s_homepage_icon_my_seller"
+                android:text="我的商户" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@color/bg_white"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/btn_my_lucre"
+                style="@style/btn_style_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/share_s_homepage_icon_profit"
+                android:text="我的收益" />
+        </LinearLayout>
+    </LinearLayout>
+
+        <LinearLayout
+            style="@style/line_style"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+    </LinearLayout>
+
+</LinearLayout>

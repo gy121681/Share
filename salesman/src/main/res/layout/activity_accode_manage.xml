@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_style_two" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.6"
+            android:background="@color/bg_white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/share_s_homepage_member_card"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="已激活"
+                        android:textColor="@color/text_gray"
+                        android:textSize="16dp"/>
+
+                    <TextView
+                        android:id="@+id/has_been_act"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/text_gray"
+                        android:textSize="14dp"/>
+                </LinearLayout>
+
+                <include layout="@layout/common_line_v" />
+
+                <LinearLayout
+                    android:id="@+id/lin_actcode"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/share_s_homepage_member_activation_code_have"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="fill_vertical"
+                            android:ellipsize="marquee"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:gravity="center_vertical"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:scrollHorizontally="true"
+                            android:singleLine="true"
+                            android:text="已生成未激活"
+                            android:textColor="@color/text_black_light"
+                            android:textSize="16dp"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/has_been_generated"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/text_black_light"
+                        android:textSize="14dp"/>
+                </LinearLayout>
+
+                <include layout="@layout/common_line_v" />
+
+                <LinearLayout
+                    android:id="@+id/layout_unactive"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="未激活"
+                        android:textColor="@color/text_black_light"
+                        android:textSize="16dp"
+                        android:drawableRight="@drawable/share_s_homepage_member_activation_code_have"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/no_generation"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text=""
+                        android:textColor="@color/text_black_light"
+                        android:textSize="14dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <include layout="@layout/common_line_h" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/bgcolor"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/agents_new_actcode"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/form_bg_wihte1"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="6"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/share_s_homepage_member_activation_code_2"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:drawableRight="@drawable/share_s_public_next"
+                        android:gravity="center_vertical"
+                        android:paddingRight="10dp"
+                        android:text="激活码生成"
+                        android:textColor="@color/text_black_light"
+                        android:textSize="16dp"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <include layout="@layout/common_line_h_m_rl"
+                android:visibility="gone"/>
+
+            <RelativeLayout
+                android:id="@+id/agents_actcode"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/form_bg_wihte1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="6"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/share_s_homepage_member_activation_senior_member"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:drawableRight="@drawable/share_s_public_next"
+                        android:gravity="center_vertical"
+                        android:paddingRight="10dp"
+                        android:text="已激活会员查询"
+                        android:textColor="@color/text_black_light"
+                        android:textSize="16dp"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <include layout="@layout/common_line_h_m_rl" />
+            <RelativeLayout
+                android:id="@+id/agents_actcode1"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/form_bg_wihte1"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="6"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/share_s_homepage_member_activation_ordinary_member"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:drawableRight="@drawable/share_s_public_next"
+                        android:gravity="center_vertical"
+                        android:paddingRight="10dp"
+                        android:text="已激活码查询"
+                        android:textColor="@color/text_black_light"
+                        android:textSize="16dp"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+        <include layout="@layout/common_line_h" />
+    </LinearLayout>
+
+</LinearLayout>

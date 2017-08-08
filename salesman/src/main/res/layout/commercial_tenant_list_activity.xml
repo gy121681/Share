@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_white"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+
+    <include layout="@layout/title_style_three"/>
+
+    <include layout="@layout/common_line_h"/>
+
+    <com.td.qianhai.epay.oem.views.SearchDateView
+        android:id="@+id/view_search_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_gray"
+        android:gravity="center"
+        android:padding="@dimen/margin_normal"
+        android:text="历史营业额："
+        android:textColor="@color/text_orange"
+        android:textSize="@dimen/text_28"/>
+
+    <com.td.qianhai.epay.oem.views.PullToRefreshListView
+        android:id="@+id/listview"
+        android:listSelector="@color/transparent"
+        android:dividerHeight="1px"
+        android:divider="@color/bg_divider"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

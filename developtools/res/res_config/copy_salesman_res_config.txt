@@ -1,0 +1,27 @@
+# 这是注释
+# *表示要忽略的文件
+
+# 要拷贝的文件
+--fromDir  ../../../../../../../art/业务员端/切图/
+--toDir    ../../temp_out/salesman/drawable-xhdpi
+--preName  share_s_
+
+# *表示要忽略的文件
+*../../../../../../../art/业务员端/切图/icon/
+*../../../../../../../art/业务员端/切图/启动界面/启动界面640x960.png
+*../../../../../../../art/业务员端/切图/启动界面/启动界面640x1136.png
+*../../../../../../../art/业务员端/切图/启动界面/启动界面750x1334.png
+*../../../../../../../art/业务员端/切图/启动界面/启动界面1242x2208.png
+*../../../../../../../art/业务员端/切图/homepage/homepage_screening.png
+
+# 特殊路径
+
+../../../../../../../art/业务员端/切图/icon/android/48.png  ../../temp_out/salesman/drawable-ldpi/ic_launcher.png
+../../../../../../../art/业务员端/切图/icon/android/48.png  ../../temp_out/salesman/drawable-mdpi/ic_launcher.png
+../../../../../../../art/业务员端/切图/icon/android/72.png  ../../temp_out/salesman/drawable-hdpi/ic_launcher.png
+../../../../../../../art/业务员端/切图/icon/android/96.png  ../../temp_out/salesman/drawable-xhdpi/ic_launcher.png
+../../../../../../../art/业务员端/切图/icon/android/144.png  ../../temp_out/salesman/drawable-xxhdpi/ic_launcher.png
+
+../../../../../../../art/业务员端/切图/启动界面/启动界面640x960.png  ../../temp_out/salesman/drawable-mdpi/welcome.png
+../../../../../../../art/业务员端/切图/启动界面/启动界面640x1136.png  ../../temp_out/salesman/drawable-hdpi/welcome.png
+../../../../../../../art/业务员端/切图/启动界面/启动界面750x1334.png  ../../temp_out/salesman/drawable-xhdpi/welcome.png

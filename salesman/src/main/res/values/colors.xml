@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- 主Activity -->
+    <color name="prelogin">#F7F6F2</color>
+
+    <color name="bg_white">#ffffff</color>
+    <!--分隔线背景颜色-->
+    <color name="bg_divider">#E1E1E1</color>
+    <!--灰色背景颜色-->
+    <color name="bg_gray">#F9F9F9</color>
+    <color name="bg_gray_dark">#F3F3F3</color>
+
+    <color name="text_black">#000000</color>
+    <color name="text_black_light">#585858</color>
+    <color name="text_gray">#c0c0c0</color>
+    <color name="text_orange">#ff7043</color>
+    <color name="text_white">#ffffff</color>
+    <color name="text_blue">#0093dd</color>
+
+</resources>

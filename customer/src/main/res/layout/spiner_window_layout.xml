@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/res"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/bg_color"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/tvs"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/margin_normal"
+                android:gravity="center_vertical"
+                android:text="完成"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/msplistviews"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/res"
+            android:listSelector="@color/transparent"
+            android:scrollbars="none" >
+        </ListView>
+        <!-- android:id="@+id/msplistviews" -->
+    </LinearLayout>
+
+</RelativeLayout>

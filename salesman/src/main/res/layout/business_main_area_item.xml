@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--业务专区-->
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+          android:id="@+id/btn_item"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_column="3"
+          android:background="@drawable/selector_public_button2"
+          android:gravity="center"
+          android:text="XXXX"
+          android:textSize="@dimen/text_28"
+          android:textColor="@color/text_black_light"
+
+    >
+
+</TextView>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/single_city_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/big_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/air_n_title_bar_rbt" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_normal"
+        android:layout_marginLeft="@dimen/margin_normal"
+        android:layout_marginRight="@dimen/margin_normal"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@id/layout_1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/air_n_linearlayout_single_bg_xml" >
+
+            <TextView
+                android:id="@id/itinerary_item_layout_txt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15.0dip"
+                android:gravity="center_vertical"
+                android:text="不需要行程单"
+                android:textColor="@color/default_black"
+                android:textSize="16.0sp" />
+
+            <ImageView
+                android:id="@id/itinerary_item_layout_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15.0dip"
+                android:background="@drawable/arrow"
+                android:checked="false"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@id/layout_2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:background="@drawable/air_n_linearlayout_single_bg_xml" >
+
+            <TextView
+                android:id="@id/itinerary_item_layout_txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15.0dip"
+                android:gravity="center_vertical"
+                android:text="自取行程单"
+                android:textColor="@color/default_black"
+                android:textSize="16.0sp" />
+
+            <ImageView
+                android:id="@id/itinerary_item_layout_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15.0dip"
+                android:background="@drawable/arrow"
+                android:checked="false"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@id/layout_3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:background="@drawable/air_n_linearlayout_single_bg_xml" >
+
+            <TextView
+                android:id="@id/itinerary_item_layout_txt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15.0dip"
+                android:gravity="center_vertical"
+                android:text="快递行程单"
+                android:textColor="@color/default_black"
+                android:textSize="16.0sp" />
+
+            <ImageView
+                android:id="@id/itinerary_item_layout_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15.0dip"
+                android:background="@drawable/arrow"
+                android:checked="false"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/remark_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_normal"
+        android:layout_marginLeft="@dimen/margin_normal"
+        android:layout_marginRight="@dimen/margin_normal"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:background="@drawable/remark_h_bg_img"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8.0dip"
+            android:layout_marginRight="8.0dip" >
+
+            <TextView
+                android:id="@id/tv_remark_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="选择快递行程单需加收10元邮寄费"
+                android:textColor="@color/air_type"
+                android:textSize="12.0sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

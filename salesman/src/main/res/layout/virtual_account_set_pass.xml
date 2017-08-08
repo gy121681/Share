@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/layout_reg_title"
+        layout="@layout/title_style_two" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-2.5dip"
+        android:layout_weight="1"
+        android:fadingEdge="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bgcolor"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/mStyle.blue12_left"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/reg_title_tvheight"
+                android:layout_marginLeft="@dimen/reg_title_tv_margin_left"
+                android:text="设置致富宝账号"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/reg_layout_margin"
+                android:layout_marginRight="@dimen/reg_layout_margin"
+                android:background="@drawable/white_background_reg"
+                android:orientation="vertical"
+                android:padding="@dimen/reg_layout_margin"
+                android:visibility="gone" >
+
+                <TextView
+                    style="@style/mStyle.reg_content_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/reg_tv_layout_height"
+                    android:text="@string/phonenumber" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <EditText
+                        android:id="@+id/et_phoneNumber"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/reg_input_height"
+                        android:background="@drawable/selector_input_reg"
+                        android:hint="@string/hintPhonenumber"
+                        android:inputType="number"
+                        android:maxLength="11"
+                        android:textColorHint="@color/greyer" />
+
+                    <TextView
+                        android:id="@+id/tv_phone_result"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/input_tips_reg"
+                        android:text="sfasfa"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/mStyle.reg_content_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/reg_tv_layout_height"
+                    android:text="@string/confirmationCode" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <EditText
+                            android:id="@+id/et_confirm_code"
+                            android:layout_width="0.0dip"
+                            android:layout_height="@dimen/reg_input_height"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/selector_input_reg"
+                            android:hint="@string/hintInputCode"
+                            android:inputType="number"
+                            android:maxLength="6"
+                            android:textColorHint="@color/greyer" />
+
+                        <Button
+                            android:id="@+id/btn_getconfirmation"
+                            android:layout_width="140.0dip"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/selector_get_verfiycode"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="@string/getConfirmationCode" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_confirm_result"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/input_tips_reg"
+                        android:text="sfasfa"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                style="@style/mStyle.blue12_left"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/reg_title_tvheight"
+                android:background="@color/bg_divider"
+                android:paddingLeft="@dimen/margin_double"
+                android:textColor="@color/text_orange"
+                android:text="设置钱包支付密码(*支付密码不能与登录密码一致)" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/mStyle.reg_content_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/reg_tv_layout_height"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_28"
+                    android:text="@string/setPassword" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white" >
+
+                    <EditText
+                        android:id="@+id/et_pw1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/reg_input_height"
+                        android:background="@color/transparent"
+                        android:gravity="left|center"
+                        android:hint="@string/inputPassWord"
+                        android:inputType="numberPassword"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:maxLength="6"
+                        android:singleLine="true"
+                        android:textColor="@color/text_black"
+                        android:textColorHint="@color/text_gray"
+                        android:textSize="@dimen/text_28" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/mStyle.reg_content_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/reg_tv_layout_height"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_28"
+                    android:text="@string/confirmPassword" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white" >
+
+                    <EditText
+                        android:id="@+id/et_pw2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/reg_input_height"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@color/transparent"
+                        android:hint="@string/inputSecondTime"
+                        android:inputType="numberPassword"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:maxLength="6"
+                        android:textColor="@color/text_black"
+                        android:textColorHint="@color/text_gray"
+                        android:textSize="@dimen/text_28" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/reg_btn_next_height"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/margin_normal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20.0dip"
+                android:background="@drawable/selector_public_button"
+                android:text="@string/ok"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/text_36" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

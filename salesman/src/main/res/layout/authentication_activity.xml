@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    android:orientation="vertical" >
+<!--   android:background="@drawable/aut_bg" -->
+    <!--  -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/transparent" >
+
+        <TextView
+            android:id="@id/bt_title_left"
+            style="@style/title_back_btn_bg_theme2"
+            android:drawableLeft="@drawable/title_back_btn_bg2"
+            android:text="返回" />
+
+        <TextView
+            android:id="@id/tv_title_contre"
+            style="@style/title_text_theme"
+            android:text="登录" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="25dp"
+            android:layout_weight="1.2"
+            android:paddingBottom="25dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/aut_title" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:src="@drawable/share_s_mine_member_supplement" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="已有"
+                android:textSize="@dimen/text_28" />
+
+            <TextView
+                android:id="@+id/tv_number"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="3000,000+"
+                android:textColor="@color/text_blue"
+                android:textSize="@dimen/text_38" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="人完成认证,尊享服务"
+                android:textSize="@dimen/text_28" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/tv_au_button"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/selector_public_button"
+                android:gravity="center"
+                android:text="开始认证"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/text_36" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

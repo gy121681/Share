@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        layout="@layout/balance_topbar" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginLeft="10dp"
+            
+        android:orientation="vertical" >
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:paddingLeft="5dp"
+            android:background="@drawable/bg_higher"
+            android:layout_height="@dimen/layout_height">
+            <TextView 
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:gravity="center_vertical"
+                android:textSize="16dp"
+                android:text="银行卡号："/>
+            
+            <TextView 
+                android:id="@+id/tv_balance_query_result_card_no"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:textSize="16dp"
+                android:text=""/>
+            
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:background="@drawable/bg_down"
+            android:paddingLeft="5dp"
+            android:layout_height="@dimen/layout_height">
+            <TextView 
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:gravity="center_vertical"
+                android:textSize="16dp"
+                android:text="　　余额："/>
+            <TextView 
+                android:id="@+id/tv_balance_query_result_balance"               
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:textSize="16dp"
+                android:text=""/>
+        </LinearLayout>
+   
+    </LinearLayout>
+    <RelativeLayout 
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="20dp"
+      android:layout_marginTop="30.0dp">
+      <Button
+            android:id="@+id/btn_balance_query_result_confirm"
+            android:layout_centerHorizontal="true"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:background="@drawable/btn"            
+            android:textSize="16dp" 
+            android:gravity="center"         
+            android:text="确认" />
+     
+  </RelativeLayout>
+
+</LinearLayout>
+

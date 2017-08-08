@@ -1,0 +1,643 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_style_two" />
+
+    <!-- <FrameLayout -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="match_parent" -->
+    <!-- android:layout_weight="4" > -->
+
+
+    <!-- <ImageView -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="match_parent" -->
+    <!-- android:layout_marginBottom="20dp" -->
+    <!-- android:background="@drawable/newreal_title" /> -->
+
+
+    <!-- <LinearLayout -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="match_parent" > -->
+
+
+    <!-- <LinearLayout -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="match_parent" -->
+    <!-- android:layout_weight="2.2" -->
+    <!-- android:gravity="center_horizontal" > -->
+
+
+    <!-- <ImageView -->
+    <!-- android:layout_width="50dp" -->
+    <!-- android:layout_height="50dp" -->
+    <!-- android:layout_gravity="center" -->
+    <!-- android:src="@drawable/contact" /> -->
+    <!-- </LinearLayout> -->
+
+
+    <!-- <LinearLayout -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="match_parent" -->
+    <!-- android:layout_weight="1" > -->
+    <!-- </LinearLayout> -->
+
+
+    <!-- <LinearLayout -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="match_parent" -->
+    <!-- android:layout_weight="2.2" > -->
+    <!-- </LinearLayout> -->
+    <!-- </LinearLayout> -->
+    <!-- </FrameLayout> -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_pros"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="收款宝实名认证需上传出款借记卡的正面照片和用户手持身份证+借记卡的照片"
+                android:textColor="@color/red"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <FrameLayout
+                    android:id="@+id/lin_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2.2" >
+
+                            <TextView
+                                android:layout_width="4dp"
+                                android:layout_height="match_parent"
+                                android:layout_centerInParent="true"
+                                android:background="@color/white"
+                                android:paddingTop="5dp" />
+
+                            <TextView
+                                android:id="@+id/real_pointimg"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/newreal_point1"
+                                android:gravity="center"
+                                android:text="1"
+                                android:textColor="@color/text_white" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="5dp"
+                            android:layout_weight="1" >
+
+                            <ImageView
+                                android:id="@+id/iv_name_auth_front"
+                                android:layout_width="match_parent"
+                                android:layout_height="140dp"
+                                android:src="@drawable/newreal_idcard" />
+
+                            <TextView
+                                android:id="@+id/tv_pro1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_below="@+id/iv_name_auth_front"
+                                android:gravity="center"
+                                android:text="本人出款借记卡照片"
+                                android:textColor="@color/gray"
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:id="@+id/tv_propty1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:gravity="center"
+                                android:paddingBottom="5dp"
+                                android:text="请拍摄您的身份证正面照"
+                                android:textColor="@color/text_white"
+                                android:textSize="16dp"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2.2" >
+
+                            <TextView
+                                android:id="@+id/btn_name_auth_take_front"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/newreal_camera_btn" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/pro_1"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="bottom|right"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/guidelines_img1"
+                        android:visibility="gone" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/lin_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:visibility="gone" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2.2" >
+
+                            <TextView
+                                android:layout_width="4dp"
+                                android:layout_height="match_parent"
+                                android:layout_centerInParent="true"
+                                android:background="@color/white"
+                                android:paddingTop="5dp" />
+
+                            <TextView
+                                android:id="@+id/real_pointimg3"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/newreal_point1"
+                                android:gravity="center"
+                                android:text="2"
+                                android:textColor="@color/text_white" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/iv_name_auth_scene2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1" >
+
+                            <ImageView
+                                android:id="@+id/iv_idcard_scene"
+                                android:layout_width="match_parent"
+                                android:layout_height="140dp"
+                                android:src="@drawable/newreal_scene" />
+
+                            <TextView
+                                android:id="@+id/tv_pro3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_below="@+id/iv_idcard_scene"
+                                android:gravity="center"
+                                android:text="身份证反面照片"
+                                android:textColor="@color/gray"
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:id="@+id/tv_propty3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:gravity="center"
+                                android:paddingBottom="5dp"
+                                android:text=""
+                                android:textColor="@color/text_white"
+                                android:textSize="16dp"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2.2" >
+
+                            <TextView
+                                android:id="@+id/btn_name_auth_take_scene1"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/newreal_camera_btn" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/pro_4"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="bottom|right"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/guidelines_img1"
+                        android:visibility="gone" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/lin_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2.2" >
+
+                            <TextView
+                                android:layout_width="4dp"
+                                android:layout_height="match_parent"
+                                android:layout_centerInParent="true"
+                                android:background="@color/white"
+                                android:paddingTop="5dp" />
+
+                            <TextView
+                                android:id="@+id/real_pointimg1"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/newreal_point1"
+                                android:gravity="center"
+                                android:text="2"
+                                android:textColor="@color/text_white" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/iv_name_auth_scene1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1" >
+
+                            <ImageView
+                                android:id="@+id/iv_name_auth_scene"
+                                android:layout_width="match_parent"
+                                android:layout_height="140dp"
+                                android:src="@drawable/newreal_scene" />
+
+                            <TextView
+                                android:id="@+id/tv_pro2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_below="@+id/iv_name_auth_scene"
+                                android:gravity="center"
+                                android:text="手持身份证+借记卡照片"
+                                android:textColor="@color/gray"
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:id="@+id/tv_propty2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:gravity="center"
+                                android:paddingBottom="5dp"
+                                android:text="请将身份证置于胸前拍摄情景照"
+                                android:textColor="@color/text_white"
+                                android:textSize="16dp"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2.2" >
+
+                            <TextView
+                                android:id="@+id/btn_name_auth_take_scene"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/newreal_camera_btn" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/pro_2"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="bottom|right"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/guidelines_img1"
+                        android:visibility="gone" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/authentication_operation"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2.2" >
+
+                            <TextView
+                                android:layout_width="4dp"
+                                android:layout_height="match_parent"
+                                android:layout_centerInParent="true"
+                                android:background="@color/white"
+                                android:paddingTop="5dp" />
+
+                            <TextView
+                                android:id="@+id/real_pointimg2"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/newreal_point1"
+                                android:gravity="center"
+                                android:text="3"
+                                android:textColor="@color/text_white" />
+                        </RelativeLayout>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1" >
+
+                            <!-- <ImageView -->
+                            <!-- android:id="@+id/iv_name_auth_bank" -->
+                            <!-- android:layout_width="match_parent" -->
+                            <!-- android:layout_height="140dp" -->
+                            <!-- android:src="@drawable/newreal_bankcard" -->
+                            <!-- android:visibility="gone" /> -->
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical" >
+
+                                <EditText
+                                    android:id="@+id/tv_username"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="45dp"
+                                    android:background="@color/white"
+                                    android:gravity="center"
+                                    android:hint="请输入您本人姓名"
+                                    android:inputType="textPersonName"
+                                    android:paddingLeft="5dp"
+                                    android:paddingRight="5dp"
+                                    android:textSize="15dp"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/tv_userid"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="45dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="2dp"
+                                    android:background="@color/white"
+                                    android:digits="1234567890xX"
+                                    android:gravity="center"
+                                    android:hint="请输入您本人身份证号码"
+                                    android:paddingLeft="5dp"
+                                    android:paddingRight="5dp"
+                                    android:textSize="15dp"
+                                    android:textStyle="bold" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="45dp"
+                                    android:layout_marginTop="2dp"
+                                    android:background="@color/white"
+                                    android:orientation="horizontal"
+                                    android:paddingLeft="10dp" >
+
+                                    <ImageView
+                                        android:id="@+id/im_bank"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="5dp" />
+
+                                    <TextView
+                                        android:id="@+id/tv_bank"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="45dp"
+                                        android:background="@color/white"
+                                        android:gravity="center"
+                                        android:hint="请选择发卡行"
+                                        android:inputType="number"
+                                        android:maxLength="25"
+                                        android:paddingLeft="5dp"
+                                        android:paddingRight="5dp"
+                                        android:textColor="@color/black"
+                                        android:textSize="15dp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                                <EditText
+                                    android:id="@+id/tv_banknum"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="45dp"
+                                    android:layout_marginTop="2dp"
+                                    android:background="@color/white"
+                                    android:gravity="center"
+                                    android:hint="您本人储蓄卡号(提现使用)"
+                                    android:inputType="number"
+                                    android:maxLength="25"
+                                    android:paddingLeft="5dp"
+                                    android:paddingRight="5dp"
+                                    android:textSize="15dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tv_issuing_bank"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="45dp"
+                                    android:layout_marginTop="2dp"
+                                    android:background="@color/white"
+                                    android:gravity="center"
+                                    android:hint="发卡行所在省"
+                                    android:maxLength="25"
+                                    android:paddingLeft="5dp"
+                                    android:paddingRight="5dp"
+                                    android:textSize="15dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tv_issuing_bank_com"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="45dp"
+                                    android:layout_marginTop="2dp"
+                                    android:background="@color/white"
+                                    android:gravity="center"
+                                    android:hint="发卡行所在市"
+                                    android:maxLength="25"
+                                    android:paddingLeft="5dp"
+                                    android:paddingRight="5dp"
+                                    android:textSize="15dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tv_issuing_bank_area"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="45dp"
+                                    android:layout_marginTop="2dp"
+                                    android:background="@color/white"
+                                    android:gravity="center"
+                                    android:hint="发卡行所在区/县"
+                                    android:maxLength="25"
+                                    android:paddingLeft="5dp"
+                                    android:paddingRight="5dp"
+                                    android:textSize="15dp"
+                                    android:textStyle="bold" >
+ <!-- <TextView -->
+                                    <!-- android:id="@+id/tv_issuing_bank_com" -->
+                                    <!-- android:layout_width="match_parent" -->
+                                    <!-- android:layout_height="45dp" -->
+                                    <!-- android:layout_marginTop="2dp" -->
+                                    <!-- android:background="@color/white" -->
+                                    <!-- android:gravity="center" -->
+                                    <!-- android:hint="发卡行所县/区" -->
+                                    <!-- android:maxLength="25" -->
+                                    <!-- android:paddingLeft="5dp" -->
+                                    <!-- android:paddingRight="5dp" -->
+                                    <!-- android:textSize="15dp" -->
+                                    <!-- android:textStyle="bold" /> -->
+
+
+                                    <!-- <TextView -->
+                                    <!-- android:id="@+id/bank_propty" -->
+                                    <!-- android:layout_width="match_parent" -->
+                                    <!-- android:layout_height="wrap_content" -->
+                                    <!-- android:layout_alignParentBottom="true" -->
+                                    <!-- android:gravity="center" -->
+                                    <!-- android:paddingBottom="5dp" -->
+                                    <!-- android:text="请输入银行卡号(不可使用信用卡)" -->
+                                    <!-- android:textColor="@color/text_white" -->
+                                    <!-- android:textSize="16dp" /> -->
+                                </TextView>
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/pro_3"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_gravity="top|center_horizontal"
+                                android:src="@drawable/guidelines_img1"
+                                android:visibility="gone" />
+                        </FrameLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2.2" >
+
+                            <!-- <TextView -->
+                            <!-- android:id="@+id/btn_name_auth_take_bank" -->
+                            <!-- android:layout_width="50dp" -->
+                            <!-- android:layout_height="50dp" -->
+                            <!-- android:layout_centerInParent="true" -->
+                            <!-- android:background="@drawable/newreal_camera_btn" /> -->
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <!-- <ImageView -->
+                    <!-- android:id="@+id/pro_3" -->
+                    <!-- android:layout_width="80dp" -->
+                    <!-- android:layout_height="80dp" -->
+                    <!-- android:layout_gravity="bottom|right" -->
+                    <!-- android:layout_marginRight="10dp" -->
+                    <!-- android:src="@drawable/guidelines_img1" -->
+                    <!-- android:visibility="gone" /> -->
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/tv_pro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="温馨提示: 此处绑定银行卡为储蓄卡,不可使用信用卡"
+                    android:textColor="#ffff9913"
+                    android:textSize="12dp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="8" >
+
+                <Button
+                    android:id="@+id/btn_name_auth_upload"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/button01_bg"
+                    android:gravity="center"
+                    android:text="提交"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/size_16" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_style_two" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10.0dip" >
+
+            <!-- 开户信息修改 -->
+
+            <RelativeLayout
+                android:id="@+id/btn_basis_model"
+                android:layout_width="fill_parent"
+                android:layout_height="49.0dip"
+                android:layout_margin="@dimen/margin_normal"
+                android:background="@drawable/form_bg"
+                android:drawableRight="@drawable/arrow_right_01"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip" >
+
+                <TextView
+                    android:id="@+id/tv_new_msg_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_normal"
+                    android:layout_marginTop="@dimen/margin_normal"
+                    android:background="@drawable/consumer_service_center_unread_msg"
+                    android:gravity="center"
+                    android:textColor="@color/text_white"
+                    android:textSize="10.0dip"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="帐号管理"
+                    android:src="@drawable/arrow_right_01" />
+
+                <TextView
+                    android:id="@+id/tv_bank_name_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16.0dip"
+                    android:background="#00000000"
+                    android:gravity="center_vertical"
+                    android:text="定存模式"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tv_basis_model"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_bank_name_info"
+                    android:background="#00000000"
+                    android:textColor="@color/txt_fg_normal"
+                    android:textSize="13.0sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_uppay_password"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_normal"
+                android:layout_marginRight="@dimen/margin_normal"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    style="@style/mStyle.reg_content_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/reg_tv_layout_height"
+                    android:text="可转入金额:"
+                    android:textSize="10.0dip" />
+
+                <TextView
+                    android:id="@+id/tv_into_money"
+                    style="@style/mStyle.reg_content_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/reg_tv_layout_height"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/textView1"
+                    android:text="1.5"
+                    android:textColor="@color/red"
+                    android:textSize="10.0dip" />
+
+                <TextView
+                    style="@style/mStyle.reg_content_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/reg_tv_layout_height"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@id/tv_into_money"
+                    android:text="元"
+                    android:textSize="10.0dip" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_uppay_moniy"
+                android:layout_width="fill_parent"
+                android:layout_height="49.0dip"
+                android:layout_margin="@dimen/margin_normal"
+                android:background="@drawable/form_bg"
+                android:drawableRight="@drawable/arrow_right_01"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip" >
+
+                <TextView
+                    android:id="@+id/icon_service_update_login_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16.0dip"
+                    android:text="金　　额"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/et_into_money"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/icon_service_update_login_password"
+                    android:background="#00000000"
+                    android:digits="1234567890."
+                    android:hint="转入金额"
+                    android:inputType="number"
+                    android:textColor="@color/txt_fg_normal"
+                    android:textSize="13.0sp" />
+
+                <TextView
+                    android:id="@+id/et_into_money_error"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/icon_service_update_login_password"
+                    android:background="#00000000"
+                    android:text="提现金额"
+                    android:textColor="@color/red"
+                    android:textSize="16.0sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_uppay_pass"
+                android:layout_width="fill_parent"
+                android:layout_height="49.0dip"
+                android:layout_margin="@dimen/margin_normal"
+                android:background="@drawable/form_bg"
+                android:drawableRight="@drawable/arrow_right_01"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/icon_pay_password_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16.0dip"
+                    android:text="支付密码"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/et_withdrawl_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/icon_pay_password_id"
+                    android:background="#00000000"
+                    android:hint="@string/inputPassWord"
+                    android:inputType="textPassword"
+                    android:maxLength="15"
+                    android:textColor="@color/txt_fg_normal"
+                    android:textSize="13.0sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_hint_capital"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_normal"
+                android:layout_marginRight="@dimen/margin_normal"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/tv_capital"
+                    style="@style/mStyle.reg_content_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/reg_tv_layout_height"
+                    android:text="可提现余额:"
+                    android:textSize="10.0dip" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/reg_btn_next_height"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/margin_normal"
+        android:layout_marginLeft="@dimen/reg_layout_margin"
+        android:layout_marginRight="@dimen/reg_layout_margin"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:background="@drawable/selector_next_normal"
+        android:text="转入VIP"
+        android:textColor="@color/text_white"
+        android:textSize="22.0dip" />
+
+</LinearLayout>

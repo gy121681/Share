@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<string name="note_wink">请眨眼</string>
+	<string name="note_mouth">请张嘴</string>
+	<string name="note_nod">请点头</string>
+	<string name="note_shakehead">请摇头</string>
+	<string name="time_out_dialog_msg">请在规定时间内完成指定动作,重试一次</string>
+	<string name="track_missed_dialog_msg">动作幅度过大,请保持人脸在屏幕中央,重试一次</string>
+	<string name="time_out_dialog_title">检测超时</string>
+	<string name="track_missed_dialog_title">检测失败</string>
+	<string name="cancel">取消</string>
+	<string name="restart_preview">确定</string>
+	<string name="blink">BLINK</string>
+	<string name="mouth">MOUTH</string>
+	<string name="nod">NOD</string>
+	<string name="yaw">YAW</string>
+	<string name="failed_liveness_title">检测失败</string>
+    <string name="keep_on_the_stage">请保持程序在前台运行，重试一次</string>
+	<string name="result_cancel">活体检测被取消!</string>
+	<string name="start_detect_note">准备开始检测</string>
+	<string name="face_too_close_note">请移动手机远离面部</string>
+	<string name="face_too_far_note">请移动手机靠近面部</string>
+	<string name="face_out_of_bound_note">请将人脸移入框内</string>
+</resources>

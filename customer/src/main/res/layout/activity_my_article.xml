@@ -1,0 +1,64 @@
+<com.handmark.pulltorefresh.library.PullToRefreshScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/svMyArticle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@drawable/bg_mine_header"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_gravity="left"
+                android:src="@drawable/arrow_left" />
+
+            <com.shareshenghuo.app.user.widget.CircleImageView
+                android:id="@+id/ivUserAvatar"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="@dimen/margin_normal"
+                android:src="@drawable/share_c_mine_head_moren"
+                app:border_color="#fff"
+                app:border_width="1dp" />
+
+            <TextView
+                android:id="@+id/tvUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="阿克苏"
+                android:textColor="@color/text_white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvArticleCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="已发表文章：0篇"
+                android:textColor="@color/text_white"
+                android:textSize="11sp" />
+        </LinearLayout>
+        
+        <ListView
+            android:id="@+id/lvData"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="6dp"
+            android:divider="@null"
+        	android:dividerHeight="6dp" />
+    </LinearLayout>
+</com.handmark.pulltorefresh.library.PullToRefreshScrollView>

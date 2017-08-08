@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 交易记录 -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!--     <item android:state_pressed="true" android:drawable="@drawable/checkrecord1" /> -->
+<!--     <item android:state_pressed="false" android:drawable="@drawable/checkrecord" /> -->
+<!--     <item android:drawable="@drawable/checkrecord1" /> -->
+
+</selector>

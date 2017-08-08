@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_style_two" />
+    
+
+    <LinearLayout
+        android:id="@+id/lin_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/layout2_start_date"
+            android:layout_width="fill_parent"
+            android:layout_height="49.0dip"
+            android:layout_gravity="center"
+            android:background="@drawable/form_bg_wihte"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp" >
+
+            <!-- android:background="@drawable/air_n_linearlayout_bombg_nocorner_xml" -->
+
+            <ImageView
+                android:id="@id/booking_layout2_start_date_image1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20.0dip"
+                android:background="@drawable/air_n_date_img" />
+
+            <TextView
+                android:id="@+id/tv_deal_records_start_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:hint="选择查询交易的开始日期"
+                android:textSize="15.0sp" />
+
+            <ImageView
+                android:id="@id/date_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20.0dip"
+                android:background="@drawable/air_city_arrow" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <LinearLayout
+            android:id="@+id/layout2_end_date"
+            android:layout_width="fill_parent"
+            android:layout_height="49.0dip"
+            android:layout_gravity="center"
+            android:background="@drawable/form_bg_wihte"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp" >
+
+            <ImageView
+                android:id="@id/booking_layout2_end_date_image1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20.0dip"
+                android:background="@drawable/air_n_date_img" />
+
+            <TextView
+                android:id="@+id/tv_deal_records_end_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:hint="选择查询交易的结束日期"
+                android:textSize="15.0sp" />
+
+            <ImageView
+                android:id="@id/date_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20.0dip"
+                android:background="@drawable/air_city_arrow" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/deal_type"
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:layout_marginTop="30.0dip"
+            android:background="@drawable/form_bg_wihte"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp">
+
+            <ImageView
+                android:id="@id/booking_layout2_start_date_image1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20.0dip"
+                android:background="@drawable/deal" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <Spinner
+                    android:id="@+id/deal_typt_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:paddingLeft="20dp"
+                    android:textSize="15.0sp" />
+
+                <ImageView
+                    android:id="@id/date_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20.0dip"
+                    android:background="@drawable/air_city_arrow" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_deal_records_confirm"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/reg_btn_next_height"
+        android:layout_marginBottom="@dimen/margin_normal"
+        android:layout_marginLeft="15.0dip"
+        android:layout_marginRight="15.0dip"
+        android:layout_marginTop="30.0dip"
+        android:background="@drawable/button01_bg"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="查询"
+            android:textColor="@color/text_white"
+            android:textSize="20.0dip" />
+    </LinearLayout>
+
+</LinearLayout>

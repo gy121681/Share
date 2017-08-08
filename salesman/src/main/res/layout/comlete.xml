@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_style_two" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/textview_style"
+                android:layout_weight="6"
+                android:gravity="center"
+                android:text="银行卡号"
+                android:textColor="@color/txt_fg_light_gray" />
+
+            <EditText
+                android:id="@+id/et_edit_bankcard"
+                style="@style/editview_style"
+                android:hint="请输入银行卡号"
+                android:inputType="number"
+                android:maxLength="25"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/et_order_receive_balance_error"
+                style="@style/error_style"
+                android:text="充值金额不能"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/textview_style"
+                android:layout_weight="6"
+                android:gravity="center"
+                android:text="手机号"
+                android:textColor="@color/txt_fg_light_gray" />
+
+            <EditText
+                android:id="@+id/et_edit_mobile"
+                style="@style/editview_style"
+                android:hint="请输入银行预留手机号"
+                android:inputType="number"
+                android:maxLength="11"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/et_order_receive_balance_error"
+                style="@style/error_style"
+                android:text="充值金额不能"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btn_edit_bankmobile"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/reg_btn_next_height"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button01_bg"
+        android:enabled="false"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="@color/text_black"
+        android:textSize="20.0dip" />
+
+</LinearLayout>

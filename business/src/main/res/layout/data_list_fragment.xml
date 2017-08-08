@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+         android:background="@color/red_y"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tv_totalbusiness"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="center_vertical"
+            android:text="营业额: 0.00"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:textSize="14dp" />
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/radio"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/circular_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <RadioButton
+            android:id="@+id/btn_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/lncen_gropbtn"
+            android:button="@null"
+            android:gravity="center"
+            android:text="5%激励"
+            android:textColor="@color/bg_top_bar"
+            android:textSize="16dp" />
+
+        <RadioButton
+            android:id="@+id/btn_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/lncen_gropbtn"
+            android:button="@null"
+            android:gravity="center"
+            android:text="25%激励"
+            android:textColor="@color/bg_top_bar"
+            android:textSize="16dp" />
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/applin" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/lvdata"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <!-- <DatePicker -->
+        <!-- android:id="@+id/dpPicker" -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="200dp" -->
+        <!-- android:layout_alignParentBottom="true" -->
+        <!-- android:calendarViewShown="false" /> -->
+    </RelativeLayout>
+
+</LinearLayout>

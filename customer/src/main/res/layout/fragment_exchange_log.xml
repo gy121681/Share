@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/bg_activity" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:text="详情" />
+        
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:text="生活币" />
+        
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:text="状态" />
+    </LinearLayout>
+    
+    <View android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_lighter"/>
+    
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/lvEchangeLog"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/tvExchangeTotalPoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        android:textColor="@color/pink"
+        android:text="消费总额：0币" />
+
+</LinearLayout>

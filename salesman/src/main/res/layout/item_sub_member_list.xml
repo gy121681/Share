@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/layout_user_info"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/margin_double"
+        android:layout_marginBottom="@dimen/margin_double">
+
+        <com.td.qianhai.epay.oem.views.CircleImageView
+            android:id="@+id/img_photo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/share_s_public_head_small_big"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="XXXX"
+            android:textSize="@dimen/text_28"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/margin_normal"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/layout_user_info"
+        android:src="@drawable/share_s_homepage_member_senior1"
+        android:layout_marginLeft="@dimen/margin_double"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/layout_user_info"
+        android:layout_marginTop="@dimen/margin_half"
+        android:layout_marginRight="@dimen/margin_normal">
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="XXXXXXXXXXX"
+            android:textSize="@dimen/text_28"
+            android:textColor="@color/text_black_light"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/margin_normal"/>
+
+        <ImageView
+            android:id="@+id/btn_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/share_s_homepage_telephone"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="XXXX-XX-XX XX:XX:XX"
+        android:textColor="@color/text_gray"
+        android:textSize="@dimen/text_24"
+        android:layout_alignBottom="@id/layout_user_info"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/margin_normal"/>
+
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="alertdialog_line">#398AF3</color>
+    <color name="actionsheet_blue">#037BFF</color>
+    <color name="lightGray">#c8c8c8</color>
+    <color name="gray_timer">#55000000</color>
+</resources>

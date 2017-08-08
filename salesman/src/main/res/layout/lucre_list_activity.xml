@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:ptr="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_white"
+    android:gravity="center_horizontal">
+
+    <include layout="@layout/title_style_three" />
+
+    <include layout="@layout/common_line_h" />
+
+    <com.td.qianhai.epay.oem.views.SearchDateView
+        android:id="@+id/view_search_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="累计消费秀点"
+        android:textColor="@color/text_black_light"
+        android:textSize="@dimen/text_32"
+        android:layout_marginTop="@dimen/margin_double"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="XXXX.XXX"
+        android:textSize="@dimen/text_50"
+        android:textColor="@color/text_orange"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/margin_double"
+        />
+
+    <Button
+        android:id="@+id/btn_exchange"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="right"
+        android:layout_marginBottom="@dimen/margin_normal"
+        android:layout_marginRight="@dimen/margin_double"
+        android:layout_marginTop="@dimen/margin_double"
+        android:background="@drawable/selector_mine_member_supplement"
+        android:text="兑换"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/text_36"/>
+
+    <include layout="@layout/common_line_h" />
+
+    <com.td.qianhai.epay.oem.views.PullToRefreshListView
+        android:id="@id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingRight="@dimen/margin_normal"
+        android:paddingLeft="@dimen/margin_normal"
+        android:dividerHeight="1px"
+        android:divider="@color/bg_divider"
+        />
+
+</LinearLayout>

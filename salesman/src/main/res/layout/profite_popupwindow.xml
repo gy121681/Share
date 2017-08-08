@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/profite_c_2" />
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@color/bgcolor"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/pro_pop"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/form_bg_gray"
+            android:drawableRight="@drawable/blueonchecked"
+            android:gravity="center"
+            android:paddingRight="10dp"
+            android:text="收益汇总"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="#F0F0F0" />
+
+        <TextView
+            android:id="@+id/pro_pop_1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/form_bg_gray"
+            android:drawableRight="@drawable/blueonchecked"
+            android:gravity="center"
+            android:paddingRight="10dp"
+            android:text="充值收益"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="#F0F0F0" />
+
+        <TextView
+            android:id="@+id/pro_pop_2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/form_bg_gray"
+            android:drawableRight="@drawable/blueonchecked"
+            android:gravity="center"
+            android:paddingRight="10dp"
+            android:text="闪提收益"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="#F0F0F0" />
+
+        <TextView
+            android:id="@+id/pro_pop_3"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/form_bg_gray"
+            android:drawableRight="@drawable/blueonchecked"
+            android:gravity="center"
+            android:paddingRight="10dp"
+            android:text="提现收益"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/pro_pop_7"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/form_bg_gray"
+            android:drawableRight="@drawable/blueonchecked"
+            android:gravity="center"
+            android:paddingRight="10dp"
+            android:text="三级代理收益"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/pro_pop_4"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/form_bg_gray"
+            android:drawableRight="@drawable/blueonchecked"
+            android:gravity="center"
+            android:paddingRight="10dp"
+            android:text="零售商收益"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/pro_pop_5"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/form_bg_gray"
+            android:drawableRight="@drawable/blueonchecked"
+            android:gravity="center"
+            android:paddingRight="10dp"
+            android:text="分销商收益"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/pro_pop_6"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/form_bg_gray"
+            android:drawableRight="@drawable/blueonchecked"
+            android:gravity="center"
+            android:paddingRight="10dp"
+            android:text="代理商收益"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/pro_pop_8"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/form_bg_gray"
+            android:drawableRight="@drawable/blueonchecked"
+            android:gravity="center"
+            android:paddingRight="10dp"
+            android:text="区域收益"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/pro_pop_9"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/form_bg_gray"
+            android:drawableRight="@drawable/blueonchecked"
+            android:gravity="center"
+            android:paddingRight="10dp"
+            android:text="商家返佣"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/pro_pop_10"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/form_bg_gray"
+            android:drawableRight="@drawable/blueonchecked"
+            android:gravity="center"
+            android:paddingRight="10dp"
+            android:text="信用卡还款收益"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+</LinearLayout>

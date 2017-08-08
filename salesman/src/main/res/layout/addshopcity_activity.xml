@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_style_two" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="bottom"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:textColor="@color/text_black_light"
+                android:textSize="@dimen/text_28"
+                android:text="省份:"
+                android:paddingLeft="@dimen/margin_normal"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp" >
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:hint="选择省份"
+                    android:singleLine="true"
+                    android:textColorHint="@color/text_gray"
+                    android:textColor="@color/text_black_light"
+                    android:textSize="@dimen/text_28" />
+
+                <!-- <View -->
+                <!-- android:layout_width="match_parent" -->
+                <!-- android:layout_height="1px" -->
+                <!-- android:layout_alignParentBottom="true" -->
+                <!-- android:layout_marginLeft="10dp" -->
+                <!-- android:background="@color/gray_lighter" > -->
+                <!-- </View> -->
+            </RelativeLayout>
+        </LinearLayout>
+
+        <include layout="@layout/common_line_h_m_rl" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="bottom"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:textColor="@color/text_black_light"
+                android:textSize="@dimen/text_28"
+                android:text="城市:"
+                android:paddingLeft="@dimen/margin_normal" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp" >
+
+                <TextView
+                    android:id="@+id/tv2"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:hint="选择城市"
+                    android:singleLine="true"
+                    android:textColorHint="@color/text_gray"
+                    android:textColor="@color/text_black_light"
+                    android:textSize="@dimen/text_28" />
+
+                <!-- <View -->
+                <!-- android:layout_width="match_parent" -->
+                <!-- android:layout_height="1px" -->
+                <!-- android:layout_alignParentBottom="true" -->
+                <!-- android:layout_marginLeft="10dp" -->
+                <!-- android:background="@color/gray_lighter" > -->
+                <!-- </View> -->
+            </RelativeLayout>
+        </LinearLayout>
+
+        <include layout="@layout/common_line_h_m_rl" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="bottom"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:textColor="@color/text_black_light"
+                android:textSize="@dimen/text_28"
+                android:text="区域:"
+                android:paddingLeft="@dimen/margin_normal"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp" >
+
+                <TextView
+                    android:id="@+id/tv3"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:hint="选择区域"
+                    android:singleLine="true"
+                    android:textColorHint="@color/text_gray"
+                    android:textColor="@color/text_black_light"
+                    android:textSize="@dimen/text_28" />
+
+                <!-- <View -->
+                <!-- android:layout_width="match_parent" -->
+                <!-- android:layout_height="1px" -->
+                <!-- android:layout_alignParentBottom="true" -->
+                <!-- android:layout_marginLeft="10dp" -->
+                <!-- android:background="@color/gray_lighter" > -->
+                <!-- </View> -->
+            </RelativeLayout>
+        </LinearLayout>
+
+        <include layout="@layout/common_line_h_m_rl" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="bottom"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:textColor="@color/text_black_light"
+                android:textSize="@dimen/text_28"
+                android:text="一级分类:"
+                android:paddingLeft="@dimen/margin_normal"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp" >
+
+                <TextView
+                    android:id="@+id/tv4"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:hint="选择一级分类"
+                    android:singleLine="true"
+                    android:textColorHint="@color/text_gray"
+                    android:textColor="@color/text_black_light"
+                    android:textSize="@dimen/text_28" />
+
+                <!-- <View -->
+                <!-- android:layout_width="match_parent" -->
+                <!-- android:layout_height="1px" -->
+                <!-- android:layout_alignParentBottom="true" -->
+                <!-- android:layout_marginLeft="10dp" -->
+                <!-- android:background="@color/gray_lighter" > -->
+                <!-- </View> -->
+            </RelativeLayout>
+        </LinearLayout>
+
+        <include layout="@layout/common_line_h_m_rl" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="bottom"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:textColor="@color/text_black_light"
+                android:textSize="@dimen/text_28"
+                android:text="二级分类:"
+                android:paddingLeft="@dimen/margin_normal" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="@dimen/margin_normal">
+
+                <TextView
+                    android:id="@+id/tv5"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:gravity="center_vertical"
+                    android:hint="选择二级分类:"
+                    android:singleLine="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:textColorHint="@color/text_gray"
+                    android:textColor="@color/text_black_light"
+                    android:textSize="@dimen/text_28"/>
+
+                <!-- <View -->
+                <!-- android:layout_width="match_parent" -->
+                <!-- android:layout_height="1px" -->
+                <!-- android:layout_alignParentBottom="true" -->
+                <!-- android:layout_marginLeft="10dp" -->
+                <!-- android:background="@color/gray_lighter" > -->
+                <!-- </View> -->
+            </RelativeLayout>
+        </LinearLayout>
+
+        <include layout="@layout/common_line_h_m_rl" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="bottom"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:textColor="@color/text_black_light"
+                android:textSize="@dimen/text_28"
+                android:text="地图选点:"
+                android:paddingLeft="@dimen/margin_normal" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp" >
+
+                <TextView
+                    android:id="@+id/tv6"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="10dp"
+                    android:drawableRight="@drawable/share_s_public_next"
+                    android:gravity="center_vertical"
+                    android:hint="地图上选择地点:"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:textColorHint="@color/text_gray"
+                    android:textColor="@color/text_black_light"
+                    android:textSize="@dimen/text_28" />
+
+                <!-- <View -->
+                <!-- android:layout_width="match_parent" -->
+                <!-- android:layout_height="1px" -->
+                <!-- android:layout_alignParentBottom="true" -->
+                <!-- android:layout_marginLeft="10dp" -->
+                <!-- android:background="@color/gray_lighter" > -->
+                <!-- </View> -->
+            </RelativeLayout>
+        </LinearLayout>
+
+        <include layout="@layout/common_line_h_m_rl" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            >
+
+            <EditText
+                android:id="@+id/ed7"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:gravity="top"
+                android:hint="具体地址"
+                android:textColorHint="@color/text_gray"
+                android:textColor="@color/text_black_light"
+                android:textSize="@dimen/text_28"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/common_line_h_m_rl" />
+
+    <TextView
+        android:id="@+id/tv_go"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/selector_public_button"
+        android:gravity="center"
+        android:text="下一步"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/text_36" />
+
+</LinearLayout>

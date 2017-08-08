@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@color/bg_white"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/layout_top_bar"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/icon_30" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:textSize="13sp"
+        android:textColor="@color/gray_light"
+        android:text="注：首次领取会员卡需填写您的真实信息" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:background="@drawable/bg_border_gray"
+        android:padding="6dp"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/edRealname"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center_vertical"
+            android:drawableLeft="@drawable/icon_26"
+            android:hint="请填写您的真实姓名"
+            android:textSize="13sp"
+            android:drawablePadding="6dp"
+            android:background="@null" />
+        
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray_lighter"/>
+        
+        <EditText
+            android:id="@+id/edIDcard"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center_vertical"
+            android:drawableLeft="@drawable/icon_47"
+            android:hint="请填写您的身份证(选填)"
+            android:textSize="13sp"
+            android:drawablePadding="6dp"
+            android:background="@null" />
+        
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray_lighter"/>
+        
+        <TextView
+            android:id="@+id/tvMobile"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center_vertical"
+            android:drawableLeft="@drawable/icon_65"
+            android:drawablePadding="6dp"
+            android:textSize="13sp"
+            android:background="@null" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        style="@style/btn_pink"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="@dimen/margin_normal"
+        android:text="提交领取" />
+
+</LinearLayout>

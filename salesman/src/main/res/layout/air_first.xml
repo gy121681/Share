@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/first"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/big_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/main_topbar" />
+
+    <LinearLayout
+        android:id="@id/booking_layout0"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_normal"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@id/booking_layout00"
+            android:layout_width="100.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@drawable/air_n_single_left_img"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@id/booking_layout00_txt1"
+                android:layout_width="60.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="单程"
+                android:textColor="@color/single_white"
+                android:textSize="18.0sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/air_n_line" />
+
+        <LinearLayout
+            android:id="@id/booking_layout01"
+            android:layout_width="100.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:background="@drawable/air_n_double_right_img"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@id/booking_layout01_txt1"
+                android:layout_width="60.0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="往返"
+                android:textColor="@color/single_gray"
+                android:textSize="18.0sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/booking_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginRight="20.0dip"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@id/booking_layout1"
+            android:layout_width="fill_parent"
+            android:layout_height="91.0dip"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@id/booking_layout1_start_city"
+                android:layout_width="fill_parent"
+                android:layout_height="45.0dip"
+                android:layout_gravity="center"
+                android:background="@drawable/air_n_linearlayout_topbg_nocorner_xml"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@id/booking_layout1_start_city_image1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13.0dip"
+                    android:background="@drawable/air_n_start_city_img" />
+
+                <TextView
+                    android:id="@id/booking_layout1_start_city_txt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:hint="请选择出发城市"
+                    android:textSize="15.0sp" />
+
+                <ImageView
+                    android:id="@id/start_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="13.0dip"
+                    android:background="@drawable/air_city_arrow" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@id/booking_layout1_end_city"
+                android:layout_width="fill_parent"
+                android:layout_height="45.0dip"
+                android:layout_gravity="center"
+                android:background="@drawable/air_n_linearlayout_bottombg_nocorner_xml"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@id/booking_layout1_end_city_image1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13.0dip"
+                    android:background="@drawable/air_n_end_city_img" />
+
+                <TextView
+                    android:id="@id/booking_layout1_end_city_txt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:hint="请选择到达城市"
+                    android:textSize="15.0sp" />
+
+                <ImageView
+                    android:id="@id/end_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="13.0dip"
+                    android:background="@drawable/air_city_arrow" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@id/booking_layout1_reverse"
+            android:layout_width="60.0dip"
+            android:layout_height="91.0dip"
+            android:layout_gravity="center"
+            android:background="@drawable/air_n_linearlayout_rightbg_nocorner_xml"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/booking_layout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginRight="20.0dip"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:clickable="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@id/booking_layout2_start_date"
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:layout_gravity="center"
+            android:background="@drawable/air_n_linearlayout_single_bg_xml"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@id/booking_layout2_start_date_image1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20.0dip"
+                android:background="@drawable/air_n_date_img" />
+
+            <TextView
+                android:id="@id/booking_layout2_start_date_txt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:hint="请选择出发日期"
+                android:textSize="15.0sp" />
+
+            <ImageView
+                android:id="@id/date_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20.0dip"
+                android:background="@drawable/air_city_arrow" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@id/booking_layout2_end_date"
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:background="@drawable/air_n_linearlayout_dbombg_nocorner_xml"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@id/booking_layout2_end_date_image1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20.0dip"
+                android:background="@drawable/air_n_date_img" />
+
+            <TextView
+                android:id="@id/booking_layout2_end_date_txt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:hint="请选择返程日期"
+                android:textSize="15.0sp" />
+
+            <ImageView
+                android:id="@id/date_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20.0dip"
+                android:background="@drawable/air_city_arrow" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@id/booking_layout2_space"
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:layout_gravity="center"
+            android:background="@drawable/air_n_linearlayout_dbombg_nocorner_xml"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@id/booking_layout2_space_image1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20.0dip"
+                android:background="@drawable/air_n_space_img" />
+
+            <TextView
+                android:id="@id/booking_layout2_space_txt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="请选择舱位"
+                android:textSize="15.0sp" />
+
+            <ImageView
+                android:id="@id/space_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20.0dip"
+                android:background="@drawable/air_city_arrow" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/booking_layout_search"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginRight="20.0dip"
+        android:layout_marginTop="20.0dip"
+        android:background="@drawable/air_n_search_button_selector_xml"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@id/booking_layout_search_txt1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="搜索"
+            android:textColor="#fffffdf8"
+            android:textSize="18.0sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_horizontal|top"
+            android:orientation="vertical" >
+
+            <TextView
+                 android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:id="@+id/tv_pro"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="只有以下行业才需要：\n     药店需要《药品经营许可证》、餐饮行业需要《餐饮服务许可证》《食品卫生许可证》、隐形眼镜、医疗器材《医疗器械经营企业许可证》、网吧/KTV/游艺厅需要《娱乐经营许可证》、美容行业《卫生许可证》" />
+
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:id="@+id/img_model"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:adjustViewBounds="true"
+                android:cropToPadding="true"
+                android:maxHeight="1000dp"
+                android:maxWidth="500dp"
+                android:src="@drawable/model_5" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/applin" />
+
+            <Button
+                android:id="@+id/btnAvatarPhoto"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/form_bg_wihte"
+                android:gravity="center"
+                android:text="拍照"
+                android:textSize="16dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/applin" />
+
+            <Button
+                android:id="@+id/btnAvatarAlbum"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/form_bg_wihte"
+                android:gravity="center"
+                android:text="相册"
+                android:textSize="16dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/applin" />
+
+            <Button
+                android:id="@+id/btnAvatarCancel"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/form_bg_wihte"
+                android:gravity="center"
+                android:text="取消"
+                android:textSize="16dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

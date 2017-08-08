@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/myoil_list" android:state_pressed="false"/>
+ <!-- pressed -->
+    <item android:drawable="@drawable/myoil_list_p" android:state_pressed="true"/>
+ <!-- focused -->
+    <item android:drawable="@drawable/myoil_list"/>
+ <!-- default -->
+
+</selector>

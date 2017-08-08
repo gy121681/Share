@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_checked="true" android:drawable="@drawable/share_s_login_xiala" />
+    <item android:state_checked="false" android:drawable="@drawable/share_s_login_xiala" />
+<!--         <item android:state_checked="true" android:drawable="@drawable/profite_c_2" /> -->
+<!--     <item android:state_checked="false" android:drawable="@drawable/profite_c_1" /> -->
+
+</selector>

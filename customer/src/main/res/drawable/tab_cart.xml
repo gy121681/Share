@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+<!--     <item android:state_selected="true" android:drawable="@drawable/icon_22"></item> -->
+<!-- 	<item android:state_selected="false" android:drawable="@drawable/tab_cart_nor"></item> -->
+	    <item android:state_selected="true" android:drawable="@drawable/share_c_public_tool_bar_icon_bonus_choose"></item>
+	<item android:state_selected="false" android:drawable="@drawable/share_c_public_tool_bar_icon_bonus"></item>
+</selector>

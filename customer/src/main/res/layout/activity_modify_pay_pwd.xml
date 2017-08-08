@@ -1,0 +1,36 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    android:orientation="vertical" >
+    
+  	<include layout="@layout/layout_top_bar"/>
+  	
+  	<EditText
+  	    android:id="@+id/edPwdNew1"
+  	    android:layout_width="match_parent"
+  	    android:layout_height="wrap_content"
+  	    android:layout_margin="@dimen/margin_normal"
+  	    android:padding="10dp"
+  	    android:textSize="14sp"
+  	    android:numeric="integer"
+  	    android:maxLength="6"
+  	    android:password="true"
+  	    android:hint="请输入新密码(6位数字)"
+  	    android:background="@drawable/bg_arc_gray" />
+  	
+  	<EditText
+  	    android:id="@+id/edPwdNew2"
+  	    android:layout_width="match_parent"
+  	    android:layout_height="wrap_content"
+  	    android:layout_marginLeft="@dimen/margin_normal"
+  	    android:layout_marginRight="@dimen/margin_normal"
+  	    android:padding="10dp"
+  	    android:textSize="14sp"
+  	    android:numeric="integer"
+  	    android:maxLength="6"
+  	    android:password="true"
+  	    android:hint="请再次输入新密码(6位数字)"
+  	    android:background="@drawable/bg_arc_gray" />
+</LinearLayout>

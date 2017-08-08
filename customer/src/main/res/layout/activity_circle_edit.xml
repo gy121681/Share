@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_top_bar"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:background="@color/bg_activity"
+        android:text="圈子头像" />
+
+    <com.shareshenghuo.app.user.widget.CircleImageView
+        android:id="@+id/civGroupPic"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="@dimen/margin_normal"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/share_c_mine_head_moren" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:background="@color/bg_activity"
+        android:text="圈子名称" />
+
+    <EditText
+        android:id="@+id/edGroupName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="15"
+        android:singleLine="true"
+        android:textSize="14sp"
+        android:layout_margin="@dimen/margin_normal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:background="@color/bg_activity"
+        android:text="圈子介绍" />
+
+    <EditText
+        android:maxLength="100"
+        android:hint="100字以内"
+        android:id="@+id/edGroupDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="3"
+        android:textSize="14sp"
+        android:layout_margin="@dimen/margin_normal" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        style="@style/btn_pink"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="@dimen/margin_normal"
+        android:text="确认" />
+</LinearLayout>

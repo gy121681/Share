@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lin1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:id="@+id/lin_choice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/lin_choice_type"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/form_bg_wihte"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/choice_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="当前费率"
+                    android:textColor="@color/txt_fg_normal"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/now_rate_ratio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center|right"
+                    android:textColor="@color/txt_fg_normal"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_choice_rate"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/form_bg_wihte"
+                android:orientation="horizontal" >
+
+                <!-- <ImageView -->
+                <!-- android:id="@+id/choice_bank_img" -->
+                <!-- android:layout_width="40dp" -->
+                <!-- android:layout_height="40dp" -->
+                <!-- android:layout_gravity="center" -->
+                <!-- android:layout_marginLeft="10dp" -->
+                <!-- android:visibility="gone" /> -->
+
+                <TextView
+                    android:id="@+id/rate_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="马上升级"
+                    android:textColor="@color/blues"
+                    android:textSize="18dp" />
+
+                <!-- <TextView -->
+                <!-- android:id="@+id/rate_ratio" -->
+                <!-- android:layout_width="match_parent" -->
+                <!-- android:layout_height="50dp" -->
+                <!-- android:drawableRight="@drawable/checked_type" -->
+                <!-- android:gravity="center_vertical" -->
+                <!-- android:padding="10dp" -->
+                <!-- android:text="选择费率" -->
+                <!-- android:textColor="@color/txt_fg_normal" -->
+                <!-- android:textSize="16dp" /> -->
+
+                <TextView
+                    android:id="@+id/rate_ratio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:drawableRight="@drawable/checked_type"
+                    android:gravity="center|right"
+                    android:textColor="@color/blues"
+                    android:textSize="18dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/btn_rateblance_update"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/reg_btn_next_height"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/button01_bg"
+            android:gravity="center"
+            android:text="马上升级"
+            android:textColor="@color/text_white"
+            android:textSize="20.0dip" />
+    </RelativeLayout>
+
+</LinearLayout>

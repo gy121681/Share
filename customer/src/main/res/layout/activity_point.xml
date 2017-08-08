@@ -1,0 +1,121 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+<!--     <View -->
+<!--         android:layout_width="match_parent" -->
+<!--         android:layout_height="@dimen/status_bar_height1" -->
+<!--         android:background="@color/bg_top_bar" /> -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@drawable/bg_mine_header"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/top_bar_height" >
+
+            <LinearLayout
+                android:id="@+id/llTopBack"
+                android:layout_width="35dp"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:gravity="bottom"
+                android:paddingBottom="5dp"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:src="@drawable/arrow_left" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvTopTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:text="我的生活币"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/topbar_title" />
+
+            <Button
+                android:id="@+id/btnToShop"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingBottom="10dp"
+                android:gravity="center_horizontal|bottom"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:text="商城"
+                android:textColor="@color/text_white"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="15dp"
+            android:src="@drawable/icon_358" />
+
+        <TextView
+            android:id="@+id/tvUserPoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_arc_yellow"
+            android:gravity="center"
+            android:paddingBottom="3dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="3dp"
+            android:text="135生活币"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rbPoint1"
+            style="@style/tab_radio_btn2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="兑换记录" />
+
+        <RadioButton
+            android:id="@+id/rbPoint2"
+            style="@style/tab_radio_btn2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="生活币详情" />
+
+        <RadioButton
+            android:id="@+id/rbPoint3"
+            style="@style/tab_radio_btn2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="生活币规则" />
+    </RadioGroup>
+
+    <RelativeLayout
+        android:id="@+id/rlContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </RelativeLayout>
+
+</LinearLayout>

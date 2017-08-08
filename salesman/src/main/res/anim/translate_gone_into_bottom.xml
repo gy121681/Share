@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 动画从上往下隐藏dialog -->
+<set xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <translate
+        android:duration="160"
+        android:fromXDelta="0.0%"
+        android:fromYDelta="0.0%"
+        android:toXDelta="0.0%"
+        android:toYDelta="100.0%" />
+
+</set>

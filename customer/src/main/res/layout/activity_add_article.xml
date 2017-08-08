@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_activity"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/layout_top_bar"/>
+    
+    <EditText
+        android:id="@+id/edArticleTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:padding="6dp"
+        android:singleLine="true"
+        android:hint="标题(选填)"
+        android:textSize="13sp"
+        android:background="@color/bg_white" >
+    </EditText>
+
+    <EditText
+        android:maxLength="100"
+        android:id="@+id/edArticleContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:lines="10"
+        android:padding="6dp"
+        android:gravity="top"
+        android:hint="这一刻的想法...(100字以内)"
+        android:textSize="13sp"
+        android:background="@color/bg_white" >
+    </EditText>
+
+    <GridView
+        android:id="@+id/gvArticlePhoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="6dp"
+        android:padding="6dp"
+        android:horizontalSpacing="10dp"
+        android:verticalSpacing="10dp"
+        android:background="@color/bg_white"
+        android:numColumns="3" >
+    </GridView>
+
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_white"
+    android:padding="6dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvWalletLogDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textColor="@color/tab_text_nor"
+            android:text="充值" />
+
+        <TextView
+            android:id="@+id/tvWalletLogDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="11sp"
+            android:textColor="@color/gray_light"
+            android:text="2015-01-01" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvWalletLogFee"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+		android:textSize="15sp"
+		android:textStyle="bold"
+		android:textColor="@color/pink_dark"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/tvWalletLogStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="待支付" />
+</LinearLayout>

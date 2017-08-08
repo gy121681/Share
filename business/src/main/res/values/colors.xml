@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 透明 -->
+    <color name="transparent">#00000000</color>
+    <!-- 半透明 -->
+    <color name="translucent">#55000000</color>
+    <!-- 半透明 activity背景 -->
+    <color name="translucent_bg">#a000</color>
+    
+    <color name="bg_top_bar">#fff</color>
+    
+    <color name="bg_activity">#f4f4f4</color>
+    <color name="bg_white">#ffffff</color>
+    <color name="tab_text_nor">#353535</color>
+    <color name="tab_text_sel">#fa675c</color>
+    
+    <color name="blue">#38a5ea</color>
+    <color name="blue_sky">#00b7ee</color>
+    <color name="blue_dark">#546893</color>
+    <color name="blue_light">#00c0ff</color>
+    <color name="black_light">#555555</color>
+    <color name="pink_light">#ff7576</color>
+    <color name="pink_dark">#ff7d36</color>
+    <color name="pink">#eb5253</color>
+    <color name="orange_dark">#ff5a2b</color>
+    <color name="orange_light">#FF9100</color>
+    <color name="yellow_light">#FFCB17</color>
+    <color name="gray_lighter">#dddddd</color>
+    <color name="gray_light">#9d9d9d</color>
+    <color name="gray_dark">#555555</color>
+    <color name="red_dark">#eb5253</color>
+    <color name="green_dark">#72D944</color>
+     <color name="green_ne">#92BF30</color>
+    <color name="bg_gray">#F3F3F3</color>
+            <!-- 黑色 -->
+    <color name="black">#000000</color>
+        <!-- 白色 -->
+    <color name="white">#FFFFFF</color>
+    	<!--灰色线-->
+    <color name="applin"> #E8E8E8</color>
+   		<!--深绿色-->
+    <color name="green_h">#066C17</color>
+    	<!--浅灰-->
+    <color name="bgcolor">@color/white</color>
+      	<!--浅红-->
+    <color name="red_y">#FCC9C3</color>
+      <color name="gays_a">#EAEAEA</color>
+    <color name="gays_b">#F2F2F2</color>
+        <!-- 首页标题栏 -->
+    <color name="apptitle">#244A74</color>
+    
+    <color name="apptitle_oem">#3BAFAE</color>
+     <!-- 金色 -->
+    <color name="golden">#fbeca4</color>
+      <!-- 大红 -->
+    <color name="brightred">#d21539</color>
+    
+    <color name="pro">#f74f0d</color>
+    
+    <color name="red">#FF0000</color>
+    
+    <color name="none_color">#00000000</color>
+     
+    <color name="coffee">#4b3224</color>
+    <color name="green_ligh">#32B16C</color>
+      
+    <color name="formgay1">#f0f0f0</color>
+    <color name="text_hui">#8C8C8C</color>
+    
+    <color name="none">#00000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+     <color name="bg_color">#EDEDED</color>
+
+    <color name="text_orange">#ff7043</color>
+    <color name="text_black">#000000</color>
+    <color name="text_black_light">#585858</color>
+    <color name="text_gray">#c0c0c0</color>
+    <color name="text_white">#ffffff</color>
+
+    <color name="bg_gray_dark">#EDEDED</color>
+
+</resources>

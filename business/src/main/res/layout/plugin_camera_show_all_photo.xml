@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/showallphoto_headview"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_marginBottom="3dp"
+        android:background="@color/bg_top_bar"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@+id/showallphoto_back"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@null"
+            android:drawableLeft="@drawable/arrow_left"
+            android:text="返回"
+            android:textColor="@color/text_white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/showallphoto_headtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:singleLine="true"
+            android:text="选择"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/showallphoto_cancel"
+            android:layout_width="67dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/plugin_camera_title_btn_cancel"
+            android:text="取消"
+            android:textColor="@color/text_white"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/showallphoto_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+         android:background="@color/white" >
+
+        <Button
+            android:id="@+id/showallphoto_preview"
+           android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_normal"
+            android:background="@drawable/btn_gray"
+            android:text="预览" />
+
+        <Button
+            android:id="@+id/showallphoto_ok_button"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:enabled="false"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:layout_marginRight="@dimen/margin_normal"
+            android:background="@drawable/selector_btn_pink" />
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/showallphoto_myGrid"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/showallphoto_bottom_layout"
+        android:layout_below="@id/showallphoto_headview"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="2dp"
+        android:horizontalSpacing="10dp"
+        android:numColumns="4"
+        android:verticalSpacing="10dp" />
+
+    <ProgressBar
+        android:id="@+id/showallphoto_progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>

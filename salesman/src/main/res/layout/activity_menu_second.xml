@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/line_style"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/layout_x_14"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/fsbuttom_bg"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/no_name_one"
+                style="@style/btn_style_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="彩票" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/fsbuttom_bg"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/no_name_two"
+                style="@style/btn_style_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/plane_ticket"
+                android:text="飞机票" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/fsbuttom_bg"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/no_name_three"
+                style="@style/btn_style_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/mention_now"
+                android:text="提现" />
+        </LinearLayout>
+    </LinearLayout>
+    
+    
+    
+
+    <LinearLayout
+        style="@style/line_style"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/fsbuttom_bg"
+            android:gravity="center" >
+
+            <Button
+                android:id="@id/btn_menu_credit_card_payment"
+                style="@style/btn_style_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/charge_electricity"
+                android:text="电费" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/fsbuttom_bg"
+            android:gravity="center" >
+
+            <Button
+                android:id="@id/btn_menu_deal_records"
+                style="@style/btn_style_menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/train_tickets"
+                android:text="火车票" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/fsbuttom_bg"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/btn_menu_real_name"
+                style="@style/btn_style_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/zhifubao"
+                android:text="致富宝" />
+        </LinearLayout>
+    </LinearLayout>
+
+        <LinearLayout
+            style="@style/line_style"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+<!--         <LinearLayout -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_marginLeft="10dp" -->
+<!--             android:layout_marginRight="10dp" -->
+<!--             android:layout_weight="1" -->
+<!--             android:background="@drawable/fsbuttom_bg" -->
+<!--             android:gravity="center" > -->
+
+<!--             <Button -->
+<!--                 android:id="@id/btn_menu_credit_card_payment" -->
+<!--                 style="@style/btn_style_menu" -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:drawableTop="@drawable/charge_electricity" -->
+<!--                 android:text="电费" /> -->
+<!--         </LinearLayout> -->
+
+<!--         <LinearLayout -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_marginLeft="10dp" -->
+<!--             android:layout_marginRight="10dp" -->
+<!--             android:layout_weight="1" -->
+<!--             android:background="@drawable/fsbuttom_bg" -->
+<!--             android:gravity="center" > -->
+
+<!--             <Button -->
+<!--                 android:id="@id/btn_menu_deal_records" -->
+<!--                 style="@style/btn_style_menu" -->
+<!--                 android:layout_width="match_parent" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_weight="1" -->
+<!--                 android:drawableTop="@drawable/train_tickets" -->
+<!--                 android:text="火车票" /> -->
+<!--         </LinearLayout> -->
+
+<!--         <LinearLayout -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_marginLeft="10dp" -->
+<!--             android:layout_marginRight="10dp" -->
+<!--             android:layout_weight="1" -->
+<!--             android:background="@drawable/fsbuttom_bg" -->
+<!--             android:gravity="center" > -->
+
+<!--             <Button -->
+<!--                 android:id="@+id/btn_menu_real_name" -->
+<!--                 style="@style/btn_style_menu" -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:drawableTop="@drawable/zhifubao" -->
+<!--                 android:text="致富宝" /> -->
+<!--         </LinearLayout> -->
+    </LinearLayout>
+
+</LinearLayout>

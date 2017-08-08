@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="50dp"
+	    android:background="@drawable/balance_head">
+	
+	    <!-- <Button
+	        android:id="@+id/left_menu"
+	        android:layout_width="60dp"
+	        android:layout_height="35dp"
+	        android:layout_alignParentLeft="true"
+	        android:layout_centerVertical="true"
+	        android:layout_marginLeft="10dp"        
+	        android:background="@drawable/btn_back"/> -->
+	
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="18dp"
+	        android:text="消费撤销" 
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerVertical="true" />
+	</RelativeLayout>
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"      
+        android:orientation="vertical" >
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_height">
+            <TextView 
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:gravity="center_vertical"
+                android:textSize="16dp"
+                android:text="银行卡号："/>
+            <EditText 
+                android:id="@+id/et_revoke_pay_bank_code"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:layout_weight="2"
+		        android:paddingLeft="5dp"
+		        android:background="@drawable/evbackground"
+            	android:hint="请刷银行卡号"
+            	android:enabled="false"
+            	android:inputType="phone"
+            	android:maxLength="19"
+            	android:gravity="center_vertical"
+            	android:drawableRight="@drawable/brush"
+            	android:textSize="16dp"/>
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="@dimen/layout_height">
+            <TextView 
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:gravity="center_vertical"
+                android:textSize="16dp"
+                android:text="卡号密码："/>
+            <EditText 
+                android:id="@+id/et_revoke_pay_password"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:layout_weight="2"
+		        android:paddingLeft="5dp"
+		        android:maxLength="6"
+		        android:imeOptions="actionSearch"
+		        android:background="@drawable/evbackground"
+            	android:gravity="center_vertical"
+            	android:password="true"
+                android:inputType="phone"
+            	android:textSize="16dp"/>
+        </LinearLayout>
+        <RelativeLayout 
+		      android:layout_width="fill_parent"
+		      android:layout_height="wrap_content"
+		      android:layout_marginBottom="20dp"
+		      android:layout_marginTop="30.0dp">
+		      <Button
+		            android:id="@+id/btn_revoke_pay_confirm"
+		            android:layout_centerHorizontal="true"
+		            android:layout_width="150dp"
+		            android:layout_height="40dp"
+		            android:background="@drawable/btn"            
+		            android:textSize="14dp" 
+		            android:gravity="center"         
+		            android:text="确认" />
+		     
+		  </RelativeLayout>
+              
+	</LinearLayout>  
+</LinearLayout>

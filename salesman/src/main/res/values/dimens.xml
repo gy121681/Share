@@ -1,0 +1,75 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="size_22">22dp</dimen>
+    <dimen name="size_18">18dp</dimen>
+    <dimen name="size_16">16dp</dimen>
+    <dimen name="size_14">14dp</dimen>
+    <dimen name="size_12">12dp</dimen>
+    <dimen name="layout_height">50dp</dimen>
+    <dimen name="layout_height3">50dp</dimen>
+    <dimen name="layout_height2">18dp</dimen>
+    <dimen name="title">19sp</dimen>
+    
+        <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    
+    <dimen name="reg_input_height">49.0dip</dimen>
+    <dimen name="reg_pic_height">120.0dip</dimen>
+    <dimen name="reg_margin_top">8.0dip</dimen>
+    <dimen name="reg_title_tvheight">30.0dip</dimen>
+    <dimen name="reg_title_tv_margin_left">18.0dip</dimen>
+    <dimen name="reg_layout_margin">8.0dip</dimen>
+    <dimen name="reg_tv_margin_left">10.0dip</dimen>
+    <dimen name="reg_tv_layout_height">30.0dip</dimen>
+    <dimen name="reg_tv_textsize">14.0dip</dimen>
+    <dimen name="reg_title_textsize">16.0dip</dimen>
+    <dimen name="reg_tv_textsize_14">14.0dip</dimen>
+    <dimen name="reg_btn_next_height">45.0dip</dimen>
+    <dimen name="input_amount_size">38.0dip</dimen>
+    <dimen name="reg_id_tv_margin_bottom">3.0dip</dimen>
+    <dimen name="reg_layout_padding">5.0dip</dimen>
+    <dimen name="reg_tv_textsize_18">18.0dip</dimen>
+    <dimen name="reg_title_height">48.0dip</dimen>
+    <dimen name="reg_spinner_18">14.0dip</dimen>
+    <dimen name="micro">12.0dip</dimen>
+    <dimen name="small">14.0sp</dimen>
+    <dimen name="medium">18.0sp</dimen>
+    <dimen name="large">22.0sp</dimen>
+    <dimen name="huge">36.0dip</dimen>
+    <dimen name="clientmanager_groupsmssend_item_marginborder">10.0dip</dimen>
+    <dimen name="clientmanager_groupsmssend_item_itemmargin">10.0dip</dimen>
+    <dimen name="clientmanager_groupsmssend_item_height">50.0dip</dimen>
+    <dimen name="clientmanager_groupsmssend_item_contentmarginborderleft">15.0dip</dimen>
+    <dimen name="clientmanager_groupsmssend_item_contentmarginborderright">15.0dip</dimen>
+<!--     <dimen name="alphabet_size">12.0dip</dimen> -->
+<!--     <dimen name="umeng_socialize_pad_window_height">350.0dip</dimen> -->
+<!--     <dimen name="umeng_socialize_pad_window_width">580.0dip</dimen> -->
+    <dimen name="default_circle_indicator_radius">3.0dip</dimen>
+    <dimen name="default_circle_indicator_stroke_width">1.0dip</dimen>
+    <dimen name="default_line_indicator_line_width">12.0dip</dimen>
+    <dimen name="default_line_indicator_gap_width">4.0dip</dimen>
+    <dimen name="default_line_indicator_stroke_width">1.0dip</dimen>
+    <dimen name="default_title_indicator_clip_padding">4.0dip</dimen>
+    <dimen name="default_title_indicator_footer_line_height">2.0dip</dimen>
+    <dimen name="default_title_indicator_footer_indicator_height">4.0dip</dimen>
+    <dimen name="default_title_indicator_footer_indicator_underline_padding">20.0dip</dimen>
+    <dimen name="default_title_indicator_footer_padding">7.0dip</dimen>
+    <dimen name="default_title_indicator_text_size">15.0dip</dimen>
+    <dimen name="default_title_indicator_title_padding">5.0dip</dimen>
+    <dimen name="default_title_indicator_top_padding">7.0dip</dimen>
+
+    <dimen name="margin_normal">10dp</dimen>
+    <dimen name="margin_half">5dp</dimen>
+    <dimen name="margin_double">20dp</dimen>
+    <dimen name="drawable_padding">5dp</dimen>
+
+    <dimen name="text_50">25sp</dimen>
+    <dimen name="text_38">19sp</dimen>
+    <dimen name="text_36">18sp</dimen>
+    <dimen name="text_32">16sp</dimen>
+    <dimen name="text_28">14sp</dimen>
+    <dimen name="text_26">13sp</dimen>
+    <dimen name="text_24">12sp</dimen>
+
+</resources>

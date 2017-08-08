@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">秀儿</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_vip_manage">VipManageActivity</string>
+    <string name="title_activity_data_report">DataReportActivity</string>
+    <string name="title_activity_vip_detail">VipDetailActivity</string>
+    <string name="title_activity_view_total_report">ViewTotalReportActivity</string>
+    <string name="title_activity_personal_center">PersonalCenterActivity</string>
+    <string name="title_activity_order_manage">OrderManageActivity</string>
+    <string name="title_activity_order_detail">OrderDetailActivity</string>
+    <string name="title_activity_bind_mobile">BindMobileActivity</string>
+    <string name="title_activity_prod_category">ProdCategoryActivity</string>
+    <string name="title_activity_pick_prod">PickProdActivity</string>
+    <string name="title_activity_date_filter_report">DateFilterReportActivity</string>
+    <string name="title_activity_statistic_month">StatisticMonthActivity</string>
+    <string name="title_activity_statistic_day">StatisticDayActivity</string>
+    <string name="title_activity_statistic_week">StatisticWeekActivity</string>
+    <string name="title_activity_statistic_total">StatisticTotalActivity</string>
+    <string name="title_activity_vip_data_report">VipDataReportActivity</string>
+    <string name="title_activity_vip_date_filter">VipDateFilterActivity</string>
+    <string name="title_activity_my_account">MyAccountActivity</string>
+    <string name="title_activity_withdraw">WithdrawActivity</string>
+    <string name="title_activity_withdraw_result">WithdrawResultActivity</string>
+    <string name="title_activity_modify_nickname">ModifyNicknameActivity</string>
+    <string name="title_activity_search_order">SearchOrderActivity</string>
+    <string name="title_activity_push_msg">PushMsgActivity</string>
+    <string name="title_activity_push_log">PushLogActivity</string>
+    <string name="title_activity_setting">SettingActivity</string>
+    <string name="title_activity_contact_us">ContactUsActivity</string>
+    <string name="title_activity_loading">LoadingActivity</string>
+    
+            <string-array name="jazzy_effects">
+        <item>Standard</item>
+        <item>Tablet</item>
+        <item>CubeIn</item>
+        <item>CubeOut</item>
+        <item>FlipVertical</item>
+        <item>FlipHorizontal</item>
+        <item>Stack</item>
+        <item>ZoomIn</item>
+        <item>ZoomOut</item>
+        <item>RotateUp</item>
+        <item>RotateDown</item>
+        <item>Accordion</item>
+    </string-array>
+    
+<string name="exchangestr"> 
+\n
+1.单笔最多可兑换秀点\n
+2.每笔兑换扣除手续费秀点\n
+3.秀点仅每月日允许兑换，其他时间不允许兑换\n
+4.代扣税=兑换秀点×税率\n
+5.预计到账时间：T+1
+</string>
+
+</resources>

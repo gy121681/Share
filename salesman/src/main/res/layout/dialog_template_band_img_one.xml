@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280.0dip"
+    android:layout_height="wrap_content"
+    android:background="@drawable/global_box"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title_bg"
+        android:orientation="horizontal"
+        android:padding="10.0dip" >
+        
+        <ImageView 
+            android:id="@+id/d_img"
+            android:layout_width="30dip"
+            android:layout_height="25dip"
+            android:paddingTop="1.0dip"
+            android:src="@drawable/yellow"
+            />
+
+        <TextView
+            android:id="@+id/add_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="--"
+            android:textColor="@color/text_white"
+            android:textSize="18.0dip"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0" >
+
+        <TextView
+            android:id="@+id/alert_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10.0dip"
+            android:textColor="@color/black"
+            android:textSize="16.0dip" />
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="10.0dip"
+        android:paddingLeft="15.0dip"
+        android:paddingRight="15.0dip"
+        android:paddingTop="5.0dip" >
+
+        <Button
+            android:id="@+id/Button_OK"
+            android:layout_width="0.0dip"
+            android:layout_height="38.0dip"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:background="@drawable/btn01_bg"
+            android:paddingLeft="5.0dip"
+            android:paddingRight="5.0dip"
+            android:text="确认"
+            android:textColor="@color/text_white"
+            android:textSize="18.0dip" />
+    </LinearLayout>
+
+</LinearLayout>

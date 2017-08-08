@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/title_container_theme" >
+
+    <TextView
+        android:id="@id/bt_title_left"
+        style="@style/title_back_btn_bg_theme2"
+        android:drawableLeft="@drawable/share_s_public_back1"
+        android:text="返回"/>
+
+    <TextView
+        android:id="@id/tv_title_contre"
+        style="@style/title_text_theme"
+        android:text="登录" />
+
+    <include layout="@layout/common_line_h"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

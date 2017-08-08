@@ -1,0 +1,712 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.shareshenghuo.app.shop">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- SD卡读取权限，用户写入离线定位数据 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 允许应用读取低级别的系统日志文件 -->
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- 定位包、导航包需要的额外权限（注：基础权限也需要） -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATIONATION" />
+    
+
+    <!-- 极光推送 -->
+    <permission
+        android:name="com.shareshenghuo.app.shop.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.shareshenghuo.app.shop.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <application
+        android:name="com.shareshenghuo.app.shop.app.CityLifeBusiApp"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        tools:replace="android:icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme" >
+
+        <!-- android:theme="@android:style/Theme.Holo.Light.NoActionBar" > -->
+
+
+        <!-- JPush begin -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="cn.jpush.android.service.DaemonService"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.DaemonService" />
+
+                <category android:name="com.shareshenghuo.app.shop" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false" >
+        </service>
+
+        <receiver android:name="cn.jpush.android.service.AlarmReceiver" />
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true" >
+            <intent-filter android:priority="1000" >
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />
+
+                <category android:name="com.shareshenghuo.app.shop" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <!-- User defined. 用户自定义的广播接收器 -->
+        <receiver
+            android:name="com.shareshenghuo.app.shop.receiver.JPushCustomReceiver"
+            android:enabled="true" >
+            <intent-filter>
+                <!--Required 用户注册SDK的intent-->
+
+                <action android:name="cn.jpush.android.intent.REGISTRATION" />
+                <action android:name="cn.jpush.android.intent.UNREGISTRATION" />
+                <!--Required 用户接收SDK消息的intent-->
+
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+                <!--Required 用户接收SDK通知栏信息的intent-->
+
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+                <!--Required 用户打开自定义通知栏的intent-->
+
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+                <!--Optional 用户接受Rich Push Javascript 回调函数的intent-->
+
+                <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK" />
+                <!--接收网络变化 连接/断开 since 1.6.3-->
+
+                <action android:name="cn.jpush.android.intent.CONNECTION" />
+
+                <category android:name="com.shareshenghuo.app.shop" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.shareshenghuo.app.shop" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default" />
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="a16a691e7b6e633198ee2f5e" />
+        <!-- JPush end -->
+
+
+        <!-- AMAP begin -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="c75b539b918204b8ece25e14f8f19bf6" />
+        <!-- 定位需要的服务 -->
+        <service android:name="com.amap.api.location.APSService" >
+        </service>
+        <!-- dba7c17810ca7668ba1adfbf769eda1f -->
+        <!-- AMAP end -->
+
+
+        <!-- 环信 begin -->
+        <!-- 设置环信应用的appkey -->
+        <meta-data
+            android:name="EASEMOB_APPKEY"
+            android:value="ermapay#ermauser" />
+        <!-- 声明sdk所需的service SDK核心功能 -->
+        <service android:name="com.easemob.chat.EMChatService" />
+        <!-- 环信 end -->
+
+
+        <!-- share sdk begin -->
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <intent-filter>
+                <data android:scheme="tencent1106301828" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- 微信分享回调 -->
+        <activity
+            android:name="com.shareshenghuo.app.shop.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- share sdk end -->
+
+
+        <!-- umsdk -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="582d14a582b63546db000c30" >
+        </meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="emsh" >
+        </meta-data>
+        <!-- umsdk end -->
+
+        <activity
+            android:name="com.shareshenghuo.app.shop.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.LoginActivity"
+            android:launchMode="singleTop" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name="com.shareshenghuo.app.shop.util.UpdateService" >
+        </service>
+
+        <activity
+            android:name="com.shareshenghuo.app.shop.VipManageActivity"
+            android:label="@string/title_activity_vip_manage" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.DataReportActivity"
+            android:label="@string/title_activity_data_report" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.VipDetailActivity"
+            android:label="@string/title_activity_vip_detail" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.ViewTotalReportActivity"
+            android:label="@string/title_activity_view_total_report" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.PersonalCenterActivity"
+            android:label="@string/title_activity_personal_center" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.OrderManageActivity"
+            android:label="@string/title_activity_order_manage" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.OrderDetailActivity"
+            android:label="@string/title_activity_order_detail" >
+        </activity>
+        <activity android:name="com.shareshenghuo.app.shop.ChatActivity" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.BindMobileActivity"
+            android:label="@string/title_activity_bind_mobile" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.ProdCategoryActivity"
+            android:label="@string/title_activity_prod_category" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.PickProdActivity"
+            android:label="@string/title_activity_pick_prod" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.DateFilterReportActivity"
+            android:label="@string/title_activity_date_filter_report" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.StatisticMonthActivity"
+            android:label="@string/title_activity_statistic_month" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.StatisticDayActivity"
+            android:label="@string/title_activity_statistic_day" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.StatisticWeekActivity"
+            android:label="@string/title_activity_statistic_week" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.StatisticTotalActivity"
+            android:label="@string/title_activity_statistic_total" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.VipDataReportActivity"
+            android:label="@string/title_activity_vip_data_report" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.VipDateFilterActivity"
+            android:label="@string/title_activity_vip_date_filter" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.MyAccountActivity"
+            android:label="@string/title_activity_my_account" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.WithdrawActivity"
+            android:label="@string/title_activity_withdraw" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.WithdrawResultActivity"
+            android:label="@string/title_activity_withdraw_result" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.ModifyNicknameActivity"
+            android:label="@string/title_activity_modify_nickname" >
+        </activity>
+        <activity android:name="com.shareshenghuo.app.shop.RetrievePwdActivity" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.SearchOrderActivity"
+            android:label="@string/title_activity_search_order" >
+        </activity>
+        <activity android:name="com.shareshenghuo.app.shop.MessageActivity" >
+        </activity>
+        <activity android:name="com.shareshenghuo.app.shop.SysMsgListActivity" >
+        </activity>
+        <activity android:name="com.shareshenghuo.app.shop.ReplyActivity" >
+        </activity>
+        <activity android:name="com.shareshenghuo.app.shop.ContactListActivity" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.PushMsgActivity"
+            android:label="@string/title_activity_push_msg" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.PushLogActivity"
+            android:label="@string/title_activity_push_log" >
+        </activity>
+        <activity android:name="com.shareshenghuo.app.shop.VCodeActivity" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.SettingActivity"
+            android:label="@string/title_activity_setting" >
+        </activity>
+        <activity android:name="com.shareshenghuo.app.shop.network.bean.WebLoadActivity" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.ContactUsActivity"
+            android:label="@string/title_activity_contact_us" >
+        </activity>
+        <!-- 显示下载大图页面 -->
+        <activity
+            android:name="com.easemob.easeui.ui.EaseShowBigImageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <!-- 下载文件 -->
+        <activity
+            android:name="com.easemob.easeui.ui.EaseShowNormalFileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.LoadingActivity"
+            android:label="@string/title_activity_loading"
+            android:launchMode="singleTop" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.GuideActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.MineActivity"
+            android:screenOrientation="portrait" >
+
+            <!-- android:theme="@style/horizontal_slide" > -->
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.function.MallSettledActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 商城入驻，主界面 -->
+        <activity
+            android:name="com.shareshenghuo.app.shop.function.MallSettled_sczl_Activity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 商城入驻，上传资料 -->
+        <activity
+            android:name="com.shareshenghuo.app.shop.function.MallSettled_sh_Activity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 商城入驻，审核 -->
+        <activity
+            android:name="com.shareshenghuo.app.shop.function.MallSettled_kt_Activity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 商城入驻，开通 -->
+        <activity
+            android:name="com.shareshenghuo.app.shop.SetPayPassActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.FindPaypassActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.IntegralActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.FilialActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.fragment.ExcitationFragment"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.IncentivePointsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.ExchangeAcyivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.QrCodeActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.RecommendActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.MemberManageActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.ConsumptionSeriesActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.EditShopActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.TodaydataActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.MerchantInfoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.ExchangeListAcyivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.ExchangeListInfoAcyivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.RealnameActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.RecommendedmemberActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.CommodityManageActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.CommodityInfoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.ShopCategoryListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.BatchManagementActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.photo.AlbumActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.photo.BitmapCache"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.photo.GalleryActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.photo.ShowAllPhoto"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.photo.ImageFile"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.IfiedManageActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.ShopPhotoAcitivty"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.ImagePagerActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.ImagePager1Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.MentionAmountActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.SysMsgFeedbackListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.FeedbackActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.network.bean.DffWebView"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.network.bean.DffWebViewActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.RecordedSingleActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.RehistoryListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.OrderDispositionActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.PayIsCompleteAvtivty"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.PaymentnewActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.AddBankCardActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.AddcardInfoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.ChooseCardTypeActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.BankCardListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.MobileChangeActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.MobileChangeActivitytwo"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.EkOrderPay"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.QrcodeAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.ShuntMainActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.TipsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeTips" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.ConsumptionXFActivity">
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.HandBrushJHLActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.UploadWriteActivity"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.ShuntMainFMActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.QrCodeActivityFm"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.IntegralFragmentActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.ExcitationMainActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.ExchangeFmListAcyivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.RecordedSingleFmActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.OrderDispositionFmActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.RehistoryListFmActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.ExchangeFmAcyivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity
+            android:name="com.shareshenghuo.app.shop.TransferActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.TransferActivityList"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.ConsumptionFragmentActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.shareshenghuo.app.shop.SearchActivty"
+            android:screenOrientation="portrait"
+            android:theme="@style/ChoolsePhotoStyleBottoms" >
+        </activity>
+        <activity
+            android:name="com.sensetime.bankcard.BankCardActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shareshenghuo.app.shop.function.myfhq.MyFhqMainActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop" >
+        </activity>
+        <!-- 我的分红权↑ -->
+        <activity
+            android:name="com.shareshenghuo.app.shop.function.myfhq.MyFhqXmtz_xxMainActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 我的分红权,秀心购买↑ -->
+        <activity
+            android:name="com.shareshenghuo.app.shop.function.myfhq.MyFhqXmtz_xfMainActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 我的分红权,秀心购买↑ -->
+    </application>
+
+</manifest>

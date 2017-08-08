@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:gravity="center"
+    android:background="@color/pink"
+    android:orientation="horizontal" >
+
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom">
+        
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="11sp"
+	        android:textColor="@color/text_white"
+	        android:text="¥" />
+	
+	    <TextView
+	        android:id="@+id/tvItemCouponFee"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="28sp"
+	        android:textColor="@color/text_white"
+	        android:textStyle="bold"
+	        android:text="0.0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:textColor="@color/text_white"
+            android:text="优惠券" />
+
+        <TextView
+            android:id="@+id/tvItemCouponDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/text_white"
+            android:textSize="11sp"
+            android:text="满0.0使用" />
+    </LinearLayout>
+
+</LinearLayout>

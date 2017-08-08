@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/window_bg"
+        android:gravity="center_horizontal"
+        android:paddingBottom="8.0dip"
+        android:paddingTop="8.0dip"
+        android:text="提 示"
+        android:textColor="@color/txt_fg_gray"
+        android:textSize="14.0dip" />
+
+    <View
+        android:id="@+id/divider1"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="@drawable/divider"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@id/btn1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_menu_item_bg"
+        android:paddingBottom="10.0dip"
+        android:paddingTop="10.0dip"
+        android:text="按钮1"
+        android:textColor="@color/black"
+        android:textSize="16.0dip" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="@drawable/divider"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@id/btn2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_menu_item_bg"
+        android:paddingBottom="10.0dip"
+        android:paddingTop="10.0dip"
+        android:text="按钮2"
+        android:textColor="@color/black"
+        android:textSize="16.0dip"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="@drawable/divider"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_menu_item_bg"
+        android:paddingBottom="10.0dip"
+        android:paddingTop="10.0dip"
+        android:text="按钮3"
+        android:textColor="@color/black"
+        android:textSize="16.0dip"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/divider4"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="@drawable/divider"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@id/btn4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_menu_item_bg"
+        android:paddingBottom="10.0dip"
+        android:paddingTop="10.0dip"
+        android:text="按钮4"
+        android:textColor="@color/black"
+        android:textSize="16.0dip"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/divider5"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="@drawable/divider"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn5"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_menu_item_bg"
+        android:paddingBottom="10.0dip"
+        android:paddingTop="10.0dip"
+        android:text="按钮5"
+        android:textColor="@color/black"
+        android:textSize="16.0dip"
+        android:visibility="gone" />
+
+</LinearLayout>

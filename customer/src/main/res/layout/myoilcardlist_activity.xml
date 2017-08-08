@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_top_bar" />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+        android:id="@+id/refreshscrollview"
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="match_parent"
+        android:fillViewport="true" >
+
+        <com.roamer.slidelistview.SlideListView
+            xmlns:slide="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/list_view"
+            android:scrollbars="none"
+            android:divider="@color/transparent"
+            android:listSelector="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            slide:slideAnimationTime="200"
+            slide:slideLeftAction="scroll"
+            slide:slideMode="both"
+            slide:slideRightAction="scroll" />
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+</LinearLayout>

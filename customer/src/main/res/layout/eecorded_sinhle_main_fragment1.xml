@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_top_bar" />
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:background="@color/bg_top_bar"
+        android:visibility="gone">
+
+        <!-- android:background="@drawable/circular_bg" -->
+
+        <LinearLayout
+            android:id="@+id/llTopBack"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/arrow_left" />
+        </LinearLayout>
+
+        <RadioGroup
+            android:layout_width="180dp"
+            android:layout_height="25dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <RadioButton
+                android:id="@+id/btn_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/radio_btn_press"
+                android:button="@null"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/btn_white_normal"
+                android:textSize="12dp" />
+
+            <RadioButton
+                android:id="@+id/btn_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/radio_rightbtn_press"
+                android:button="@null"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/btn_white_normal"
+                android:textSize="12dp" />
+        </RadioGroup>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/tv_choosedate"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_normal"
+                android:background="@drawable/share_c_homepage_search_icon"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btnTopRight1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/margin_normal"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:textColor="@color/text_white"
+                android:textSize="13dp"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <com.example.widget.NoScrollViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</LinearLayout>

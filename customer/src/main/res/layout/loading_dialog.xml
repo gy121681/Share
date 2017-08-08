@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_view"
+    android:layout_width="120dp"
+    android:minWidth="120dp"  
+    android:layout_height="100dp"
+    android:padding="10dp"
+    android:background="@drawable/fsbuttom_bg"
+    android:gravity="center"
+    android:orientation="vertical">
+<!-- progressbar_bg -->
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/loadingpage_light" />
+
+    <TextView
+        android:id="@+id/tipTextView"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:textColor="@color/gray_dark"
+        android:layout_height="wrap_content"
+        android:textSize="14dp" />
+	
+
+</LinearLayout>

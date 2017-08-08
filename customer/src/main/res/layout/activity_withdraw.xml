@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_activity"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/layout_top_bar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="账户余额：¥" />
+
+        <TextView
+            android:id="@+id/tvWithdrawMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:background="@color/bg_white" >
+
+        <TextView
+            android:id="@+id/tvWithdrawSource"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="支付宝账号：" />
+
+        <EditText
+            android:id="@+id/edWithdrawAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入账号"
+            android:textSize="14sp"
+            android:background="@null" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginTop="1px"
+        android:padding="10dp"
+        android:background="@color/bg_white" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提现金额(元)：" />
+
+        <EditText
+            android:id="@+id/edWithdrawMoney"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入提现金额"
+            android:textSize="14sp"
+            android:numeric="decimal"
+            android:background="@null" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnWithdraw"
+        style="@style/btn_pink"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="@dimen/margin_normal"
+        android:layout_marginRight="@dimen/margin_normal"
+        android:text="提交申请" />
+
+</LinearLayout>

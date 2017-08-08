@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/apptitle" >
+
+        <TextView
+            android:id="@id/bt_title_left"
+            style="@style/title_back_btn_bg_theme2"
+            android:drawableLeft="@drawable/title_back_btn_bg2"
+            android:text="" />
+
+        <TextView
+            android:id="@id/tv_title_contre"
+            style="@style/title_text_theme"
+            android:text="登录" />
+
+        <TextView
+            android:id="@+id/tv_rr"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/choose_img"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <TextView
+        android:textSize="15dp"
+        android:id="@+id/tv_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp" />
+
+    <com.td.qianhai.epay.oem.views.PullToRefreshLayout
+        android:id="@+id/refresh_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <include layout="@layout/refresh_head" />
+
+        <com.td.qianhai.epay.oem.views.PullableListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/none"
+            android:listSelector="@color/none"
+            android:scrollbars="none" >
+        </com.td.qianhai.epay.oem.views.PullableListView>
+
+        <include layout="@layout/load_more" />
+    </com.td.qianhai.epay.oem.views.PullToRefreshLayout>
+
+</LinearLayout>

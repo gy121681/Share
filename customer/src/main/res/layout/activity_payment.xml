@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_activity"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_top_bar" />
+
+    <RadioGroup
+        android:id="@+id/rgPayType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp" >
+
+        <RadioButton
+            android:id="@+id/rbPayBalance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:checked="true"
+            android:background="@color/bg_white"
+            android:button="@null"
+            android:drawableLeft="@drawable/icon_262"
+            android:drawableRight="@drawable/cb_red"
+            android:drawablePadding="10dp"
+            android:text="账户余额：0" />
+        
+        <RadioButton
+            android:id="@+id/rbPayWx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1px"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:background="@color/bg_white"
+            android:button="@null"
+            android:drawableLeft="@drawable/icon_54"
+            android:drawableRight="@drawable/cb_red"
+            android:drawablePadding="10dp"
+            android:text="微信支付" />
+        
+        <RadioButton
+            android:id="@+id/rbPayAli"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1px"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:background="@color/bg_white"
+            android:button="@null"
+            android:drawableLeft="@drawable/icon_80"
+            android:drawableRight="@drawable/cb_red"
+            android:drawablePadding="10dp"
+            android:text="支付宝" />
+        
+        <RadioButton
+            android:id="@+id/rbPayCash"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1px"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:background="@color/bg_white"
+            android:button="@null"
+            android:drawableLeft="@drawable/icon_109"
+            android:drawableRight="@drawable/cb_red"
+            android:drawablePadding="10dp"
+            android:text="现金支付"
+            android:visibility="gone" />
+        
+        <RadioButton
+            android:visibility="gone"
+            android:id="@+id/rbPayBank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1px"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:background="@color/bg_white"
+            android:button="@null"
+            android:drawableLeft="@drawable/credit_card"
+            android:drawableRight="@drawable/cb_red"
+            android:drawablePadding="10dp"
+            android:text="银行卡" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnPay"
+        style="@style/btn_pink"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_margin="20dp"
+        android:text="确认支付" />
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/form_bg_wihte"
+    android:focusable="false"
+    android:gravity="center"
+    android:minHeight="40dp"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="@dimen/margin_normal" />
+
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/contact_name"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:layout_weight="6"
+            android:gravity="left|center"
+            android:paddingLeft="10.0dip"
+            android:textColor="@color/black"
+            android:textSize="14dp" />
+
+        <CheckBox
+            android:enabled="false"
+            android:id="@+id/chk_selectone"
+            android:layout_width="20dp"
+            android:layout_marginRight="@dimen/margin_normal"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="6"
+            android:button="@drawable/checkbox_pink"
+            android:focusable="false"
+            android:gravity="center" />
+    </RelativeLayout>
+    <!-- <CheckBox -->
+    <!-- android:id="@+id/chk_selectone" -->
+    <!-- android:layout_width="0.0dip" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_gravity="right|center" -->
+    <!-- android:layout_weight="1" -->
+    <!-- android:button="@drawable/checkbox_style" -->
+    <!-- android:checked="false" -->
+    <!-- android:clickable="false" -->
+    <!-- android:focusable="false" -->
+    <!-- android:gravity="right|center" /> -->
+
+</LinearLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/applin"
+    android:orientation="vertical" >
+
+    <!-- <View -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="@dimen/status_bar_height" -->
+    <!-- android:background="@color/bg_top_bar" /> -->
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/bg_top_bar"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/tvTopTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/topbar_title" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <HorizontalScrollView
+            android:id="@+id/scroll"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:focusable="false"
+            android:scrollbars="none"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/img_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:enabled="false" />
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RadioGroup
+                android:visibility="gone"
+                android:id="@+id/radio"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/btn_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/form_bg_wihte"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="信用商家"
+                    android:textColor="@color/bg_top_bar"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/gray_lighter" />
+
+                <RadioButton
+                    android:id="@+id/btn_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/form_bg_wihte"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="消费系列"
+                    android:textColor="@color/bg_top_bar"
+                    android:textSize="16dp" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/applin" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <com.shareshenghuo.app.user.widget.JazzyViewPager
+                    android:id="@+id/jazzy_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <include 
+                    android:id="@+id/stopdata"
+                    android:visibility="gone"
+                    layout="@layout/close_prolayout" />
+            </RelativeLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/front"
+    android:layout_width="match_parent"
+    android:layout_height="155dp"
+    android:background="@color/transparent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/lin_content"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/card_bg_blue"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="10dp" >
+
+            <ImageView
+                android:layout_marginTop="30dp"
+                android:id="@+id/img_logo"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true" />
+            
+            
+
+            <TextView
+                android:layout_marginRight="20dp"
+              
+                android:layout_marginLeft="@dimen/margin_normal"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2" >
+
+            <TextView
+                android:layout_marginLeft="40dp"
+                android:id="@+id/card"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_marginRight="@dimen/margin_normal"
+                android:layout_alignParentRight="true"
+                 android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="18dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

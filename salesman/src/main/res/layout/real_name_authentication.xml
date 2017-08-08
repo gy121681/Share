@@ -1,0 +1,681 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- <ScrollView xmlns:android="http://schemas.android.com/apk/res/android" -->
+<!-- android:layout_width="match_parent" -->
+<!-- android:layout_height="match_parent" -->
+<!-- android:background="@color/bgcolor" -->
+<!-- android:orientation="vertical" -->
+<!-- android:paddingBottom="10dp" > -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_style_two" />
+
+    <ScrollView
+        android:id="@+id/btn_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="6"
+                        android:background="@drawable/form_bg_wihte"
+                        android:orientation="vertical"
+                        android:padding="5dp" >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:gravity="center" >
+
+                            <!-- android:paddingTop="20dp" -->
+                            <!--  -->
+
+                            <Button
+                                android:id="@+id/btn_name_auth_take_front"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/button_selector_white"
+                                android:gravity="center"
+                                android:text="拍证件照"
+                                android:textSize="@dimen/size_16" />
+
+                            <Button
+                                android:id="@+id/btn_name_auth_take_scene"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/button_selector_white"
+                                android:gravity="center"
+                                android:text="拍情景照"
+                                android:textSize="@dimen/size_16" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/form_bg_wihte"
+                        android:orientation="vertical"
+                        android:padding="5dp" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="5"
+                            android:orientation="horizontal" >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical" >
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center" >
+
+                                    <FrameLayout
+                                        android:id="@+id/fl_name_auth_front"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="150dp" >
+
+                                        <ImageView
+                                            android:id="@+id/iv_name_auth_front"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:src="@drawable/id_front_pic" />
+
+                                    </FrameLayout>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center" >
+
+                                    <FrameLayout
+                                        android:id="@+id/fl_name_auth_scene"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="150dp" >
+
+                                        <ImageView
+                                            android:id="@+id/iv_name_auth_scene"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:src="@drawable/scene_pic" />
+
+                                        <TextView
+                                            android:id="@+id/tv_name_auth_scene"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:gravity="center"
+                                            android:textColor="@color/text_white"
+                                            android:textSize="30dp" />
+                                    </FrameLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3"
+                                android:gravity="center"
+                                android:paddingLeft="5dp" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/real_name_auth_point"
+                                    android:textColor="@color/red"
+                                    android:textSize="@dimen/size_16" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal" >
+
+                            <Button
+                                android:id="@+id/btn_name_auth_clean"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/button_selector_white"
+                                android:gravity="center"
+                                android:text="清除照片"
+                                android:textSize="@dimen/size_16" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!-- <LinearLayout -->
+                    <!-- android:layout_width="match_parent" -->
+                    <!-- android:orientation="vertical" -->
+                    <!-- android:layout_height="match_parent" > -->
+
+                    <LinearLayout
+                        android:id="@+id/authentication_operation"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:orientation="vertical" >
+
+                        <!-- <LinearLayout -->
+                        <!-- android:layout_width="match_parent" -->
+                        <!-- android:layout_height="@dimen/layout_height" -->
+                        <!-- android:layout_marginTop="10dp" > -->
+
+
+                        <!-- <TextView -->
+                        <!-- style="@style/textview_style" -->
+                        <!-- android:text="商户编号" -->
+                        <!-- android:textColor="@color/txt_fg_light_gray" /> -->
+
+
+                        <!-- <EditText -->
+                        <!-- android:id="@+id/et_terminal_no" -->
+                        <!-- style="@style/editview_style" -->
+                        <!-- android:hint="请输入商户编号" -->
+                        <!-- android:inputType="textPersonName" /> -->
+
+
+                        <!-- <TextView -->
+                        <!-- android:id="@+id/et_terminal_n_error" -->
+                        <!-- style="@style/error_style" -->
+                        <!-- android:text="商户编号不能为空" -->
+                        <!-- android:visibility="gone" /> -->
+                        <!-- </LinearLayout> -->
+
+                        <LinearLayout
+                            android:id="@+id/propty1_lin"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:visibility="gone" >
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="10dp"
+                                android:text="温馨提示：(请输入您本人的姓名)用户姓名后台审核通过将不能修改"
+                                android:textColor="@color/red"
+                                android:textSize="12dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/layout_height"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/form_bg_wihte"
+                            android:paddingLeft="10dp" >
+
+                            <TextView
+                                style="@style/textview_style"
+                                android:text="用户姓名"
+                                android:textColor="@color/txt_fg_light_gray" />
+
+                            <EditText
+                                android:id="@+id/et_register_name"
+                                style="@style/editview_style"
+                                android:hint="请输入用户姓名"
+                                android:inputType="textPersonName"
+                                android:maxLength="6" />
+
+                            <TextView
+                                android:id="@+id/et_register_name_error"
+                                style="@style/error_style"
+                                android:text="用户姓名只能为中文"
+                                android:visibility="gone" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/layout_height"
+                            android:layout_marginTop="1dp"
+                            android:background="@drawable/form_bg_wihte"
+                            android:paddingLeft="10dp" >
+
+                            <TextView
+                                style="@style/textview_style"
+                                android:text="手机号码"
+                                android:textColor="@color/txt_fg_light_gray" />
+
+                            <EditText
+                                android:id="@+id/et_register_mobile"
+                                style="@style/editview_style"
+                                android:clickable="false"
+                                android:focusable="false"
+                                android:hint="请输入手机号码"
+                                android:inputType="phone"
+                                android:maxLength="11" />
+
+                            <TextView
+                                android:id="@+id/et_register_mobile_error"
+                                style="@style/error_style"
+                                android:text="手机号码不能为空"
+                                android:visibility="gone" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/propty2_lin"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/layout_height2"
+                            android:paddingLeft="10dp"
+                            android:visibility="gone" >
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="温馨提示：身份证号码后台审核通过将不能修改"
+                                android:textColor="@color/red"
+                                android:textSize="12dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/layout_height"
+                            android:layout_marginTop="1dp"
+                            android:background="@drawable/form_bg_wihte"
+                            android:paddingLeft="10dp" >
+
+                            <TextView
+                                style="@style/textview_style"
+                                android:text="身份证号"
+                                android:textColor="@color/txt_fg_light_gray" />
+
+                            <EditText
+                                android:id="@+id/et_deale_cert_no1"
+                                style="@style/editview_style"
+                                android:digits="1234567890xX"
+                                android:hint="请输入身份证号码"
+                                android:maxLength="18" />
+
+                            <TextView
+                                android:id="@+id/et_register_cert_no_error"
+                                style="@style/error_style"
+                                android:text="身份证号码不能为空"
+                                android:visibility="gone" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/layout_height"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/form_bg_wihte"
+                            android:paddingLeft="10dp" >
+
+                            <TextView
+                                style="@style/textview_style"
+                                android:text="用户省份"
+                                android:textColor="@color/txt_fg_light_gray" />
+
+                            <TextView
+                                android:id="@+id/tv_revise_info_bank_province"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:background="@drawable/base_edittext_normal"
+                                android:drawableRight="@drawable/arrow_down_01"
+                                android:ems="10"
+                                android:gravity="center_vertical"
+                                android:hint="选择用户所在省份"
+                                android:paddingRight="10.0dip"
+                                android:textSize="14dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/layout_height"
+                            android:layout_marginTop="1dp"
+                            android:background="@drawable/form_bg_wihte"
+                            android:paddingLeft="10dp" >
+
+                            <TextView
+                                style="@style/textview_style"
+                                android:text="用户城市"
+                                android:textColor="@color/txt_fg_light_gray" />
+
+                            <TextView
+                                android:id="@+id/tv_revise_info_bank_city"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:background="@drawable/base_edittext_normal"
+                                android:drawableRight="@drawable/arrow_down_01"
+                                android:ems="10"
+                                android:gravity="center_vertical"
+                                android:hint="选择用户所在城市"
+                                android:paddingRight="10.0dip"
+                                android:textSize="14dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/layout_height"
+                            android:layout_marginTop="1dp"
+                            android:background="@drawable/form_bg_wihte"
+                            android:paddingLeft="10dp" >
+
+                            <TextView
+                                style="@style/textview_style"
+                                android:text="街道地址"
+                                android:textColor="@color/txt_fg_light_gray" />
+
+                            <EditText
+                                android:id="@+id/tv_revise_info_bank_branch"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:background="@drawable/base_edittext_normal"
+                                android:ems="10"
+                                android:hint="请填写街道详细地址"
+                                android:maxLength="50"
+                                android:paddingRight="10.0dip"
+                                android:singleLine="true"
+                                android:textSize="14dp" />
+                        </LinearLayout>
+
+                        <!-- <LinearLayout -->
+                        <!-- android:layout_width="match_parent" -->
+                        <!-- android:layout_height="@dimen/layout_height" -->
+                        <!-- android:layout_marginTop="10dp" > -->
+
+
+                        <!-- <TextView -->
+                        <!-- style="@style/textview_style" -->
+                        <!-- android:text="商户姓名" -->
+                        <!-- android:textColor="@color/txt_fg_light_gray" /> -->
+
+
+                        <!-- <EditText -->
+                        <!-- android:id="@+id/et_name" -->
+                        <!-- style="@style/editview_style" -->
+                        <!-- android:hint="请输入商户姓名" -->
+                        <!-- android:inputType="phone" -->
+                        <!-- android:maxLength="11" /> -->
+
+
+                        <!-- <TextView -->
+                        <!-- android:id="@+id/et_name_error" -->
+                        <!-- style="@style/error_style" -->
+                        <!-- android:text="姓名不能为空" -->
+                        <!-- android:visibility="gone" /> -->
+                        <!-- </LinearLayout> -->
+
+
+                        <!-- <LinearLayout -->
+                        <!-- android:layout_width="match_parent" -->
+                        <!-- android:layout_height="@dimen/layout_height" -->
+                        <!-- android:layout_marginTop="10dp" > -->
+
+
+                        <!-- <TextView -->
+                        <!-- style="@style/textview_style" -->
+                        <!-- android:text="身份证" -->
+                        <!-- android:textColor="@color/txt_fg_light_gray" /> -->
+
+
+                        <!-- <EditText -->
+                        <!-- android:id="@+id/et_ids" -->
+                        <!-- style="@style/editview_style" -->
+                        <!-- android:hint="请输入身份证" -->
+                        <!-- android:inputType="number" -->
+                        <!-- android:maxLength="6" -->
+                        <!-- android:password="true" /> -->
+
+
+                        <!-- <TextView -->
+                        <!-- android:id="@+id/et_ids_error" -->
+                        <!-- style="@style/error_style" -->
+                        <!-- android:text="身份证不能为空" -->
+                        <!-- android:visibility="gone" /> -->
+                        <!-- </LinearLayout> -->
+
+
+                        <!-- <LinearLayout -->
+                        <!-- android:layout_width="match_parent" -->
+                        <!-- android:layout_height="@dimen/layout_height" -->
+                        <!-- android:layout_marginTop="10dp" > -->
+
+
+                        <!-- <TextView -->
+                        <!-- style="@style/textview_style" -->
+                        <!-- android:text="卡号" -->
+                        <!-- android:textColor="@color/txt_fg_light_gray" /> -->
+
+
+                        <!-- <EditText -->
+                        <!-- android:id="@+id/et_card" -->
+                        <!-- style="@style/editview_style" -->
+                        <!-- android:hint="请输入卡号" -->
+                        <!-- android:inputType="number" -->
+                        <!-- android:maxLength="6" -->
+                        <!-- android:password="true" /> -->
+
+
+                        <!-- <TextView -->
+                        <!-- android:id="@+id/et_card_error" -->
+                        <!-- style="@style/error_style" -->
+                        <!-- android:text="卡号不能为空" -->
+                        <!-- android:visibility="gone" /> -->
+                        <!-- </LinearLayout> -->
+
+                        <LinearLayout
+                            android:id="@+id/propty3_lin"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/layout_height"
+                            android:layout_marginTop="5dp"
+                            android:paddingLeft="10dp"
+                            android:visibility="gone" >
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/register_prompt"
+                                android:textColor="@color/red"
+                                android:textSize="12dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/layout_height"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/form_bg_wihte"
+                            android:paddingLeft="10dp" >
+
+                            <TextView
+                                style="@style/textview_style"
+                                android:text="绑定银行卡"
+                                android:textColor="@color/txt_fg_light_gray" />
+
+                            <EditText
+                                android:id="@+id/et_deale_card_nos"
+                                style="@style/editview_style"
+                                android:hint="请输入银行卡号"
+                                android:inputType="number"
+                                android:maxLength="19" />
+
+                            <!-- <TextView -->
+                            <!-- android:id="@+id/et_register_card_no_error" -->
+                            <!-- style="@style/error_style" -->
+                            <!-- android:text="银行卡号不能为空" -->
+                            <!-- android:visibility="gone" /> -->
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/layout_height"
+                            android:layout_marginTop="1dp"
+                            android:background="@drawable/form_bg_wihte"
+                            android:paddingLeft="10dp" >
+
+                            <TextView
+                                style="@style/textview_style"
+                                android:text="银行名称"
+                                android:textColor="@color/txt_fg_light_gray" />
+
+                            <TextView
+                                android:id="@+id/tv_revise_bank_info_bank_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:background="@drawable/base_edittext_normal"
+                                android:ems="10"
+                                android:gravity="center_vertical"
+                                android:hint="获取银行名称"
+                                android:text=""
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:id="@+id/tv_register_bank_name_error"
+                                style="@style/error_style"
+                                android:text="银行名称不能为空"
+                                android:visibility="gone" />
+                        </LinearLayout>
+
+                        <!-- <LinearLayout -->
+                        <!-- android:layout_width="match_parent" -->
+                        <!-- android:layout_height="@dimen/layout_height" -->
+                        <!-- android:layout_marginTop="10dp" > -->
+
+
+                        <!-- <TextView -->
+                        <!-- style="@style/textview_style" -->
+                        <!-- android:text="账户省份" -->
+                        <!-- android:textColor="@color/txt_fg_light_gray" /> -->
+
+
+                        <!-- <TextView -->
+                        <!-- android:id="@+id/tv_revise_info_bank_province" -->
+                        <!-- android:layout_width="match_parent" -->
+                        <!-- android:layout_height="match_parent" -->
+                        <!-- android:layout_weight="2" -->
+                        <!-- android:background="@drawable/base_edittext_normal" -->
+                        <!-- android:drawableRight="@drawable/arrow_down_01" -->
+                        <!-- android:ems="10" -->
+                        <!-- android:gravity="center" -->
+                        <!-- android:hint="选择所在省份" -->
+                        <!-- android:paddingRight="10.0dip" -->
+                        <!-- android:textSize="14dp" /> -->
+                        <!-- </LinearLayout> -->
+
+
+                        <!-- <LinearLayout -->
+                        <!-- android:layout_width="match_parent" -->
+                        <!-- android:layout_height="@dimen/layout_height" -->
+                        <!-- android:layout_marginTop="10dp" > -->
+
+
+                        <!-- <TextView -->
+                        <!-- style="@style/textview_style" -->
+                        <!-- android:text="账户城市" -->
+                        <!-- android:textColor="@color/txt_fg_light_gray" /> -->
+
+
+                        <!-- <TextView -->
+                        <!-- android:id="@+id/tv_revise_info_bank_city" -->
+                        <!-- android:layout_width="match_parent" -->
+                        <!-- android:layout_height="match_parent" -->
+                        <!-- android:layout_weight="2" -->
+                        <!-- android:background="@drawable/base_edittext_normal" -->
+                        <!-- android:drawableRight="@drawable/arrow_down_01" -->
+                        <!-- android:ems="10" -->
+                        <!-- android:gravity="center" -->
+                        <!-- android:hint="选择所在城市" -->
+                        <!-- android:paddingRight="10.0dip" -->
+                        <!-- android:textSize="14dp" /> -->
+                        <!-- </LinearLayout> -->
+
+
+                        <!-- <LinearLayout -->
+                        <!-- android:layout_width="match_parent" -->
+                        <!-- android:layout_height="@dimen/layout_height" -->
+                        <!-- android:layout_marginTop="10dp" > -->
+
+
+                        <!-- <TextView -->
+                        <!-- style="@style/textview_style" -->
+                        <!-- android:text="详细地址" -->
+                        <!-- android:textColor="@color/txt_fg_light_gray" /> -->
+
+
+                        <!-- <EditText -->
+                        <!-- android:id="@+id/tv_revise_info_bank_branch" -->
+                        <!-- android:layout_width="match_parent" -->
+                        <!-- android:layout_height="match_parent" -->
+                        <!-- android:layout_weight="2" -->
+                        <!-- android:background="@drawable/base_edittext_normal" -->
+                        <!-- android:ems="10" -->
+                        <!-- android:gravity="center" -->
+                        <!-- android:hint="请填写街道详细地址" -->
+                        <!-- android:maxLength="50" -->
+                        <!-- android:paddingRight="10.0dip" -->
+                        <!-- android:singleLine="true" -->
+                        <!-- android:textSize="14dp" /> -->
+                        <!-- </LinearLayout> -->
+                    </LinearLayout>
+                </LinearLayout>
+                <!-- </LinearLayout> -->
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="20dp"
+                android:gravity="bottom"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp" >
+
+                <Button
+                    android:id="@+id/btn_name_auth_upload"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/button01_bg"
+                    android:gravity="center"
+                    android:text="提交"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/size_16" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

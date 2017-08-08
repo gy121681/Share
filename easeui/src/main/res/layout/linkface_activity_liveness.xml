@@ -1,0 +1,114 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.LivenessActivity" >
+
+    <com.sensetime.stlivenesslibrary.ui.FixedAspectRatioFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000" >
+
+        <fragment
+            android:id="@+id/overlapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            class="com.sensetime.stlivenesslibrary.ui.FaceOverlapFragment" />
+    </com.sensetime.stlivenesslibrary.ui.FixedAspectRatioFrameLayout>
+
+    <ImageView
+        android:id="@+id/image_mask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/linkface_mask_background" />
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <ImageButton
+            android:id="@+id/linkface_return_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/linkface_icon_return" />
+
+        <ImageButton
+            android:id="@+id/linkface_sound_play_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/linkface_icon_voice" />
+        
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000"
+        android:id="@+id/notice_relative_layout" >
+
+        <RelativeLayout
+            android:id="@+id/anim_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" >
+
+            <LinearLayout
+                android:id="@+id/viewGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/action_group"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_above="@+id/viewGroup"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp" >
+            </android.support.v4.view.ViewPager>
+
+            <com.sensetime.stlivenesslibrary.view.CircleTimeView
+                android:id="@+id/time_view"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_alignTop="@+id/action_group"
+                 android:layout_above="@+id/viewGroup"
+                app:circle_color="@color/gray_timer"
+                app:circle_width="4"
+                app:max_time="@integer/linkface_max_time"
+                app:text_color="#ffffff"
+                app:text_redus="100"
+                app:text_size="30" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+  <RelativeLayout
+        android:id="@+id/track_notice_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/track_notice_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="50dp"
+                android:layout_alignParentBottom="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/notice_size" />
+    </RelativeLayout>
+
+</merge>

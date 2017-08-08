@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_style_two" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.6"
+            android:background="@drawable/new_agent_bg"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/bgcolor"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_height"
+                android:layout_marginTop="10dp"
+                android:background="@color/white" >
+
+                <TextView
+                    style="@style/textview_style"
+                    android:layout_margin="10dp"
+                    android:layout_weight="3"
+                    android:textSize="14dp"
+                    android:text="用户手机号"
+                    android:textColor="@color/txt_fg_light_gray" />
+
+                <RelativeLayout
+                    android:id="@+id/relalay"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5" >
+
+                    <EditText
+                        android:id="@+id/ed_newagent"
+                        style="@style/editview_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:hint="新建代理商的手机号码"
+                        android:inputType="number"
+                        android:maxLength="11"
+                        android:paddingRight="10.0dip"
+                        android:textSize="14dp" />
+
+                    <ImageView
+                        android:id="@+id/load_phonr_img"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/contact"
+                        android:src="@drawable/ok"
+                        android:visibility="gone" />
+
+                    <ProgressBar
+                        android:id="@+id/load_phonr_pro"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/contact"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/contact"
+                        android:layout_width="40dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/contact_selector" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/phone_error"
+                    style="@style/error_style"
+                    android:text=""
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="温馨提示:此号码应为秀儿支付实名认证已通过的手机号码"
+                android:textColor="@color/prompt"
+                android:textSize="12dp" />
+
+            <LinearLayout
+                android:id="@+id/lin_rate_l"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_height"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/form_bg_wihte" >
+
+                <TextView
+                    style="@style/textview_style"
+                    android:layout_marginLeft="10dp"
+                    android:text="代理商费率"
+                    android:textColor="@color/txt_fg_light_gray" />
+
+                <TextView
+                    android:id="@+id/new_agent_set_rate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="2.5"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="10dp"
+                    android:text=""
+                    android:textColor="@color/red"
+                    android:textSize="16dp" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/lin_rate_w"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_height"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/form_bg_wihte" >
+
+                <TextView
+                    style="@style/textview_style"
+                    android:layout_marginLeft="10dp"
+                    android:text="闪提费率"
+                    android:textColor="@color/txt_fg_light_gray" />
+
+                <TextView
+                    android:id="@+id/new_agent_withdrawals_rate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="2.5"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="10dp"
+                    android:text=""
+                    android:textColor="@color/red"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_agent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/btn_newagent_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/reg_btn_next_height"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/button01_bg"
+                    android:gravity="center"
+                    android:text="确定"
+                    android:textColor="@color/text_white"
+                    android:textSize="20.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/big_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/air_n_title_bar_rbt" />
+
+    <include layout="@layout/ll_index_loading" />
+
+    <LinearLayout
+        android:id="@id/contact_layout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/margin_normal"
+        android:layout_marginLeft="@dimen/margin_normal"
+        android:layout_marginRight="@dimen/margin_normal"
+        android:layout_marginTop="@dimen/margin_half"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@id/query_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"
+            android:listSelector="#00000000" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="5.0dip" />
+    </LinearLayout>
+
+</LinearLayout>

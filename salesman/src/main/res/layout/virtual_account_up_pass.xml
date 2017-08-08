@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/bg_white"
+              android:orientation="vertical">
+
+    <include
+        android:id="@+id/layout_reg_title"
+        layout="@layout/title_style_two"/>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="none">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/mStyle.blue12_left"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/reg_title_tvheight"
+                android:text="修改钱包支付密码(*支付密码不能与登录密码一致)"
+                android:background="@color/bg_divider"
+                android:paddingLeft="@dimen/margin_double"
+                android:textColor="@color/text_orange"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/mStyle.reg_content_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/reg_tv_layout_height"
+                    android:text="@string/oldPassword"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_28"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white">
+
+                    <EditText
+                        android:id="@+id/et_upoldpass"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/reg_input_height"
+                        android:background="@color/transparent"
+                        android:gravity="left|center"
+                        android:hint="@string/upHintNowPassword"
+                        android:inputType="numberPassword"
+                        android:maxLength="6"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/text_black"
+                        android:textColorHint="@color/text_gray"
+                        android:textSize="@dimen/text_28"/>
+
+                    <CheckBox
+                        android:id="@+id/e_pwd3"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="5dp"
+                        android:button="@drawable/epwd"
+                        android:visibility="gone"/>
+                </RelativeLayout>
+
+                <include layout="@layout/common_line_h_m_rl"/>
+
+                <TextView
+                    style="@style/mStyle.reg_content_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/reg_tv_layout_height"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/newPassword"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_28"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white">
+
+                    <EditText
+                        android:id="@+id/et_up1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/reg_input_height"
+                        android:background="@color/transparent"
+                        android:hint="@string/inputPassWord"
+                        android:inputType="numberPassword"
+                        android:maxLength="6"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textColor="@color/text_black"
+                        android:textColorHint="@color/text_gray"
+                        android:textSize="@dimen/text_28"/>
+
+                    <CheckBox
+                        android:id="@+id/e_pwd2"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="5dp"
+                        android:button="@drawable/epwd"
+                        android:visibility="gone"/>
+                </RelativeLayout>
+
+                <include layout="@layout/common_line_h_m_rl"/>
+
+                <TextView
+                    style="@style/mStyle.reg_content_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/reg_tv_layout_height"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/newSecondPassword"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_28"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white">
+
+                    <EditText
+                        android:id="@+id/et_up2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/reg_input_height"
+                        android:background="@color/transparent"
+                        android:hint="@string/inputSecondTime"
+                        android:inputType="numberPassword"
+                        android:maxLength="6"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textColor="@color/text_black"
+                        android:textColorHint="@color/text_gray"
+                        android:textSize="@dimen/text_28"/>
+
+                    <CheckBox
+                        android:id="@+id/e_pwd1"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="5dp"
+                        android:button="@drawable/epwd"
+                        android:visibility="gone"/>
+                </RelativeLayout>
+
+                <include layout="@layout/common_line_h_m_rl"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/reg_btn_next_height"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/margin_normal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/selector_public_button"
+        android:text="@string/ok"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/text_36"
+        />
+
+</LinearLayout>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_white"
+    android:orientation="vertical"
+    android:padding="6dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.shareshenghuo.app.user.widget.CircleImageView
+            android:id="@+id/ivCommentAvatar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/share_c_business_comment_head" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvCommentName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_black"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvCommentDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="2015-09-08"
+                android:textColor="@color/text_gray"
+                android:textSize="11sp" />
+        </LinearLayout>
+        
+        <RatingBar
+            android:id="@+id/rtCommentScore"
+            style="@style/ratingbar_style"
+            android:visibility="gone"
+            android:layout_gravity="bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:isIndicator="true" />
+
+        <ImageView
+            android:id="@+id/ivCommentNice"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tag_boutique" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvCommentContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="好好好"
+        android:textColor="@color/text_black_light"
+        android:textSize="13sp" />
+
+    <com.shareshenghuo.app.user.widget.MyGridView
+        android:id="@+id/gvLifeItemPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="6dp"
+        android:horizontalSpacing="6dp"
+        android:numColumns="4"
+        android:verticalSpacing="6dp" />
+
+    <LinearLayout
+        android:id="@+id/llCommentBottomData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="6dp"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"
+            android:src="@drawable/icon_124" />
+
+        <TextView
+            android:id="@+id/tvArticleBrowseCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/gray_light"
+            android:textSize="11sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/icon_137" />
+
+        <TextView
+            android:id="@+id/tvArticleCommentCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/gray_light"
+            android:textSize="11sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/ic_like" />
+
+        <TextView
+            android:id="@+id/tvArticleLikeCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/gray_light"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llReplyContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray_lighter"
+        android:layout_marginTop="5dp"
+        android:padding="6dp"
+        android:visibility="gone"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvReplyContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="商家回复：" />
+
+        <TextView
+            android:id="@+id/tvReplyTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="right"
+            android:textSize="11sp"
+            android:text="2016-01-01" />
+    </LinearLayout>
+</LinearLayout>

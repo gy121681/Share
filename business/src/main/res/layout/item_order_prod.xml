@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_arc_gray"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tvProdName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textColor="@color/tab_text_nor"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/tvProdCount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="right"
+            android:textSize="11sp"
+            android:textColor="@color/gray_dark"
+            android:text="×0" />
+        
+        <TextView
+            android:id="@+id/tvProdPrice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="right"
+            android:textSize="11sp"
+            android:textColor="@color/tab_text_nor"
+            android:text="¥0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp" >
+
+
+        <TextView
+            android:id="@+id/tvProdZhekou"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:paddingRight="6dp"
+            android:gravity="right"
+            android:textSize="11sp"
+            android:textColor="@color/gray_dark" />
+        
+        <TextView
+            android:id="@+id/tvProdZhekouPrice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="right"
+            android:textSize="11sp"
+            android:textColor="@color/pink_dark" />
+    </LinearLayout>
+</LinearLayout>

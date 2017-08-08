@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_style_two" />
+
+    <LinearLayout
+        android:id="@+id/lin_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ScrollView
+            android:id="@+id/sccrols"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="bottom"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp" >
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="营业执照名称:"
+                        android:textSize="@dimen/text_28"
+                        android:textColor="@color/text_black_light"
+                        />
+
+                    <EditText
+                        android:id="@+id/shopname"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:hint="与营业执照一致"
+                        android:maxLength="50"
+                        android:inputType="textPersonName"
+                        android:textColorHint="@color/text_gray"
+                        android:textColor="@color/text_black_light"
+                        android:textSize="@dimen/text_28" />
+                </LinearLayout>
+
+                <include layout="@layout/common_line_h_m_rl" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:gravity="bottom"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp" >
+
+                    <TextView
+                        android:id="@+id/tv_textadvertising"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="marquee"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_vertical"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true"
+                        android:text="统一社会信用代码:"
+                        android:textSize="@dimen/text_28"
+                        android:textColor="@color/text_black_light" />
+                    <!-- <TextView -->
+                    <!-- android:layout_width="120dp" -->
+                    <!-- android:layout_height="match_parent" -->
+                    <!-- android:ellipsize="marquee" -->
+                    <!-- android:focusableInTouchMode="true" -->
+                    <!-- android:gravity="center_vertical|right" -->
+                    <!-- android:marqueeRepeatLimit="marquee_forever" -->
+                    <!-- android:scrollHorizontally="true" -->
+                    <!-- android:singleLine="true" -->
+                    <!-- android:text="统一社会信用代码:.......adasd" /> -->
+
+                    <EditText
+                        android:id="@+id/shoplicense"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@color/white"
+                        android:digits="1234567890QWERTYUIOPASDFGHJKLZXCVBNM"
+                        android:gravity="center_vertical"
+                        android:hint="输入统一社会信用代码"
+                        android:maxLength="18"
+                        android:textColorHint="@color/text_gray"
+                        android:textColor="@color/text_black_light"
+                        android:textSize="@dimen/text_28" />
+                </LinearLayout>
+
+                <include layout="@layout/common_line_h_m_rl" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="bottom"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp" >
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/text_28"
+                        android:textColor="@color/text_black_light"
+                        android:text="行业类别:" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp" >
+
+                        <TextView
+                            android:id="@+id/shoptype"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginLeft="10dp"
+                            android:drawableRight="@drawable/arrow_down"
+                            android:gravity="center_vertical"
+                            android:hint="选择类别"
+                            android:paddingRight="10dp"
+                            android:singleLine="true"
+                            android:textColorHint="@color/text_gray"
+                            android:textColor="@color/text_black_light"
+                            android:textSize="@dimen/text_28" />
+
+                        <!-- <View -->
+                        <!-- android:layout_width="match_parent" -->
+                        <!-- android:layout_height="1px" -->
+                        <!-- android:layout_alignParentBottom="true" -->
+                        <!-- android:layout_marginLeft="10dp" -->
+                        <!-- android:background="@color/gray_lighter" > -->
+                        <!-- </View> -->
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <include layout="@layout/common_line_h_m_rl" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="bottom"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp" >
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/text_28"
+                        android:textColor="@color/text_black_light"
+                        android:text="激励模式:" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <CheckBox
+                                android:id="@+id/radio1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="@drawable/checkbox_style"
+                                android:text="25%"
+                                android:textSize="@dimen/text_28"
+                                android:textColor="@color/text_black_light"
+                                />
+
+                            <CheckBox
+                                android:id="@+id/radio2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:button="@drawable/checkbox_style"
+                                android:text="50%"
+                                android:textSize="@dimen/text_28"
+                                android:textColor="@color/text_black_light" />
+
+                            <CheckBox
+                                android:id="@+id/radio3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="@drawable/checkbox_style"
+                                android:text="100%"
+                                android:textSize="@dimen/text_28"
+                                android:textColor="@color/text_black_light" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <include layout="@layout/common_line_h_m_rl" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/white"
+                    android:paddingLeft="10dp" >
+
+                    <EditText
+                        android:id="@+id/shopcontent"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/white"
+                        android:gravity="top"
+                        android:hint="经营内容摘要"
+                        android:padding="5dp"
+                        android:textColorHint="@color/text_gray"
+                        android:textColor="@color/text_black_light"
+                        android:textSize="@dimen/text_28" />
+                </LinearLayout>
+
+                <include layout="@layout/common_line_h_m_rl" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="bottom"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp" >
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/text_28"
+                        android:textColor="@color/text_black_light"
+                        android:text="人均消费:" />
+
+                    <EditText
+                        android:maxLength="6"
+                        android:id="@+id/peopleturnover"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:hint="人均消费(元)"
+                        android:inputType="numberDecimal"
+                        android:textColorHint="@color/text_gray"
+                        android:textColor="@color/text_black_light"
+                        android:textSize="@dimen/text_28"/>
+                </LinearLayout>
+
+                <include layout="@layout/common_line_h_m_rl" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="bottom"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp" >
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/text_28"
+                        android:textColor="@color/text_black_light"
+                        android:text="日均交易额:" />
+
+                    <EditText
+                        android:maxLength="6"
+                        android:id="@+id/shopturnover"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:hint="日均交易额(万元)"
+                        android:inputType="numberDecimal"
+                        android:textColorHint="@color/text_gray"
+                        android:textColor="@color/text_black_light"
+                        android:textSize="@dimen/text_28"/>
+                </LinearLayout>
+
+                <include layout="@layout/common_line_h_m_rl" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="bottom"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp" >
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/text_28"
+                        android:textColor="@color/text_black_light"
+                        android:text="门店面积:" />
+
+                    <EditText
+                        android:maxLength="6"
+                        android:id="@+id/shopsize"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:hint="门店面积(平米)"
+                        android:inputType="number"
+                        android:textColorHint="@color/text_gray"
+                        android:textColor="@color/text_black_light"
+                        android:textSize="@dimen/text_28" />
+                </LinearLayout>
+
+                <include layout="@layout/common_line_h_m_rl" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="bottom"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp" >
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/text_28"
+                        android:textColor="@color/text_black_light"
+                        android:text="门店规模:" />
+
+                    <EditText
+                         android:maxLength="6"
+                        android:id="@+id/shopnumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:hint="门店规模(人数)"
+                        android:inputType="number"
+                         android:textColorHint="@color/text_gray"
+                         android:textColor="@color/text_black_light"
+                         android:textSize="@dimen/text_28" />
+                </LinearLayout>
+
+                <include layout="@layout/common_line_h_m_rl" />
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="bottom"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp" >
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical|right"
+                        android:text="门店电话:" />
+
+                    <EditText
+                        android:id="@+id/shopmobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:hint="门店电话"
+                        android:inputType="number"
+                        android:maxLength="11"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+                <include layout="@layout/common_line_h_m_rl" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="bottom"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp" >
+
+                    <TextView
+                        android:id="@+id/tv_starttime"
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:ellipsize="marquee"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_vertical"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:scrollHorizontally="true"
+                        android:text="营业开始时间:"
+                        android:textSize="@dimen/text_28"
+                        android:textColor="@color/text_black_light" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp" >
+
+                        <TextView
+                            android:id="@+id/starttime"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginLeft="10dp"
+                            android:drawableRight="@drawable/arrow_down"
+                            android:gravity="center_vertical"
+                            android:hint="选择时间"
+                            android:maxLength="11"
+                            android:paddingRight="10dp"
+                            android:textColorHint="@color/text_gray"
+                            android:textColor="@color/text_black_light"
+                            android:textSize="@dimen/text_28" />
+
+                        <!-- <View -->
+                        <!-- android:layout_width="match_parent" -->
+                        <!-- android:layout_height="1px" -->
+                        <!-- android:layout_alignParentBottom="true" -->
+                        <!-- android:layout_marginLeft="10dp" -->
+                        <!-- android:background="@color/gray_lighter" > -->
+                        <!-- </View> -->
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <include layout="@layout/common_line_h_m_rl" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="bottom"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp" >
+
+                    <TextView
+                        android:id="@+id/tv_lasttime"
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:ellipsize="marquee"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_vertical"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:scrollHorizontally="true"
+                        android:text="营业结束时间:"
+                        android:textSize="@dimen/text_28"
+                        android:textColor="@color/text_black_light"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp" >
+
+                        <TextView
+                            android:id="@+id/lasttime"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginLeft="10dp"
+                            android:drawableRight="@drawable/arrow_down"
+                            android:gravity="center_vertical"
+                            android:hint="选择时间"
+                            android:maxLength="11"
+                            android:paddingRight="10dp"
+                            android:textColorHint="@color/text_gray"
+                            android:textColor="@color/text_black_light"
+                            android:textSize="@dimen/text_28"/>
+
+                        <!-- <View -->
+                        <!-- android:layout_width="match_parent" -->
+                        <!-- android:layout_height="1px" -->
+                        <!-- android:layout_alignParentBottom="true" -->
+                        <!-- android:layout_marginLeft="10dp" -->
+                        <!-- android:background="@color/gray_lighter" > -->
+                        <!-- </View> -->
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <include layout="@layout/common_line_h_m_rl" />
+
+                <TextView
+                    android:id="@+id/tv_go"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/selector_public_button"
+                    android:gravity="center"
+                    android:text="下一步"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/text_36" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

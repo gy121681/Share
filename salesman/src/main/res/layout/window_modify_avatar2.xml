@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/transparent" />
+
+    <Button
+        android:id="@+id/btnAvatarPhoto"
+        android:layout_width="match_parent"
+        android:textSize="16dp"
+        android:layout_height="40dp"
+        android:background="@color/bg_white"
+        android:gravity="center"
+        android:text="拍照" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/bg_divider" />
+
+    <Button
+         android:textSize="16dp"
+        android:id="@+id/btnAvatarAlbum"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/bg_white"
+        android:gravity="center"
+        android:text="相册" />
+
+    <Button
+         android:textSize="16dp"
+        android:id="@+id/btnAvatarCancel"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:background="@color/bg_white"
+        android:gravity="center"
+        android:text="取消" />
+
+</LinearLayout>

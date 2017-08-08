@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/single_city_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/big_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/air_n_title_bar_rbt" />
+
+    <LinearLayout
+        android:id="@id/flight_title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="35.0dip"
+        android:layout_gravity="center"
+        android:background="@drawable/air_n_list_title_bg_img"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@id/flight_title_layout_txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin_normal"
+            android:layout_weight="1.0"
+            android:gravity="left"
+            android:text="2013-03-02"
+            android:textColor="@color/black"
+            android:textSize="16.0sp" />
+
+        <TextView
+            android:id="@id/flight_title_layout_txt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/margin_normal"
+            android:layout_weight="1.0"
+            android:gravity="right"
+            android:text="共2个航班"
+            android:textColor="@color/black"
+            android:textSize="16.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@id/flight_sort_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/margin_half"
+            android:layout_marginTop="@dimen/margin_half"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@id/flight_sort_layout1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin_normal"
+                android:layout_weight="1.0"
+                android:background="@drawable/air_n_zuofocus_img"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@id/flight_sort_layout1_txt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text=" 起飞时间"
+                    android:textColor="@color/default_white"
+                    android:textSize="16.0sp" />
+
+                <ImageView
+                    android:id="@id/flight_sort_layout1_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1.0dip"
+                    android:background="@drawable/air_n_jiantou_focus_img" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@id/flight_sort_layout2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:background="@drawable/air_n_zhong_img"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@id/flight_sort_layout2_txt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text=" 行程时长"
+                    android:textColor="@color/default_gray"
+                    android:textSize="16.0sp" />
+
+                <ImageView
+                    android:id="@id/flight_sort_layout2_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3.0dip"
+                    android:background="@drawable/air_n_jiantou_img" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@id/flight_sort_layout3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/margin_normal"
+                android:layout_weight="1.0"
+                android:background="@drawable/air_n_you_img"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@id/flight_sort_layout3_txt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text=" 机票单价"
+                    android:textColor="@color/default_gray"
+                    android:textSize="16.0sp" />
+
+                <ImageView
+                    android:id="@id/flight_sort_layout3_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1.0dip"
+                    android:background="@drawable/air_n_jiantou_img" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line" />
+
+    <LinearLayout
+        android:id="@id/flight_progressbar_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1.0"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ProgressBar
+            android:id="@id/flight_progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:indeterminate="false"
+            android:indeterminateDrawable="@anim/loading" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@id/flight_listView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:cacheColorHint="#00000000"
+        android:divider="@null" />
+
+</LinearLayout>

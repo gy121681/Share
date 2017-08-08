@@ -1,0 +1,30 @@
+# 这是注释
+# *表示要忽略的文件
+
+# 要拷贝的文件
+--fromDir  ../../../../../../../art/消费者端/切图/
+--toDir    ../../temp_out/customer/drawable-xhdpi
+--preName  share_c_
+
+# *表示要忽略的文件
+*../../../../../../../art/消费者端/切图/icon/
+*../../../../../../../art/消费者端/切图/欢迎界面/欢迎界面640x960.png
+*../../../../../../../art/消费者端/切图/欢迎界面/欢迎界面640x1136.png
+*../../../../../../../art/消费者端/切图/欢迎界面/欢迎界面640x960.png
+*../../../../../../../art/消费者端/切图/欢迎界面/欢迎界面750x1334.png
+*../../../../../../../art/消费者端/切图/欢迎界面/欢迎界面1242x2208.png
+*../../../../../../../art/消费者端/切图/business/business_details_photo_default.png
+*../../../../../../../art/消费者端/切图/login/login_title_choose.png
+*../../../../../../../art/消费者端/切图/login/login_title.png
+
+# 特殊路径
+
+../../../../../../../art/消费者端/切图/icon/消费者/android/48.png  ../../temp_out/customer/drawable-ldpi/ic_launcher.png
+../../../../../../../art/消费者端/切图/icon/消费者/android/48.png  ../../temp_out/customer/drawable-mdpi/ic_launcher.png
+../../../../../../../art/消费者端/切图/icon/消费者/android/72.png  ../../temp_out/customer/drawable-hdpi/ic_launcher.png
+../../../../../../../art/消费者端/切图/icon/消费者/android/96.png  ../../temp_out/customer/drawable-xhdpi/ic_launcher.png
+../../../../../../../art/消费者端/切图/icon/消费者/android/144.png  ../../temp_out/customer/drawable-xxhdpi/ic_launcher.png
+
+../../../../../../../art/消费者端/切图/欢迎界面/欢迎界面640x960.png  ../../temp_out/customer/drawable-mdpi/welcome.png
+../../../../../../../art/消费者端/切图/欢迎界面/欢迎界面640x1136.png  ../../temp_out/customer/drawable-hdpi/welcome.png
+../../../../../../../art/消费者端/切图/欢迎界面/欢迎界面750x1334.png  ../../temp_out/customer/drawable-xhdpi/welcome.png

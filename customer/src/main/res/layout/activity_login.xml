@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_top_bar" />
+
+    <RadioGroup
+        android:id="@+id/rgLogin"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rbLoginNormal"
+            style="@style/tab_radio_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="普通登录" />
+
+        <include layout="@layout/common_line_v"
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+
+        <RadioButton
+            android:id="@+id/rbLoginQuick"
+            style="@style/tab_radio_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="快速登录" />
+
+    </RadioGroup>
+
+    <include layout="@layout/common_line_h" />
+
+    <RelativeLayout
+        android:id="@+id/rlLoginContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </RelativeLayout>
+
+</LinearLayout>

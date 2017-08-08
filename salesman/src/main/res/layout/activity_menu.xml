@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <!-- <include layout="@layout/unified_title" /> -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2.55"
+            android:background="@color/white" >
+
+            <!-- <com.td.qianhai.epay.advertising.AdGallery -->
+            <!-- android:id="@+id/adGallery" -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:fadingEdge="none" -->
+            <!-- android:unselectedAlpha="1" /> -->
+
+
+            <!-- <RelativeLayout -->
+            <!-- android:id="@+id/ad_container" -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_below="@id/adGallery" /> -->
+            <!-- </RelativeLayout> -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:gravity="top" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <com.td.qianhai.epay.oem.advertising.AdGallery
+                        android:id="@+id/adGallery"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fadingEdge="none"
+                        android:unselectedAlpha="1" />
+
+                    <RelativeLayout
+                        android:id="@+id/ad_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/adGallery" >
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <com.td.qianhai.epay.oem.advertising.Image3DSwitchView
+                    android:id="@+id/image_switch_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top" >
+
+                    <!-- <com.example.imageswitchviewtest.Image3DView -->
+                    <!-- android:id="@+id/image1" -->
+                    <!-- android:layout_width="match_parent" -->
+                    <!-- android:layout_height="match_parent" -->
+                    <!-- android:scaleType="fitXY" -->
+                    <!-- android:src="@drawable/image1" /> -->
+
+
+                    <!-- <com.example.imageswitchviewtest.Image3DView -->
+                    <!-- android:id="@+id/image2" -->
+                    <!-- android:layout_width="match_parent" -->
+                    <!-- android:layout_height="match_parent" -->
+                    <!-- android:scaleType="fitXY" -->
+                    <!-- android:src="@drawable/image2" /> -->
+
+
+                    <!-- <com.example.imageswitchviewtest.Image3DView -->
+                    <!-- android:id="@+id/image3" -->
+                    <!-- android:layout_width="match_parent" -->
+                    <!-- android:layout_height="match_parent" -->
+                    <!-- android:scaleType="fitXY" -->
+                    <!-- android:src="@drawable/image3" /> -->
+
+
+                    <!-- <com.example.imageswitchviewtest.Image3DView -->
+                    <!-- android:id="@+id/image4" -->
+                    <!-- android:layout_width="match_parent" -->
+                    <!-- android:layout_height="match_parent" -->
+                    <!-- android:scaleType="fitXY" -->
+                    <!-- android:src="@drawable/image4" /> -->
+
+
+                    <!-- <com.example.imageswitchviewtest.Image3DView -->
+                    <!-- android:id="@+id/image5" -->
+                    <!-- android:layout_width="match_parent" -->
+                    <!-- android:layout_height="match_parent" -->
+                    <!-- android:scaleType="fitXY" -->
+                    <!-- android:src="@drawable/image5" /> -->
+
+
+                    <!-- <com.example.imageswitchviewtest.Image3DView -->
+                    <!-- android:id="@+id/image6" -->
+                    <!-- android:layout_width="match_parent" -->
+                    <!-- android:layout_height="match_parent" -->
+                    <!-- android:scaleType="fitXY" -->
+                    <!-- android:src="@drawable/image6" /> -->
+
+
+                    <!-- <com.example.imageswitchviewtest.Image3DView -->
+                    <!-- android:id="@+id/image7" -->
+                    <!-- android:layout_width="match_parent" -->
+                    <!-- android:layout_height="match_parent" -->
+                    <!-- android:scaleType="fitXY" -->
+                    <!-- android:src="@drawable/image7" /> -->
+                </com.td.qianhai.epay.oem.advertising.Image3DSwitchView>
+            </RelativeLayout>
+
+            <RadioGroup
+                android:id="@+id/home_pop_gallery_mark1"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="10dp"
+                android:gravity="center|right"
+                android:orientation="horizontal" >
+            </RadioGroup>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/re_pro"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3.5"
+            android:background="@color/white"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/gb_bg"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/share_s_homepage_notice" />
+
+            <TextView
+                android:id="@+id/tv_textadvertising"
+                android:layout_width="270dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:paddingLeft="10dp"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/text_black"
+                android:textSize="14dp" />
+
+            <!-- <TextView -->
+            <!-- android:id="@+id/tv_textadvertising" -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="match_parent" -->
+            <!-- android:layout_marginRight="10dp" -->
+            <!-- android:layout_toLeftOf="@+id/tt" -->
+            <!-- android:ellipsize="marquee" -->
+            <!-- android:focusable="true" -->
+            <!-- android:focusableInTouchMode="true" -->
+            <!-- android:gravity="center_vertical" -->
+            <!-- android:paddingLeft="20dp" -->
+            <!-- android:singleLine="true" -->
+            <!-- android:text="加油哟！您还差4个用户即可尊享0费率/恭喜！您已超额贡献N个用户" -->
+            <!-- android:textColor="@color/apptitle" -->
+            <!-- android:textSize="14dp" /> -->
+            <!-- android:drawableLeft="@drawable/horn_img" -->
+
+            <TextView
+                android:id="@+id/tt"
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="2dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="2dp"
+                android:layout_toLeftOf="@+id/share_buttons"
+                android:background="@color/applin" />
+
+            <LinearLayout
+                android:id="@+id/share_buttons"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/form_bg_wihte"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingRight="6dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/share_s_homepage_share" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="分享"
+                    android:textSize="12dp"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+            <!-- <TextView -->
+            <!-- android:id="@+id/tv_dimiss" -->
+            <!-- android:layout_width="40dp" -->
+            <!-- android:layout_height="40dp" -->
+            <!-- android:layout_alignParentRight="true" -->
+            <!-- android:layout_centerInParent="true" -->
+            <!-- android:layout_marginRight="3dp" -->
+            <!-- android:background="@drawable/dimiss_img" /> -->
+        </RelativeLayout>
+        <!-- <TextView -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="0.1dp" -->
+        <!-- android:background="@color/applin" /> -->
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3.3"
+            android:background="@color/white"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/tv_ss"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1.5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/form_bg_gray"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="2dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/ss_img" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="top|center_horizontal"
+                        android:text="扫一扫付款"
+                        android:textColor="@color/txt_fg_normal"
+                        android:textSize="12dp" />
+                </LinearLayout>
+
+                <!-- <TextView -->
+                <!-- android:layout_width="0.1dp" -->
+                <!-- android:layout_height="match_parent" -->
+                <!-- android:background="@color/applin" /> -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1.5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/form_bg_gray"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="2dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/share_s_homepage_share" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="top|center_horizontal"
+                        android:text="分享"
+                        android:textColor="@color/txt_fg_normal"
+                        android:textSize="12dp" />
+                </LinearLayout>
+
+                <!-- <TextView -->
+                <!-- android:layout_width="0.1dp" -->
+                <!-- android:layout_height="match_parent" -->
+                <!-- android:background="@color/applin" /> -->
+
+                <LinearLayout
+                    android:id="@+id/tv_dow"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1.5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/form_bg_gray"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="2dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/code_collection_img" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="top|center_horizontal"
+                        android:text="二维码收款"
+                        android:textColor="@color/txt_fg_normal"
+                        android:textSize="12dp" />
+                </LinearLayout>
+                <!-- @drawable/form_bg_wihte#2F3943 -->
+            </LinearLayout>
+
+            <!-- <TextView -->
+            <!-- android:id="@+id/share_buttons" -->
+            <!-- android:layout_width="50dp" -->
+            <!-- android:layout_height="50dp" -->
+            <!-- android:layout_gravity="center" -->
+            <!-- android:background="@drawable/help_main" -->
+            <!-- android:gravity="center" -->
+            <!-- android:text="分享" -->
+            <!-- android:textColor="@color/text_white" -->
+            <!-- android:textSize="15dp" /> -->
+            <!-- android:drawableLeft="@drawable/share_s_homepage_share" -->
+        </FrameLayout>
+
+        <!-- <TextView -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="0.1dp" -->
+        <!-- android:background="@color/applin" /> -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="1.5dp"
+            android:layout_weight="1.6"
+            android:orientation="vertical" >
+
+            <com.td.qianhai.epay.oem.adapter.VerticalViewPager
+                android:id="@+id/guidePages"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white" >
+            </com.td.qianhai.epay.oem.adapter.VerticalViewPager>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

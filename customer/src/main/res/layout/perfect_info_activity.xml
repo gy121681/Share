@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_top_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="40dp"
+            android:text="请完善常住地址"
+            android:textSize="18dp"
+            android:textColor="@color/text_black_light"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:layout_marginTop="50dp"
+            android:text="请选择常住地址"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/applin" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/text_black_light"
+                    android:text="省份"
+                    android:textSize="@dimen/text_28" />
+
+                <TextView
+                    android:id="@+id/tv_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawableRight="@drawable/share_c_public_next"
+                    android:gravity="center"
+                    android:textColor="@color/text_black_light"
+                    android:textColorHint="@color/text_gray"
+                    android:hint="选择省份"
+                    android:textSize="@dimen/text_28" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/applin" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/text_black_light"
+                    android:text="城市"
+                    android:textSize="@dimen/text_28" />
+
+                <TextView
+                    android:id="@+id/tv_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawableRight="@drawable/share_c_public_next"
+                    android:gravity="center"
+                    android:textColor="@color/text_black_light"
+                    android:textColorHint="@color/text_gray"
+                    android:hint="选择城市"
+                    android:textSize="@dimen/text_28" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/applin" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/text_black_light"
+                    android:text="区/县"
+                    android:textSize="@dimen/text_28" />
+
+                <TextView
+                    android:id="@+id/tv_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawableRight="@drawable/share_c_public_next"
+                    android:gravity="center"
+                    android:textColor="@color/text_black_light"
+                    android:textColorHint="@color/text_gray"
+                    android:hint="选择区县"
+                    android:textSize="@dimen/text_28" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/applin" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/commit"
+            android:enabled="false"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/selector_btn_pink"
+            android:gravity="center"
+            android:text="完成"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_36" />
+
+        <LinearLayout
+            android:id="@+id/lin_cascade"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="invisible" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <!-- <LinearLayout -->
+                <!-- android:id="@+id/tv_finish" -->
+                <!-- android:layout_width="match_parent" -->
+                <!-- android:layout_height="match_parent" -->
+                <!-- android:background="@color/gays_b" -->
+                <!-- android:gravity="top" -->
+                <!-- android:orientation="vertical" -->
+                <!-- android:visibility="invisible" > -->
+
+                <com.shareshenghuo.app.user.city.CityPicker
+                    android:layout_alignParentBottom="true"
+                    android:id="@+id/citypicker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+                </com.shareshenghuo.app.user.city.CityPicker>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

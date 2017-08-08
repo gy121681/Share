@@ -1,0 +1,168 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_activity"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_top_bar" />
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_white"
+                android:gravity="center_vertical"
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="圈子头像" />
+
+                <ImageView
+                    android:id="@+id/ivGroupPic"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/p8" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:background="@color/bg_white"
+                android:gravity="center_vertical"
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/icon_182"
+                    android:drawablePadding="10dp"
+                    android:text="圈子昵称"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tvGroupName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1px"
+                android:background="@color/bg_white"
+                android:gravity="center_vertical"
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/icon_205"
+                    android:drawablePadding="10dp"
+                    android:text="圈子ID"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tvGroupID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1px"
+                android:background="@color/bg_white"
+                android:gravity="center_vertical"
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/icon_226"
+                    android:drawablePadding="10dp"
+                    android:text="圈子介绍"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tvGroupDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:background="@color/bg_white"
+                android:gravity="center_vertical"
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/icon_251"
+                    android:drawablePadding="10dp"
+                    android:text="圈子成员"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tvGroupMemberCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0人"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <com.shareshenghuo.app.user.widget.MapLayout
+                android:id="@+id/llmap"
+                android:layout_width="match_parent"
+                android:layout_height="250dp" >
+
+                <com.shareshenghuo.app.user.widget.MyGridView
+                    android:scrollbars="none"
+                    android:id="@+id/gvGroupMember"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1px"
+                    android:background="@color/bg_white"
+                    android:horizontalSpacing="20dp"
+                    android:numColumns="4"
+                    android:padding="10dp"
+                    android:verticalSpacing="6dp" >
+                </com.shareshenghuo.app.user.widget.MyGridView>
+            </com.shareshenghuo.app.user.widget.MapLayout>
+
+            <Button
+                android:id="@+id/btnGroupJoin"
+                style="@style/btn_border_red"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="@dimen/margin_normal"
+                android:enabled="false"
+                android:text="加入圈子" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,168 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/layout_top_bar"/>
+
+    <include layout="@layout/layout_datepicker"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="6dp"
+        android:background="@color/bg_activity" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textColor="@color/tab_text_nor"
+            android:text="项目名称" />
+        
+        <View android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/gray_lighter"/>
+        
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textColor="@color/tab_text_nor"
+            android:text="数量" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:textColor="@color/tab_text_nor"
+            android:text="累计新增会员数" />
+        
+        <View android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/gray_lighter"/>
+        
+        <TextView
+            android:id="@+id/tvMemberCount"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:textColor="@color/tab_text_nor"
+            android:text="0" />
+    </LinearLayout>
+    
+    <View android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_lighter"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:textColor="@color/tab_text_nor"
+            android:text="累计新增收藏数" />
+        
+        <View android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/gray_lighter"/>
+        
+        <TextView
+            android:id="@+id/tvCollectCount"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:textColor="@color/tab_text_nor"
+            android:text="0" />
+    </LinearLayout>
+    
+    <View android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_lighter"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:textColor="@color/tab_text_nor"
+            android:text="累计总会员数" />
+        
+        <View android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/gray_lighter"/>
+        
+        <TextView
+            android:id="@+id/tvTotalMemberCount"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:textColor="@color/tab_text_nor"
+            android:text="0" />
+    </LinearLayout>
+    
+    <View android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_lighter"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:textColor="@color/tab_text_nor"
+            android:text="累计总收藏数" />
+        
+        <View android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/gray_lighter"/>
+        
+        <TextView
+            android:id="@+id/tvTotalCollectCount"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:textColor="@color/tab_text_nor"
+            android:text="0" />
+    </LinearLayout>
+    
+    <View android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_lighter"/>
+</LinearLayout>

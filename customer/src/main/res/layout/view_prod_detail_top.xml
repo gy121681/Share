@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.shareshenghuo.app.user.widget.snapscrollview.McoyScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/product_scrollview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_activity"
+    android:fadeScrollbars="true"
+    android:focusable="false"
+    android:fillViewport="true" >
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="260dp" >
+
+                <com.shareshenghuo.app.user.widget.BannerViewPager
+                    android:id="@+id/bannerProd"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <ImageView
+                    android:id="@+id/btnBack"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="@dimen/margin_normal"
+                    android:src="@drawable/btn_back" />
+
+                <ImageView
+                    android:id="@+id/ivShare"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="@dimen/margin_normal"
+                    android:src="@drawable/btn_share" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_white"
+                android:orientation="vertical"
+                android:padding="10dp" >
+                
+                <TextView
+                    android:id="@+id/tvProdDetailName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="哈斯卡哈的卡上一步"
+                    android:textColor="@color/tab_text_nor"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tvProdDetailNowPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="¥0"
+                    android:textColor="@color/pink_dark"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp" >
+
+                    <TextView
+                        android:id="@+id/tvProdDetailOldPrice"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="原价：¥0"
+                        android:textColor="@color/gray_light"
+                        android:textSize="11sp" />
+                    
+                    <TextView
+                        android:id="@+id/tvProdDetailSaleCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="已售0件/剩0件"
+                        android:textColor="@color/gray_dark"
+                        android:textSize="11sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_white"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/bg_activity"
+                    android:padding="6dp"
+                    android:gravity="center_vertical" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_message" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="商品评价" />
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/lvProdComment"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="@dimen/margin_normal"
+                    android:layout_marginRight="@dimen/margin_normal" >
+                </ListView>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnProdMoreComment"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="1px"
+                android:background="@color/bg_white"
+                android:text="查看更多"
+                android:textColor="@color/gray_dark"
+                android:textSize="11sp" />
+            
+            <View 
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/bg_activity"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_white"
+                android:padding="6dp" >
+
+                <ImageView
+                    android:id="@+id/ivShopLogo"
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/p6" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tvShopName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:text="商店" />
+
+                    <LinearLayout
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:visibility="gone"
+			            android:layout_marginTop="5dp" >
+			
+			            <ImageView
+			                android:id="@+id/ivShopTagIntegrity"
+			                android:layout_width="wrap_content"
+			                android:layout_height="15dp"
+			                android:src="@drawable/tag_integrity" />
+			'
+			            <ImageView
+			                android:id="@+id/ivShopTagAuth"
+			                android:layout_width="wrap_content"
+			                android:layout_height="15dp"
+			                android:layout_marginLeft="6dp"
+			                android:src="@drawable/tag_auth" />
+			        </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btnProdShop"
+                        style="@style/btn_border_red"
+                        android:layout_width="65dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="right"
+                        android:text="进店逛逛" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            
+            <View android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical" >
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1px"
+                        android:layout_weight="1"
+                        android:background="@color/gray_light"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_normal"
+                        android:textSize="13sp"
+                        android:text="继续拖动，查看商品详情" />
+                    
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1px"
+                        android:layout_weight="1"
+                        android:background="@color/gray_light"/>
+                </LinearLayout>
+        </LinearLayout>
+</com.shareshenghuo.app.user.widget.snapscrollview.McoyScrollView>

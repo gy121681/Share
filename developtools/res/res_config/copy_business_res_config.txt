@@ -1,0 +1,14 @@
+# 这是注释
+# *表示要忽略的文件
+
+# 要拷贝的文件
+--fromDir  ../../../../../../../art/商户端/元素/
+--toDir    ../../temp_out/business/drawable-xhdpi
+--preName  share_b_
+
+# *表示要忽略的文件
+
+# 特殊路径
+../../../../../../../art/消费者端/切图/欢迎界面/欢迎界面640x960.png  ../../temp_out/business/drawable-mdpi/welcome.png
+../../../../../../../art/消费者端/切图/欢迎界面/欢迎界面640x1136.png  ../../temp_out/business/drawable-hdpi/welcome.png
+../../../../../../../art/消费者端/切图/欢迎界面/欢迎界面750x1334.png  ../../temp_out/business/drawable-xhdpi/welcome.png

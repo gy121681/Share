@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bgcolor"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ordergatheringitembg" >
+
+        <TextView
+            android:id="@+id/tv_orderstatustxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0.0dip"
+            android:layout_marginRight="3.0dip"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:singleLine="true"
+            android:text="订单状态:"
+            android:textColor="#ff333333"
+            android:textSize="16.0sp" />
+
+        <TextView
+            android:id="@+id/tv_orderstatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9.0dip"
+            android:layout_toRightOf="@id/tv_orderstatustxt"
+            android:text="已支付"
+            android:textColor="#ffd30000"
+            android:textSize="16.0sp" />
+
+        <TextView
+            android:id="@+id/moneyunit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_half"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:layout_toLeftOf="@+id/tv_ordermoney"
+            android:text="￥"
+            android:textColor="#ffff9913"
+            android:textSize="16.0sp" />
+
+        <TextView
+            android:id="@+id/tv_ordermoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:singleLine="true"
+            android:text="500"
+            android:textColor="#ffff9913"
+            android:textSize="16.0sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="120.0dip"
+        android:background="@drawable/air_n_linearlayout_dbombg_nocorner_xml"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/ordernotxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8.0dip"
+            android:layout_marginRight="3.0dip"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:text="支付订单号:"
+            android:textColor="#ff333333"
+            android:textSize="12.0sp" />
+
+        <TextView
+            android:id="@+id/orderno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/ordernotxt"
+            android:layout_toRightOf="@id/ordernotxt"
+            android:text="u85945803451"
+            android:textColor="#ff333333"
+            android:textSize="12.0sp" />
+
+        <TextView
+            android:id="@+id/ordertimetxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/ordernotxt"
+            android:layout_below="@id/ordernotxt"
+            android:layout_marginRight="3.0dip"
+            android:layout_marginTop="@dimen/margin_half"
+            android:text="支付时间:　"
+            android:textColor="#ff333333"
+            android:textSize="12.0sp" />
+
+        <TextView
+            android:id="@+id/ordertime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/ordertimetxt"
+            android:layout_toRightOf="@id/ordertimetxt"
+            android:text="2013-10-21 12:22:22"
+            android:textColor="#ff333333"
+            android:textSize="12.0sp" />
+
+        <TextView
+            android:id="@id/ordercardtxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/ordertimetxt"
+            android:layout_below="@id/ordertimetxt"
+            android:layout_marginBottom="@dimen/margin_normal"
+            android:layout_marginRight="3.0dip"
+            android:layout_marginTop="@dimen/margin_half"
+            android:text="手机号:　　"
+            android:textColor="#ff333333"
+            android:textSize="12.0sp" />
+
+        <TextView
+            android:id="@id/ordercard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/ordercardtxt"
+            android:layout_toRightOf="@id/ordercardtxt"
+            android:text="13565321654"
+            android:textColor="#ff333333"
+            android:textSize="12.0sp" />
+    </RelativeLayout>
+
+</LinearLayout>

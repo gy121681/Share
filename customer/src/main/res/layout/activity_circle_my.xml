@@ -1,0 +1,104 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_top_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_activity"
+                android:padding="6dp"
+                android:text="我建的圈"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="6dp" >
+
+                <com.shareshenghuo.app.user.widget.MyGridView
+                    android:id="@+id/gvCreatedGroup"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:horizontalSpacing="6dp"
+                    android:numColumns="3"
+                    android:verticalSpacing="6dp" >
+                </com.shareshenghuo.app.user.widget.MyGridView>
+
+                <ImageView
+                    android:id="@+id/ivCreateGroup"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="6dp"
+                    android:src="@drawable/icon_361" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_activity"
+                android:padding="6dp"
+                android:text="我加的圈"
+                android:textSize="13sp" />
+
+            <com.shareshenghuo.app.user.widget.MyGridView
+                android:id="@+id/gvJoinedGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="6dp"
+                android:horizontalSpacing="6dp"
+                android:numColumns="4"
+                android:verticalSpacing="6dp" >
+            </com.shareshenghuo.app.user.widget.MyGridView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="6dp"
+                android:background="@color/bg_activity" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="13sp"
+                    android:text="兴趣圈" />
+
+                <TextView
+		            android:id="@+id/tvSwitchCircle"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:drawableLeft="@drawable/icon_281"
+		            android:drawablePadding="6dp"
+		            android:textColor="@color/gray_dark"
+		            android:text="换一组" />
+            </LinearLayout>
+            
+            <com.shareshenghuo.app.user.widget.MyGridView
+                android:id="@+id/gvHobbyGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="6dp"
+                android:horizontalSpacing="6dp"
+                android:numColumns="4"
+                android:verticalSpacing="6dp" >
+            </com.shareshenghuo.app.user.widget.MyGridView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@color/bgcolor"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_style_two" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="可用余额   "
+                android:textColor="@color/txt_fg_normal"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="¥  "
+                android:textColor="@color/txt_fg_normal"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/balance_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/red"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/phone_relativw"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white" >
+
+            <EditText
+                android:id="@+id/charge_phone"
+                style="@style/editview_style"
+                android:inputType="number"
+                android:maxLength="11"
+                android:paddingLeft="20dp"
+                android:text=""
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/contacts"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/contact_selector" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/phone_lin_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/applin" />
+
+            <!-- <LinearLayout -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:background="@color/white" -->
+            <!-- android:orientation="horizontal" > -->
+
+            <ListView
+                android:id="@+id/phonenuber_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:divider="@color/white"
+                android:listSelector="@null" >
+            </ListView>
+
+            <!-- <TextView -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_weight="2" -->
+            <!-- android:layout_height="40dp" -->
+            <!-- android:gravity="center_vertical" -->
+            <!-- android:textColor="@color/txt_fg_normal" -->
+            <!-- android:text="用户绑定号码" -->
+            <!-- android:textSize="14dp" /> -->
+            <!-- </LinearLayout> -->
+
+            <TextView
+                android:id="@+id/clear_phonenumber"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/form_bg_wihte"
+                android:gravity="center"
+                android:text="清空号码"
+                android:textColor="@color/txt_fg_normal" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_operators"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/txt_fg_normal"
+            android:textSize="14dp"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/white" >
+
+            <GridView
+                android:id="@+id/gridView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:horizontalSpacing="10dp"
+                android:listSelector="@null"
+                android:numColumns="3"
+                android:padding="5dp"
+                android:verticalSpacing="10dp" >
+            </GridView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/money_typt_content"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/form_bg_wihte" >
+
+            <!-- <Spinner -->
+            <!-- android:id="@+id/money_typt_content" -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="match_parent" -->
+            <!-- android:background="@color/white" -->
+            <!-- android:gravity="center" -->
+            <!-- android:paddingLeft="20dp" -->
+            <!-- android:textSize="15.0sp" /> -->
+
+            <TextView
+                android:id="@+id/tv_denomination"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@id/date_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20.0dip"
+                android:background="@drawable/air_city_arrow" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/date_arrow"
+                android:orientation="horizontal"
+                android:paddingRight="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="售价: "
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="0.0元"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="10dp"
+            android:text="温馨提示:手机充值金额将从钱包扣款"
+            android:textColor="@color/prompt"
+            android:textSize="12.0dip" />
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/transfer_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/reg_btn_next_height"
+                android:background="@drawable/button01_bg"
+                android:gravity="center"
+                android:text="立即充值"
+                android:textColor="@color/text_white"
+                android:textSize="20.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

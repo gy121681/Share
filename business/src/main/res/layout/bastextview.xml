@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/form_bg_wihte"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/margin_normal"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/margin_normal">
+
+            <TextView
+                android:id="@+id/tvs"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="12dp"
+                android:textColor="@color/gray_light"
+                android:layout_weight="1.5"
+                android:gravity="center_vertical|right"/>
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/check_del"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:button="@drawable/checkbox_pink"
+            android:focusable="false"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+</LinearLayout>

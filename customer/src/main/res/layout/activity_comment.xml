@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_activity"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/layout_top_bar"/>
+
+    <EditText
+        android:maxLength="50"
+        android:id="@+id/edCommentContent"
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+        android:padding="6dp"
+        android:gravity="top"
+        android:hint="发表评论(50字以内)"
+        android:textSize="13sp"
+        android:background="@color/bg_white" >
+    </EditText>
+
+    <GridView
+        android:id="@+id/gvCommentPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="6dp"
+        android:padding="6dp"
+        android:horizontalSpacing="10dp"
+        android:verticalSpacing="10dp"
+        android:background="@color/bg_white"
+        android:numColumns="3" >
+    </GridView>
+
+</LinearLayout>

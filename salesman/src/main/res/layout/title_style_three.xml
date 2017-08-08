@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/title_container_theme" >
+
+    <TextView
+        android:id="@id/bt_title_left"
+        style="@style/title_back_btn_bg_theme2"
+        android:drawableLeft="@drawable/share_s_public_back1"
+        android:text="返回" />
+
+    <TextView
+        android:id="@id/tv_title_contre"
+        style="@style/title_text_theme"
+        android:ellipsize="end"
+        android:maxEms="12"
+        android:singleLine="true"
+        android:text="绑定手机号码" />
+
+    <TextView
+        android:id="@id/bt_title_right"
+        style="@style/title_btn_bg_theme2"
+        android:layout_marginRight="5dp" />
+
+    <ImageView
+        android:id="@+id/img_title_right"
+        android:visibility="gone"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/share_s_consume_series_add"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:scaleType="centerInside"
+        android:layout_marginRight="5dp"/>
+
+    <TextView
+        android:id="@+id/bt_title_right1"
+        style="@style/title_btn_bg_theme3"
+        android:layout_marginRight="5dp"
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="筛选"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_marginRight="10dp"
+        android:id="@+id/bt_title_right2"
+        android:background="@drawable/menu_img"
+        android:layout_width="28dp"
+        android:visibility="gone"
+        android:layout_height="24dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" />
+
+</RelativeLayout>

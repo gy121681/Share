@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/layout_top_bar"/>
+
+    <LinearLayout
+        android:id="@+id/llPushTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_margin="6dp"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_28"
+            android:textColor="@color/tab_text_nor"
+            android:text="推送时间：" />
+
+        <TextView
+            android:id="@+id/tvPushTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textSize="@dimen/text_28"
+            android:textColor="@color/tab_text_nor" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_normal"
+            android:src="@drawable/share_b_public_next_step2" />
+
+    </LinearLayout>
+
+    <include layout="@layout/common_line_h"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/margin_normal"
+        android:layout_marginRight="@dimen/margin_normal"/>
+
+    <LinearLayout
+        android:id="@+id/llPushLevel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:padding="10dp" >
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_28"
+            android:textColor="@color/tab_text_nor"
+            android:text="推送对象：" />
+
+        <TextView
+            android:id="@+id/tvPushLevel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:drawableRight="@drawable/share_b_public_next_step2"
+            android:drawablePadding="3dp"
+            android:textSize="@dimen/text_28"
+            android:textColor="@color/tab_text_nor"
+            android:text="全部" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/bg_gray_dark" />
+
+    <EditText
+        android:id="@+id/edPushContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:padding="10dp"
+        android:hint="请输入推送内容"
+        android:textSize="@dimen/text_28"
+        android:textColorHint="@color/text_gray"
+        android:gravity="top"
+        android:lines="10"
+        android:maxLength="100"
+        android:background="@null" />
+
+</LinearLayout>

@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_activity"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/layout_top_bar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="提现申请已提交，待审核" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:background="@color/bg_white" >
+
+        <TextView
+            android:id="@+id/tvWithdrawSource"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="支付宝" />
+
+        <TextView
+            android:id="@+id/tvWithdrawAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="123" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1px"
+        android:padding="10dp"
+        android:background="@color/bg_white" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="提现金额" />
+
+        <TextView
+            android:id="@+id/tvWithdrawMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥0" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnWithdrawComplete"
+        style="@style/btn_pink"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_margin="20dp"
+        android:text="完成" />
+
+</LinearLayout>

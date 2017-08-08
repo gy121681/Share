@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+              android:background="@drawable/form_bg_wihte">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="XXXX-XX-XX\nXX:XX:XX"
+            android:textColor="@color/text_black_light"
+            android:textSize="@dimen/text_28"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:layout_marginBottom="@dimen/margin_normal"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1.6"
+        android:layout_height="match_parent"
+        android:drawableLeft="@drawable/share_s_mine_icon1_xiudian"
+        android:text="XXXX.XX"
+        android:textColor="@color/text_orange"
+        android:layout_centerInParent="true"
+        android:gravity="center_vertical"
+        android:drawablePadding="@dimen/margin_half"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="XXXXXX"
+        android:gravity="center_vertical|right"
+        android:drawableRight="@drawable/share_s_public_next"
+        />
+
+</LinearLayout>

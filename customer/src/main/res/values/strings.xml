@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">秀儿</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_flash_sale">FlashSaleActivity</string>
+    <string name="title_activity_prod_detail">ProdDetailActivity</string>
+    <string name="title_activity_shop_detail">ShopDetailActivity</string>
+    <string name="title_activity_shop_list">ShopListActivity</string>
+    <string name="title_activity_activ_detail">ActivDetailActivity</string>
+    <string name="title_activity_article_detail">ArticleDetailActivity</string>
+    <string name="title_activity_personal_info">PersonalInfoActivity</string>
+    <string name="title_activity_sign">SignActivity</string>
+    <string name="title_activity_wallet">WalletActivity</string>
+    <string name="title_activity_order_list">OrderListActivity</string>
+    <string name="title_activity_club_card">ClubCardActivity</string>
+    <string name="title_activity_point">PointActivity</string>
+    <string name="title_activity_coupon_list">CouponListActivity</string>
+    <string name="title_activity_favorites">FavoritesActivity</string>
+    <string name="title_activity_my_article">MyArticleActivity</string>
+    <string name="title_activity_find_shop_list">FindShopListActivity</string>
+    <string name="title_activity_share">ShareActivity</string>
+    <string name="title_activity_feedback">FeedbackActivity</string>
+    <string name="title_activity_about">AboutActivity</string>
+    <string name="title_activity_prod_classification">ProdClassificationActivity</string>
+    <string name="title_activity_regist">RegistActivity</string>
+    <string name="title_activity_retrieve_pwd">RetrievePwdActivity</string>
+    <string name="title_activity_comment_list">CommentListActivity</string>
+    <string name="title_activity_comment">CommentActivity</string>
+    <string name="title_activity_edit_shop">EditShopActivity</string>
+    <string name="title_activity_poi_map">PoiMapActivity</string>
+    <string name="title_activity_search_poi">SearchPOIActivity</string>
+    <string name="title_activity_shop_nav">ShopNavActivity</string>
+    <string name="title_activity_perfect_personal_info">PerfectPersonalInfoActivity</string>
+    <string name="title_activity_shop_coupon_list">ShopCouponListActivity</string>
+    <string name="title_activity_shop_activ_list">ShopActivListActivity</string>
+    <string name="title_activity_album_catalog">AlbumCatalogActivity</string>
+    <string name="title_activity_image_pager">ImagePagerActivity</string>
+    <string name="title_activity_city_list">CityListActivity</string>
+    <string name="title_activity_search_city">SearchCityActivity</string>
+    <string name="title_activity_search_shop">SearchShopActivity</string>
+    <string name="title_activity_message">MessageActivity</string>
+    <string name="title_activity_activ_type">ActivTypeActivity</string>
+    <string name="title_activity_add_article">AddArticleActivity</string>
+    <string name="title_activity_search_article">SearchArticleActivity</string>
+    <string name="title_activity_article_comment_list">ArticleCommentListActivity</string>
+    <string name="title_activity_search_card">SearchCardActivity</string>
+    <string name="title_activity_card_detail">CardDetailActivity</string>
+    <string name="title_activity_chat">ChatActivity</string>
+    <string name="title_activity_point_detail">PointDetailActivity</string>
+    <string name="title_activity_modify_user_info">ModifyUserInfoActivity</string>
+    <string name="title_activity_bind_mobile">BindMobileActivity</string>
+    <string name="title_activity_addr_manage">AddrManageActivity</string>
+    <string name="title_activity_addr_edit">AddrEditActivity</string>
+    <string name="title_activity_area_list">AreaListActivity</string>
+    <string name="title_activity_withdraw">WithdrawActivity</string>
+    <string name="title_activity_withdraw_result">WithdrawResultActivity</string>
+    <string name="title_activity_recharge">RechargeActivity</string>
+    <string name="title_activity_shop_info">ShopInfoActivity</string>
+    <string name="title_activity_submit_order">SubmitOrderActivity</string>
+    <string name="title_activity_payment">PaymentActivity</string>
+    <string name="title_activity_order_detail">OrderDetailActivity</string>
+    <string name="title_activity_comment_order">CommentOrderActivity</string>
+    <string name="title_activity_order_status">OrderStatusActivity</string>
+    <string name="title_activity_shop_flash_pay">ShopFlashPayActivity</string>
+    <string name="title_activity_search_prod">SearchProdActivity</string>
+    <string name="title_activity_web_load">WebLoadActivity</string>
+    <string name="title_activity_sys_msg_list">SysMsgListActivity</string>
+    <string name="title_activity_reply">ReplyActivity</string>
+    <string name="title_activity_contact_list">ContactListActivity</string>
+    <string name="title_activity_bind">BindActivity</string>
+    <string name="title_activity_cart">CartActivity</string>
+    <string name="title_activity_modify_pay_pwd">ModifyPayPwdActivity</string>
+    <string name="title_activity_loading">LoadingActivity</string>
+    <string name="title_activity_guide">GuideActivity</string>
+    <string name="title_activity_vcode">VCodeActivity</string>
+    <string name="title_activity_activ_list">ActivListActivity</string>
+    <string name="title_activity_circle_detail">CircleDetailActivity</string>
+    <string name="title_activity_circle_my">CircleMyActivity</string>
+    <string name="title_activity_circle_edit">CircleEditActivity</string>
+    <string name="title_activity_wallet_detail">WalletDetailActivity</string>
+    <string name="title_activity_filial">FilialActivity</string>
+    <string name="title_activity_IncentivePoints">IncentivePointsActivity</string>
+    <string name="title_activity_Consumption">ConsumptionActivity</string>
+    
+        <string-array name="jazzy_effects">
+        <item>Standard</item>
+        <item>Tablet</item>
+        <item>CubeIn</item>
+        <item>CubeOut</item>
+        <item>FlipVertical</item>
+        <item>FlipHorizontal</item>
+        <item>Stack</item>
+        <item>ZoomIn</item>
+        <item>ZoomOut</item>
+        <item>RotateUp</item>
+        <item>RotateDown</item>
+        <item>Accordion</item>
+    </string-array>
+    
+<string name="exchangestr">
+\n
+1.单笔最多可兑换50000秀点；\n
+2.到账时间分为T+1；\n
+3.兑换的到账时间为一个工作日到账（T+1），手续费固定每笔5秀点。\n
+</string>
+
+
+
+
+<string name="sharestr"> 
+规则说明:\n
+&#160;&#160;&#160;&#160;凡是通过下方分享按钮推荐身边亲朋好友下秀儿消费app的用户,新用户在注册的时候输入推荐人的手机号,推荐人即可获得秀点奖励,秀点可提现哦.
+</string>
+
+
+
+<!-- 	活体检测 -->
+    <string name="title_activity_settings">Settings</string>
+    <string name="blink">BLINK</string>
+    <string name="nod">NOD</string>
+    <string name="mouth">MOUTH</string>
+    <string name="yaw">YAW</string>
+    <string name="sound_notice">提示声音</string>
+    <string name="set_detect_list">动作序列</string>
+    <string name="set_output_type">选图方案</string>
+    <string name="set_complexity">难易程度</string>
+    <string name="default_detect_list">BLINK MOUTH NOD YAW</string>
+    <string name="start_detect">开始检测</string>
+    <string name="done">完成</string>
+    <string name="liveness_detect">活体测试</string>
+    <string name="zhang">张</string>
+    <string name="max_action">最多可设置10个动作</string>
+    <string name="settings">设置</string>
+    <string name="pref_title_complexity">难易程度</string>
+	<string name="pass_liveness">通过活体检测</string>
+    <string name="cancel_liveness">活体检测被取消</string>
+    <string name="failed_init_sdk">算法SDK初始化失败:可能是模型路径错误,SDK权限过期,包名绑定错误,没有相机权限</string>
+	<string name="camera_refuse">调用摄像头权限被拒绝，不能启动活体检测。</string>
+	<string name="write_external_storage_refuse">访问存储空间权限被拒绝，不能启动活体检测。</string>
+	<string name="save_liveness_result_fail">访问存储空间权限被拒绝，保存活体检测结果失败。</string>
+    <string name="first_action">第一个动作必须为BLINK</string>
+    <string name="stlivenesslibrary">STLivenessLibrary</string>
+    
+    <string-array name="pref_complexity_titles">
+        <item>Easy</item>
+        <item>Normal</item>
+        <item>Hard</item>
+        <item>Hell</item>
+    </string-array>
+    <string-array name="pref_complexity_values">
+        <item>Easy</item>
+        <item>Normal</item>
+        <item>Hard</item>
+        <item>Hell</item>
+    </string-array>
+
+    <string name="pref_title_outputtype">选图方案</string>
+
+    <string-array name="pref_outputtype_titles">
+        <item>单图</item>
+        <item>多图</item>
+    </string-array>
+    <string-array name="pref_outputtype_values">
+        <item>singleImg</item>
+        <item>multiImg</item>
+    </string-array>
+
+    <string name="default_complexity_value">Normal</string>
+    <string name="default_outputtype_value">multiImg</string>
+
+    <!--测试-->
+    <string name="register_treaty"> 　　本协议是用户（仅指自然人）与成都秀儿科技有限公司（以下简称“秀儿”）之间关于“秀儿”手机客户端软件产品及其提供的服务所拟定的法律协议。秀儿公司在此特别提醒用户认真阅读、充分理解本协议各条款，特别是其中所涉及的免除、限制秀儿公司责任的条款、对用户权利限制条款、争议解决和法律实用等。一旦安装、复制或以其他方式使用本软件产品，即表示同意接受协议各项条件的约束。如果用户不同意本协议中的条款，请勿复制、下载、安装或以其他方式使用本软件。\n
+（一）关于“秀儿”服务协议的确认和接受\n
+　　1．1“秀儿”服务是由秀儿公司向用户提供的“秀儿”软件服务系统（以下简称“秀儿服务”）。为了保障用户的权益，用户在自愿注册使用本秀儿服务前，必须仔细阅读并接受本服务协议所有条款。\n
+　　1．2秀儿有权在必要时单方修改或变更本服务协议之内容，并将通过秀儿网站公布最新的服务协议，不另作个别通知。若用户于任何修改或变更本服务条款后继续使用本服务，则视为用户已阅读、了解并同意接受修改或变更，若用户不同意，则用户应主动立即停止使用秀儿服务。\n
+　　1．3如用户所属的国家或地区排除本服务条款内容的全部或部分，则用户应立即停止使用秀儿服务。\n
+(二) 关于“秀儿”服务的注册\n
+　　在使用“秀儿”服务前，用户必须是具《备中华人民共和国民法通则》规定的完全明事行为能力的自然人，或者是具有相应合法证照的实体组织。无民事行为能力人、限制明事行为能力人以及无合法证照的组织不得注册并使用“秀儿”。无明事行为能力人、限制民事行为能力人以及无合法证照的组织以不当方式注册为“秀儿”用户，其与秀儿公司之间的服务协议自始无效，一经发现，有权注销用户。\n
+　　无民事行为能力人或限制民事行为能力人以不当方式注册为“秀儿”进行交易的，无民事行为能力人所进行的交易行为自始无效。\n
+　　注册成为“秀儿”用户，用户同意以下事项：\n
+　　2.1用户确认在用户注册成为秀儿用户以接受本服务条款之前，用户已充分阅读、理解并接受本服务的全部内容，一旦用户使用本服务，即表示用户同意遵循本服务之所有约定。\n
+　　2.2用户同意秀儿公司有权随时对本服务内容进行单方面的变更，并以公告方式予以公布，无需另行通知；若用户在本服务内容公告变更后继续使用本服务的，表示用户已充分阅读、理解并接受修改后的服务内容，也将遵循修改后的服务内容使用本服务；若用户不同意修改后的服务内容，软件会自动为用户停止使用本服务。\n
+　　2.3用户同意基于运行和服务安全的需要，秀儿公司可以暂时停止提供或者限制本服务部分功能提供新的功能，在任何功能减小、增加或者变化时，如用户继续使用本服务，表示用户同意本服务及变更后的服务。\n
+　　2.4用户声明在用户同意接受本服务并成功注册为秀儿用户时，用户是具有法律规定的完全民事权利能力和民事行为能力，能够独立承担民事责任的自然人、法人或其他组织；本服务内容不受用户所属国家或地区的排斥。不具备前述条件的，用户应立即终止注册或停止使用本服务，秀儿公司有权自行终止用户所使用的所有服务。\n
+（三）关于“秀儿”服务的守法使用及用户承诺\n
+　　3.1用户在使用本服务时应遵守中华人民共和国相关法律及所在国家或地区之法令及相关国家惯例，不将本服务用于任何非法目的（包括用于禁止或限制物品的交易），也不能以任何非法方式使用本服务。\n
+　　3.2用户在使用秀儿服务时，必须遵守中华人民共和国相关法律法规的规定，用户同意将不会利用本服务从事侵害他人合法权益之行为，以及进行任何违法或不正当的活动，否则秀儿有权拒绝提供本服务，且用户应承担所有相关法律责任，因此导致秀儿或秀儿雇员受损的，用户应承担赔偿责任。上述行为包括但不限于：侵害他人名誉权、隐私权、商业秘密、商标权、著作权、专利权等合法权益。非法使用他人银行账号（包括信用卡账号）或无效银行卡账号（包括信用卡账号）。其他秀儿有正当理由认为不适当之行为。\n
+　　3.3用户违反本服务或相关的服务条款的规定，导致或产生的任何第三方主张的任何索赔、要求或损失，包括合理的律师费，用户同意赔偿秀儿与合作公司、关联公司，并使之免受损害。对此，秀儿有权视用户的行为性质，采取包括但不限于删除用户发布信息内容、暂停使用许可、终止服务、限制使用、回收秀儿账号、追究法律责任等措施。对恶意注册秀儿账号或利用秀儿账号进行违法活动、捣乱、骚扰、欺骗、其他用户以及其他违反本服务的行为，秀儿有权回收其账号。同时，秀儿会视同司法部门的要求，协助调查。\n
+　　3.4用户不得对本服务任何部分或本服务之使用或获得，进行复制、拷贝、出售、转售或用于任何其它商业目的。\n
+　　3.5用户必须对自己在使用本服务过程中的行为承担法律责任。用户承担法律责任的形式包括但不限于：对受到侵害者进行赔偿，以及在秀儿首先承担了因用户行为导致的行政处罚或侵权损害赔偿责任后，用户应给予秀儿等额的赔偿。\n
+　　3.6服务费用：当用户使用秀儿服务时，秀儿会向用户收取相关服务费用。各项服务费用请详见用户使用秀儿服务时客户端所列之收费方式说明。秀儿保留有预定及调整服务费之权利。用户同意，除非另有说明，上述服务费用秀儿有权自秀儿代收应向用户支付的款项中先行扣除。\n
+（四）暂停、拒绝或终止用户的使用\n
+　　4.1用户同意秀儿有权基于单方独立判断，包含但不限于秀儿认为用户已经违反本服务条款的规定，将暂停、中断或终止向用户提供“秀儿”服务内任何“用户资料”加以移除并删除。\n
+　　4.2用户同意秀儿发现异常交易或有疑义或有违法之虞时，不经通知有权先行暂停或终止用户的账户、密码，并拒绝用户使用“秀儿”服务之部分或全部功能。\n
+　　4.3用户同意在必要时，秀儿无需进行事先通知即得终止提供“秀儿”服务，并可能立即暂停、关闭或删除用户的账户及用户账户中所有相关资料及档案。\n
+（五）秀儿用户账户安全性\n
+　　用户了解并同意，确保密码及账户的机密安全是用户的责任。用户将对利用该密码及账户所进行的一切行动及言论，负完全的责任，并同意以下事项：\n
+　　5.1用户不可对其他任何人泄漏用户的账户和密码，亦不可使用其他任何人的账户或密码。\n
+　　5.2用户同意如发现有第三人冒用或盗用用户的账户及密码，或其他任何未经合法授权的情形，应立即以有效方式通知秀儿，同意暂停其使用本服务并采取有效的防范措施。秀儿在接受用户的有效通知前，对第三人使用该服务已发生之效力，除非可证明秀儿故意或重大过失而不知是未经合法授权之使用，否则秀儿将不承担任何责任。\n
+（六）系统服务中断或故障\n
+　　系统因下列状况无法正常运作，使用户无法使用各项服务时，秀儿对用户不负任何损害赔偿责任，包括但不限于：\n
+　　6.1秀儿系统停机维护期间。\n
+　　6.2手机设备出现故障不能进行数据传输的。\n
+　　6.3因台风、地震、海啸、洪水、停电、战争、恐怖袭击等不可抗力之因素，造成秀儿系统障碍不能执行业务的。\n
+（七）责任范围及责任限制\n
+　　7.1秀儿仅对本协议中所列明的义务承担责任。\n
+　　7.2用户明确因交易所产生的任何风险应由交易双方承担。\n
+　　7.3用户信息是由用户自行发布，秀儿无法保证用户信息的真实、及时和完整，用户应对用户的判断承担全部责任。\n
+　　7.4秀儿未对交易标的及“秀儿”服务提供任何形式的保证，包括但不限于以下事项：\n
+　　“秀儿”服务将符合用户的需求。\n
+　　“秀儿”服务将不受干扰、及时提供或免于出错。\n
+　　用户经由“秀儿”服务购买或取得之任何产品、服务、资讯或其他资料将符合用户的期望。\n
+　　7.5“秀儿”服务的合作单位，所提供的服务品质及内容由该合作单位自行负责。\n
+　　7.6用户经由“秀儿”服务的使用下载或取得任何资料，应由用户自行考量且自负风险，因资料的下载而导致用户手机系统的任何损坏或资料流失，用户应负完全责任。\n
+　　7.7用户自秀儿及公司工作人员或经由“秀儿”服务取得的建议或资讯，无论其为书面或口头，均不构成秀儿对“秀儿”服务的任何保证。\n
+　　7.8在法律允许的情况下，秀儿对于与本协议有关或由本协议引起的任何间接的、惩罚性的、特殊的、派生的损失（包括业务损失、收益损失、利润损失、使用数据或其他经济利益的损失），不论是如何产生的，也不论是由对本协议的违约（包括违反保证）还是由侵权造成的，均不负有任何责任，即使其事先已被告知此等损失的可能性。另外即使本协议规定的排他性救济没有达到其基本目的，也应排除秀儿对上述损失的责任。\n
+　　7.9除本协议另有规定外，在任何情况下，秀儿对本协议所承担的违约赔偿责任总额不超过向用户收取的当次“秀儿”服务费用总额。\n
+（八）隐私权保护\n
+　　秀儿重视对用户隐私的保护，关于用户的用户资料和其他特定资料依秀儿受到保护与规范。\n
+（九）知识产权的保护\n
+　　9.1手机客户端上所有内容、包括但不限于著作、图片、档案、资讯、资料、网站架构、网站画面的安排、网页设计，均由秀儿或其他权利人依法拥有其知识产权，包括但不限于商标权、专利权、著作权、商业秘密等。\n
+　　9.2非经秀儿或其他权利人书面同意任何人不得擅自使用、修改、复制、公开传播、改变、散布、发行或公开发表软件程序或内容。\n
+　　9.3尊重知识产权是用户应尽的义务，如有违反，用户应对秀儿承担损害赔偿责任。\n
+（十）服务条款的解释、法律适用及争端解决\n
+　　10.1秀儿对本服务条款拥有最终解释权。\n
+　　10.2本协议及其修订本的有效性、履行和与本协议及修订本效力有关的所有事宜，将受中华人民共和国法律管辖，任何争议仅适用中华人民共和国法律。\n
+　　10.3因本协议所引起的用户与秀儿的任何纠纷或争议，首先应友好协商解决，协商不成的，用户在此完全同意将纠纷或争议提交秀儿所在地人民法院诉讼解决。　　</string>
+</resources>

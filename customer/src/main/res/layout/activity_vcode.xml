@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_activity"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/layout_top_bar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="我们已经发送了校验码到你的手机：" />
+
+    <TextView
+        android:id="@+id/tvMobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:text="1237812738" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:layout_margin="@dimen/margin_normal"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/edVCode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:hint="请输入验证码"
+            android:textSize="13sp" />
+
+        <com.shareshenghuo.app.user.widget.CountDownButton
+            android:id="@+id/btnGetVCode"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:background="@drawable/btn_border_red"
+            android:textColor="@color/red_dark"
+            android:textSize="12sp"
+            android:text="CountDownButton" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnNext"
+        style="@style/btn_red"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_margin="@dimen/margin_normal"
+        android:text="下一步" />
+
+</LinearLayout>

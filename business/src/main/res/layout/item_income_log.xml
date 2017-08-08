@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="6dp"
+    android:background="#fff"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvIncomeDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:textColor="@color/tab_text_nor"
+            android:textStyle="bold"
+            android:text="充值" />
+
+        <TextView
+            android:id="@+id/tvIncomeDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="11sp"
+            android:textColor="@color/gray_light"
+            android:text="2016-01-01" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvIncomeFee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/pink_dark"
+        android:text="0" />
+</LinearLayout>

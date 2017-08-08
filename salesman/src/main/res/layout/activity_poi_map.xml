@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+<!--     <include layout="@layout/title_style_two" /> -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/apptitle"
+        android:gravity="center_vertical" >
+
+        <LinearLayout
+            android:id="@+id/llSearchBack"
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@id/bt_title_left"
+                style="@style/title_back_btn_bg_theme2"
+                android:drawableLeft="@drawable/title_back_btn_bg2"/>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edSearchKeyWord"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:layout_weight="1"
+            android:background="@drawable/bg_arc_white"
+            android:gravity="center_vertical"
+            android:hint="输入关键字"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:singleLine="true"
+            android:textSize="13sp" />
+
+        <Button
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/btnSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:text="搜索"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <com.amap.api.maps2d.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6" />
+
+    <ListView
+        android:id="@+id/lvPOIS"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="1px"
+        android:layout_weight="0.4" >
+    </ListView>
+
+</LinearLayout>

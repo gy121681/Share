@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <color name="big_bg">#E0E0E0</color>
+    <!-- 背景颜色 -->
+
+    <color name="bgcolor">#F7F7F7</color>
+    <!-- <color name="bgcolor">#EFF0F2</color> -->
+    <!--  -->
+    <!-- 错误背景颜色 -->
+    <color name="ercolor">#FDF5F3</color>
+    <!-- 红色 -->
+    <color name="red">#FF0000</color>
+    <!-- 白色 -->
+    <color name="white">#FFFFFF</color>
+    <!-- 黑色 -->
+    <color name="black">#000000</color>
+    <!-- 黄色 -->
+    <!-- 蓝色 -->
+    <color name="bule_text">#4070D5</color>
+    <!-- 没有颜色 -->
+    <color name="none">#00000000</color>
+    <color name="yellow">#FF9210</color>
+    <!-- 蓝色 -->
+    <color name="blue">#3300FF</color>
+    <!-- 灰色 -->
+    <color name="gray">#808a87</color>
+    <!-- 随机图片按钮背景 -->
+    <color name="randombg">#CACACA</color>
+    <color name="eo">#e0000000</color>
+
+    <!-- 钱袋宝 -->
+    <color name="Transparent">#00000000</color>
+    <color name="huise">#ff474644</color>
+    <color name="red_1">#ff740100</color>
+    <color name="button_blue">#ff0e6ca7</color>
+    <!-- 钱袋宝 -->
+
+
+    <!-- LIST BORDER COLOR -->
+    <color name="rounded_container_border">#ffb7babb</color>
+
+    <!-- ITEM BACKGROUND COLOR - STATE - DEFAULT -->
+    <color name="base_start_color_default">#FFFFFF</color>
+    <color name="base_end_color_default">#FFFFFF</color>
+
+    <!-- ITEM BACKGROUND COLOR - STATE - PRESSED -->
+    <color name="base_start_color_pressed">#fffcfcfc</color>
+    <color name="base_end_color_pressed">#ffd7d7d7</color>
+
+    <!-- 英雄会 -->
+    <color name="grey">#ffb6b6b6</color>
+    <color name="air_type">#ff333333</color>
+    <color name="air_white">#ffffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparent1">#55555555</color>
+    <color name="list_divider">#ffc8c3c3</color>
+    <color name="gray_air">#ff6e6e6e</color>
+     <color name="gray_air_lin">#848484</color>
+    <color name="yellow_air">#fffecd64</color>
+    <color name="yellow_air2">#ffc77204</color>
+    <color name="gray_layout_air">#ff444444</color>
+    <color name="blue_layout_bg">#ffb1d2f2</color>
+    <color name="blue_layout_stroke">#ff63aef7</color>
+    <color name="layout_bg">#00000000</color>
+    <color name="layout_stroke">#ffaeaeae</color>
+    <color name="layout_gradient_start">#ffffca5e</color>
+    <color name="layout_gradient_end">#fff87706</color>
+    <color name="single_gray">#ff9a9c9b</color>
+    <color name="single_white">#fffffcf7</color>
+    <color name="default_white">#ffffffff</color>
+    <color name="default_black">#ff454239</color>
+    <color name="default_gray">#ff9a9c9b</color>
+    <color name="list_gray">#ff707070</color>
+    <color name="list_yellow">#ffee8400</color>
+    <color name="date_title">#ff63aef7</color>
+    <color name="lightyellow">#ffffcc00</color>
+    <color name="darkgray">#808080ff</color>
+    <color name="txt_fg_gray">#ff9a9a9a</color>
+    <!-- 使用 -->
+    <color name="white_trans">#3300FF</color>
+    <color name="window_bg">#ffeef0f1</color>
+    <color name="txt_fg_normal">#ff8694ad</color>
+    <color name="black_trans">#55000000</color>
+
+    <!-- 银行卡信息变更 -->
+    <color name="tv_register_right_hint">#ffd5d5d5</color>
+    <color name="tv_register_right_text">#ff000000</color>
+    <color name="transparents">#00ffffff</color>
+    <color name="tv_register_right_error">#ffff0000</color>
+    <color name="tv_register_left_tip">#ffa8b1bd</color>
+    <color name="txt_fg_light_gray">#ff8694ad</color>
+    <color name="box">#ffcccccc</color>
+    <color name="sucees_green">#007500</color>
+
+    <!-- 虚拟账户设置密码 -->
+    <color name="regBackGround">#ffd2d6d7</color>
+    <color name="regBlue">#ff005a7e</color>
+    <color name="content_title">#ff3f4245</color>
+    <color name="greyer">#ffd1d6da</color>
+    <color name="logrey">#DBDBDBDB</color>
+
+    <!-- 红色button -->
+    <color name="reds">#ff6b6b</color>
+    <color name="reds1">#FF3333</color>
+
+    <!-- 蓝色button -->
+    <color name="blues">#009ACD</color>
+    <color name="blues1">#00B2EE</color>
+
+    <!-- 首页标题栏 -->
+    <color name="apptitle">#244A74</color>
+    
+    <color name="apptitle_oem">#3BAFAE</color>
+<!--     #B0E3E4 -->
+   
+
+    <!-- #00B2EE -->
+    <!-- #244973 -->
+    <color name="apptitle1">#6CCFF7</color>
+
+    <!-- #E8E8E8 -->
+
+    <color name="applin_b">#00B2EE</color>
+    <color name="applin"> #E8E8E8</color>
+    <color name="prompt">#ffff9913</color>
+    <color name="lgray">#C2C2C2</color>
+    <color name="darkblue">#63A7F0</color>
+    <color name="formgay">#f7f7f7</color>
+    <color name="formgay1">#f0f0f0</color>
+    <color name="b_gay">#9AA1A9</color>
+    <color name="b_gay1">#243245</color>
+    <color name="gays_a">#EAEAEA</color>
+    <color name="gays_b">#F2F2F2</color>
+    
+    
+         
+    <color name="org">#FF8031</color>
+    <color name="de">#dedede</color>
+    <color name="gay_bg">#f6f6f6</color>
+    <color name="greens">#ff5fb713</color>
+     <color name="cblue">#444D56</color>
+    <color name="bg_top_bar">#fa675c</color>
+    <color name="pink">#eb5253</color>
+    <color name="gray_dark">#555555</color>
+   	<color name="bg_activity">#f4f4f4</color>
+
+</resources>

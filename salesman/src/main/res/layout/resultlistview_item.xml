@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/listview_item_traparentselector"
+        android:orientation="vertical"
+         >
+
+        <TextView
+            android:id="@+id/timetxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="5dp"
+            android:text="2013-12-12 00:00:00"
+            android:textColor="#1C86EE"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/infotxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="left|top"
+            android:paddingLeft="5dp"
+            android:text="福建省泉州市石狮市公司 已收件 操作员：包叶明"
+            android:textColor="#3B3B3B"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="15dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center|center_vertical"
+        android:background="@drawable/xlistview_arrow"
+        android:gravity="center|center_vertical"
+        android:visibility="gone" />
+
+</LinearLayout>

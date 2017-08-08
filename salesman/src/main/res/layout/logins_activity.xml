@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_white" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5" >
+
+            <TextView
+                android:id="@+id/login_toast"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="请输入手势密码"
+                android:textColor="@android:color/white" />
+
+            
+
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/tv_head"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/share_s_public_head_small_big" />
+
+            <TextView
+                android:layout_below="@+id/tv_head"
+                android:id="@+id/tv_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="" />
+            
+            
+            <TextView
+                android:id="@+id/tv_prompt"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginBottom="20dp"
+                android:text=""
+                android:textColor="@color/red" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1.2" >
+
+            <com.td.qianhai.epay.oem.unlock.LocusPassWordView
+                android:id="@+id/mLocusPassWordView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+            </com.td.qianhai.epay.oem.unlock.LocusPassWordView>
+
+            <Button
+                android:id="@+id/tvNoSetPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@color/transparent"
+                android:gravity="center"
+                android:paddingLeft="15dip"
+                android:paddingRight="15dip"
+                android:text="设置手势密码"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_36"
+                android:visibility="gone" >
+            </Button>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_user_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="帐号登录 >"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_28" />
+    </LinearLayout>
+
+</FrameLayout>

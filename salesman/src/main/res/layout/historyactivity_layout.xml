@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_style_two" />
+
+    <LinearLayout
+        android:id="@+id/historydetailinfolayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:cacheColorHint="#00000000"
+            android:clickable="false"
+            android:divider="#C5C1AA"
+            android:dividerHeight="0dp"
+            android:listSelector="@drawable/historydetailinfo_click_selector"
+            android:scrollbarFadeDuration="300"
+            android:scrollbars="vertical" >
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

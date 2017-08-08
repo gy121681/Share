@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckBox xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tvHotCity"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:gravity="center"
+    android:paddingTop="2dp"
+    android:paddingBottom="2dp"
+    android:button="@null"
+    android:background="@drawable/radiobutton_grid"
+    android:textSize="13sp"
+    android:textColor="@color/tab_text_nor"
+    android:text="城市" >
+    
+
+</CheckBox>

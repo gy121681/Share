@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/top_bar_height"
+    android:background="@color/bg_top_bar" >
+
+    <LinearLayout
+        android:id="@+id/llTopBack"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:visibility="gone"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/share_b_public_back1" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/top_title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/topbar_title" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/btnTopRight3"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginRight="@dimen/margin_normal"
+            android:button="@null"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnTopRight2"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="@dimen/margin_normal"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnTopRight4"
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="@dimen/margin_normal"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnTopRight1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/margin_normal"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:textColor="@color/text_white"
+            android:textSize="13dp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</RelativeLayout>

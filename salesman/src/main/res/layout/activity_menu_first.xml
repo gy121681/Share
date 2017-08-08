@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <!-- <TextView -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="1dp" -->
+        <!-- android:background="@color/applin" /> -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1" >
+
+                <Button
+                    android:id="@id/btn_menu_balance_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/form_bg_gray" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true" >
+
+                    <ImageView
+                        android:id="@+id/img002"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/balance_query" />
+
+                    <TextView
+                        style="@style/btn_style_menu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img002"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/balance" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+<!--             <TextView -->
+<!--                 android:layout_width="0.1dp" -->
+<!--                 android:layout_height="match_parent" -->
+<!--                 android:background="@color/applin" /> -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1" >
+
+                <Button
+                    android:id="@id/btn_menu_boss_receive"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/form_bg_gray" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true" >
+
+                    <ImageView
+                        android:id="@+id/img003"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/boss_of" />
+
+                    <TextView
+                        style="@style/btn_style_menu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img003"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/boss_receive" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+<!--             <TextView -->
+<!--                 android:layout_width="0.1dp" -->
+<!--                 android:layout_height="match_parent" -->
+<!--                 android:background="@color/applin" /> -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1" >
+
+                <Button
+                    android:id="@+id/btn_menu_gas_rate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/form_bg_gray" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true" >
+
+                    <ImageView
+                        android:id="@+id/img004"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/mention_now" />
+
+                    <TextView
+                        style="@style/btn_style_menu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img004"
+                        android:layout_centerHorizontal="true"
+                        android:text=" 闪电提现" />
+                </RelativeLayout>
+
+                <!-- <LinearLayout -->
+                <!-- android:layout_width="match_parent" -->
+                <!-- android:layout_height="wrap_content" -->
+                <!-- android:layout_marginLeft="10dp" -->
+                <!-- android:layout_marginRight="10dp" -->
+                <!-- android:layout_weight="1" -->
+                <!-- android:background="@drawable/fsbuttom_bg" -->
+                <!-- android:gravity="center" > -->
+
+
+                <!-- <Button -->
+                <!-- android:id="@id/btn_menu_gas_rate" -->
+                <!-- style="@style/btn_style_menu" -->
+                <!-- android:layout_width="wrap_content" -->
+                <!-- android:layout_height="wrap_content" -->
+                <!-- android:drawableTop="@drawable/transfers" -->
+                <!-- android:text="@string/gas_rate" /> -->
+                <!-- </LinearLayout> -->
+            </RelativeLayout>
+        </LinearLayout>
+
+<!--         <TextView -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="0.1dp" -->
+<!--             android:background="@color/applin" /> -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <Button
+                        android:id="@+id/btn_menu_rates"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/form_bg_gray" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true" >
+
+                    <ImageView
+                        android:id="@+id/img001"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerHorizontal="true"/>
+
+                    <TextView
+                        style="@style/btn_style_menu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img001"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/rate" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <!-- <RelativeLayout -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="match_parent" -->
+            <!-- android:layout_weight="1" > -->
+
+
+            <!-- <Button -->
+            <!-- android:id="@+id/btn_menu_rates" -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="match_parent" -->
+            <!-- android:background="@drawable/form_bg_wihte" /> -->
+
+
+            <!-- <RelativeLayout -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_centerInParent="true" > -->
+
+
+            <!-- <TextView -->
+            <!-- android:id="@+id/img007" -->
+            <!-- android:layout_width="40dp" -->
+            <!-- android:layout_height="40dp" -->
+            <!-- android:layout_centerHorizontal="true" -->
+            <!-- android:background="@drawable/card_payments" /> -->
+
+
+            <!-- <TextView -->
+            <!-- style="@style/btn_style_menu" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_below="@+id/img007" -->
+            <!-- android:layout_centerHorizontal="true" -->
+            <!-- android:text="@string/rate" /> -->
+            <!-- </RelativeLayout> -->
+            <!-- </RelativeLayout> -->
+
+
+            <!-- <LinearLayout -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_marginLeft="10dp" -->
+            <!-- android:layout_marginRight="10dp" -->
+            <!-- android:layout_weight="1" -->
+            <!-- android:background="@drawable/fsbuttom_bg" -->
+            <!-- android:gravity="center" > -->
+
+
+            <!-- <Button -->
+            <!-- android:id="@id/btn_menu_credit_card_payment" -->
+            <!-- style="@style/btn_style_menu" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:drawableTop="@drawable/card_payments" -->
+            <!-- android:text="@string/water_rate" /> -->
+            <!-- </LinearLayout> -->
+
+<!--             <TextView -->
+<!--                 android:layout_width="0.1dp" -->
+<!--                 android:layout_height="match_parent" -->
+<!--                 android:background="@color/applin" /> -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_margin="2dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <Button
+                    android:id="@id/btn_menu_remittance"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/form_bg_gray" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true" >
+
+                    <ImageView
+                        android:id="@+id/img009"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/transaction" />
+
+                    <TextView
+                        style="@style/btn_style_menu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img009"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/remittance" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+<!--             <TextView -->
+<!--                 android:layout_width="0.1dp" -->
+<!--                 android:layout_height="match_parent" -->
+<!--                 android:background="@color/applin" /> -->
+
+            <RelativeLayout
+                 android:layout_margin="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <Button
+                    android:id="@id/btn_menu_deal_records"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/form_bg_gray" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true" >
+
+                    <ImageView
+                        android:id="@+id/img005"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/transfers" />
+
+                    <TextView
+                        style="@style/btn_style_menu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img005"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/deal_records" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <!-- <LinearLayout -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_marginLeft="10dp" -->
+            <!-- android:layout_marginRight="10dp" -->
+            <!-- android:layout_weight="1" -->
+            <!-- android:background="@drawable/fsbuttom_bg" -->
+            <!-- android:gravity="center" > -->
+
+
+            <!-- <Button -->
+            <!-- android:id="@+id/btn_menu_real_name" -->
+            <!-- style="@style/btn_style_menu" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:drawableTop="@drawable/paid_phone" -->
+            <!-- android:text="@string/credit_card_payment" /> -->
+            <!-- </LinearLayout> -->
+        </LinearLayout>
+
+<!--         <TextView -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="0.1dp" -->
+<!--             android:background="@color/applin" /> -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <!-- <LinearLayout -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_marginLeft="10dp" -->
+            <!-- android:layout_marginRight="10dp" -->
+            <!-- android:layout_weight="1" -->
+            <!-- android:background="@drawable/fsbuttom_bg" -->
+            <!-- android:gravity="center" > -->
+
+
+            <!-- <Button -->
+            <!-- android:id="@id/btn_menu_credit_card_payment" -->
+            <!-- style="@style/btn_style_menu" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:drawableTop="@drawable/card_payments" -->
+            <!-- android:text="@string/water_rate" /> -->
+            <!-- </LinearLayout> -->
+
+
+            <!-- <RelativeLayout -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:visibility="gone" -->
+            <!-- android:layout_height="match_parent" -->
+            <!-- android:layout_weight="1" > -->
+
+
+            <!-- <Button -->
+            <!-- android:id="@+id/btn_menu_rates" -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="match_parent" -->
+            <!-- android:background="@drawable/form_bg_wihte" /> -->
+
+
+            <!-- <RelativeLayout -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_centerInParent="true" > -->
+
+
+            <!-- <ImageView -->
+            <!-- android:id="@+id/img007" -->
+            <!-- android:layout_width="40dp" -->
+            <!-- android:layout_height="40dp" -->
+            <!-- android:layout_centerHorizontal="true" -->
+            <!-- android:src="@drawable/card_payments" /> -->
+
+
+            <!-- <TextView -->
+            <!-- style="@style/btn_style_menu" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_below="@+id/img007" -->
+            <!-- android:layout_centerHorizontal="true" -->
+            <!-- android:text="@string/rate" /> -->
+            <!-- </RelativeLayout> -->
+            <!-- </RelativeLayout> -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                 android:layout_margin="2dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <Button
+                        android:id="@+id/phone_recharges"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/form_bg_gray" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true" >
+
+                    <ImageView
+                        android:id="@+id/img001"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/paid_phone" />
+
+                    <TextView
+                        style="@style/btn_style_menu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img001"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/phone_charge" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+<!--             <TextView -->
+<!--                 android:layout_width="0.1dp" -->
+<!--                 android:layout_height="match_parent" -->
+<!--                 android:background="@color/applin" /> -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                 android:layout_margin="2dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <Button
+                    android:id="@+id/btn_credit_card_payments"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/form_bg_gray" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true" >
+
+                    <ImageView
+                        android:id="@+id/img001"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/card_payments" />
+
+                    <TextView
+                        style="@style/btn_style_menu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img001"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/credit" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+<!--             <TextView -->
+<!--                 android:layout_width="0.1dp" -->
+<!--                 android:layout_height="match_parent" -->
+<!--                 android:background="@color/applin" /> -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                 android:layout_margin="2dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <Button
+                    android:id="@+id/btn_plane_ticket"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/form_bg_gray" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true" >
+
+                    <ImageView
+                        android:id="@+id/img006"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/plane_ticket" />
+
+                    <TextView
+                        style="@style/btn_style_menu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img006"
+                        android:layout_centerHorizontal="true"
+                        android:text="机票" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <!-- <LinearLayout -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_marginLeft="10dp" -->
+            <!-- android:layout_marginRight="10dp" -->
+            <!-- android:layout_weight="1" -->
+            <!-- android:background="@drawable/fsbuttom_bg" -->
+            <!-- android:gravity="center" > -->
+
+
+            <!-- <Button -->
+            <!-- android:id="@+id/btn_menu_real_name" -->
+            <!-- style="@style/btn_style_menu" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:drawableTop="@drawable/paid_phone" -->
+            <!-- android:text="@string/credit_card_payment" /> -->
+            <!-- </LinearLayout> -->
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/form_bg_wihte"
+    android:focusable="false"
+    android:gravity="center"
+    android:minHeight="40dp"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="0.0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <CheckBox
+            android:id="@+id/chk_selectone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:gravity="right|center"
+            android:button="@drawable/checkbox_style"
+            android:checked="false"
+            android:clickable="false"
+            android:focusable="false"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/contact_name"
+        android:layout_width="0.0dip"
+        android:layout_weight="6"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center"
+        android:gravity="left|center"
+        android:paddingLeft="10.0dip"
+        android:textColor="@color/black"
+        android:textSize="14dp" />
+
+
+</LinearLayout>

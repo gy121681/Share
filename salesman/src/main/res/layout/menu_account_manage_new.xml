@@ -1,0 +1,850 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_white"
+              android:orientation="vertical">
+
+    <include layout="@layout/title_style_two"/>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_normal">
+
+                <com.td.qianhai.epay.oem.views.CircleImageView
+                    android:id="@+id/img_head_photo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/share_s_public_head_small_big"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="帐号管理"
+                    android:src="@drawable/share_s_public_next"/>
+
+            </RelativeLayout>
+
+            <include layout="@layout/common_line_h_m_rl"/>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="49.0dip"
+                android:background="@drawable/form_bg_wihte"
+                android:drawableRight="@drawable/share_s_public_next"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="#00000000"
+                    android:drawableLeft="@drawable/share_s_mine_icon_name"
+                    android:drawablePadding="@dimen/margin_normal"
+                    android:text="真实姓名"
+                    android:textSize="16.0sp"/>
+
+                <TextView
+                    android:id="@+id/tv_real_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/margin_normal"
+                    android:textColor="@color/text_black_light"
+                    android:textSize="@dimen/text_28"/>
+
+            </RelativeLayout>
+
+            <include layout="@layout/common_line_h_m_rl"/>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="49.0dip"
+                android:background="@drawable/form_bg_wihte"
+                android:drawableRight="@drawable/share_s_public_next"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="#00000000"
+                    android:drawableLeft="@drawable/share_s_mine_icon_region"
+                    android:drawablePadding="@dimen/margin_normal"
+                    android:text="代理区域"
+                    android:textSize="16.0sp"/>
+
+                <TextView
+                    android:id="@+id/tv_agent_area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/margin_normal"
+                    android:textColor="@color/text_black_light"
+                    android:textSize="@dimen/text_28"/>
+
+            </RelativeLayout>
+
+            <include layout="@layout/common_line_h_m_rl"/>
+
+            <RelativeLayout
+                android:id="@+id/layout_bank_card"
+                android:layout_width="fill_parent"
+                android:layout_height="49.0dip"
+                android:background="@drawable/form_bg_wihte"
+                android:drawableRight="@drawable/share_s_public_next"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="#00000000"
+                    android:drawableLeft="@drawable/share_s_mine_icon_bank"
+                    android:drawablePadding="@dimen/margin_normal"
+                    android:text="我的银行卡"
+                    android:textSize="16.0sp"/>
+
+                <TextView
+                    android:id="@+id/tv_bank_card_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawableRight="@drawable/share_s_public_next"
+                    android:gravity="center_vertical"
+                    android:text="XX"
+                    android:textColor="@color/text_black_light"
+                    android:textSize="@dimen/text_28"/>
+
+            </RelativeLayout>
+
+            <include layout="@layout/common_line_h_m_rl"/>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="49.0dip"
+                android:background="@drawable/form_bg_wihte"
+                android:drawableRight="@drawable/share_s_public_next"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="#00000000"
+                    android:drawableLeft="@drawable/share_s_mine_icon_id"
+                    android:drawablePadding="@dimen/margin_normal"
+                    android:text="身份证号"
+                    android:textSize="16.0sp"/>
+
+                <TextView
+                    android:id="@+id/tv_idcard_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/margin_normal"
+                    android:gravity="center_vertical"
+                    android:text="XX"
+                    android:textColor="@color/text_black_light"
+                    android:textSize="@dimen/text_28"/>
+
+            </RelativeLayout>
+
+            <include layout="@layout/common_line_h_m_rl"/>
+
+            <RelativeLayout
+                android:id="@+id/layout_change_mobile"
+                android:layout_width="fill_parent"
+                android:layout_height="49.0dip"
+                android:background="@drawable/form_bg_wihte"
+                android:drawableRight="@drawable/share_s_public_next"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="#00000000"
+                    android:drawableLeft="@drawable/share_s_mine_icon_telephone"
+                    android:drawablePadding="@dimen/margin_normal"
+                    android:text="手机号码"
+                    android:textSize="16.0sp"/>
+
+                <TextView
+                    android:id="@+id/tv_mobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawableRight="@drawable/share_s_public_next"
+                    android:gravity="center_vertical"
+                    android:text="XX"
+                    android:textColor="@color/text_black_light"
+                    android:textSize="@dimen/text_28"/>
+
+            </RelativeLayout>
+
+            <include layout="@layout/common_line_h_m_rl"/>
+
+
+            <RelativeLayout
+                android:id="@+id/layout_authentication"
+                android:layout_width="fill_parent"
+                android:layout_height="49.0dip"
+                android:background="@drawable/form_bg_wihte"
+                android:drawableRight="@drawable/share_s_public_next"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="#00000000"
+                    android:drawableLeft="@drawable/share_s_mine_icon_authentication"
+                    android:drawablePadding="@dimen/margin_normal"
+                    android:text="实名认证"
+                    android:textSize="16.0sp"/>
+
+                <TextView
+                    android:id="@+id/tv_authentication_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/margin_normal"
+                    android:gravity="center_vertical"
+                    android:text="XX"
+                    android:textColor="@color/text_black_light"
+                    android:textSize="@dimen/text_28"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_menu_account_manage_query_info"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/form_bg_wihte"
+                android:drawableRight="@drawable/share_s_public_next"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip"
+                android:visibility="gone">
+
+                <!-- android:drawableRight="@drawable/share_s_public_next" -->
+
+
+                <!-- <View -->
+                <!-- android:id="@+id/icon_service" -->
+                <!-- android:layout_width="20.0dip" -->
+                <!-- android:layout_height="20.0dip" -->
+                <!-- android:layout_alignParentLeft="true" -->
+                <!-- android:layout_centerVertical="true" -->
+                <!-- android:layout_marginRight="@dimen/margin_normal" -->
+                <!-- android:background="@drawable/login_user" /> -->
+
+                <TextView
+                    android:id="@+id/tv_consumer_service_center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="#00000000"
+                    android:text="用户信息"
+                    android:textSize="16.0sp"/>
+
+                <TextView
+                    android:id="@+id/tv_new_msg_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_normal"
+                    android:layout_marginTop="@dimen/margin_normal"
+                    android:layout_toRightOf="@id/tv_consumer_service_center"
+                    android:background="@drawable/consumer_service_center_unread_msg"
+                    android:gravity="center"
+                    android:textColor="@color/text_white"
+                    android:textSize="10.0dip"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="帐号管理"
+                    android:src="@drawable/share_s_public_next"/>
+            </RelativeLayout>
+
+            <!-- 手机号码更改申请 -->
+
+            <RelativeLayout
+                android:id="@+id/btn_menu_account_manage_update_dealer_data"
+                android:layout_width="fill_parent"
+                android:layout_height="49.0dip"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/form_bg_wihte"
+                android:drawableRight="@drawable/share_s_public_next"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip"
+                android:visibility="gone">
+
+                <!-- <View -->
+                <!-- android:id="@+id/icon_update_dealer_data" -->
+                <!-- android:layout_width="20.0dip" -->
+                <!-- android:layout_height="20.0dip" -->
+                <!-- android:layout_alignParentLeft="true" -->
+                <!-- android:layout_centerVertical="true" -->
+                <!-- android:layout_marginRight="@dimen/margin_normal" -->
+                <!-- android:background="@drawable/hl_ic_phone_gray" /> -->
+
+                <TextView
+                    android:id="@+id/tv_update_dealer_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="#00000000"
+                    android:text="手机号码更改申请"
+                    android:textSize="16.0sp"/>
+
+                <TextView
+                    android:id="@+id/tv_update_dealer_data_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_normal"
+                    android:layout_marginTop="@dimen/margin_normal"
+                    android:layout_toRightOf="@id/tv_update_dealer_data"
+                    android:background="@drawable/consumer_service_center_unread_msg"
+                    android:gravity="center"
+                    android:textColor="@color/text_white"
+                    android:textSize="10.0dip"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="帐号管理"
+                    android:src="@drawable/share_s_public_next"/>
+            </RelativeLayout>
+
+            <!-- 银行卡信息变更申请 -->
+
+            <RelativeLayout
+                android:id="@+id/btn_menu_bank_info_update_request"
+                android:layout_width="fill_parent"
+                android:layout_height="49.0dip"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/form_bg_wihte"
+                android:drawableRight="@drawable/share_s_public_next"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip"
+                android:visibility="gone">
+
+                <!-- <View -->
+                <!-- android:id="@+id/icon_bank_info_update_request" -->
+                <!-- android:layout_width="20.0dip" -->
+                <!-- android:layout_height="20.0dip" -->
+                <!-- android:layout_alignParentLeft="true" -->
+                <!-- android:layout_centerVertical="true" -->
+                <!-- android:layout_marginRight="@dimen/margin_normal" -->
+                <!-- android:background="@drawable/hl_card_gray" /> -->
+
+                <TextView
+                    android:id="@+id/tv_bank_info_update_request"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="#00000000"
+                    android:text="银行卡信息变更申请"
+                    android:textSize="16.0sp"/>
+
+                <TextView
+                    android:id="@+id/tv_bank_info_update_request_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_normal"
+                    android:layout_marginTop="@dimen/margin_normal"
+                    android:layout_toRightOf="@id/tv_bank_info_update_request"
+                    android:background="@drawable/consumer_service_center_unread_msg"
+                    android:gravity="center"
+                    android:textColor="@color/text_white"
+                    android:textSize="10.0dip"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="帐号管理"
+                    android:src="@drawable/share_s_public_next"/>
+            </RelativeLayout>
+
+            <!-- 开户信息修改 -->
+
+            <RelativeLayout
+                android:id="@+id/btn_menu_account_manage_bank_info_update"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/form_bg_wihte"
+                android:drawableRight="@drawable/share_s_public_next"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip"
+                android:visibility="gone">
+
+                <!-- <View -->
+                <!-- android:id="@+id/icon_bank_info_update" -->
+                <!-- android:layout_width="20.0dip" -->
+                <!-- android:layout_height="20.0dip" -->
+                <!-- android:layout_alignParentLeft="true" -->
+                <!-- android:layout_centerVertical="true" -->
+                <!-- android:layout_marginRight="@dimen/margin_normal" /> -->
+
+                <TextView
+                    android:id="@+id/tv_bank_info_update"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="#00000000"
+                    android:text="开户信息修改"
+                    android:textSize="16.0sp"/>
+
+                <TextView
+                    android:id="@+id/tv_bank_info_updatecount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_normal"
+                    android:layout_marginTop="@dimen/margin_normal"
+                    android:layout_toRightOf="@id/tv_bank_info_update"
+                    android:background="@drawable/consumer_service_center_unread_msg"
+                    android:gravity="center"
+                    android:textColor="@color/text_white"
+                    android:textSize="10.0dip"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="帐号管理"
+                    android:src="@drawable/share_s_public_next"/>
+            </RelativeLayout>
+
+            <!-- 实名认证 -->
+
+            <RelativeLayout
+                android:id="@+id/btn_menu_account_manage_real_name_authentication"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/form_bg_wihte"
+                android:drawableRight="@drawable/share_s_public_next"
+                android:paddingLeft="10dp"
+                android:paddingRight="10.0dip"
+                android:visibility="gone">
+
+                <!-- <View -->
+                <!-- android:id="@+id/icon_real_name_authentication" -->
+                <!-- android:layout_width="20.0dip" -->
+                <!-- android:layout_height="20.0dip" -->
+                <!-- android:layout_alignParentLeft="true" -->
+                <!-- android:layout_centerVertical="true" -->
+                <!-- android:layout_marginRight="@dimen/margin_normal" -->
+                <!-- android:background="@drawable/autonym" /> -->
+
+                <TextView
+                    android:id="@+id/tv_real_name_authentication"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="#00000000"
+                    android:text="资料补全"
+                    android:textSize="16.0sp"/>
+
+                <TextView
+                    android:id="@+id/tv_real_name_authentication_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_normal"
+                    android:layout_marginTop="@dimen/margin_normal"
+                    android:layout_toRightOf="@id/tv_real_name_authentication"
+                    android:background="@drawable/consumer_service_center_unread_msg"
+                    android:gravity="center"
+                    android:textColor="@color/text_white"
+                    android:textSize="10.0dip"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="帐号管理"
+                    android:src="@drawable/share_s_public_next"/>
+            </RelativeLayout>
+
+            <!-- 实名认证 -->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_half"
+                android:background="@color/bg_divider"/>
+
+            <RelativeLayout
+                android:id="@+id/btn_menu_account_manage_update_login_password"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/form_bg_wihte"
+                android:drawableRight="@drawable/share_s_public_next"
+                android:paddingLeft="10dp"
+                android:paddingRight="10.0dip">
+
+                <!-- <View -->
+                <!-- android:id="@+id/icon_service_update_login_password" -->
+                <!-- android:layout_width="20.0dip" -->
+                <!-- android:layout_height="20.0dip" -->
+                <!-- android:layout_alignParentLeft="true" -->
+                <!-- android:layout_centerVertical="true" -->
+                <!-- android:layout_marginRight="@dimen/margin_normal" -->
+                <!-- android:background="@drawable/login_key" /> -->
+
+                <TextView
+                    android:id="@+id/tv_update_login_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="#00000000"
+                    android:drawableLeft="@drawable/share_s_mine_icon_login"
+                    android:drawablePadding="@dimen/margin_normal"
+                    android:text="修改登录密码"
+                    android:textSize="16.0sp"/>
+
+                <TextView
+                    android:id="@+id/tv_update_login_password_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_normal"
+                    android:layout_marginTop="@dimen/margin_normal"
+                    android:layout_toRightOf="@id/tv_update_login_password"
+                    android:background="@drawable/consumer_service_center_unread_msg"
+                    android:gravity="center"
+                    android:textColor="@color/text_white"
+                    android:textSize="10.0dip"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="帐号管理"
+                    android:src="@drawable/share_s_public_next"/>
+            </RelativeLayout>
+
+            <include layout="@layout/common_line_h_m_rl"/>
+
+            <RelativeLayout
+                android:id="@+id/btn_uppay_password"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/form_bg_wihte"
+                android:drawableRight="@drawable/share_s_public_next"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <!-- <View -->
+                <!-- android:id="@+id/icon_service_update_login_password" -->
+                <!-- android:layout_width="20.0dip" -->
+                <!-- android:layout_height="20.0dip" -->
+                <!-- android:layout_alignParentLeft="true" -->
+                <!-- android:layout_centerVertical="true" -->
+                <!-- android:layout_marginRight="@dimen/margin_normal" -->
+                <!-- android:background="@drawable/login_key" /> -->
+
+                <TextView
+                    android:id="@+id/tv_update_login_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="#00000000"
+                    android:drawableLeft="@drawable/share_s_mine_icon_pay"
+                    android:drawablePadding="@dimen/margin_normal"
+                    android:text="修改支付密码"
+                    android:textSize="16.0sp"/>
+
+                <TextView
+                    android:id="@+id/tv_update_login_password_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_normal"
+                    android:layout_marginTop="@dimen/margin_normal"
+                    android:layout_toRightOf="@id/tv_update_login_password"
+                    android:background="@drawable/consumer_service_center_unread_msg"
+                    android:gravity="center"
+                    android:textColor="@color/text_white"
+                    android:textSize="10.0dip"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="帐号管理"
+                    android:src="@drawable/share_s_public_next"/>
+            </RelativeLayout>
+
+            <include layout="@layout/common_line_h_m_rl"/>
+
+            <RelativeLayout
+                android:id="@+id/btn_reguppay_password"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/form_bg_wihte"
+                android:drawableRight="@drawable/share_s_public_next"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <!-- <View -->
+                <!-- android:id="@+id/icon_service_update_reglogin_password" -->
+                <!-- android:layout_width="20.0dip" -->
+                <!-- android:layout_height="20.0dip" -->
+                <!-- android:layout_alignParentLeft="true" -->
+                <!-- android:layout_centerVertical="true" -->
+                <!-- android:layout_marginRight="@dimen/margin_normal" -->
+                <!-- android:background="@drawable/login_key" /> -->
+
+                <TextView
+                    android:id="@+id/tv_update_reglogin_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="#00000000"
+                    android:drawableLeft="@drawable/share_s_mine_icon_find"
+                    android:drawablePadding="@dimen/margin_normal"
+                    android:text="找回支付密码"
+                    android:textSize="16.0sp"/>
+
+                <TextView
+                    android:id="@+id/tv_update_reglogin_password_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_normal"
+                    android:layout_marginTop="@dimen/margin_normal"
+                    android:layout_toRightOf="@id/tv_update_reglogin_password"
+                    android:background="@drawable/consumer_service_center_unread_msg"
+                    android:gravity="center"
+                    android:textColor="@color/text_white"
+                    android:textSize="10.0dip"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="帐号管理"
+                    android:src="@drawable/share_s_public_next"/>
+            </RelativeLayout>
+
+            <include layout="@layout/common_line_h_m_rl"/>
+
+            <RelativeLayout
+                android:id="@+id/btn_unbindkard"
+                android:layout_width="fill_parent"
+                android:layout_height="49.0dip"
+                android:background="@drawable/form_bg_wihte"
+                android:drawableRight="@drawable/share_s_public_next"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    android:id="@+id/tv_touch_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="#00000000"
+                    android:drawableLeft="@drawable/share_s_mine_icon_login"
+                    android:drawablePadding="@dimen/margin_normal"
+                    android:text="解绑银行卡"
+                    android:textSize="16.0sp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="帐号管理"
+                    android:src="@drawable/share_s_public_next"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_touch_bankphone"
+                android:layout_width="fill_parent"
+                android:layout_height="49.0dip"
+                android:background="@drawable/form_bg_wihte"
+                android:drawableRight="@drawable/share_s_public_next"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_touch_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="#00000000"
+                    android:drawableLeft="@drawable/share_s_mine_icon_login"
+                    android:drawablePadding="@dimen/margin_normal"
+                    android:text="银行预留手机号变更"
+                    android:textSize="16.0sp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="帐号管理"
+                    android:src="@drawable/share_s_public_next"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_touch_password"
+                android:layout_width="fill_parent"
+                android:layout_height="49.0dip"
+                android:background="@drawable/form_bg_wihte"
+                android:drawableRight="@drawable/share_s_public_next"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip"
+                android:visibility="gone">
+
+                <!-- <View -->
+                <!-- android:id="@+id/icon_touch_password" -->
+                <!-- android:layout_width="20.0dip" -->
+                <!-- android:layout_height="20.0dip" -->
+                <!-- android:layout_alignParentLeft="true" -->
+                <!-- android:layout_centerVertical="true" -->
+                <!-- android:layout_marginRight="@dimen/margin_normal" -->
+                <!-- android:background="@drawable/gestures_img" /> -->
+
+                <TextView
+                    android:id="@+id/tv_touch_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="#00000000"
+                    android:drawableLeft="@drawable/share_s_mine_icon_gesture"
+                    android:drawablePadding="@dimen/margin_normal"
+                    android:text="重置手势图案密码"
+                    android:textSize="16.0sp"/>
+
+                <TextView
+                    android:id="@+id/tv_touch_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_normal"
+                    android:layout_marginTop="@dimen/margin_normal"
+                    android:layout_toRightOf="@id/tv_touch_password"
+                    android:background="@drawable/consumer_service_center_unread_msg"
+                    android:gravity="center"
+                    android:textColor="@color/text_white"
+                    android:textSize="10.0dip"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="帐号管理"
+                    android:src="@drawable/share_s_public_next"/>
+            </RelativeLayout>
+
+            <include layout="@layout/common_line_h_m_rl"/>
+
+            <RelativeLayout
+                android:id="@+id/btn_touch_password_set"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/white"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:text="手势密码"
+                    android:textSize="16.0sp"/>
+
+                <CheckBox
+                    android:id="@+id/checs"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:button="@drawable/checkbox_btn"
+                    android:checked="true"/>
+            </RelativeLayout>
+
+            <include layout="@layout/common_line_h_m_rl"/>
+
+            <TextView
+                android:id="@+id/p_out"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/reg_btn_next_height"
+                android:layout_marginLeft="@dimen/margin_normal"
+                android:layout_marginRight="@dimen/margin_normal"
+                android:layout_marginTop="@dimen/margin_double"
+                android:layout_marginBottom="@dimen/margin_normal"
+                android:background="@drawable/selector_public_button"
+                android:gravity="center"
+                android:text="退出"
+                android:textColor="@color/text_white"
+                android:textSize="20.0dip"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

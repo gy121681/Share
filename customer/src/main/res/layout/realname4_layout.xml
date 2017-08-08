@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_top_bar" />
+
+    <include layout="@layout/realname_taglayout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="50dp" >
+
+        <TextView
+            android:id="@+id/tvsimg"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/resuccess"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="35px" />
+
+        <TextView
+            android:id="@+id/tv_pro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:gravity="center"
+            android:text="恭喜完成认证"
+            android:textColor="@color/green_ligh"
+            android:textSize="18dp" />
+        <!-- bg_arc_white -->
+
+        <Button
+            android:id="@+id/llWalletRecharge"
+            style="@style/btn_gray"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="完成" />
+
+        <TextView
+            android:id="@+id/tv_pro1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_normal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:gravity="center"
+            android:text="关联银行卡后还可以进行支付操作,现在就去"
+            android:textColor="@color/gray_dark"
+            android:textSize="12dp" />
+
+        <Button
+            android:id="@+id/llWalletRecharge1"
+            style="@style/btn_pink"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="关联银行卡" />
+    </LinearLayout>
+
+</LinearLayout>

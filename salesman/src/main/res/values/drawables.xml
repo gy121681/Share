@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="white" type="drawable">#ffffffff</item>
+    <item name="dialog_menu_press" type="drawable">#ffe9e9e9</item>
+    <item name="dialog_menu_normal" type="drawable">#ffffffff</item>
+
+</resources>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="vertical" >
+    
+	<LinearLayout 
+	    android:paddingLeft="20dp"
+	    android:paddingRight="20dp"
+	    android:paddingTop="10dp"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_weight="1">
+	    <TextView
+	        android:id="@+id/tv_deal_records_item_name" 
+	        android:singleLine="true"
+	        android:gravity="center_vertical"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:textSize="14dp"
+	        android:layout_weight="1"
+	        android:text=""/>
+	    <TextView
+	        android:id="@+id/tv_deal_records_item_money" 
+	        android:singleLine="true"
+	        android:textSize="14dp"
+	        android:gravity="right|center_vertical"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_weight="2"
+	        android:text=""/>
+	    
+	</LinearLayout>
+	<LinearLayout 
+	    android:paddingLeft="20dp"
+	    android:paddingRight="20dp"
+	    android:paddingBottom="10dp"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_weight="1">
+	    <TextView
+	        android:id="@+id/tv_deal_records_item_date" 
+	        android:singleLine="true"
+	        android:textSize="14dp"
+	        android:gravity="center_vertical"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:text=""/>
+	    <TextView
+	        android:id="@+id/tv_deal_records_item_status" 
+	        android:singleLine="true"
+	        android:textSize="14dp"
+	        android:gravity="right|center_vertical"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_weight="2"
+	        android:text=""/>
+	    
+	</LinearLayout>
+	<TextView android:text="" style="@style/horizontal_line_style"/>
+</LinearLayout>
+

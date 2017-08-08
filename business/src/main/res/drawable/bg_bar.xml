@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 背景图 -->
+    <!-- <item -->
+    <!-- android:id="@+android:id/background" -->
+    <!-- android:drawable="@drawable/bar_dn"/> -->
+    <!-- 第二进度图 -->
+    <!-- <item -->
+    <!-- android:id="@+android:id/SecondaryProgress" -->
+<!--     android:drawable="@drawable/bar_dn"/> -->
+    <!-- 进度度 -->
+    <!-- <item -->
+    <!-- android:id="@+android:id/progress" -->
+    <!-- android:drawable="@drawable/bar_up"/> -->
+
+    <item android:id="@+android:id/background">
+        <shape>
+
+            <!-- 填充颜色 -->
+            <solid android:color="@color/applin" >
+            </solid>
+
+            <!-- 矩形的圆角半径 -->
+            <corners android:radius="20dp" />
+        </shape>
+    </item>
+    <item android:id="@+android:id/secondaryProgress">
+        <clip>
+            <shape>
+
+                <!-- 填充颜色 -->
+                <solid android:color="@color/applin" >
+                </solid>
+
+                <!-- 矩形的圆角半径 -->
+                <corners android:radius="20dp" />
+            </shape>
+        </clip>
+    </item>
+    <item android:id="@+android:id/progress">
+        <clip>
+            <shape>
+
+                <!-- 填充颜色 -->
+                <!-- <solid android:color="@color/bg_top_bar" > -->
+                <!-- </solid> -->
+
+
+                <!-- 矩形的圆角半径 -->
+                <corners android:radius="20dp" />
+
+                <gradient
+                    android:angle="45"
+                     android:centerColor="#FF7256"
+					android:endColor="#FF0000"
+                    android:startColor="#FF7256" />
+            </shape>
+        </clip>
+    </item>
+<!--                       android:centerColor="#FF6A6A"-->
+</layer-list>

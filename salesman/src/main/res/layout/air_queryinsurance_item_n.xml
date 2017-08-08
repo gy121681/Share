@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_half" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_half"
+            android:layout_marginTop="@dimen/margin_half"
+            android:background="@drawable/air_n_linearlayout_single_bg_xml" >
+
+            <TextView
+                android:id="@id/contact_layout_txt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="保险公司名称"
+                android:textColor="@color/black"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:id="@id/tv_baoe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/contact_layout_txt1"
+                android:layout_below="@id/contact_layout_txt1"
+                android:layout_marginTop="4.0dip"
+                android:text="保额：" />
+
+            <TextView
+                android:id="@id/contact_layout_txt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/tv_baoe"
+                android:layout_toRightOf="@id/tv_baoe"
+                android:text="保险额度"
+                android:textColor="@color/blue_layout_stroke"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:id="@id/contact_layout_txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/tv_baoe"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/margin_half"
+                android:text="保险价格"
+                android:textColor="@color/lightyellow"
+                android:textSize="14.0sp" />
+
+            <TextView
+                android:id="@id/tv_jiage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/tv_baoe"
+                android:layout_toLeftOf="@id/contact_layout_txt2"
+                android:text="价格：" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

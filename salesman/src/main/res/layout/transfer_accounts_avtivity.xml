@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_style_two" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/tarns_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:visibility="gone" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            style="@style/textview_style"
+                            android:layout_weight="6"
+                            android:text="收款人"
+                            android:textColor="@color/txt_fg_light_gray" />
+
+                        <TextView
+                            android:id="@+id/tv_payee"
+                            style="@style/textview_style"
+                            android:layout_weight="3"
+                            android:text=""
+                            android:textColor="@color/txt_fg_light_gray" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            style="@style/textview_style"
+                            android:layout_weight="6"
+                            android:text="手机号"
+                            android:textColor="@color/txt_fg_light_gray" />
+
+                        <TextView
+                            android:id="@+id/tv_payee_p"
+                            style="@style/textview_style"
+                            android:layout_weight="3"
+                            android:text=""
+                            android:textColor="@color/txt_fg_light_gray" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="49dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp" >
+
+                    <TextView
+                        style="@style/textview_style"
+                        android:layout_weight="5"
+                        android:text="可用余额"
+                        android:textColor="@color/txt_fg_light_gray" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="¥  "
+                            android:textColor="@color/txt_fg_normal"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/transfer_allmoney"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="0.00"
+                            android:textColor="@color/red"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="49dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp" >
+
+                    <TextView
+                        style="@style/textview_style"
+                        android:layout_weight="5"
+                        android:text="付款金额"
+                        android:textColor="@color/txt_fg_light_gray" />
+
+                    <EditText
+                        android:id="@+id/transfer_money"
+                        style="@style/editview_style"
+                        android:hint="¥ 0.00"
+                        android:inputType="numberDecimal" />
+                    <!-- android:background="@drawable/base_edittext_normal" -->
+
+                    <TextView
+                        android:id="@+id/transfer_money_error"
+                        style="@style/error_style"
+                        android:text=""
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/transfer_capital_layouts"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dip"
+                    android:paddingLeft="20dp"
+                    android:visibility="gone" >
+
+                    <TextView
+                        style="@style/textview_style"
+                        android:layout_weight="5" />
+
+                    <TextView
+                        android:id="@+id/transfer_capital_tvs"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="12dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_pro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dip"
+                    android:text="日付款金额累计不超过1000元，日付款上限10次"
+                    android:textColor="@color/prompt"
+                    android:textSize="12dp" />
+
+                <LinearLayout
+                    android:id="@+id/userphone"
+                    android:layout_width="match_parent"
+                    android:layout_height="49dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp" >
+
+                    <TextView
+                        style="@style/textview_style"
+                        android:layout_weight="5.5"
+                        android:text="手机号"
+                        android:textColor="@color/txt_fg_light_gray" />
+
+                    <RelativeLayout
+                        android:id="@+id/relalay"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2" >
+
+                        <EditText
+                            android:id="@+id/transfer_userphone"
+                            style="@style/editview_style"
+                            android:hint="请输对方的手机号"
+                            android:inputType="phone"
+                            android:maxLength="11" />
+
+                        <ImageView
+                            android:id="@+id/load_phonr_img"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/contact"
+                            android:src="@drawable/ok"
+                            android:visibility="gone" />
+
+                        <ProgressBar
+                            android:id="@+id/load_phonr_pro"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/contact"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/contact"
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/contact_selector" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/transfer_phone_error"
+                        style="@style/error_style"
+                        android:text=""
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/username"
+                    android:layout_width="match_parent"
+                    android:layout_height="49dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp" >
+
+                    <TextView
+                        style="@style/textview_style"
+                        android:layout_weight="5"
+                        android:text="账户姓名"
+                        android:textColor="@color/txt_fg_light_gray" />
+
+                    <EditText
+                        android:id="@+id/transfer_username"
+                        android:enabled="false"
+                        style="@style/editview_style"
+                        android:hint="请输入对方姓名"
+                        android:singleLine="true" />
+
+                    <TextView
+                        android:id="@+id/transfer_username_error"
+                        style="@style/error_style"
+                        android:text=""
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <!-- <LinearLayout -->
+                <!-- android:layout_width="match_parent" -->
+                <!-- android:layout_height="40dp" -->
+                <!-- android:layout_marginTop="10dp" -->
+                <!-- android:orientation="horizontal" > -->
+
+
+                <!-- <TextView -->
+                <!-- style="@style/textview_style" -->
+                <!-- android:layout_weight="5" -->
+                <!-- android:text="支付密码" -->
+                <!-- android:textColor="@color/txt_fg_light_gray" /> -->
+
+
+                <!-- <EditText -->
+                <!-- android:id="@+id/transfer_usersaypwd" -->
+                <!-- style="@style/editview_style" -->
+                <!-- android:background="@drawable/base_edittext_normal" -->
+                <!-- android:hint="请输入支付密码" -->
+                <!-- android:inputType="textPassword" -->
+                <!-- android:maxLength="15" /> -->
+
+
+                <!-- <TextView -->
+                <!-- android:id="@+id/transfer_usersaypwd_error" -->
+                <!-- style="@style/error_style" -->
+                <!-- android:text="" -->
+                <!-- android:visibility="gone" /> -->
+                <!-- </LinearLayout> -->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/transfer_confirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/reg_btn_next_height"
+                    android:background="@drawable/button01_bg"
+                    android:gravity="center"
+                    android:text="付款"
+                    android:textColor="@color/text_white"
+                    android:textSize="20.0dip" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="温馨提示: 付款是指钱包账户资金转出到其他钱包账户的过程"
+                    android:textColor="#ffff9913"
+                    android:textSize="12dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

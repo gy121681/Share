@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_activity"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/layout_top_bar"/>
+
+    <LinearLayout
+        android:id="@+id/llContactTel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:gravity="center_vertical"
+        android:background="#fff" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:textColor="@color/tab_text_nor"
+            android:text="我们的联系电话：" />
+
+        <TextView
+            android:id="@+id/tvContactTel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="13sp"
+            android:textColor="@color/tab_text_nor" />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/share_b_mine_icon_phone1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llContactQQ"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1px"
+        android:padding="6dp"
+        android:gravity="center_vertical"
+        android:background="#fff" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:textColor="@color/tab_text_nor"
+            android:text="直接联系客服：" />
+
+        <TextView
+            android:id="@+id/tvContactQQ"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="13sp"
+            android:textColor="@color/tab_text_nor" />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/share_b_mine_icon_qq" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edFeedbackContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:padding="6dp"
+        android:hint="请写下您的宝贵意见(200字以内)"
+        android:textSize="14sp"
+        android:gravity="top"
+        android:background="@drawable/bg_border_gray"
+        android:lines="8"
+        android:maxLength="200" />
+
+    <Button
+        android:gravity="center"
+        android:id="@+id/btnFeedbackCommit"
+        style="@style/btn_pink"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="@dimen/margin_normal"
+        android:text="提交" />
+
+</LinearLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--业务专区-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_white"
+              android:gravity="center_horizontal">
+
+    <include layout="@layout/title_style_two" />
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+
+            <RelativeLayout
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.td.qianhai.epay.oem.views.CircleImageView
+                    android:id="@+id/img"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginRight="@dimen/margin_double"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/share_s_public_head_small_big"
+                    app:border_color="#fff"
+                    app:border_width="1dp" />
+
+                <View
+                    android:id="@+id/center_divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_38"
+                    android:text="XXXXX"
+                    android:layout_toRightOf="@id/img"
+                    android:layout_above="@id/center_divider"
+                    android:layout_marginBottom="@dimen/margin_half"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_black_light"
+                    android:textSize="@dimen/text_28"
+                    android:text="区域经理"
+                    android:layout_toRightOf="@id/img"
+                    android:layout_below="@id/center_divider"
+                    android:layout_marginTop="@dimen/margin_half"
+                    />
+
+            </RelativeLayout>
+
+            <include layout="@layout/common_line_h" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv_province"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="XXXX"
+                        android:drawableRight="@drawable/share_s_pubulic_xiala2"
+                        android:layout_gravity="center"
+                        android:enabled="false"/>
+
+                </FrameLayout>
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv_city"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="XXXX"
+                        android:drawableRight="@drawable/share_s_pubulic_xiala2"
+                        android:layout_gravity="center"
+                        android:enabled="false"/>
+
+                </FrameLayout>
+                <FrameLayout
+                    android:id="@+id/layout_btn_area"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv_area"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="XXXX"
+                        android:drawableRight="@drawable/share_s_pubulic_xiala2"
+                        android:layout_gravity="center"/>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <include layout="@layout/common_line_h"
+                android:id="@+id/view_divider"/>
+
+            <com.td.qianhai.epay.oem.views.MyTabView
+                android:id="@+id/tabFavorites"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

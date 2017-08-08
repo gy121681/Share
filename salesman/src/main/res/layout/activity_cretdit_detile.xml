@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_style_two" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="可用余额   "
+                android:textColor="@color/txt_fg_normal"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="¥  "
+                android:textColor="@color/txt_fg_normal"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/balance_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/red"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp" >
+
+            <TextView
+                style="@style/textview_style"
+                android:layout_weight="5"
+                android:text="信用卡号" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2" >
+
+                <EditText
+                    android:id="@+id/et_credit_card"
+                    style="@style/editview_style"
+                    android:hint="信用卡号"
+                    android:inputType="numberDecimal"
+                    android:maxLength="19" />
+
+                <ProgressBar
+                    android:id="@+id/getbanck_pro"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="10dp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <!-- <TextView -->
+            <!-- android:id="@+id/et_order_receive_balance_error" -->
+            <!-- style="@style/error_style" -->
+            <!-- android:text="收款金额不能" -->
+            <!-- android:visibility="gone" /> -->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp" >
+
+            <TextView
+                style="@style/textview_style"
+                android:layout_weight="5"
+                android:text="发  卡  行" />
+
+            <LinearLayout style="@style/editview_style" >
+
+                <ImageView
+                    android:id="@+id/im_bank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_margin="5dp"/>
+
+                <TextView
+                    android:paddingRight="10dp"
+                    android:id="@+id/et_credit_balance"
+                    style="@style/editview_style"
+                    android:hint=""
+                    android:drawableRight="@drawable/arrow"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/et_order_receive_balance_error"
+                style="@style/error_style"
+                android:text="充值金额不能"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp" >
+
+            <TextView
+                style="@style/textview_style"
+                android:layout_weight="5"
+                android:text="姓        名"/>
+
+            <TextView
+                android:id="@+id/et_credit_name"
+                style="@style/editview_style"
+                android:enabled="false"
+                android:hint="持卡人姓名"/>
+
+            <TextView
+                android:id="@+id/et_order_receive_balance_error"
+                style="@style/error_style"
+                android:text="充值金额不能"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:visibility="gone" >
+
+            <TextView
+                style="@style/textview_style"
+                android:layout_weight="5"
+                android:text="还款日期"
+                android:textColor="@color/txt_fg_light_gray" />
+
+            <EditText
+                android:id="@+id/et_order_receive_balance"
+                style="@style/editview_style"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/et_order_receive_balance_error"
+                style="@style/error_style"
+                android:text="充值金额不能"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="10dp"
+            android:textColor="@color/prompt"
+            android:textSize="12.0dip" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/btn_credit_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/reg_btn_next_height"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button01_bg"
+                android:gravity="center"
+                android:enabled="false"
+                android:text="绑定"
+                android:textColor="@color/text_white"
+                android:textSize="20.0dip" />
+
+            <ImageView
+                android:id="@+id/bank_imgs"
+                android:layout_width="50dp"
+                android:layout_height="@dimen/reg_btn_next_height"
+                android:layout_gravity="right"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp" />
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

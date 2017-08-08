@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_activity" >
+
+    <include layout="@layout/layout_top_bar"/>
+    
+    <RelativeLayout
+        android:id="@+id/rlBannerContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:visibility="gone" >
+
+        <com.shareshenghuo.app.user.widget.BannerViewPager
+            android:id="@+id/bannerShop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/ivCloseBanner"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="6dp"
+            android:src="@drawable/btn_close" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="6dp" >
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/pink_dark"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:text="秒杀专场" />
+
+        <com.shareshenghuo.app.user.widget.CountDownTextView
+            android:id="@+id/tvFlashSaleTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="21:13:13" />
+    </LinearLayout>
+    
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/lvFlashSale"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

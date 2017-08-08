@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/apptitle"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_style_two" />
+
+<!--     <LinearLayout -->
+<!--         android:layout_width="match_parent" -->
+<!--         android:layout_height="match_parent" -->
+<!--         android:layout_weight="1.8" > -->
+<!--     </LinearLayout> -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/rate_circle_img1" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" >
+
+<!--                 <TextView -->
+<!--                     android:id="@+id/rate_name" -->
+<!--                     android:layout_width="match_parent" -->
+<!--                     android:layout_height="wrap_content" -->
+<!--                     android:gravity="center" -->
+<!--                     android:text="当前费率" -->
+<!--                     android:textColor="@color/txt_fg_normal" -->
+<!--                     android:textSize="20dp" /> -->
+
+                <TextView
+                    android:id="@+id/rate_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="0.00%"
+                    android:paddingTop="20dp"
+                    android:textColor="@color/text_white"
+                    android:textSize="60dp" />
+            </RelativeLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.2"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/btn_rate_update"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/reg_btn_next_height"
+            android:layout_gravity="center"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/button01_bg"
+            android:gravity="center"
+            android:text="费率升级"
+            android:textColor="@color/text_white"
+            android:textSize="20.0dip" />
+
+<!--         <TextView -->
+<!--             android:layout_marginTop="10dp" -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:gravity="center" -->
+<!--             android:text="" -->
+<!--             android:textColor="#ffff9913" -->
+<!--             android:textSize="12dp" /> -->
+    </LinearLayout>
+
+</LinearLayout>

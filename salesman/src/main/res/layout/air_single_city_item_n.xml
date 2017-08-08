@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@id/linear_l"
+        android:layout_width="10.0dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical" />
+
+    <ImageView
+        android:id="@id/iv_arrown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/linear_l"
+        android:src="@drawable/arrow" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="@dimen/margin_normal"
+        android:layout_marginLeft="@dimen/margin_normal"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:layout_toLeftOf="@id/iv_arrown" >
+
+        <TextView
+            android:id="@id/listview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="中国航空"
+            android:textColor="@color/huise" />
+
+        <TextView
+            android:id="@id/listview2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/listview1"
+            android:layout_toRightOf="@id/listview1"
+            android:text="(CA178)"
+            android:textColor="@color/huise" />
+
+        <TextView
+            android:id="@id/listview3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/listview2"
+            android:layout_toRightOf="@id/listview2"
+            android:text="空中客车A330"
+            android:textColor="@color/grey" />
+
+        <TextView
+            android:id="@id/tv_stopover"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/listview3"
+            android:layout_marginLeft="8.0dip"
+            android:layout_toRightOf="@id/listview3"
+            android:text=""
+            android:textColor="@color/blue_layout_stroke" />
+
+        <TextView
+            android:id="@id/listview4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/listview1"
+            android:layout_below="@id/listview1"
+            android:layout_marginTop="3.0dip"
+            android:text="11:20"
+            android:textColor="@color/blue_layout_stroke" />
+
+        <TextView
+            android:id="@id/listview6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/listview4"
+            android:layout_marginLeft="6.0dip"
+            android:layout_toRightOf="@id/listview4"
+            android:text="新郑飞机场"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@id/listview5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/listview4"
+            android:layout_below="@id/listview4"
+            android:layout_marginTop="2.0dip"
+            android:text="12:40"
+            android:textSize="12.0sp" />
+
+        <TextView
+            android:id="@id/listview7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/listview5"
+            android:layout_alignLeft="@id/listview6"
+            android:layout_toRightOf="@id/listview5"
+            android:text="宝安机场A1"
+            android:textColor="@color/gray_air" />
+
+        <TextView
+            android:id="@id/listview8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15.0dip"
+            android:text="￥1000"
+            android:textColor="@color/yellow_air2" />
+
+        <TextView
+            android:id="@id/listview10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/listview5"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="13.0dip"
+            android:text="经济舱"
+            android:textSize="10.0sp" />
+
+        <TextView
+            android:id="@id/tv_zhe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/listview5"
+            android:layout_toLeftOf="@id/listview10"
+            android:text=""
+            android:textSize="10.0sp" />
+
+        <TextView
+            android:id="@id/listview9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/listview5"
+            android:layout_toLeftOf="@id/tv_zhe"
+            android:text="0.5"
+            android:textSize="10.0sp" />
+    </RelativeLayout>
+
+    <!-- 这是一个分割线 -->
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/line" />
+
+</RelativeLayout>

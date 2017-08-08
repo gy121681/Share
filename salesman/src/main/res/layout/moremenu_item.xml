@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+       android:paddingTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom|center_horizontal"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/img_m"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/dzdf_img"
+                android:layout_weight="1"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/tv_wallet_p"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="3"
+            android:gravity="center_horizontal"
+            android:text="信用卡还款"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+</LinearLayout>

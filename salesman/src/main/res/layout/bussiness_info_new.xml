@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_style_two" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10.0dip" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical" >
+
+            <!-- 商户ID -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="46.0dip"
+               
+                android:background="@color/white"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="120.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="开户姓名："
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_28"
+                     />
+
+                <TextView
+                    android:id="@+id/tv_bussiness_info_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_half"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_28" />
+            </LinearLayout>
+
+            <include layout="@layout/common_line_h"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="46.0dip"
+                android:background="@color/white"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="120.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="会员等级："
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_28"/>
+
+                <TextView
+                    android:id="@+id/tv_bussiness_info_custon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_half"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/text_orange"
+                    android:textSize="@dimen/text_28" />
+            </LinearLayout>
+            <include layout="@layout/common_line_h"/>
+            <LinearLayout
+                android:id="@+id/lin_region_agt"
+                android:layout_width="fill_parent"
+                android:layout_height="46.0dip"
+                android:background="@color/white"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="120.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="代理区域："
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_28"
+                     />
+
+                <TextView
+                    android:id="@+id/tv_region_agt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_half"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/text_28" />
+            </LinearLayout>
+            <include layout="@layout/common_line_h"/>
+            <!-- 开户姓名 -->
+
+
+            <!-- 银行卡号 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="46.0dip"
+                android:background="@color/white"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="120.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="银行卡号："
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_28"
+                     />
+
+                <TextView
+                    android:id="@+id/tv_bussiness_info_card_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_half"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_28" />
+            </LinearLayout>
+            <include layout="@layout/common_line_h"/>
+            <!-- 开户银行 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="46.0dip"
+                android:background="@color/white"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="120.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="开户银行："
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_28"
+                     />
+
+                <TextView
+                    android:id="@+id/tv_bussiness_info_bank_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_half"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_28" />
+            </LinearLayout>
+            <include layout="@layout/common_line_h"/>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="46.0dip"
+                android:background="@color/white"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="120.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="开户地址："
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_28"
+                     />
+
+                <TextView
+                    android:id="@+id/tv_bank_name_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_half"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_28" />
+            </LinearLayout>
+            <include layout="@layout/common_line_h"/>
+            <LinearLayout
+                android:id="@+id/lin_adress"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:gravity="center"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1" >
+
+                    <!-- <TextView -->
+                    <!-- android:layout_width="wrap_content" -->
+                    <!-- android:layout_height="match_parent" -->
+                    <!-- android:gravity="center" -->
+                    <!-- android:text="省" -->
+                    <!-- android:textColor="@color/text_black" -->
+                    <!-- android:textSize="@dimen/text_28" /> -->
+
+                    <TextView
+                        android:id="@+id/tv_issuing_bank"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/spinnerbg"
+                        android:gravity="center"
+                        android:hint="发卡行所在省"
+                        android:maxLength="25"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1" >
+
+                    <!-- <TextView -->
+                    <!-- android:layout_width="wrap_content" -->
+                    <!-- android:layout_height="match_parent" -->
+                    <!-- android:gravity="center" -->
+                    <!-- android:text="市" -->
+                    <!-- android:textColor="@color/text_black" -->
+                    <!-- android:textSize="@dimen/text_28" /> -->
+
+                    <TextView
+                        android:id="@+id/tv_issuing_bank_com"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/spinnerbg"
+                        android:gravity="center"
+                        android:hint="发卡行所在市"
+                        android:maxLength="25"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:textSize="15dp" >
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1" >
+
+                    <!-- <TextView -->
+                    <!-- android:layout_width="wrap_content" -->
+                    <!-- android:layout_height="match_parent" -->
+                    <!-- android:gravity="center" -->
+                    <!-- android:text="市" -->
+                    <!-- android:textColor="@color/text_black" -->
+                    <!-- android:textSize="@dimen/text_28" /> -->
+
+                    <TextView
+                        android:id="@+id/tv_issuing_com"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/spinnerbg"
+                        android:gravity="center"
+                        android:hint="所在区/县"
+                        android:maxLength="25"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:textSize="15dp" >
+                    </TextView>
+                </LinearLayout>
+            </LinearLayout>
+            <include layout="@layout/common_line_h"/>
+            <!-- 身份证号 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="46.0dip"
+                android:background="@color/white"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="120.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="身份证号："
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_28"
+                     />
+
+                <TextView
+                    android:id="@+id/tv_bussiness_info_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_half"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_28" />
+            </LinearLayout>
+            <include layout="@layout/common_line_h"/>
+            <!-- 手机号码 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="46.0dip"
+                android:background="@color/white"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="120.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="手机号码："
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_28"
+                     />
+
+                <TextView
+                    android:id="@+id/tv_bussiness_info_mobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_half"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_28" />
+            </LinearLayout>
+            <include layout="@layout/common_line_h"/>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="46.0dip"
+                android:background="@color/white"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="120.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="充值费率："
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_28"
+                     />
+
+                <TextView
+                    android:id="@+id/tv_feerat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_half"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_28" />
+            </LinearLayout>
+            <include layout="@layout/common_line_h"/>
+            <LinearLayout
+                android:id="@+id/lin_feerate"
+                android:layout_width="fill_parent"
+                android:layout_height="46.0dip"
+                android:background="@color/white"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="120.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="结算费率："
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_28"
+                     />
+
+                <TextView
+                    android:id="@+id/tv_feerate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_half"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_28" />
+            </LinearLayout>
+            <include layout="@layout/common_line_h"/>
+            <!-- 实名认证状态 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="46.0dip"
+                android:background="@color/white"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="120.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="实名认证状态："
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_28"
+                     />
+
+                <TextView
+                    android:id="@+id/tv_bussiness_info_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_half"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_28" />
+            </LinearLayout>
+            <include layout="@layout/common_line_h"/>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="46.0dip"
+                android:background="@color/white"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="120.0dip"
+                    android:layout_height="wrap_content"
+                    android:text="我的上级推荐人："
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_28"
+                     />
+
+                <TextView
+                    android:id="@+id/my_frend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_half"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_28" />
+            </LinearLayout>
+            <include layout="@layout/common_line_h"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,195 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/layout_top_bar"/>
+
+    <include 
+        android:id="@+id/layoutDatePicker"
+        layout="@layout/layout_datepicker"/>
+    
+    <RadioGroup
+        android:id="@+id/rgVipData"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:padding="3dp"
+        android:gravity="center_horizontal"
+        android:background="@color/bg_activity"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rbMemberCount"
+            style="@style/tab_radio_btn2"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:checked="true"
+            android:text="会员数" />
+
+        <RadioButton
+            android:id="@+id/rbCollectCount"
+            style="@style/tab_radio_btn2"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="收藏数" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="6dp"
+        android:background="@color/bg_activity" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textColor="@color/tab_text_nor"
+            android:text="项目名称" />
+        
+        <View android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/gray_lighter"/>
+        
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textColor="@color/tab_text_nor"
+            android:text="数量" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:textColor="@color/tab_text_nor"
+            android:text="今日新增" />
+        
+        <View android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/gray_lighter"/>
+        
+        <TextView
+            android:id="@+id/tvTodayCount"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:textColor="@color/tab_text_nor"
+            android:text="0" />
+    </LinearLayout>
+    
+    <View android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_lighter"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:textColor="@color/tab_text_nor"
+            android:text="本周新增" />
+        
+        <View android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/gray_lighter"/>
+        
+        <TextView
+            android:id="@+id/tvWeekCount"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:textColor="@color/tab_text_nor"
+            android:text="0" />
+    </LinearLayout>
+    
+    <View android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_lighter"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:textColor="@color/tab_text_nor"
+            android:text="本月新增" />
+        
+        <View android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/gray_lighter"/>
+        
+        <TextView
+            android:id="@+id/tvMonthCount"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:textColor="@color/tab_text_nor"
+            android:text="0" />
+    </LinearLayout>
+    
+    <View android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_lighter"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:textColor="@color/tab_text_nor"
+            android:text="累计总数" />
+        
+        <View android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/gray_lighter"/>
+        
+        <TextView
+            android:id="@+id/tvTotalCount"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:textColor="@color/tab_text_nor"
+            android:text="0" />
+    </LinearLayout>
+    
+    <View android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_lighter"/>
+</LinearLayout>

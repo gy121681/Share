@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_style_two" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_height" >
+
+            <TextView
+                style="@style/textview_style"
+                android:layout_weight="4"
+                android:text="收款金额"
+                android:textColor="@color/txt_fg_light_gray" />
+
+            <EditText
+                android:id="@+id/et_boss_receive_balance"
+                style="@style/editview_style"
+                android:hint="请输入收款金额"
+                android:inputType="textPersonName"
+                android:maxLength="6" />
+
+            <TextView
+                android:id="@+id/et_boss_receive_balance_error"
+                style="@style/error_style"
+                android:text="收款金额不能"
+                android:visibility="gone" />
+        </LinearLayout>
+
+       <!--  <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_height"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                style="@style/textview_style"
+                android:layout_weight="4"
+                android:text="银行卡号"
+                android:textColor="@color/txt_fg_light_gray" />
+
+            <EditText
+                android:id="@+id/et_receive_card_no"
+                style="@style/editview_style"
+                android:drawableRight="@drawable/brush"
+                android:enabled="false"
+                android:focusable="false"
+                android:hint="请刷入银行卡号"
+                android:inputType="number"
+                android:maxLength="19"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/et_register_card_no_error"
+                style="@style/error_style"
+                android:text="银行卡号不能为空"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_height"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                style="@style/textview_style"
+                android:layout_weight="4"
+                android:text="付款卡户名"
+                android:textColor="@color/txt_fg_light_gray" />
+
+            <EditText
+                android:id="@+id/et_receive_name"
+                style="@style/editview_style"
+                android:hint="请输入付款卡户名"
+                android:inputType="textPersonName"
+                android:maxLength="6" />
+
+            <TextView
+                android:id="@+id/et_receive_name_error"
+                style="@style/error_style"
+                android:text="收款金额不能"
+                android:visibility="gone" />
+        </LinearLayout> -->
+
+       <!--  <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_height"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="温馨提示:付款卡号与付款卡户名信息必须一致,以免导致付款失败"
+                android:textColor="@color/red"
+                android:textSize="12dp" />
+        </LinearLayout> -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_height"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                style="@style/textview_style"
+                android:layout_weight="4"
+                android:text="结算方式"
+                android:textColor="@color/txt_fg_light_gray" />
+
+            <TextView
+                android:id="@+id/et_receive_clearing"
+                style="@style/editview_style"
+                android:drawableRight="@drawable/arrow_down_01"
+                android:hint="请选择结算方式"
+                android:paddingRight="10.0dip" />
+        </LinearLayout>
+
+        <!-- <RadioGroup
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/layout_height"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="T+0" />
+
+            <RadioButton
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="T+1" />
+
+            <RadioButton
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="T+5" />
+        </RadioGroup> -->
+
+        <LinearLayout
+            android:id="@+id/btn_boss_receive_confirm"
+            android:layout_width="fill_parent"
+            android:layout_height="36.0dip"
+            android:layout_marginBottom="@dimen/margin_normal"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginRight="15.0dip"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:background="@drawable/btn02_bg"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="下一步"
+                android:textColor="@color/text_white"
+                android:textSize="20.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

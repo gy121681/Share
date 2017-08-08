@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <!-- android:background="@drawable/aut_bg1" -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/transparent" >
+
+        <TextView
+            android:id="@id/bt_title_left"
+            style="@style/title_back_btn_bg_theme2"
+            android:drawableLeft="@drawable/title_back_btn_bg2"
+            android:text="返回" />
+
+        <TextView
+            android:id="@id/tv_title_contre"
+            style="@style/title_text_theme"
+            android:text="登录" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="9"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp" >
+
+            <ImageView
+                android:id="@+id/flow_chart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/share_s_mine_member_supplement3" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:orientation="vertical" >
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:visibility="gone" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4" >
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" >
+
+                            <ImageView
+                                android:id="@+id/iv_name_auth_front"
+                                android:layout_width="match_parent"
+                                android:layout_height="160dp"
+                                android:src="@drawable/newreal_idcard" />
+
+                            <ImageView
+                                android:id="@+id/button1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/aut_button_cs" />
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4" >
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_pro1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/iv_name_auth_front"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/text_black_light"
+                        android:gravity="center_horizontal"
+                        android:text="点击拍手持银行卡+身份证情景照" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4" >
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" >
+
+                            <ImageView
+                                android:id="@+id/iv_name_auth_scene"
+                                android:layout_width="240dp"
+                                android:layout_height="160dp"
+                                android:layout_centerHorizontal="true"
+                                android:background="@drawable/share_s_mine_member_supplement_hold"
+                                android:scaleType="centerCrop"
+                                android:layout_marginBottom="@dimen/margin_normal"/>
+
+                            <Button
+                                android:id="@+id/button2"
+                                android:layout_below="@id/iv_name_auth_scene"
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"
+                                android:layout_centerHorizontal="true"
+                                android:text="点击拍摄"
+                                android:textColor="@color/text_black_light"
+                                android:textSize="@dimen/text_28"
+                                android:background="@drawable/selector_public_button2"
+                                android:layout_gravity="center_horizontal"/>
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4" >
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+
+            <TextView
+                android:id="@+id/tv_au_button"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="50dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/selector_public_button"
+                android:gravity="center"
+                android:text="下一步"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/text_36" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

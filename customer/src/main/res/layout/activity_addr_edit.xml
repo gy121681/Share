@@ -1,0 +1,158 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_activity"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_top_bar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:background="@color/bg_white" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="姓名" />
+
+        <EditText
+            android:id="@+id/edAddrName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_normal"
+            android:hint="请输入姓名"
+            android:textSize="14sp"
+            android:background="@null" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1px"
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:background="@color/bg_white" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="电话" />
+
+        <EditText
+            android:id="@+id/edAddrMobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_normal"
+            android:hint="请输入电话"
+            android:numeric="integer"
+            android:maxLength="11"
+            android:textSize="14sp"
+            android:background="@null" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/llPickCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1px"
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:background="@color/bg_white" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="城市" />
+
+        <TextView
+            android:id="@+id/tvAddrCity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/margin_normal"
+            android:hint="请选择"
+            android:textSize="14sp"
+            android:background="@null" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:src="@drawable/arrow_right" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/llPickArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1px"
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:background="@color/bg_white" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="区域" />
+
+        <TextView
+            android:id="@+id/tvAddrArea"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/margin_normal"
+            android:hint="请选择"
+            android:textSize="14sp"
+            android:background="@null" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:src="@drawable/arrow_right" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1px"
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:background="@color/bg_white" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="详细地址" />
+
+        <EditText
+            android:id="@+id/edAddrSnippet"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/margin_normal"
+            android:hint="尽量详细，方便送货上门"
+            android:textSize="14sp"
+            android:background="@null" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1px"
+        android:padding="10dp"
+        android:background="@color/bg_white" >
+
+        <CheckBox
+            android:id="@+id/cbAddrDefault"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/cb_red"
+            android:paddingLeft="6dp"
+            android:textSize="15sp"
+            android:text="设为默认地址" />
+    </LinearLayout>
+</LinearLayout>

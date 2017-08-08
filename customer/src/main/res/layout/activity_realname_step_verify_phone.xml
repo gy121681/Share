@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--认证手机号-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+    android:background="@color/bg_white">
+
+    <include layout="@layout/layout_top_bar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="验证码已发送至您的手机"
+        android:textSize="@dimen/text_36"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="80dp"
+        android:textColor="@color/text_black_light"/>
+
+    <TextView
+        android:id="@+id/tv_mobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="XXXXXX"
+        android:textSize="@dimen/text_36"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:textColor="@color/text_black_light"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp">
+
+        <EditText
+            android:id="@+id/edt_verify_code"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/margin_normal"
+            android:background="@color/transparent"
+            android:hint="请输入验证码"
+            android:textSize="@dimen/text_28"
+            android:textColor="@color/text_black_light"
+            android:textColorHint="@color/text_gray"/>
+
+        <com.shareshenghuo.app.user.widget.CountDownButton
+            android:id="@+id/btn_count_down"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="@dimen/margin_half"
+            android:layout_marginBottom="@dimen/margin_half"
+            android:layout_marginRight="@dimen/margin_normal"
+            android:textColor="@color/text_black_light"
+            android:background="@drawable/selector_mine_button_modify_telephone"/>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="下一步"
+        android:textSize="@dimen/text_36"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/selector_btn_pink"
+        android:textColor="@color/text_white"
+        android:layout_marginLeft="@dimen/margin_double"
+        android:layout_marginRight="@dimen/margin_double"
+        android:layout_marginBottom="@dimen/margin_normal"/>
+
+
+</LinearLayout>

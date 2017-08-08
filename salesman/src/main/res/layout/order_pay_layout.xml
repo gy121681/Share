@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_style_three" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="49dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp" >
+
+                    <TextView
+                        style="@style/textview_style"
+                        android:layout_weight="5"
+                        android:text="充值金额"
+                        android:textColor="@color/txt_fg_light_gray" />
+
+                    <EditText
+                        android:id="@+id/et_order_receive_balance"
+                        style="@style/editview_style"
+                        android:hint="¥ 0.00"
+                        android:inputType="numberDecimal" />
+
+                    <TextView
+                        android:id="@+id/et_order_receive_balance_error"
+                        style="@style/error_style"
+                        android:text="充值金额不能"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="49dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp" >
+
+                    <TextView
+                        style="@style/textview_style"
+                        android:layout_weight="5"
+                        android:text="订单"
+                        android:textColor="@color/txt_fg_light_gray" />
+
+                    <EditText
+                        android:id="@+id/edits"
+                        style="@style/editview_style"
+                        android:hint="不输入则自动生成" />
+
+                    <!-- <TextView -->
+                    <!-- android:id="@+id/et_order_receive_balance_bg" -->
+                    <!-- android:layout_width="match_parent" -->
+                    <!-- android:layout_height="match_parent" -->
+                    <!-- android:background="@color/greyer" /> -->
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/capital_layouts"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dip"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/rate_remind"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:text="费率:"
+                        android:textColor="@color/black"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/capital_tvs"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.2"
+                        android:text="11"
+                        android:textColor="@color/black"
+                        android:textSize="12dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="49dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp" >
+
+                    <TextView
+                        style="@style/textview_style"
+                        android:layout_weight="5"
+                        android:text="商品名称"
+                        android:textColor="@color/txt_fg_light_gray" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2" >
+
+                        <Spinner
+                            android:id="@+id/sp"
+                            style="?android:attr/spinnerDropDownItemStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/white"
+                            android:entries="@array/spins"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/arrow"
+                            android:visibility="gone" />
+
+                        <EditText
+                            style="@style/editview_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="选填" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/et_order_receive_balance_error"
+                        style="@style/error_style"
+                        android:text="充值金额不能"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_height"
+                android:layout_marginTop="10dp"
+                android:visibility="gone" >
+
+                <TextView
+                    style="@style/textview_style"
+                    android:layout_weight="4"
+                    android:text="结算方式"
+                    android:textColor="@color/txt_fg_light_gray" />
+
+                <TextView
+                    android:id="@+id/et_receive_clearing"
+                    style="@style/editview_style"
+                    android:drawableRight="@drawable/arrow_down_01"
+                    android:hint="请选择结算方式"
+                    android:paddingRight="10.0dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:gravity="top"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:visibility="gone"
+                    android:text="单笔消费不可超过2万,当日操作上限4次"
+                    android:textColor="#ffff9913"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/btn_order_receive_confirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/reg_btn_next_height"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button01_bg"
+                    android:gravity="center"
+                    android:text="充值"
+                    android:textColor="@color/text_white"
+                    android:textSize="20.0dip" />
+                <!-- android:background="@drawable/btn02_bg" -->
+
+                <TextView
+                    android:id="@+id/btn_order_receive_bycard"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/reg_btn_next_height"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/button01_bg"
+                    android:gravity="center"
+                    android:text="刷卡"
+                    android:textColor="@color/text_white"
+                    android:textSize="20.0dip"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/tv_propty_pay"
+                    style="@style/text_style_15_bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="20dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="@string/action_warning"
+                    android:textColor="@color/gray"
+                    android:textSize="12dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_top_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="@dimen/margin_normal"
+            android:layout_marginTop="5dp"
+            android:text="银行卡号"
+            android:textColor="@color/text_black_light"
+            android:textSize="12dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/applin"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="银行卡号"
+                android:textColor="@color/black"
+                android:textSize="13dp"/>
+
+            <EditText
+                android:id="@+id/eibankcardnum"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="5dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:hint=""
+                android:inputType="number"
+                android:maxLength="30"
+                android:textSize="14dp"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/applin"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="@dimen/margin_normal"
+            android:layout_marginTop="5dp"
+            android:text="选择银行卡类型"
+            android:textColor="@color/text_black_light"
+            android:textSize="12dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/applin"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="卡类型"
+                android:textColor="@color/black"
+                android:textSize="13dp"/>
+
+            <RelativeLayout
+                android:id="@+id/re_banktype"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                >
+
+                <TextView
+                    android:id="@+id/eibankcard"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/text_orange"
+                    android:textSize="14dp"/>
+
+                <!-- <View -->
+                <!-- android:layout_width="match_parent" -->
+                <!-- android:layout_height="1px" -->
+                <!-- android:layout_alignParentBottom="true" -->
+                <!-- android:layout_marginLeft="5dp" -->
+                <!-- android:background="@color/gray_lighter" > -->
+                <!-- </View> -->
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/applin"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="@dimen/margin_normal"
+            android:layout_marginTop="5dp"
+            android:text="填写预留手机号码"
+            android:textColor="@color/text_black_light"
+            android:textSize="12dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/applin"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="手机号码"
+                android:textColor="@color/black"
+                android:textSize="13dp"/>
+
+            <EditText
+                android:id="@+id/emobile"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="5dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:hint="输入手机号"
+                android:inputType="number"
+                android:maxLength="11"
+                android:textColor="@color/text_black_light"
+                android:textColorHint="@color/text_gray"
+                android:textSize="14dp"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/applin"/>
+
+        <LinearLayout
+            android:id="@+id/ll_credit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="@dimen/margin_normal"
+                android:layout_marginTop="5dp"
+                android:text="信用卡有效期"
+                android:textColor="@color/text_black_light"
+                android:textSize="12dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/applin"/>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="bottom"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="有效期"
+                    android:textColor="@color/black"
+                    android:textSize="13dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="5dp">
+
+                    <EditText
+                        android:id="@+id/edate"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toLeftOf="@+id/tv_card_propty"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:hint=""
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:textColor="@color/text_black_light"
+                        android:textColorHint="@color/text_gray"
+                        android:textSize="14dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_card_propty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/margin_normal"
+                        android:gravity="center"
+                        android:text="提示"
+                        android:textColor="@color/bg_top_bar"
+                        android:textSize="16dp"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/applin"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="@dimen/margin_normal"
+                android:layout_marginTop="5dp"
+                android:text="填写卡背面三位数字"
+                android:textColor="@color/text_black_light"
+                android:textSize="12dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/applin"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="bottom"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="CVN2码"
+                    android:textColor="@color/black"
+                    android:textSize="13dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="5dp">
+
+                    <EditText
+                        android:id="@+id/ecvn2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toLeftOf="@+id/tv_card_propty1"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:hint=""
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:textColor="@color/text_black_light"
+                        android:textColorHint="@color/text_gray"
+                        android:textSize="14dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_card_propty1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/margin_normal"
+                        android:gravity="center"
+                        android:text="提示"
+                        android:textColor="@color/bg_top_bar"
+                        android:textSize="16dp"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/applin"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/llWalletRecharge"
+            style="@style/btn_pink"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:text="确定添加"/>
+    </LinearLayout>
+
+</LinearLayout>

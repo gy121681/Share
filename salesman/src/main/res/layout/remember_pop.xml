@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="开始时间："
+                android:gravity="center"
+                android:textColor="@color/text_black_light"
+                android:textSize="@dimen/text_28"/>
+
+            <TextView
+                android:id="@+id/tvDateStart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:drawablePadding="6dp"
+                android:gravity="center"
+                android:drawableRight="@drawable/share_s_mine_date"
+                android:hint=""
+                android:paddingLeft="20dp"
+                android:paddingRight="10dp"
+                android:background="@color/bg_gray_dark"
+                android:textColorHint="@color/text_gray"
+                android:textColor="@color/text_black_light"
+                android:textSize="@dimen/text_28" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_gravity="center" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <!-- <TextView -->
+            <!-- android:layout_margin="10dp" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="match_parent" -->
+            <!-- android:text="选择结束时间" /> -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="结束时间："
+                android:gravity="center"
+                android:textColor="@color/text_black_light"
+                android:textSize="@dimen/text_28"/>
+
+
+            <TextView
+                android:id="@+id/tvDateEnd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:drawablePadding="6dp"
+                android:gravity="center"
+                android:drawableRight="@drawable/share_s_mine_date"
+                android:hint=""
+                android:paddingLeft="20dp"
+                android:paddingRight="10dp"
+                android:textColorHint="@color/text_gray"
+                android:textColor="@color/text_black_light"
+                android:background="@color/bg_gray_dark"
+                android:textSize="@dimen/text_28"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_gravity="center"
+            android:layout_margin="6dp" />
+
+        <RelativeLayout
+             android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/bg_arc_gray" >
+
+<!--             <EditText -->
+<!--                 android:id="@+id/edquery" -->
+<!--                 android:layout_width="match_parent" -->
+<!--                 android:layout_height="45dp" -->
+<!--                 android:layout_marginLeft="20dp" -->
+<!--                 android:layout_marginRight="20dp" -->
+<!--                 android:background="@drawable/bg_arc_gray" -->
+<!--                 android:gravity="center_vertical" -->
+<!--                 android:hint="输入姓名/手机号" -->
+<!--                 android:paddingLeft="10dp" -->
+<!--                 android:textSize="15dp" /> -->
+
+            <EditText
+               
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:id="@+id/edquery"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/bg_arc_gray"
+                android:gravity="center_vertical"
+                android:hint="输入姓名/手机号"
+                android:textSize="15dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnNo"
+                android:background="@drawable/selector_public_button2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/text_black_light"
+                android:textSize="@dimen/text_28"
+                android:text="取消" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/btnOK"
+                 android:background="@drawable/selector_public_button2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/text_black_light"
+                android:textSize="@dimen/text_28"
+                android:text="查询" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

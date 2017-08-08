@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_activity"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/layout_top_bar"/>
+    
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/lvComment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="6dp" >
+
+        <EditText
+            android:id="@+id/edCommentContent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:maxLines="5"
+            android:hint="评论"
+            android:textSize="14sp"
+            android:background="@drawable/bg_border_gray" />
+
+        <Button
+            android:id="@+id/btnCommentSend"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="6dp"
+            android:background="@drawable/btn_send" />
+    </LinearLayout>
+</LinearLayout>

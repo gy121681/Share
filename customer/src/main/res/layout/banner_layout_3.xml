@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical"
+              android:paddingBottom="20dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="秀儿每份秀心的价值"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/tv_payDate"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:text="2016"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="70dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/share_c_consume_customer" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:gravity="center" >
+
+                        <!-- <ImageView -->
+                        <!-- android:id="@+id/img" -->
+                        <!-- android:layout_width="60dp" -->
+                        <!-- android:layout_height="60dp" -->
+                        <!-- android:layout_marginLeft="5dp" -->
+                        <!-- android:layout_marginRight="5dp" -->
+                        <!-- android:layout_marginTop="@dimen/margin_normal" -->
+                        <!-- android:layout_weight="2" -->
+                        <!-- android:src="@drawable/xiaozi_img" /> -->
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            android:id="@+id/tv_userFilialPric"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:gravity="center_vertical"
+                            android:text="0"
+                            android:textColor="@color/text_orange"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                        <!--                         <TextView  -->
+
+                        <!--                             android:layout_width="wrap_content" -->
+                        <!--                             android:layout_height="wrap_content" -->
+                        <!--                             android:text="300积分一颗" -->
+                        <!--                             /> -->
+
+                        <!-- <ImageView -->
+                        <!-- android:layout_width="40dp" -->
+                        <!-- android:layout_height="wrap_content" -->
+                        <!-- android:layout_centerInParent="true" -->
+                        <!-- android:layout_toRightOf="@+id/tv_userFilialPric" -->
+                        <!-- android:src="@drawable/icon_xiaofxs" /> -->
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <!-- <TextView -->
+                <!-- android:layout_width="wrap_content" -->
+                <!-- android:layout_height="20dp" -->
+                <!-- android:text="/" -->
+                <!-- android:textColor="@color/bg_top_bar" -->
+                <!-- android:textSize="18dp" /> -->
+
+
+                <!-- <ImageView -->
+                <!-- android:layout_width="18dp" -->
+                <!-- android:layout_height="18dp" -->
+                <!-- android:src="@drawable/xiaoxin" /> -->
+
+
+                <!-- <RelativeLayout -->
+                <!-- android:layout_width="match_parent" -->
+                <!-- android:layout_height="match_parent" -->
+                <!-- android:layout_weight="1" > -->
+
+
+                <!-- <TextView -->
+                <!-- android:layout_width="match_parent" -->
+                <!-- android:layout_height="match_parent" -->
+                <!-- android:layout_marginTop="@dimen/margin_normal" -->
+                <!-- android:gravity="center|top" -->
+                <!-- android:text="消费者每份秀心所得秀点数" -->
+                <!-- android:textStyle="bold" -->
+                <!-- android:textColor="@color/black" -->
+                <!-- android:textSize="18dp" /> -->
+                <!-- </RelativeLayout> -->
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/share_c_consume_merchant" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:gravity="center" >
+
+                        <!-- <ImageView -->
+                        <!-- android:id="@+id/img" -->
+                        <!-- android:layout_width="60dp" -->
+                        <!-- android:layout_height="60dp" -->
+                        <!-- android:layout_marginLeft="5dp" -->
+                        <!-- android:layout_marginRight="5dp" -->
+                        <!-- android:layout_marginTop="@dimen/margin_normal" -->
+                        <!-- android:layout_weight="2" -->
+                        <!-- android:src="@drawable/sj_img" /> -->
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            android:id="@+id/tv_shopFilialPric"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:gravity="center_vertical"
+                            android:text="0"
+                            android:textColor="@color/text_orange"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                        <!-- <ImageView -->
+                        <!-- android:layout_width="40dp" -->
+                        <!-- android:layout_height="wrap_content" -->
+                        <!-- android:layout_centerInParent="true" -->
+                        <!-- android:layout_toRightOf="@+id/tv_shopFilialPric" -->
+                        <!-- android:src="@drawable/icon_xiaofxs" /> -->
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <!-- <TextView -->
+                <!-- android:layout_width="wrap_content" -->
+                <!-- android:layout_height="20dp" -->
+                <!-- android:text="/" -->
+                <!-- android:textColor="@color/bg_top_bar" -->
+                <!-- android:textSize="18dp" /> -->
+
+
+                <!-- <ImageView -->
+                <!-- android:layout_width="18dp" -->
+                <!-- android:layout_height="18dp" -->
+                <!-- android:src="@drawable/xiaoxin" /> -->
+
+
+                <!-- <RelativeLayout -->
+                <!-- android:layout_width="match_parent" -->
+                <!-- android:layout_height="match_parent" -->
+                <!-- android:layout_weight="1" > -->
+
+
+                <!-- <TextView -->
+                <!-- android:layout_width="match_parent" -->
+                <!-- android:layout_height="match_parent" -->
+                <!-- android:layout_marginTop="@dimen/margin_normal" -->
+                <!-- android:gravity="center|top" -->
+                <!-- android:textStyle="bold" -->
+                <!-- android:text="商家每份秀心所得秀点数" -->
+                <!-- android:textColor="@color/black" -->
+                <!-- android:textSize="18dp" /> -->
+                <!-- </RelativeLayout> -->
+            </RelativeLayout>
+
+            <!-- <TextView -->
+            <!-- android:id="@+id/tv_shopFilialPric" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:text="0" -->
+            <!-- android:textColor="@color/bg_top_bar" -->
+            <!-- android:textSize="14dp" -->
+            <!-- android:textStyle="bold" /> -->
+
+
+            <!-- <TextView -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="20dp" -->
+            <!-- android:gravity="center" -->
+            <!-- android:text="商家每颗秀心所得秀点数" -->
+            <!-- android:textColor="@color/bg_top_bar" -->
+            <!-- android:textSize="8dp" /> -->
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

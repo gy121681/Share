@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_top_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:background="@color/bg_top_bar"
+        android:visibility="gone">
+
+        <!-- android:background="@drawable/circular_bg" -->
+
+        <RadioGroup
+            android:layout_width="150dp"
+            android:layout_height="25dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/btn_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/radio_btn_press"
+                android:button="@null"
+                android:gravity="center"
+                android:text="产业链"
+                android:textColor="@color/black"
+                android:textSize="12dp" />
+
+            <RadioButton
+                android:id="@+id/btn_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/radio_rightbtn_press"
+                android:button="@null"
+                android:gravity="center"
+                android:text="秀儿消费"
+                android:textColor="@color/black"
+                android:textSize="12dp" />
+        </RadioGroup>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/tv_choosedates"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_normal"
+                android:background="@drawable/share_c_homepage_search_icon" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/radio"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:visibility="gone"
+            android:id="@+id/rbtn_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/form_bg_wihte"
+            android:button="@null"
+            android:gravity="center"
+            android:text="信用商家"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@color/gray_lighter" />
+
+        <RadioButton
+            android:id="@+id/rbtn_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/form_bg_wihte"
+            android:button="@null"
+            android:gravity="center"
+            android:text="消费系列"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/applin" />
+
+    <com.example.widget.NoScrollViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</LinearLayout>

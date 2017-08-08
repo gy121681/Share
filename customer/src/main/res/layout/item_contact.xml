@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/llContactItemBack"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/pink"
+        android:gravity="right" >
+
+        <Button
+            android:id="@+id/btnContactItemDel"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:text="删除"
+            android:textColor="@color/text_white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llContactItemFront"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_white"
+        android:orientation="horizontal" >
+        
+        <LinearLayout
+            android:id="@+id/llContactDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="10dp" >
+
+	        <com.shareshenghuo.app.user.widget.CircleImageView
+	            android:id="@+id/ivContactAvatar"
+	            android:layout_width="40dp"
+	            android:layout_height="40dp"
+	            android:src="@drawable/share_c_business_details_photo_default" />
+
+	        <TextView
+	            android:id="@+id/tvContactName"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="@dimen/margin_normal"
+	            android:text="TextView" />
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

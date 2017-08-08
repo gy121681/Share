@@ -1,0 +1,674 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_top_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:background="@color/black"
+        android:orientation="vertical" >
+
+        <!-- <RelativeLayout -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="match_parent" -->
+        <!-- android:layout_weight="4" -->
+        <!-- android:padding="5dp" > -->
+
+
+        <!-- <TextView -->
+        <!-- android:id="@id/bt_title_left" -->
+        <!-- style="@style/title_back_btn_bg_theme2" -->
+        <!-- android:drawableLeft="@drawable/title_back_btn_bg2" -->
+        <!-- android:text="" /> -->
+
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/bt_title_right" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_alignParentRight="true" -->
+        <!-- android:src="@drawable/shoppay_simg" /> -->
+        <!-- </RelativeLayout> -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toLeftOf="@+id/edtNumber"
+                android:text="￥"
+                android:textColor="@color/black"
+                android:textSize="40dp" />
+
+            <EditText
+                android:id="@+id/edtNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@color/black"
+                android:gravity="bottom"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="50dp"
+                android:textStyle="normal" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/re_number"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <Button
+                        android:id="@+id/btn_7"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/form_bg_gray"
+                        android:gravity="center"
+                        android:text="7"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <!-- <ImageView -->
+                    <!-- android:layout_width="match_parent" -->
+                    <!-- android:layout_height="match_parent" -->
+                    <!-- android:scaleType="centerCrop" -->
+                    <!-- android:src="@drawable/call_7" /> -->
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/applin" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <Button
+                        android:id="@+id/btn_8"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/form_bg_gray"
+                        android:gravity="center"
+                        android:text="8"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <!-- <ImageView -->
+                    <!-- android:layout_width="match_parent" -->
+                    <!-- android:layout_height="match_parent" -->
+                    <!-- android:scaleType="centerCrop" -->
+                    <!-- android:src="@drawable/call_8" /> -->
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/applin" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <Button
+                        android:id="@+id/btn_9"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/form_bg_gray"
+                        android:gravity="center"
+                        android:text="9"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <!-- <ImageView -->
+                    <!-- android:layout_width="match_parent" -->
+                    <!-- android:layout_height="match_parent" -->
+                    <!-- android:scaleType="centerCrop" -->
+                    <!-- android:src="@drawable/call_9" /> -->
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.1px"
+                android:background="@color/applin" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <Button
+                        android:id="@+id/btn_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/form_bg_gray"
+                        android:gravity="center"
+                        android:text="4"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <!-- <ImageView -->
+                    <!-- android:layout_width="match_parent" -->
+                    <!-- android:layout_height="match_parent" -->
+                    <!-- android:scaleType="centerCrop" -->
+                    <!-- android:src="@drawable/call_4" /> -->
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/applin" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <Button
+                        android:id="@+id/btn_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/form_bg_gray"
+                        android:gravity="center"
+                        android:text="5"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <!-- <ImageView -->
+                    <!-- android:layout_width="match_parent" -->
+                    <!-- android:layout_height="match_parent" -->
+                    <!-- android:scaleType="centerCrop" -->
+                    <!-- android:src="@drawable/call_5" /> -->
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/applin" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <Button
+                        android:id="@+id/btn_6"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/form_bg_gray"
+                        android:gravity="center"
+                        android:text="6"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <!-- <ImageView -->
+                    <!-- android:layout_width="match_parent" -->
+                    <!-- android:layout_height="match_parent" -->
+                    <!-- android:scaleType="centerCrop" -->
+                    <!-- android:src="@drawable/call_6" /> -->
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.1px"
+                android:background="@color/applin" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <Button
+                        android:id="@+id/btn_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/form_bg_gray"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <!-- <ImageView -->
+                    <!-- android:layout_width="match_parent" -->
+                    <!-- android:layout_height="match_parent" -->
+                    <!-- android:scaleType="centerCrop" -->
+                    <!-- android:src="@drawable/call_1" /> -->
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/applin" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <Button
+                        android:id="@+id/btn_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/form_bg_gray"
+                        android:gravity="center"
+                        android:text="2"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <!-- <ImageView -->
+                    <!-- android:layout_width="match_parent" -->
+                    <!-- android:layout_height="match_parent" -->
+                    <!-- android:scaleType="centerCrop" -->
+                    <!-- android:src="@drawable/call_2" /> -->
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/applin" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <Button
+                        android:id="@+id/btn_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/form_bg_gray"
+                        android:gravity="center"
+                        android:text="3"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <!-- <ImageView -->
+                    <!-- android:layout_width="match_parent" -->
+                    <!-- android:layout_height="match_parent" -->
+                    <!-- android:scaleType="centerCrop" -->
+                    <!-- android:src="@drawable/call_3" /> -->
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.1px"
+                android:background="@color/applin" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <Button
+                        android:id="@+id/btn_10"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/form_bg_gray"
+                        android:gravity="center"
+                        android:text="."
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <!-- <ImageView -->
+                    <!-- android:layout_width="match_parent" -->
+                    <!-- android:layout_height="match_parent" -->
+                    <!-- android:scaleType="centerCrop" -->
+                    <!-- android:src="@drawable/call" /> -->
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/applin" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <Button
+                        android:id="@+id/btn_0"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/form_bg_gray"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <!-- <ImageView -->
+                    <!-- android:layout_width="match_parent" -->
+                    <!-- android:layout_height="match_parent" -->
+                    <!-- android:scaleType="centerCrop" -->
+                    <!-- android:src="@drawable/call_0" /> -->
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/applin" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <Button
+                        android:id="@+id/btnCancel"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/form_bg_gray"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:layout_centerInParent="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/back" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- <TextView -->
+        <!-- android:layout_width="0.1px" -->
+        <!-- android:layout_height="match_parent" -->
+        <!-- android:background="@color/applin" /> -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="@color/bg_top_bar"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/llistview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@color/none"
+                android:listSelector="@color/none"
+                android:scrollbars="none" >
+            </ListView>
+
+            <!-- <RelativeLayout -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="match_parent" -->
+            <!-- android:layout_weight="1" -->
+            <!-- android:orientation="vertical" > -->
+
+
+            <!-- <Button -->
+            <!-- android:id="@+id/btn1" -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="fill_parent" -->
+            <!-- android:background="@drawable/form_bg_none" -->
+            <!-- android:gravity="center" -->
+            <!-- android:textColor="@color/black" /> -->
+
+
+            <!-- <LinearLayout -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="match_parent" -->
+            <!-- android:gravity="center" -->
+            <!-- android:orientation="vertical" > -->
+
+
+            <!-- <ImageView -->
+            <!-- android:layout_width="35dp" -->
+            <!-- android:layout_height="35dp" -->
+            <!-- android:scaleType="centerCrop" -->
+            <!-- android:src="@drawable/bancard_img" /> -->
+
+
+            <!-- <TextView -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:text="银行卡" -->
+            <!-- android:textColor="@color/black" -->
+            <!-- android:textSize="14dp" /> -->
+            <!-- </LinearLayout> -->
+            <!-- </RelativeLayout> -->
+
+
+            <!-- <TextView -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="0.1px" -->
+            <!-- android:background="@color/applin" /> -->
+
+
+            <!-- <RelativeLayout -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="match_parent" -->
+            <!-- android:layout_weight="1" -->
+            <!-- android:orientation="vertical" > -->
+
+
+            <!-- <Button -->
+            <!-- android:id="@+id/btn2" -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="fill_parent" -->
+            <!-- android:background="@drawable/form_bg_none" -->
+            <!-- android:gravity="center" -->
+            <!-- android:textColor="@color/black" /> -->
+
+
+            <!-- <LinearLayout -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="match_parent" -->
+            <!-- android:gravity="center" -->
+            <!-- android:orientation="vertical" > -->
+
+
+            <!-- <ImageView -->
+            <!-- android:layout_width="35dp" -->
+            <!-- android:layout_height="35dp" -->
+            <!-- android:scaleType="centerCrop" -->
+            <!-- android:src="@drawable/wechat_img" /> -->
+
+
+            <!-- <TextView -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:text="微信" -->
+            <!-- android:textColor="@color/black" -->
+            <!-- android:textSize="14dp" /> -->
+            <!-- </LinearLayout> -->
+            <!-- </RelativeLayout> -->
+
+
+            <!-- <TextView -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="0.1px" -->
+            <!-- android:background="@color/applin" /> -->
+
+
+            <!-- <RelativeLayout -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="match_parent" -->
+            <!-- android:layout_weight="1" -->
+            <!-- android:orientation="vertical" > -->
+
+
+            <!-- <Button -->
+            <!-- android:id="@+id/btn3" -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="fill_parent" -->
+            <!-- android:background="@drawable/form_bg_none" -->
+            <!-- android:gravity="center" -->
+            <!-- android:textColor="@color/black" /> -->
+
+
+            <!-- <LinearLayout -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="match_parent" -->
+            <!-- android:gravity="center" -->
+            <!-- android:orientation="vertical" > -->
+
+
+            <!-- <ImageView -->
+            <!-- android:layout_width="35dp" -->
+            <!-- android:layout_height="35dp" -->
+            <!-- android:scaleType="centerCrop" -->
+            <!-- android:src="@drawable/alipay_img" /> -->
+
+
+            <!-- <TextView -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:text="支付宝" -->
+            <!-- android:textColor="@color/black" -->
+            <!-- android:textSize="14dp" /> -->
+            <!-- </LinearLayout> -->
+            <!-- </RelativeLayout> -->
+
+
+            <!-- <RelativeLayout -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="match_parent" -->
+            <!-- android:layout_weight="1" -->
+            <!-- android:orientation="vertical" > -->
+
+
+            <!-- <Button -->
+            <!-- android:id="@+id/bnt4" -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="fill_parent" -->
+            <!-- android:background="@drawable/form_bg_none" -->
+            <!-- android:gravity="center" -->
+            <!-- android:textColor="@color/black" /> -->
+
+
+            <!-- <LinearLayout -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="match_parent" -->
+            <!-- android:gravity="center" -->
+            <!-- android:orientation="vertical" > -->
+
+
+            <!-- <ImageView -->
+            <!-- android:layout_width="35dp" -->
+            <!-- android:layout_height="35dp" -->
+            <!-- android:scaleType="centerCrop" -->
+            <!-- android:src="@drawable/qrcode_img" /> -->
+
+
+            <!-- <TextView -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:text="二维码" -->
+            <!-- android:textColor="@color/black" -->
+            <!-- android:textSize="14dp" /> -->
+            <!-- </LinearLayout> -->
+            <!-- </RelativeLayout> -->
+
+
+            <!-- <RelativeLayout -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="match_parent" -->
+            <!-- android:layout_weight="1" -->
+            <!-- android:orientation="vertical" > -->
+
+
+            <!-- <Button -->
+            <!-- android:id="@+id/btn5" -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="fill_parent" -->
+            <!-- android:background="@drawable/form_bg_none" -->
+            <!-- android:gravity="center" -->
+            <!-- android:textColor="@color/black" /> -->
+
+
+            <!-- <LinearLayout -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="match_parent" -->
+            <!-- android:gravity="center" -->
+            <!-- android:orientation="vertical" > -->
+
+
+            <!-- <ImageView -->
+            <!-- android:layout_width="35dp" -->
+            <!-- android:layout_height="35dp" -->
+            <!-- android:scaleType="centerCrop" -->
+            <!-- android:src="@drawable/pos_img" /> -->
+
+
+            <!-- <TextView -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:text="POS" -->
+            <!-- android:textColor="@color/black" -->
+            <!-- android:textSize="14dp" /> -->
+            <!-- </LinearLayout> -->
+            <!-- </RelativeLayout> -->
+        </RelativeLayout>
+    </LinearLayout>
+    <!-- #658CFA -->
+
+</LinearLayout>

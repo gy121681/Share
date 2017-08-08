@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parent"
+    android:background="@color/bg_activity"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/status_bar_height1"
+        android:background="@color/bg_top_bar" />
+
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:background="@color/bg_top_bar"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnHomeCity"
+            style="@style/text_black"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="@null"
+            android:drawableRight="@drawable/share_c_homepage_down"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="选择城市" />
+
+        <Button
+            android:id="@+id/btnSearch"
+            style="@style/btn_search"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:text="搜索商户名、商品名" />
+
+        <LinearLayout
+            android:id="@+id/re_masking"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btnQRcode"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/share_c_homepage_scanning" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="扫一扫"
+                android:textColor="@color/black"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnMessage"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/btn_msg"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+            android:id="@+id/refreshscrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp">
+
+                    <com.shareshenghuo.app.user.widget.AdGallery
+                        android:id="@+id/adGallery"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fadingEdge="none"
+                        android:unselectedAlpha="1"/>
+
+                    <RelativeLayout
+                        android:id="@+id/ad_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/adGallery">
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RadioGroup
+                    android:id="@+id/home_pop_gallery_mark1"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="@dimen/margin_normal"
+                    android:gravity="center|right"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+                </RadioGroup>
+
+                <com.shareshenghuo.app.user.widget.BannerViewPager
+                    android:id="@+id/bannerHome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/vpHomeCategory"
+                        android:layout_width="match_parent"
+                        android:layout_height="190dp"
+                        android:background="@color/bg_white"
+                        android:clickable="true"/>
+
+                    <LinearLayout
+                        android:id="@+id/llHomeCategoryDot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="135dp"
+                    android:layout_marginTop="6dp"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:id="@+id/llHomeFlashSale"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/bg_white"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:src="@drawable/icon_147"/>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/margin_normal"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="秒杀专场"
+                                    android:textColor="@color/red_dark"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold"/>
+
+                                <com.shareshenghuo.app.user.widget.CountDownTextView
+                                    android:id="@+id/tvRemainingTime"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="6dp">
+                                </com.shareshenghuo.app.user.widget.CountDownTextView>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tvLimitProdTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_normal"
+                            android:text="抢购商品"
+                            android:textSize="15sp"
+                            android:textStyle="bold"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp">
+
+                            <TextView
+                                android:id="@+id/tvLimitProdNewPrice"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/red_dark"
+                                android:textSize="14sp"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:id="@+id/tvLimitProdOldPrice"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:textColor="@color/gray_light"
+                                android:textSize="11sp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="1px"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/llHomeActiv"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="@color/bg_white"
+                            android:gravity="center">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="优惠活动"
+                                    android:textColor="@color/pink_dark"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:ems="7"
+                                    android:text="精彩活动等你来"
+                                    android:textColor="@color/gray_light"
+                                    android:textSize="11sp"/>
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/icon_224"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/llHomePointShop"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginTop="1px"
+                            android:layout_weight="1"
+                            android:background="@color/bg_white"
+                            android:gravity="center">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="积分商城"
+                                    android:textColor="#9487f4"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:ems="7"
+                                    android:text="0元兑换好礼"
+                                    android:textColor="@color/gray_light"
+                                    android:textSize="11sp"/>
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/icon_186"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llHomeHot"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/bg_white"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/bg_activity"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_274"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="6dp"
+                            android:text="热门商品"
+                            android:textSize="13sp"/>
+                    </LinearLayout>
+
+                    <com.shareshenghuo.app.user.widget.MyGridView
+                        android:id="@+id/gvHomeHot"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/bg_activity"
+                        android:gravity="center"
+                        android:numColumns="1"
+                        android:verticalSpacing="1px">
+                    </com.shareshenghuo.app.user.widget.MyGridView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llHomeRecomm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/bg_white"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/bg_activity"
+                        android:orientation="horizontal"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/share_c_homepage_top"
+                            android:visibility="gone"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="6dp"
+                            android:drawableLeft="@drawable/share_c_homepage_top"
+                            android:drawablePadding="13dp"
+                            android:text="人气好店"
+                            android:textSize="13sp"/>
+                    </RelativeLayout>
+
+                    <ListView
+                        android:id="@+id/lvHomeRecomm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    </ListView>
+                </LinearLayout>
+            </LinearLayout>
+        </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+        <LinearLayout
+            android:id="@+id/llNetworkException"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg_activity"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:src="@drawable/request_loading_error_bg"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="检测到当前无网络，请检测网络连接"
+                android:textSize="16sp"/>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

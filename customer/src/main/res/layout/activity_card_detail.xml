@@ -1,0 +1,115 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_top_bar" />
+
+    <include layout="@layout/item_club_card" />
+
+    <LinearLayout
+        android:id="@+id/llSeePointDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="6dp" >
+
+        <TextView
+            android:id="@+id/tvCardDetailPoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/tab_text_nor"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="积分"
+            android:textColor="@color/tab_text_nor"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查看积分详情"
+            android:textColor="@color/gray_light"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:src="@drawable/arrow_right" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_lighter" />
+
+    <LinearLayout
+        android:id="@+id/llSeeCardDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="6dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前等级："
+            android:textColor="@color/tab_text_nor"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tvCardDetailLevelDesc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/tab_text_nor"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="会员卡详细说明"
+            android:textColor="@color/gray_light"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:src="@drawable/arrow_right" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_activity"
+        android:gravity="center_vertical"
+        android:padding="6dp" >
+
+        <ImageView
+            android:layout_width="6dp"
+            android:layout_height="8dp"
+            android:src="@drawable/btn_pink" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textSize="13sp"
+            android:textColor="@color/gray_dark"
+            android:text="会员卡使用情况" />
+    </LinearLayout>
+
+    <com.shareshenghuo.app.user.widget.MyTabView
+        android:id="@+id/tabCardUseInfo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </com.shareshenghuo.app.user.widget.MyTabView>
+
+</LinearLayout>

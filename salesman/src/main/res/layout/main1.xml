@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/fm_main"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/white"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <include layout="@layout/unified_title"/>
+
+    <!-- <TextView -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="1dp" -->
+    <!-- android:background="@color/greyer" /> -->
+
+
+    <!-- <RelativeLayout -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="match_parent" -->
+    <!-- android:layout_weight="2.2" > -->
+
+
+    <!-- <com.td.qianhai.epay.advertising.AdGallery -->
+    <!-- android:id="@+id/adGallery" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:fadingEdge="none" -->
+    <!-- android:unselectedAlpha="1" /> -->
+
+
+    <!-- <RelativeLayout -->
+    <!-- android:id="@+id/ad_container" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_below="@id/adGallery" /> -->
+    <!-- </RelativeLayout> -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bb"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/tab_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="3dp"
+                android:layout_weight="1"/>
+
+            <!-- <TextView -->
+            <!-- android:id="@+id/bottom_layout" -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="match_parent" -->
+            <!-- android:layout_weight="9.2" -->
+            <!-- android:background="@color/white" /> -->
+
+
+            <!-- android:background="#77557799" -->
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <include layout="@layout/common_line_h" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioGroup
+                    android:id="@+id/tabs_rg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/bg_white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingTop="5dp">
+
+                    <!-- android:background="@drawable/bottombg" -->
+
+                    <RadioButton
+                        android:id="@+id/tab_host_work"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:checked="true"
+                        android:drawableTop="@drawable/selector_tab"
+                        android:gravity="center"
+                        android:paddingLeft="0dip"
+                        android:text="主页"
+                        android:textColor="@color/text_blue"
+                        android:textSize="12dp"/>
+
+                    <RadioButton
+                        android:id="@+id/tab_host_order"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:drawableTop="@drawable/selector_tab_near"
+                        android:gravity="center_horizontal"
+                        android:paddingLeft="0dip"
+                        android:text="消费"
+                        android:textColor="@color/text_black_light"
+                        android:textSize="12dp"/>
+
+                    <RadioButton
+                        android:id="@+id/tab_host_production"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:drawableTop="@drawable/selector_tab_my"
+                        android:gravity="center_horizontal"
+                        android:paddingLeft="0dip"
+                        android:text="我"
+                        android:textColor="@color/text_black_light"
+                        android:textSize="12dp"/>
+
+                    <RadioButton
+                        android:id="@+id/tab_host_semi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:drawableTop="@drawable/selector_tab_more"
+                        android:gravity="center_horizontal"
+                        android:paddingLeft="0dip"
+                        android:text="帮助"
+                        android:textColor="@color/text_black_light"
+                        android:textSize="12dp"/>
+                </RadioGroup>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/lin_near"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:paddingRight="10dp"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:src="@drawable/remind"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/my_remind"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:paddingRight="10dp"
+                        android:visibility="invisible">
+
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:src="@drawable/remind"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lin_more"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:paddingRight="10dp"
+                        android:visibility="invisible">
+
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:src="@drawable/remind"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_style_two" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="20dp" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/layout_height"
+                        android:layout_marginTop="10dp" >
+
+                        <TextView
+                            style="@style/textview_style"
+                            android:text="用户姓名"
+                            android:textColor="@color/txt_fg_light_gray" />
+
+                        <EditText
+                            android:id="@+id/et_deale_name"
+                            style="@style/editview_style"
+                            android:hint="请输入用户姓名"
+                            android:inputType="textPersonName"
+                            android:maxLength="6"
+                            android:textSize="14.0dip" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/layout_height2"
+                        android:gravity="center" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="温馨提示：用户姓名后台审核通过将不能修改"
+                            android:textColor="@color/red"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/et_deale_cert_no_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/layout_height"
+                        android:layout_marginTop="10dp" >
+
+                        <TextView
+                            style="@style/textview_style"
+                            android:text="身份证号"
+                            android:textColor="@color/txt_fg_light_gray" />
+
+                        <EditText
+                            android:id="@+id/et_deale_cert_no"
+                            style="@style/editview_style"
+                            android:digits="1234567890xX"
+                            android:hint="请输入身份证号码"
+                            android:maxLength="18"
+                            android:textSize="14.0dip" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/layout_height2" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="温馨提示：身份证号码后台审核通过将不能修改"
+                            android:textColor="@color/red"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/layout_height"
+                        android:layout_marginTop="10dp" >
+
+                        <TextView
+                            style="@style/textview_style"
+                            android:text="银行卡号"
+                            android:textColor="@color/txt_fg_light_gray" />
+
+                        <EditText
+                            android:id="@+id/et_deale_card_no"
+                            style="@style/editview_style"
+                            android:hint="请输入银行卡号"
+                            android:inputType="number"
+                            android:maxLength="19"
+                             android:textSize="14.0dip" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/layout_height"
+                        android:layout_marginTop="10dp" >
+
+                        <TextView
+                            style="@style/textview_style"
+                            android:text="银行名称"
+                            android:textColor="@color/txt_fg_light_gray" />
+
+                        <TextView
+                            android:id="@+id/tv_revise_bank_info_bank_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:background="@drawable/evbackground"
+                            android:ems="10"
+                            android:gravity="center"
+                            android:hint="银行名称　　"
+                            android:text=""
+                            android:textSize="14dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/layout_height"
+                        android:layout_marginTop="10dp" >
+
+                        <TextView
+                            style="@style/textview_style"
+                            android:text="银行省份"
+                            android:textColor="@color/txt_fg_light_gray" />
+
+                        <TextView
+                            android:id="@+id/tv_revise_info_bank_province"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:background="@drawable/evbackground"
+                            android:drawableRight="@drawable/arrow_down_01"
+                            android:ems="10"
+                            android:gravity="center"
+                            android:hint="选择省份"
+                            android:paddingRight="10.0dip"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/layout_height"
+                        android:layout_marginTop="10dp" >
+
+                        <TextView
+                            style="@style/textview_style"
+                            android:text="银行城市"
+                            android:textColor="@color/txt_fg_light_gray" />
+
+                        <TextView
+                            android:id="@+id/tv_revise_info_bank_city"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:background="@drawable/evbackground"
+                            android:drawableRight="@drawable/arrow_down_01"
+                            android:ems="10"
+                            android:gravity="center"
+                            android:hint="选择城市"
+                            android:paddingRight="10.0dip"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/layout_height"
+                        android:layout_marginTop="10dp" >
+
+                        <TextView
+                            style="@style/textview_style"
+                            android:text="详细支行"
+                            android:textColor="@color/txt_fg_light_gray" />
+
+                        <TextView
+                            android:id="@+id/tv_revise_info_bank_branch"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:background="@drawable/evbackground"
+                            android:drawableRight="@drawable/arrow_down_01"
+                            android:ems="10"
+                            android:gravity="center"
+                            android:hint="选择支行"
+                            android:paddingRight="10.0dip"
+                            android:singleLine="true"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btn_revise_bank_info_revise"
+                    android:layout_width="fill_parent"
+                    android:layout_height="48.0dip"
+                    android:layout_marginBottom="@dimen/margin_normal"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:layout_marginTop="@dimen/margin_normal"
+                    android:background="@drawable/btn02_bg"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="修改"
+                        android:textColor="@color/text_white"
+                        android:textSize="20.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

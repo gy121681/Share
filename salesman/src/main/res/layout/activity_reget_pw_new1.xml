@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 找回密码 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_white"
+              android:orientation="vertical">
+
+    <include layout="@layout/title_style_two"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_height3"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_normal"
+            android:layout_weight="1.1"
+            android:text="手机号码:"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_28"/>
+
+        <EditText
+            android:id="@+id/et_reget_mobiles"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/margin_normal"
+            android:layout_weight="3.0"
+            android:background="@color/transparent"
+            android:hint="请输入手机号码"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="11"
+            android:singleLine="true"
+            android:textColor="@color/text_black"
+            android:textColorHint="@color/text_gray"
+            android:textSize="@dimen/text_28"/>
+    </LinearLayout>
+
+    <include layout="@layout/common_line_h_m_rl"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_height3"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_normal"
+            android:layout_weight="1.1"
+            android:text="身份证号码:"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_28"/>
+
+        <EditText
+            android:id="@id/et_reget_cert_no"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/margin_normal"
+            android:layout_weight="3.0"
+            android:background="@color/transparent"
+            android:digits="1234567890xX"
+            android:hint="请输入身份证号码"
+            android:imeOptions="actionNext"
+            android:maxLength="18"
+            android:singleLine="true"
+            android:textColor="@color/text_black"
+            android:textColorHint="@color/text_gray"
+            android:textSize="@dimen/text_28"/>
+    </LinearLayout>
+
+    <include layout="@layout/common_line_h_m_rl"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_height3"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_normal"
+            android:layout_weight="1.1"
+            android:text="短信验证码:"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_28"/>
+
+        <EditText
+            android:id="@id/et_reget_verif_code"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.8"
+            android:background="@color/transparent"
+            android:hint="请输入短信验证码"
+            android:imeOptions="actionNext"
+            android:inputType="phone"
+            android:maxLength="6"
+            android:singleLine="true"
+            android:textColor="@color/text_black"
+            android:textColorHint="@color/text_gray"
+            android:textSize="@dimen/text_28"/>
+
+        <com.td.qianhai.epay.oem.views.CountDownButton
+            android:id="@id/btn_reget_get_verif_code"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/margin_half"
+            android:layout_marginRight="@dimen/margin_normal"
+            android:layout_marginTop="@dimen/margin_half"
+            android:layout_weight="1.2"
+            android:background="@drawable/selector_public_button2"
+            android:text="获取验证码"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_28"/>
+    </LinearLayout>
+
+    <include layout="@layout/common_line_h_m_rl"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:padding="20.0dip">
+
+        <Button
+            android:id="@id/btn_reget_submit"
+            android:layout_width="0.0dip"
+            android:layout_height="@dimen/reg_btn_next_height"
+            android:layout_weight="1.0"
+            android:background="@drawable/selector_public_button"
+            android:text="找回密码"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_36"/>
+    </LinearLayout>
+
+</LinearLayout>

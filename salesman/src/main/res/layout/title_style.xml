@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/title_container_theme" >
+
+    <TextView
+        android:id="@id/tv_title_contre"
+        style="@style/title_text_theme"
+        android:text="" />
+
+</RelativeLayout>

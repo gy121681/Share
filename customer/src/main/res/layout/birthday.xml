@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ff424542"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_above="@+id/bithday_layout"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/applin" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="80dip"
+            android:layout_height="40dip"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/btn_gray"
+            android:text="取消"
+            android:textColor="@android:color/white"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="80dip"
+            android:layout_height="40dip"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/margin_normal"
+            android:background="@null"
+            android:gravity="center|right"
+            android:text="完成"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bithday_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="180dip"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="220dip"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <com.example.widget.WheelView
+                android:id="@+id/year"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" />
+
+            <com.example.widget.WheelView
+                android:id="@+id/month"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" />
+
+            <com.example.widget.WheelView
+                android:id="@+id/day"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="220.0dip"
+            android:layout_gravity="center" >
+        </FrameLayout>
+    </RelativeLayout>
+
+</LinearLayout>

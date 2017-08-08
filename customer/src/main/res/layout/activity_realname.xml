@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_top_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingLeft="10dp" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/applin" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="bottom"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="姓名" />
+
+                <EditText
+                    android:id="@+id/edname"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:hint="输入姓名"
+                    android:maxLength="11"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/margin_normal"
+                android:layout_marginRight="@dimen/margin_normal"
+                android:background="@color/applin" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="bottom"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="身份证号" />
+
+                <EditText
+                    android:id="@+id/eidcard"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@color/white"
+                    android:digits="1234567890xXQWERTYUIOPASDFGHJKLZCVBNM"
+                    android:gravity="center_vertical"
+                    android:hint="输入您本人身份证号"
+                    android:maxLength="20"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/margin_normal"
+                android:layout_marginRight="@dimen/margin_normal"
+                android:background="@color/applin" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="bottom"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="银行名称" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp" >
+
+                    <TextView
+                        android:id="@+id/eibankcard"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="5dp"
+                        android:drawableRight="@drawable/arrow_right"
+                        android:gravity="center_vertical"
+                        android:hint="选择银行卡发卡行"
+                        android:maxLength="11"
+                        android:textSize="14dp" />
+
+                    <!-- <View -->
+                    <!-- android:layout_width="match_parent" -->
+                    <!-- android:layout_height="1px" -->
+                    <!-- android:layout_alignParentBottom="true" -->
+                    <!-- android:layout_marginLeft="5dp" -->
+                    <!-- android:background="@color/gray_lighter" > -->
+                    <!-- </View> -->
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/margin_normal"
+                android:layout_marginRight="@dimen/margin_normal"
+                android:background="@color/applin" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="bottom"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="银行卡号" />
+
+                <EditText
+                    android:id="@+id/eibankcardnum"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:inputType="number"
+                    android:hint="输入银行卡卡号"
+                    android:maxLength="30"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/margin_normal"
+                android:layout_marginRight="@dimen/margin_normal"
+                android:background="@color/applin" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="bottom"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="所在地" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp" >
+
+                    <TextView
+                        android:id="@+id/edcome"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="5dp"
+                        android:drawableRight="@drawable/arrow_right"
+                        android:gravity="center_vertical"
+                        android:hint="选择您本人所在地"
+                        android:maxLength="11"
+                        android:textSize="14dp" />
+
+                    <!-- <View -->
+                    <!-- android:layout_width="match_parent" -->
+                    <!-- android:layout_height="1px" -->
+                    <!-- android:layout_alignParentBottom="true" -->
+                    <!-- android:layout_marginLeft="5dp" -->
+                    <!-- android:background="@color/gray_lighter" /> -->
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/applin" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_cascade"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="invisible" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <!-- <LinearLayout -->
+                <!-- android:id="@+id/tv_finish" -->
+                <!-- android:layout_width="match_parent" -->
+                <!-- android:layout_height="match_parent" -->
+                <!-- android:background="@color/gays_b" -->
+                <!-- android:gravity="top" -->
+                <!-- android:orientation="vertical" -->
+                <!-- android:visibility="invisible" > -->
+
+                <com.shareshenghuo.app.user.city.CityPicker
+                    android:id="@+id/citypicker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+                </com.shareshenghuo.app.user.city.CityPicker>
+            </RelativeLayout>
+            <!-- </LinearLayout> -->
+
+
+            <!-- <LinearLayout -->
+            <!-- android:layout_width="fill_parent" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_marginTop="30dip" -->
+            <!-- android:orientation="horizontal" > -->
+
+
+            <!-- <com.createlife.user.wheelview.WheelView -->
+            <!-- android:id="@+id/id_province" -->
+            <!-- android:layout_width="0dp" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_weight="1" > -->
+            <!-- </com.createlife.user.wheelview.WheelView> -->
+
+
+            <!-- <com.createlife.user.wheelview.WheelView -->
+            <!-- android:id="@+id/id_city" -->
+            <!-- android:layout_width="0dp" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_weight="1" > -->
+            <!-- </com.createlife.user.wheelview.WheelView> -->
+
+
+            <!-- <com.createlife.user.wheelview.WheelView -->
+            <!-- android:id="@+id/id_district" -->
+            <!-- android:layout_width="0dp" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_weight="1" > -->
+            <!-- </com.createlife.user.wheelview.WheelView> -->
+            <!-- </LinearLayout> -->
+
+
+            <!-- <Button -->
+            <!-- android:visibility="gone" -->
+            <!-- android:id="@+id/btn_confirm" -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_marginTop="@dimen/margin_normal" -->
+            <!-- android:gravity="center" -->
+            <!-- android:text="确定" -->
+            <!-- android:textColor="@color/black" /> -->
+            <!-- </LinearLayout> -->
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

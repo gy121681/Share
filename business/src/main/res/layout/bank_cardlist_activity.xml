@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_top_bar" />
+
+    <TextView
+        android:id="@+id/tv_pro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="@dimen/margin_normal"
+        android:layout_marginTop="5dp"
+        android:text="左滑可解绑银行卡"
+        android:textColor="@color/bg_top_bar"
+        android:textSize="12dp"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+            android:id="@+id/refreshscrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="60dp"
+            android:fillViewport="true"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <com.roamer.slidelistview.SlideListView
+                    xmlns:slide="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/list_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:divider="@color/transparent"
+                    android:listSelector="@color/transparent"
+                    android:scrollbars="none"
+                    slide:slideAnimationTime="200"
+                    slide:slideLeftAction="scroll"
+                    slide:slideMode="both"
+                    slide:slideRightAction="scroll" />
+            </LinearLayout>
+        </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+        <LinearLayout
+            android:id="@+id/ll_add"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/form_bg_wihte"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="@dimen/margin_normal"
+                android:src="@drawable/bg_add" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="添加新的银行卡"
+                android:textSize="16dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

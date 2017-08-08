@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <!-- corner_bg -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/img_1" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="100dp" -->
+        <!-- android:layout_marginLeft="10dp" -->
+        <!-- android:layout_marginRight="10dp" -->
+        <!-- android:src="@drawable/dialog_titles" /> -->
+        <!-- <ImageView -->
+        <!-- android:id="@+id/img_1" -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_marginLeft="20dp" -->
+        <!-- android:layout_marginRight="20dp" -->
+
+
+        <!-- android:src="@drawable/dialog_titles" /> -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:background="@drawable/dialog_bgs"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/re_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp" >
+
+                    <ImageView
+                        android:id="@+id/img_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/dialog_titles" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="秀儿支付温馨提示!"
+                        android:textColor="#074079"
+                        android:textSize="20dp" />
+                </RelativeLayout>
+
+                <!-- <TextView -->
+                <!-- android:layout_width="match_parent" -->
+                <!-- android:layout_height="1dp" -->
+                <!-- android:background="@color/applin" /> -->
+                <!-- <ImageView -->
+                <!-- android:layout_width="fill_parent" -->
+                <!-- android:layout_height="wrap_content" -->
+                <!-- android:padding="10.0dip" -->
+                <!-- android:src="@drawable/line" /> -->
+
+                <TextView
+                    android:id="@+id/tv_prompt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/tv_title"
+                    android:layout_below="@+id/re_title"
+                    android:gravity="top"
+                    android:paddingLeft="15.0dip"
+                    android:paddingRight="15.0dip"
+                    android:paddingTop="10dp"
+                    android:text="@string/qhpro"
+                    android:textColor="@color/text_white"
+                    android:textSize="15.0dip" />
+
+                <TextView
+                    android:id="@id/tv_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/lin_btn"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/qhpros"
+                    android:textColor="@color/text_white"
+                    android:textSize="15.0dip" />
+
+                <LinearLayout
+                    android:id="@+id/lin_btn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/btn_left"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/form_bg_wihte"
+                        android:gravity="center"
+                        android:text="确定"
+                        android:textColor="#1985EF"
+                        android:textSize="18.0dip" />
+                    <!-- btn_yellow_bg -->
+
+
+                    <!-- <TextView -->
+                    <!-- android:layout_width="1dp" -->
+                    <!-- android:layout_height="match_parent" -->
+                    <!-- android:background="@color/applin" /> -->
+
+                    <TextView
+                        android:id="@+id/btn_right"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/form_bg_wihte"
+                        android:gravity="center"
+                        android:text="取消"
+                        android:textColor="#1985EF"
+                        android:textSize="18.0dip" />
+                    <!-- btn_white_bg -->
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <!-- <TextView -->
+                <!-- android:layout_width="match_parent" -->
+                <!-- android:layout_height="1dp" -->
+                <!-- android:background="@color/applin" /> -->
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

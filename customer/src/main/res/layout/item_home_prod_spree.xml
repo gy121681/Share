@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/ivHomeSpreeItemPic"
+        android:layout_width="73dp"
+        android:layout_height="73dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/share_c_business_details_photo_default" />
+
+    <TextView
+        android:id="@+id/tvHomeSpreeItemPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="14sp"
+        android:textColor="@color/pink_dark"
+        android:text="¥100.0" />
+
+    <TextView
+        android:id="@+id/tvHomeSpreeItemOldPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:textSize="12sp"
+        android:textColor="@color/gray_light"
+        android:text="原价：¥150.0" />
+
+</LinearLayout>

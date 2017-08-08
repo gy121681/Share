@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/llConversationItemBack"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/pink"
+        android:gravity="right" >
+
+        <Button
+            android:id="@+id/btnConversationItemDel"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:text="删除"
+            android:textColor="@color/text_white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llConversationItemFront"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="horizontal" >
+        
+        <LinearLayout
+            android:id="@+id/llConversationDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp" >
+
+	        <com.shareshenghuo.app.shop.widget.CircleImageView
+	            android:id="@+id/ivConversationAvatar"
+	            android:layout_width="40dp"
+	            android:layout_height="40dp"
+	            android:src="@drawable/p_load_failed" />
+	
+	        <LinearLayout
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:layout_marginLeft="@dimen/margin_normal"
+	            android:orientation="vertical" >
+	
+	            <TextView
+	                android:id="@+id/tvConversationName"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textSize="15sp"
+	                android:textStyle="bold"
+	                android:textColor="@color/tab_text_nor" />
+	
+	            <TextView
+	                android:id="@+id/tvConversationMessage"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginTop="5dp"
+	                android:singleLine="true"
+	                android:textSize="13sp"
+	                android:textColor="@color/gray_dark" />
+	        </LinearLayout>
+	
+	        <LinearLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="right"
+	            android:orientation="vertical" >
+	
+	            <TextView
+	                android:id="@+id/tvConversationDate"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textSize="11sp"
+	                android:textColor="@color/gray_dark"
+	                android:text="15:30" />
+	
+	            <TextView
+	                android:id="@+id/tvConversationUnreadCount"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:visibility="invisible"
+	                android:gravity="center"
+	                android:padding="2dp"
+	                android:background="@drawable/dot_red"
+	                android:textSize="12sp"
+	                android:textColor="@color/text_white"
+	                android:text="0" />
+	        </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

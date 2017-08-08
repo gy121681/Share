@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/llOrderShop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="6dp" >
+
+        <TextView
+            android:id="@+id/tvOrderShopName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:drawablePadding="6dp"
+            android:drawableRight="@drawable/arrow_right" />
+
+        <View android:layout_width="0dp"
+            android:layout_height="1px"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/tvOrderStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:textColor="@color/pink" />
+    </LinearLayout>
+    
+    <View android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_lighter"/>
+
+    <ListView
+        android:id="@+id/lvOrderProd"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" >
+    </ListView>
+    
+    <View android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_lighter"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/tvOrderProdCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="11sp"
+            android:textColor="@color/tab_text_nor"
+            android:text="共0件商品" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:textSize="12sp"
+            android:textColor="@color/tab_text_nor"
+            android:text="合计：¥" />
+        
+        <TextView
+            android:id="@+id/tvOrderTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:textSize="12sp"
+            android:textColor="@color/tab_text_nor"
+            android:text="0" />
+    </LinearLayout>
+    
+    <View android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_lighter"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:layout_gravity="right" >
+        
+        <Button
+            android:id="@+id/btnOrderRefund"
+            style="@style/btn_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="6dp"
+            android:text="退款" />
+        
+        <Button
+            android:id="@+id/btnOrderDelete"
+            style="@style/btn_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="6dp"
+            android:text="删除" />
+
+        <Button
+            android:id="@+id/btnOrderCancel"
+            style="@style/btn_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="6dp"
+            android:text="取消" />
+        
+        <Button
+            android:id="@+id/btnOrderReceived"
+            style="@style/btn_pink"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="6dp"
+            android:text="确认" />
+
+        <Button
+            android:id="@+id/btnOrderPay"
+            style="@style/btn_pink"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="6dp"
+            android:text="去支付" />
+        
+        <Button
+            android:id="@+id/btnOrderConfirm"
+            style="@style/btn_pink"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="6dp"
+            android:text="确认下单" />
+        
+        <Button
+            android:id="@+id/btnOrderComment"
+            style="@style/btn_pink"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="6dp"
+            android:text="评价" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/lin_rate"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/form_bg_wihte"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/ok_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:src="@drawable/bluechecked" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <!-- <LinearLayout -->
+                <!-- android:paddingLeft="10dp" -->
+                <!-- android:layout_width="match_parent" -->
+                <!-- android:layout_height="match_parent" -->
+                <!-- android:layout_weight="0.5" -->
+                <!-- android:orientation="horizontal" > -->
+
+
+                <!-- <TextView -->
+                <!-- android:id="@+id/tv_type" -->
+                <!-- android:layout_width="90.0dip" -->
+                <!-- android:layout_height="wrap_content" -->
+                <!-- android:background="#00000000" -->
+                <!-- android:paddingLeft="3.0dip" -->
+                <!-- android:paddingTop="3.0dip" -->
+                <!-- android:text="类型" -->
+                <!-- android:textSize="20.0sp" -->
+                <!-- android:textStyle="bold" /> -->
+                <!-- </LinearLayout> -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/rate_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#00000000"
+                        android:paddingTop="3.0dip"
+                        android:text="类型:"
+                        android:textColor="@color/txt_fg_normal"
+                        android:textSize="16.0sp"
+                        android:textStyle="bold" />
+
+                    <!-- <TextView -->
+                    <!-- android:id="@+id/moneyunit" -->
+                    <!-- android:layout_width="wrap_content" -->
+                    <!-- android:layout_height="wrap_content" -->
+                    <!-- android:layout_marginLeft="20dp" -->
+                    <!-- android:text="￥" -->
+                    <!-- android:textColor="#ffff9913" -->
+                    <!-- android:textSize="16.0sp" /> -->
+
+
+                    <!-- <TextView -->
+                    <!-- android:id="@+id/tv_trading_amt" -->
+                    <!-- android:layout_width="wrap_content" -->
+                    <!-- android:layout_height="wrap_content" -->
+                    <!-- android:background="#00000000" -->
+                    <!-- android:gravity="center" -->
+                    <!-- android:text="0.00" -->
+                    <!-- android:textColor="#ffff9913" -->
+                    <!-- android:textSize="16.0sp" -->
+                    <!-- android:textStyle="bold" /> -->
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#00000000"
+                        android:paddingLeft="3.0dip"
+                        android:paddingTop="3.0dip"
+                        android:text="费率:"
+                        android:textColor="@color/txt_fg_normal"
+                        android:textSize="20.0sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/rate_s"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#00000000"
+                        android:paddingLeft="3.0dip"
+                        android:paddingTop="3.0dip"
+                        android:text="0.00%"
+                        android:textColor="@color/txt_fg_normal"
+                        android:textSize="25.0sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_operation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:text=""
+                    android:textColor="@color/txt_fg_normal"
+                    android:textSize="10.0sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:gravity="center|right"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_trading_state_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#00000000"
+                        android:paddingLeft="3.0dip"
+                        android:paddingTop="3.0dip"
+                        android:text="价钱:"
+                        android:textColor="@color/txt_fg_normal"
+                        android:textSize="16.0sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/rate_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#00000000"
+                        android:paddingLeft="20.0dip"
+                        android:paddingTop="3.0dip"
+                        android:text="0.00"
+                        android:textSize="16.0sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_operation_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:paddingLeft="3.0dip"
+                    android:paddingTop="3.0dip"
+                    android:text="操作人:"
+                    android:textColor="@color/txt_fg_normal"
+                    android:textSize="10.0sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

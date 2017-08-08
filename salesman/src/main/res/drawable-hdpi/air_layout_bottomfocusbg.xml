@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="@color/layout_bg" />
+        </shape>
+    </item>
+    <item android:left="0.0dip" android:top="-1.0dip" android:right="0.0dip" android:bottom="0.0dip">
+        <shape>
+            <gradient android:startColor="@color/layout_gradient_start" android:endColor="@color/layout_gradient_end" android:angle="270.0" />
+            <stroke android:width="0.5dip" android:color="@color/layout_stroke" />
+            <corners android:bottomLeftRadius="6.0dip" android:bottomRightRadius="6.0dip" />
+        </shape>
+    </item>
+</layer-list>

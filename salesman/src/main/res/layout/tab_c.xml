@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_white"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <!-- <LinearLayout -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="match_parent" -->
+    <!-- android:layout_weight="9" -->
+    <!-- android:orientation="horizontal" -->
+    <!-- android:visibility="gone" > -->
+
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/tv_fx" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="match_parent" -->
+    <!-- android:layout_weight="1" -->
+    <!-- android:background="@drawable/form_bg_wihte" -->
+    <!-- android:drawableLeft="@drawable/share_s_homepage_share" -->
+    <!-- android:gravity="center" -->
+    <!-- android:paddingLeft="10dp" -->
+    <!-- android:text="分享给朋友" -->
+    <!-- android:textColor="@color/txt_fg_normal" -->
+    <!-- android:textSize="16sp" /> -->
+
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/tv_message" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="match_parent" -->
+    <!-- android:layout_weight="1" -->
+    <!-- android:background="@drawable/form_bg_wihte" -->
+    <!-- android:drawableLeft="@drawable/msg_img" -->
+    <!-- android:gravity="center" -->
+    <!-- android:paddingLeft="10dp" -->
+    <!-- android:text="消息记录" -->
+    <!-- android:textColor="@color/txt_fg_normal" -->
+    <!-- android:textSize="16sp" /> -->
+
+
+    <!-- <TextView -->
+    <!-- android:layout_width="1dp" -->
+    <!-- android:layout_height="match_parent" -->
+    <!-- android:layout_marginBottom="4dp" -->
+    <!-- android:layout_marginTop="4dp" -->
+    <!-- android:background="@color/bgcolor" /> -->
+
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/tv_dow" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="match_parent" -->
+    <!-- android:layout_weight="1" -->
+    <!-- android:background="@drawable/form_bg_wihte" -->
+    <!-- android:drawableLeft="@drawable/qr_code_img" -->
+    <!-- android:gravity="center" -->
+    <!-- android:paddingLeft="10dp" -->
+    <!-- android:text="版本信息" -->
+    <!-- android:textColor="@color/txt_fg_normal" -->
+    <!-- android:textSize="16sp" /> -->
+    <!-- </LinearLayout> -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <!-- <TextView -->
+            <!-- android:id="@+id/tv_message" -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="50dp" -->
+            <!-- android:layout_marginTop="5dp" -->
+            <!-- android:background="@drawable/form_bg_wihte" -->
+            <!-- android:drawableLeft="@drawable/msg_img" -->
+            <!-- android:drawableRight="@drawable/arrow_right_01" -->
+            <!-- android:gravity="center_vertical" -->
+            <!-- android:paddingRight="10dp" -->
+            <!-- android:text="消息记录" -->
+            <!-- android:textColor="@color/txt_fg_normal" -->
+            <!-- android:textSize="16sp" /> -->
+
+
+            <!-- <TextView -->
+            <!-- android:id="@+id/tv_ss" -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="50dp" -->
+            <!-- android:layout_marginTop="10dp" -->
+            <!-- android:background="@drawable/form_bg_wihte" -->
+            <!-- android:drawableLeft="@drawable/sss_img" -->
+            <!-- android:drawableRight="@drawable/arrow_right_01" -->
+            <!-- android:gravity="center_vertical" -->
+            <!-- android:paddingRight="10dp" -->
+            <!-- android:text="扫一扫" -->
+            <!-- android:textColor="@color/txt_fg_normal" -->
+            <!-- android:textSize="16sp" /> -->
+
+
+            <!-- <TextView -->
+            <!-- android:id="@+id/tv_fx" -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="50dp" -->
+            <!-- android:layout_marginTop="5dp" -->
+            <!-- android:background="@drawable/form_bg_wihte" -->
+            <!-- android:drawableLeft="@drawable/share_s_homepage_share" -->
+            <!-- android:drawableRight="@drawable/arrow_right_01" -->
+            <!-- android:gravity="center_vertical" -->
+            <!-- android:paddingRight="10dp" -->
+            <!-- android:text="推荐给朋友" -->
+            <!-- android:textColor="@color/txt_fg_normal" -->
+            <!-- android:textSize="16sp" /> -->
+
+            <TextView
+                android:id="@+id/tv_qh"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/form_bg_wihte"
+                android:drawableLeft="@drawable/share_s_help_icon_about"
+                android:gravity="center_vertical"
+                android:paddingRight="10dp"
+                android:text="关于秀儿"
+                android:textColor="@color/text_black"
+                android:paddingLeft="@dimen/margin_normal"
+                android:drawablePadding="@dimen/margin_normal"
+                android:textSize="16sp" />
+
+            <include layout="@layout/common_line_h_m_rl" />
+
+            <TextView
+                android:id="@+id/tv_vqf"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/form_bg_wihte"
+                android:drawableLeft="@drawable/share_s_help_icon_aptitude"
+                android:gravity="center_vertical"
+                android:paddingRight="10dp"
+                android:text="关于资质"
+                android:textColor="@color/text_black"
+                android:paddingLeft="@dimen/margin_normal"
+                android:drawablePadding="@dimen/margin_normal"
+                android:textSize="16sp" />
+
+            <include layout="@layout/common_line_h_m_rl" />
+            <TextView
+                android:id="@+id/tv_og"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/form_bg_wihte"
+                android:drawableLeft="@drawable/share_s_help_icon_help"
+                android:gravity="center_vertical"
+                android:paddingRight="10dp"
+                android:text="操作手册"
+                android:textColor="@color/text_black"
+                android:paddingLeft="@dimen/margin_normal"
+                android:drawablePadding="@dimen/margin_normal"
+                android:textSize="16sp" />
+
+            <include layout="@layout/common_line_h_m_rl" />
+            <TextView
+                android:id="@+id/tv_message"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/form_bg_wihte"
+                android:drawableLeft="@drawable/share_s_help_icon_problem"
+                android:gravity="center_vertical"
+                android:paddingRight="10dp"
+                android:text="常见问题"
+                android:textColor="@color/text_black"
+                android:paddingLeft="@dimen/margin_normal"
+                android:drawablePadding="@dimen/margin_normal"
+                android:textSize="16sp" />
+
+            <include layout="@layout/common_line_h_m_rl" />
+            <TextView
+                android:id="@+id/tv_customer"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/form_bg_wihte"
+                android:drawableLeft="@drawable/share_s_help_icon_service"
+                android:gravity="center_vertical"
+                android:paddingRight="10dp"
+                android:text="客户服务"
+                android:textColor="@color/text_black"
+                android:paddingLeft="@dimen/margin_normal"
+                android:drawablePadding="@dimen/margin_normal"
+                android:textSize="16sp" />
+
+            <include layout="@layout/common_line_h_m_rl" />
+            <TextView
+                android:id="@+id/tv_feed"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/form_bg_wihte"
+                android:drawableLeft="@drawable/share_s_help_icon_feedback"
+                android:gravity="center_vertical"
+                android:paddingRight="10dp"
+                android:text="意见反馈"
+                android:textColor="@color/text_black"
+                android:paddingLeft="@dimen/margin_normal"
+                android:drawablePadding="@dimen/margin_normal"
+                android:textSize="16sp" />
+
+            <include layout="@layout/common_line_h_m_rl" />
+            <TextView
+                android:id="@+id/tv_seer"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/form_bg_wihte"
+                android:drawableLeft="@drawable/my_qr_img"
+                android:gravity="center_vertical"
+                android:paddingRight="10dp"
+                android:text="收款二维码"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_dow"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/form_bg_wihte"
+                android:drawableLeft="@drawable/share_s_help_icon_edition"
+                android:gravity="center_vertical"
+                android:paddingRight="10dp"
+                android:text="版本信息"
+                android:textColor="@color/text_black"
+                android:paddingLeft="@dimen/margin_normal"
+                android:drawablePadding="@dimen/margin_normal"
+                android:textSize="16sp" />
+
+            <include layout="@layout/common_line_h_m_rl" />
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_qrcodes"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/form_bg_wihte"
+                android:drawableLeft="@drawable/my_qr_img"
+                android:gravity="center_vertical"
+                android:paddingRight="10dp"
+                android:text="我的推广二维码"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+<!--             <TextView -->
+<!--                 android:id="@+id/tv_qrcode" -->
+<!--                 android:layout_width="match_parent" -->
+<!--                 android:layout_height="50dp" -->
+<!--                 android:layout_marginTop="1dp" -->
+<!--                 android:background="@drawable/form_bg_wihte" -->
+<!--                 android:gravity="center_vertical" -->
+<!--                 android:paddingRight="10dp" -->
+<!--                 android:text="我的二维码" -->
+<!--                 android:textColor="@color/black" -->
+<!--                 android:textSize="16sp" -->
+<!--                 android:visibility="gone" /> -->
+
+            <Button
+                android:id="@+id/go_out"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/selector_public_button"
+                android:text="安全退出"
+                android:textColor="@color/text_white"
+                android:textSize="18dp"
+                android:visibility="gone"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

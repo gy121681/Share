@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include 
+        android:visibility="gone"
+        layout="@layout/layout_top_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+             android:layout_above="@+id/lin"
+            android:id="@+id/svHomeContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <com.shareshenghuo.app.shop.widget.swipelistview.SwipeListView
+                    android:id="@+id/lvMsg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:swipeBackView="@+id/llConversationItemBack"
+                    app:swipeFrontView="@+id/llConversationItemFront"
+                    app:swipeOffsetLeft="260dp" >
+                </com.shareshenghuo.app.shop.widget.swipelistview.SwipeListView>
+            </RelativeLayout>
+        </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+        <View
+            android:id="@+id/lin"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_above="@+id/re_check1"
+            android:background="@color/gray_light" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/re_check1"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/re_check"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:paddingLeft="10dp" >
+
+                <CheckBox
+                    android:id="@+id/check_dels"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:button="@drawable/checkbox_pink"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:text="  全选"
+                    android:textSize="14dp"
+                    android:textColor="@color/text_black_light"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_normal"
+                    android:layout_toRightOf="@+id/check_dels" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="right"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/margin_normal"
+                            android:layout_marginTop="5dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_toLeftOf="@+id/tv_num"
+                                android:text="合计"
+                                android:textSize="14dp"
+                                android:textColor="@color/text_black_light"
+                                />
+
+                            <TextView
+                                android:id="@+id/tv_num"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_weight="1"
+                                android:text="0.00"
+                                android:textColor="@color/pro"
+                                android:textSize="15dp" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tvs_pro"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:background="@color/white"
+                            android:padding="2dp"
+                            android:textColor="@color/text_black_light"
+                            android:textSize="13dp"
+                            android:text=""
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginRight="@dimen/margin_normal"
+                            />
+
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/llWalletRecharge"
+                        style="@style/btn_pink"
+                        android:background="@drawable/selector_public_button1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.4"
+                        android:gravity="center"
+                        android:text="确认支付" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

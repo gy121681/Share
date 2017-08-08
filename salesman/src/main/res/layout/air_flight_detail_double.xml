@@ -1,0 +1,804 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/big_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/air_n_title_bar" />
+
+    <ScrollView
+        android:id="@id/scroll_fight_detail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@id/fight_detail_linearlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_normal"
+            android:layout_marginRight="@dimen/margin_normal"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@id/first_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/air_goto_background_img"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_normal"
+                    android:src="@drawable/air_goto_img" />
+
+                <TextView
+                    android:id="@id/tv_airpath"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_half"
+                    android:layout_weight="1.0"
+                    android:text="郑州-深圳"
+                    android:textColor="@color/air_white"
+                    android:textSize="16.0sp" />
+
+                <TextView
+                    android:id="@id/tv_airtime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2013-09-12"
+                    android:textColor="@color/air_white"
+                    android:textSize="16.0sp" />
+
+                <TextView
+                    android:id="@id/tv_airweek"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_half"
+                    android:text="周一"
+                    android:textColor="@color/air_white"
+                    android:textSize="16.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/air_n_linearlayout_middlebg_xml"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_half" >
+
+                    <TextView
+                        android:id="@id/tv_flightcompany"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16.0dip"
+                        android:text="中国航空"
+                        android:textColor="@color/huise" />
+
+                    <TextView
+                        android:id="@id/tv_flightno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3.0dip"
+                        android:text="(CA178)"
+                        android:textColor="@color/huise" />
+
+                    <TextView
+                        android:id="@id/tv_craftype"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3.0dip"
+                        android:text="空中客车A330"
+                        android:textColor="@color/grey" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_half" >
+
+                    <TextView
+                        android:id="@id/tv_departtime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16.0dip"
+                        android:text="11:20"
+                        android:textColor="@color/blue_layout_stroke" />
+
+                    <TextView
+                        android:id="@id/tv_departterminal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3.0dip"
+                        android:text="新郑飞机场"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_half" >
+
+                    <TextView
+                        android:id="@id/tv_arrivedTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16.0dip"
+                        android:text="12:43"
+                        android:textColor="@color/gray_air"
+                        android:textSize="12.0sp" />
+
+                    <TextView
+                        android:id="@id/tv_arrivalterminal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="9.0dip"
+                        android:text="宝安机场A1"
+                        android:textColor="@color/huise" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/air_n_linearlayout_middlebg_xml"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2.0dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16.0dip"
+                        android:layout_weight="1.0"
+                        android:text="成人票"
+                        android:textColor="#ff333333" />
+
+                    <TextView
+                        android:id="@id/tv_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="￥600"
+                        android:textColor="@color/yellow_air" />
+
+                    <TextView
+                        android:id="@id/tv_pricecal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="16.0dip"
+                        android:text="(票价￥400+机建燃油￥160)"
+                        android:textColor="@color/grey"
+                        android:textSize="12.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2.0dip"
+                    android:layout_marginTop="2.0dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16.0dip"
+                        android:layout_weight="1.0"
+                        android:text="儿童票"
+                        android:textColor="#ff333333" />
+
+                    <TextView
+                        android:id="@id/tv_childprice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="￥600"
+                        android:textColor="@color/yellow_air" />
+
+                    <TextView
+                        android:id="@id/tv_childpricecal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="16.0dip"
+                        android:text="(票价￥400+机建燃油￥160)"
+                        android:textColor="@color/grey"
+                        android:textSize="12.0sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@id/second_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/air_n_linearlayout_dbombg_nocorner_xml"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16.0dip"
+                    android:layout_weight="9.0"
+                    android:text="舱位"
+                    android:textColor="#ff333333" />
+
+                <TextView
+                    android:id="@id/tv_cabinname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16.0dip"
+                    android:layout_weight="1.0"
+                    android:text="3.8折经济舱"
+                    android:textColor="@color/gray_layout_air" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_normal"
+                    android:layout_weight="1.0"
+                    android:src="@drawable/arrow" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@id/first_layout_cometo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:background="@drawable/air_cometo_background_img"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_normal"
+                    android:src="@drawable/air_cometo_img" />
+
+                <TextView
+                    android:id="@id/tv_airpath_cometo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_half"
+                    android:layout_weight="1.0"
+                    android:text="郑州-深圳"
+                    android:textColor="@color/air_white"
+                    android:textSize="16.0sp" />
+
+                <TextView
+                    android:id="@id/tv_airtime_cometo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2013-09-12"
+                    android:textColor="@color/air_white"
+                    android:textSize="16.0sp" />
+
+                <TextView
+                    android:id="@id/tv_airweek_cometo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_half"
+                    android:text="周一"
+                    android:textColor="@color/air_white"
+                    android:textSize="16.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/air_n_linearlayout_middlebg_xml"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_half" >
+
+                    <TextView
+                        android:id="@id/tv_flightcompany_cometo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16.0dip"
+                        android:text="中国航空"
+                        android:textColor="@color/huise" />
+
+                    <TextView
+                        android:id="@id/tv_flightno_cometo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3.0dip"
+                        android:text="(CA178)"
+                        android:textColor="@color/huise" />
+
+                    <TextView
+                        android:id="@id/tv_craftype_cometo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3.0dip"
+                        android:text="空中客车A330"
+                        android:textColor="@color/grey" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_half" >
+
+                    <TextView
+                        android:id="@id/tv_departtime_cometo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16.0dip"
+                        android:text="11:20"
+                        android:textColor="@color/blue_layout_stroke" />
+
+                    <TextView
+                        android:id="@id/tv_departterminal_cometo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3.0dip"
+                        android:text="新郑飞机场"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_half" >
+
+                    <TextView
+                        android:id="@id/tv_arrivedTime_cometo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16.0dip"
+                        android:text="12:43"
+                        android:textColor="@color/gray_air"
+                        android:textSize="12.0sp" />
+
+                    <TextView
+                        android:id="@id/tv_arrivalterminal_cometo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="9.0dip"
+                        android:text="宝安机场A1"
+                        android:textColor="@color/huise" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/air_n_linearlayout_middlebg_xml"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2.0dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16.0dip"
+                        android:layout_weight="1.0"
+                        android:text="成人票"
+                        android:textColor="#ff333333" />
+
+                    <TextView
+                        android:id="@id/tv_price_cometo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="￥600"
+                        android:textColor="@color/yellow_air" />
+
+                    <TextView
+                        android:id="@id/tv_pricecal_cometo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="16.0dip"
+                        android:text="(票价￥400+机建燃油￥160)"
+                        android:textColor="@color/grey"
+                        android:textSize="12.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2.0dip"
+                    android:layout_marginTop="2.0dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16.0dip"
+                        android:layout_weight="1.0"
+                        android:text="儿童票"
+                        android:textColor="#ff333333" />
+
+                    <TextView
+                        android:id="@id/tv_childprice_cometo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="￥600"
+                        android:textColor="@color/yellow_air" />
+
+                    <TextView
+                        android:id="@id/tv_childpricecal_cometo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="16.0dip"
+                        android:text="(票价￥400+机建燃油￥160)"
+                        android:textColor="@color/grey"
+                        android:textSize="12.0sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@id/second_layout_cometo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/air_n_linearlayout_middlebg_xml"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16.0dip"
+                    android:layout_weight="9.0"
+                    android:text="舱位"
+                    android:textColor="#ff333333" />
+
+                <TextView
+                    android:id="@id/tv_cabinname_cometo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16.0dip"
+                    android:layout_weight="1.0"
+                    android:text="3.8折经济舱"
+                    android:textColor="@color/gray_layout_air" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_normal"
+                    android:layout_weight="1.0"
+                    android:src="@drawable/arrow" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@id/remarklayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/air_n_linearlayout_middlebg_xml"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16.0dip"
+                    android:layout_weight="9.0"
+                    android:text="退改签规则、舱位说明"
+                    android:textColor="#ff333333" />
+
+                <ImageView
+                    android:id="@id/iv_remarklayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_normal"
+                    android:layout_weight="1.0"
+                    android:src="@drawable/arrow_down" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@id/remarktextlayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/air_n_linearlayout_dbombg_nocorner_xml"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16.0dip"
+                    android:layout_marginTop="@dimen/margin_half"
+                    android:text="退改签规则"
+                    android:textColor="#ff333333" />
+
+                <TextView
+                    android:id="@id/tv_note"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_half"
+                    android:layout_marginLeft="16.0dip"
+                    android:layout_marginRight="16.0dip"
+                    android:layout_marginTop="@dimen/margin_half"
+                    android:text="一般是起飞前24小时..."
+                    android:textColor="#ff333333"
+                    android:textSize="12.0sp" />
+
+                <TextView
+                    android:id="@id/tv_note2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_half"
+                    android:layout_marginLeft="16.0dip"
+                    android:layout_marginRight="16.0dip"
+                    android:layout_marginTop="@dimen/margin_half"
+                    android:text="以上退改签规则仅作参考，以航空公司最新公布为准！"
+                    android:textColor="#ffff0600"
+                    android:textSize="13.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@id/layout_cjr"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:background="@drawable/air_n_linearlayout_bombg_nocorner_xml"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_half"
+                    android:text="*"
+                    android:textColor="@color/yellow_air" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3.0dip"
+                    android:layout_weight="9.0"
+                    android:text="乘机人"
+                    android:textColor="#ff333333" />
+
+                <TextView
+                    android:id="@id/tv_cjrtianjia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16.0dip"
+                    android:text="继续添加"
+                    android:textColor="@color/grey" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_normal"
+                    android:layout_weight="1.0"
+                    android:src="@drawable/arrow" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@id/layout_pnr"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/air_n_linearlayout_middlebg_xml"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13.0dip"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="儿童乘机"
+                        android:textColor="@color/red_1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="请填写成人票号"
+                        android:textColor="@color/red_1" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@id/et_pnr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2.0dip"
+                    android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                    android:hint="这里填写票号"
+                    android:maxLength="13" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@id/layout_cjr_child"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:id="@id/layout_lxr"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/air_n_linearlayout_middlebg_xml"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_half"
+                    android:text="*"
+                    android:textColor="@color/yellow_air" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3.0dip"
+                    android:layout_weight="9.0"
+                    android:text="联系人"
+                    android:textColor="#ff333333" />
+
+                <TextView
+                    android:id="@id/tv_genggai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16.0dip"
+                    android:text="更改"
+                    android:textColor="@color/grey" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_normal"
+                    android:layout_weight="1.0"
+                    android:src="@drawable/arrow" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/air_n_linearlayout_dbombg_nocorner_xml"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@id/tv_contact_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16.0dip"
+                    android:layout_marginTop="@dimen/margin_half"
+                    android:layout_weight="9.0"
+                    android:text="张三"
+                    android:textColor="@color/blue_layout_bg" />
+
+                <TextView
+                    android:id="@id/tv_contact_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_half"
+                    android:layout_marginLeft="16.0dip"
+                    android:text="18888888888"
+                    android:textColor="@color/blue_layout_bg" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@id/air_n_linearlayout_insurance"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:background="@drawable/air_n_linearlayout_bombg_nocorner_xml"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8.0dip"
+                    android:layout_weight="9.0"
+                    android:text="保险"
+                    android:textColor="#ff333333" />
+
+                <TextView
+                    android:id="@id/tv_baoxian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16.0dip"
+                    android:text="￥20"
+                    android:textColor="@color/yellow_air" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_normal"
+                    android:layout_weight="1.0"
+                    android:src="@drawable/arrow" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@id/layout_itinerary"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/air_n_linearlayout_dbombg_nocorner_xml"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8.0dip"
+                    android:layout_weight="9.0"
+                    android:text="行程单"
+                    android:textColor="#ff333333" />
+
+                <TextView
+                    android:id="@id/tv_xctianjia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16.0dip"
+                    android:text="不需要行程单"
+                    android:textColor="@color/grey" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_normal"
+                    android:layout_weight="1.0"
+                    android:src="@drawable/arrow" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@id/tijiao_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20.0dip"
+                android:layout_marginLeft="20.0dip"
+                android:layout_marginRight="20.0dip"
+                android:layout_marginTop="20.0dip"
+                android:background="@drawable/air_n_search_button_selector_xml"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="提交订单"
+                    android:textColor="#fffffdf8"
+                    android:textSize="18.0sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

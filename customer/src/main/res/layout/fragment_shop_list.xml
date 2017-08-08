@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/statusBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/status_bar_height1"
+        android:background="@color/bg_top_bar" />
+    <!-- <View -->
+    <!-- android:id="@+id/statusBar" -->
+    <!-- android:visibility="gone" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="@dimen/status_bar_height" -->
+    <!-- android:background="@color/bg_top_bar"/> -->
+
+    <RelativeLayout
+        android:id="@+id/resreach"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height1"
+        android:background="@color/bg_top_bar" >
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_normal"
+            android:src="@drawable/arrow_left"
+            android:visibility="gone" />
+
+        <!-- <include -->
+        <!-- android:id="@+id/btnSearch" -->
+        <!-- layout="@layout/edittext_search" /> -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@+id/tv_search"
+            android:gravity="center_vertical" >
+
+            <EditText
+                android:id="@+id/btnSearch"
+                style="@style/btn_search"
+                android:layout_width="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/margin_normal"
+                android:hint="搜索商户名、商品名"
+                android:imeOptions="actionGo"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/tv_ceash"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/share_c_mine_button_delete"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_search"
+          
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/margin_normal"
+            android:layout_marginRight="@dimen/margin_normal"
+            android:gravity="center"
+            android:text="搜索"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <!-- <RelativeLayout -->
+    <!-- android:id="@+id/rlBannerContainer" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="100dp" -->
+    <!-- android:visibility="gone" > -->
+
+
+    <!-- <BannerViewPager -->
+    <!-- android:id="@+id/bannerShop" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="100dp" /> -->
+
+
+    <!-- <ImageView -->
+    <!-- android:id="@+id/ivCloseBanner" -->
+    <!-- android:layout_width="22dp" -->
+    <!-- android:layout_height="22dp" -->
+    <!-- android:layout_alignParentRight="true" -->
+    <!-- android:layout_margin="6dp" -->
+    <!-- android:src="@drawable/btn_close" /> -->
+    <!-- </RelativeLayout> -->
+
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+        android:id="@+id/refreshscrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+          android:layout_marginBottom="2dp"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg_color"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/llayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bgcolor"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/rlBannerContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:visibility="gone" >
+
+                    <com.shareshenghuo.app.user.widget.BannerViewPager
+                        android:id="@+id/bannerShop"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp" />
+
+                    <ImageView
+                        android:id="@+id/ivCloseBanner"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="6dp"
+                        android:src="@drawable/btn_close" />
+                </RelativeLayout>
+
+                <com.shareshenghuo.app.user.widget.MyGridView
+                    android:id="@+id/gvHomeHot"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_normal"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:listSelector="@color/transparent"
+                    android:numColumns="4" >
+                </com.shareshenghuo.app.user.widget.MyGridView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llayout1"
+                 android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <include
+                    android:id="@+id/buy"
+                    layout="@layout/buy_layout" />
+
+                <!-- <LinearLayout -->
+                <!-- android:layout_width="match_parent" -->
+                <!-- android:layout_height="30dp" -->
+                <!-- android:orientation="vertical" > -->
+
+
+                <!-- <LinearLayout -->
+                <!-- android:id="@+id/buy" -->
+                <!-- android:layout_width="match_parent" -->
+                <!-- android:layout_height="30dp" -->
+                <!-- android:background="@color/bg_white" -->
+                <!-- android:gravity="center_vertical" > -->
+
+
+                <!-- <Button -->
+                <!-- android:id="@+id/btnArea" -->
+                <!-- style="@style/filter_button" -->
+                <!-- android:layout_width="0dp" -->
+                <!-- android:layout_height="match_parent" -->
+                <!-- android:layout_weight="1" -->
+                <!-- android:singleLine="true" -->
+                <!-- android:text="商圈" /> -->
+
+
+                <!-- <Button -->
+                <!-- android:id="@+id/btnShopType" -->
+                <!-- style="@style/filter_button" -->
+                <!-- android:layout_width="0dp" -->
+                <!-- android:layout_height="match_parent" -->
+                <!-- android:layout_weight="1" -->
+                <!-- android:singleLine="true" -->
+                <!-- android:text="分类" /> -->
+
+
+                <!-- <Button -->
+                <!-- android:id="@+id/btnSort" -->
+                <!-- style="@style/filter_button" -->
+                <!-- android:layout_width="0dp" -->
+                <!-- android:layout_height="match_parent" -->
+                <!-- android:layout_weight="1" -->
+                <!-- android:text="排序" /> -->
+
+
+                <!-- <Button -->
+                <!-- android:id="@+id/btnFilter" -->
+                <!-- style="@style/filter_button" -->
+                <!-- android:layout_width="0dp" -->
+                <!-- android:layout_height="match_parent" -->
+                <!-- android:layout_weight="1" -->
+                <!-- android:text="筛选" /> -->
+                <!-- </LinearLayout> -->
+
+
+                <!-- <View -->
+                <!-- android:layout_width="match_parent" -->
+                <!-- android:layout_height="1px" -->
+                <!-- android:background="@color/gray_lighter" /> -->
+                <!-- </LinearLayout> -->
+
+                <com.shareshenghuo.app.user.widget.ListViewForScrollView
+                    android:id="@+id/lvShop"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/views"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relayout"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/applin" >
+
+        <EditText
+            android:id="@+id/ed_search"
+            android:hint="搜索支行关键字"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:inputType="textPostalAddress"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/tv_cancel"
+            android:background="@drawable/bg_arc_white" />
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="取消"
+            android:textColor="@color/greens" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/greyer" />
+
+    <ListView
+        android:divider="@color/applin"
+        android:visibility="gone"
+        android:background="@color/white"
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:listSelector="@drawable/form_bg_wihte" >
+    </ListView>
+
+</LinearLayout>

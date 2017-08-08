@@ -1,0 +1,160 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_activity"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_top_bar" />
+
+    <LinearLayout
+        android:id="@+id/llSysMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:gravity="center_vertical"
+        android:padding="10dp" >
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/share_b_public_news_system" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_normal"
+            android:layout_weight="1"
+            android:text="系统消息"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_28" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvSysMsgTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray_dark"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/tvSysMsgUnreadCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dot_red"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="0"
+                android:textColor="@color/text_white"
+                android:textSize="12sp"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_lighter" />
+
+    <LinearLayout
+        android:id="@+id/llSysMsgfeed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:gravity="center_vertical"
+        android:padding="10dp" >
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/share_b_public_news_opinion" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_normal"
+            android:layout_weight="1"
+            android:text="意见反馈"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_28" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvSysMsgTimefeed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray_dark"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/tvSysMsgUnreadCountfeed"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:background="@drawable/dot_red"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="0"
+                android:textColor="@color/text_white"
+                android:textSize="12sp"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_lighter" />
+
+    <com.shareshenghuo.app.shop.widget.swipelistview.SwipeListView
+        android:id="@+id/lvMsg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:swipeBackView="@+id/llConversationItemBack"
+        app:swipeFrontView="@+id/llConversationItemFront"
+        app:swipeOffsetLeft="260dp" >
+    </com.shareshenghuo.app.shop.widget.swipelistview.SwipeListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/bg_top_bar" >
+
+        <Button
+            android:id="@+id/btnPushMsg"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:text="发布推送通知"
+            android:textSize="@dimen/text_28"
+            android:textColor="@color/text_black" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#fff" />
+
+        <Button
+            android:id="@+id/btnPushLog"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:text="查看推送记录"
+            android:textSize="@dimen/text_28"
+            android:textColor="@color/text_black" />
+    </LinearLayout>
+
+</LinearLayout>

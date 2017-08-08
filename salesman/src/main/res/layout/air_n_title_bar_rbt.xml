@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="55.0dip"
+    android:background="@drawable/top_bg" >
+
+    <Button
+        android:id="@id/filter"
+        android:layout_width="55.0dip"
+        android:layout_height="36.0dip"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/margin_half"
+        android:background="@drawable/home_button_bg"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="17.0sp" />
+
+    <TextView
+        android:id="@id/header_title"
+        android:layout_width="wrap_content"
+        android:layout_height="36.0dip"
+        android:layout_centerInParent="true"
+        android:ellipsize="marquee"
+        android:maxWidth="180.0dip"
+        android:singleLine="true"
+        android:textColor="#ffffffff"
+        android:textSize="18.0sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@id/right_count"
+        android:layout_width="55.0dip"
+        android:layout_height="36.0dip"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/margin_half"
+        android:background="@drawable/rcount_button_bg"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="#fffffcf7"
+        android:textSize="13.0sp" />
+
+</RelativeLayout>

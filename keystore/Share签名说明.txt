@@ -1,0 +1,22 @@
+消费者端：
+	File：ShareSignCustomer.jks
+	Password：ShareSignCustomer
+	Alias：share
+	MD5: 85:B1:45:44:C7:C7:FA:74:08:39:83:78:4B:0A:B5:EC
+	SHA1: 78:8D:E3:32:EA:20:E8:D5:80:10:39:44:35:BB:E4:59:C5:C2:ED:C5
+
+	
+商家端：
+	File：ShareSignBusiness.jks
+	Password：ShareSignBusiness
+	Alias：share
+	MD5: E6:C1:0E:3A:54:14:E3:D3:53:4A:25:5E:BC:C9:41:54
+	SHA1: E2:16:6A:A4:93:09:4B:8D:24:B8:35:BE:2E:CD:EB:12:69:1C:BD:99
+
+	
+业务员端：
+	File：ShareSignSalesman.jks
+	Password：ShareSignSalesman
+	Alias：share
+	MD5: 25:C6:EE:26:A8:1B:1E:96:97:FE:05:6A:26:3A:BE:B5
+	SHA1: 14:01:07:EF:F2:B9:F3:66:D0:AD:9B:73:C9:BE:A8:84:5B:32:EA:D5

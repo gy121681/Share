@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    >
+
+    <RelativeLayout
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_toLeftOf="@+id/tv_del"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_arc_white" >
+        <!-- <ImageView -->
+        <!-- android:id="@+id/tv_del" -->
+        <!-- android:layout_width="22dp" -->
+        <!-- android:layout_height="30dp" -->
+        <!-- android:layout_centerVertical="true" -->
+        <!-- android:layout_marginRight="5dp" -->
+        <!-- android:layout_toLeftOf="@+id/ivSearch" -->
+        <!-- android:src="@drawable/btn_close_red" -->
+        <!-- android:visibility="gone" /> -->
+
+        <ImageView
+            android:id="@+id/ivSearch"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:src="@drawable/share_b_public__icon_search1" />
+
+        <EditText
+            android:paddingLeft="5dp"
+            android:id="@+id/edSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/bg_gray_dark"
+            android:hint=""
+            android:imeOptions="actionGo"
+            android:singleLine="true"
+            android:textSize="13sp"
+            android:layout_toLeftOf="@id/ivSearch"
+            android:layout_alignParentLeft="true"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_marginRight="5dp"
+        android:visibility="gone"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="2dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/tv_del"
+        android:gravity="center"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:background="@color/transparent"
+        android:text="取消"
+        android:textColor="@color/black" />
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_white"
+    android:padding="10dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <com.shareshenghuo.app.user.widget.CircleImageView
+        android:id="@+id/ivShopLogo"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/share_c_business_details_photo_default" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/margin_normal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvShopName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textColor="@color/tab_text_nor"
+            android:text="百佳超市" />
+
+        <TextView
+            android:id="@+id/tvShopCollectCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="13sp"
+            android:textColor="@color/gray_dark"
+            android:text="0人收藏" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnShopCollect"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/share_c_mine_collect_icon" />
+
+</LinearLayout>

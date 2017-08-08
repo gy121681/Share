@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_activity"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_top_bar" />
+
+    <include layout="@layout/mall_settled_taglayout" />
+
+    <LinearLayout
+        android:id="@+id/shenme_ok_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical" >
+
+        <include layout="@layout/mall_settled_sh_layout" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/shenme_error_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <include layout="@layout/mall_settled_sh_error_layout" />
+    </LinearLayout>
+
+</LinearLayout>

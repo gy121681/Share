@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="right"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/profite_c_2"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/share_s_homepage_screening"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:layout_marginRight="@dimen/margin_half">
+
+        <TextView
+            android:id="@+id/pro_pop"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="所有"
+            android:textSize="@dimen/text_28"
+            android:layout_marginTop="9dp"
+            android:visibility="gone"/>
+
+
+        <TextView
+            android:id="@+id/pro_pop_1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="1dp"
+            android:gravity="center"
+            android:text="代理商"
+            android:textSize="@dimen/text_28"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/pro_pop_2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="1dp"
+            android:gravity="center"
+            android:text="分销商"
+            android:textSize="@dimen/text_28"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/pro_pop_3"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="1dp"
+            android:gravity="center"
+            android:text="零售商"
+            android:visibility="gone"
+            android:textSize="@dimen/text_28" />
+
+        <TextView
+            android:id="@+id/pro_pop_5"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="9dp"
+            android:gravity="center"
+            android:text="普通会员"
+            android:textSize="@dimen/text_28" />
+
+        <include layout="@layout/common_line_h_m_rl"/>
+
+        <TextView
+            android:id="@+id/pro_pop_4"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="3dp"
+            android:gravity="center"
+            android:text="高级会员"
+            android:textSize="@dimen/text_28" />
+    </LinearLayout>
+
+</LinearLayout>

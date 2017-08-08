@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/margin_normal"
+        android:layout_marginRight="@dimen/margin_normal"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:background="@drawable/air_n_linearlayout_single_bg_xml" >
+
+        <TextView
+            android:id="@id/tv_chengshi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="深圳-长沙"
+            android:textColor="@color/black"
+            android:textSize="16.0sp" />
+
+        <TextView
+            android:id="@id/tv_dancheng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/tv_chengshi"
+            android:layout_toRightOf="@id/tv_chengshi"
+            android:text="(单程)"
+            android:textColor="@color/black"
+            android:textSize="16.0sp" />
+
+        <TextView
+            android:id="@id/tv_dingdaizongjia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_chengshi"
+            android:layout_below="@id/tv_chengshi"
+            android:text="订单总价："
+            android:textColor="@color/default_black" />
+
+        <TextView
+            android:id="@id/tv_dingdanzongjia_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_chengshi"
+            android:layout_toRightOf="@id/tv_dingdaizongjia"
+            android:text="￥2000"
+            android:textColor="@color/default_black" />
+
+        <TextView
+            android:id="@id/tv_zhuangtaixianshi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/tv_dingdaizongjia"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="3.0dip"
+            android:text="状态显示"
+            android:textColor="@color/blue" />
+
+        <TextView
+            android:id="@id/tv_dingdanzhuangtai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/tv_dingdaizongjia"
+            android:layout_toLeftOf="@id/tv_zhuangtaixianshi"
+            android:text="订单状态："
+            android:textColor="@color/default_black" />
+
+        <TextView
+            android:id="@id/tv_qifeishijian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_chengshi"
+            android:layout_below="@id/tv_dingdaizongjia"
+            android:text="起飞时间："
+            android:textColor="@color/default_black" />
+
+        <TextView
+            android:id="@id/tv_qifeishijian_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/tv_qifeishijian"
+            android:layout_toRightOf="@id/tv_qifeishijian"
+            android:text="2013-12-05  12:45"
+            android:textColor="@color/default_black" />
+
+        <TextView
+            android:id="@id/tv_xiadanshijian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_chengshi"
+            android:layout_below="@id/tv_qifeishijian"
+            android:text="下单时间："
+            android:textColor="@color/default_black" />
+
+        <TextView
+            android:id="@id/tv_xiadanshijian_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/tv_xiadanshijian"
+            android:layout_toRightOf="@id/tv_xiadanshijian"
+            android:text="2013-12-01  12:08"
+            android:textColor="@color/default_black" />
+    </RelativeLayout>
+
+</RelativeLayout>

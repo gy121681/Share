@@ -1,0 +1,31 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    
+    <dimen name="top_bar_height">40dp</dimen>
+    
+    <dimen name="banner_paddding">20dp</dimen>
+    <dimen name="margin_12dp">12dp</dimen>
+
+    <dimen name="margin_normal">10dp</dimen>
+    <dimen name="margin_half">5dp</dimen>
+    <dimen name="margin_double">20dp</dimen>
+
+    <dimen name="draw_padding">5dp</dimen>
+
+<!--     <dimen name="status_bar_height">0dp</dimen> -->
+<!--     <dimen name="status_bar_height1">22dp</dimen> -->
+<!--     <dimen name="top_bar_height">67dp</dimen> -->
+<!--     <dimen name="top_bar_height1">45dp</dimen> -->
+<!-- 	<dimen name="topbar_title">18sp</dimen> -->
+
+    <dimen name="topbar_title">@dimen/text_38</dimen>
+    <dimen name="text_50">25sp</dimen>
+    <dimen name="text_38">19sp</dimen>
+    <dimen name="text_36">18sp</dimen>
+    <dimen name="text_32">16sp</dimen>
+    <dimen name="text_28">14sp</dimen>
+
+</resources>

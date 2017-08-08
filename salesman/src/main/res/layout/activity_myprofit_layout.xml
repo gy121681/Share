@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout style="@style/title_container_theme" >
+
+            <TextView
+                android:id="@+id/bt_title_left"
+                style="@style/title_back_btn_bg_theme2"
+                android:drawableLeft="@drawable/title_back_btn_bg2"
+                android:text="返回" />
+
+            <CheckBox
+                android:id="@+id/cb_title_contre"
+                style="@style/title_text_theme"
+                android:button="@drawable/profite_checkbox"
+                android:text="收益汇总" />
+
+            <TextView
+                android:id="@+id/bt_title_right1"
+                style="@style/title_btn_bg_theme2"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/return_selector"
+                android:gravity="center"
+                android:text="筛选"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/pro_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:listSelector="#00000000" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/pro_null_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="没有更多数据!"
+        android:textSize="15dp"
+        android:visibility="gone" />
+
+</LinearLayout>

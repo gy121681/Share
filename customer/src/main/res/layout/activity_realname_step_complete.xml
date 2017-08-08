@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--认证手机号-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+    android:background="@color/bg_white">
+
+    <include layout="@layout/layout_top_bar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="交易密码设置成功！"
+        android:drawablePadding="@dimen/margin_normal"
+        android:textSize="@dimen/text_36"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:textColor="@color/text_black_light"
+        android:drawableTop="@drawable/share_c_mine_password_idcard_sure"/>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="认证成功"
+        android:textSize="@dimen/text_36"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/selector_btn_pink"
+        android:textColor="@color/text_white"
+        android:layout_marginLeft="@dimen/margin_double"
+        android:layout_marginRight="@dimen/margin_double"
+        android:layout_marginBottom="@dimen/margin_normal"/>
+
+
+</LinearLayout>

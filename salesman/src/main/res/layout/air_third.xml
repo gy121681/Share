@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/third" android:background="@drawable/big_bg" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/air_n_title_bar" />
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/status_layout1" android:layout_width="fill_parent" android:layout_height="145.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="@dimen/margin_half" android:layout_marginRight="20.0dip">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/status_layout1_txt" android:background="@drawable/air_n_linearlayout_bombg_nocorner_xml" android:layout_width="fill_parent" android:layout_height="45.0dip">
+            <TextView android:textSize="18.0sp" android:textColor="#ff454239" android:gravity="center" android:layout_gravity="center" android:id="@id/status_layout1_txt_txt1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="按航线查询" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/status_layout1_start_city" android:background="@drawable/air_n_linearlayout_middlebg_xml" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <ImageView android:id="@id/status_layout1_start_city_image1" android:background="@drawable/air_n_start_city_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" />
+            <TextView android:textSize="18.0sp" android:gravity="center" android:layout_gravity="center" android:id="@id/status_layout1_start_city_txt1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="请选择出发城市" android:layout_weight="1.0" />
+            <ImageView android:id="@id/status_layout1_start_city_image2" android:background="@drawable/air_city_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/status_layout1_end_city" android:background="@drawable/air_n_linearlayout_dbombg_nocorner_xml" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <ImageView android:id="@id/status_layout1_end_city_img1" android:background="@drawable/air_n_end_city_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" />
+            <TextView android:textSize="18.0sp" android:gravity="center" android:layout_gravity="center" android:id="@id/status_layout1_end_city_txt1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="请选择到达城市" android:layout_weight="1.0" />
+            <ImageView android:id="@id/status_layout1_end_city_image2" android:background="@drawable/air_city_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="18.0sp" android:textColor="#fffffdf8" android:gravity="center" android:layout_gravity="center" android:id="@id/status_search1" android:background="@drawable/air_n_search_button_selector_xml" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="@dimen/margin_half" android:layout_marginRight="20.0dip" android:text="查询" />
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/status_layout2" android:layout_width="fill_parent" android:layout_height="95.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="@dimen/margin_half" android:layout_marginRight="20.0dip">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/status_layout2_txt" android:background="@drawable/air_n_linearlayout_bombg_nocorner_xml" android:layout_width="fill_parent" android:layout_height="45.0dip">
+            <TextView android:textSize="18.0sp" android:textColor="#ff454239" android:gravity="center" android:layout_gravity="center" android:id="@id/status_layout2_txt_txt1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="按航班查询" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/status_layout2_number" android:background="@drawable/air_n_linearlayout_dbombg_nocorner_xml" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:textSize="18.0sp" android:gravity="center" android:layout_gravity="center" android:id="@id/status_layout2_number_txt1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="航班号：" android:layout_weight="2.0" />
+            <EditText android:gravity="center_vertical" android:id="@id/status_layout2_number_edit1" android:background="@drawable/air_layout_bg" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginRight="@dimen/margin_normal" android:singleLine="true" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="18.0sp" android:textColor="#fffffdf8" android:gravity="center" android:layout_gravity="center" android:id="@id/status_search2" android:background="@drawable/air_n_search_button_selector_xml" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="@dimen/margin_half" android:layout_marginRight="20.0dip" android:text="查询" />
+</LinearLayout>

@@ -1,0 +1,222 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_top_bar" />
+
+    <include layout="@layout/item_club_card" />
+
+    <LinearLayout
+        android:id="@+id/llHomeRecharge"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp" >
+
+        <EditText
+            android:id="@+id/edHomeRecharge"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_arc_gray"
+            android:hint="请输入充值金额"
+            android:numeric="decimal"
+            android:padding="6dp"
+            android:singleLine="true"
+            android:textSize="13sp" >
+        </EditText>
+
+        <Button
+            android:id="@+id/btnHomeRecharge"
+            style="@style/btn_pink"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="6dp"
+            android:text="充值" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llHomeSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="6dp" >
+
+        <TextView
+            android:id="@+id/tvHomePayType"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="6dp"
+            android:layout_weight="0.3"
+            android:background="@drawable/bg_arc_gray"
+            android:drawableRight="@drawable/ic_down"
+            android:gravity="center_vertical"
+            android:padding="6dp"
+            android:text="卡内余额"
+            android:textColor="@color/gray_dark"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/edHomeRemark"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_arc_gray"
+            android:hint="备注(选填)"
+            android:maxLines="2"
+            android:minHeight="40dp"
+            android:padding="6dp"
+            android:textSize="13sp" >
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llHomeConsume1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="6dp" >
+
+        <EditText
+            android:id="@+id/edHomeConsume"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_arc_gray"
+            android:hint="请输入消费金额"
+            android:numeric="decimal"
+            android:padding="6dp"
+            android:singleLine="true"
+            android:textSize="13sp" >
+        </EditText>
+
+        <Button
+            android:id="@+id/btnHomeCalc"
+            style="@style/btn_pink"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="6dp"
+            android:text="计算折后价格" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llHomeConsume2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="6dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="折后价格："
+            android:textColor="@color/pink" />
+
+        <TextView
+            android:id="@+id/tvHomeDiscount"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_arc_gray"
+            android:gravity="center_vertical"
+            android:padding="6dp"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/btnHomeConsume"
+            style="@style/btn_pink"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="6dp"
+            android:enabled="false"
+            android:text="消费" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llHomeExchange"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="6dp" >
+
+        <EditText
+            android:id="@+id/edHomePointExchange"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_arc_gray"
+            android:hint="请输入积分数"
+            android:numeric="decimal"
+            android:padding="6dp"
+            android:singleLine="true"
+            android:textSize="13sp" >
+        </EditText>
+
+        <Button
+            android:id="@+id/btnHomePointExchange"
+            style="@style/btn_pink"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="6dp"
+            android:text="积分兑换" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="6dp"
+        android:background="@color/gray_lighter" />
+
+    <RadioGroup
+        android:id="@+id/rgTab"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#fff"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rbTab1"
+            style="@style/tab_radio_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="充值" />
+
+        <RadioButton
+            android:id="@+id/rbTab2"
+            style="@style/tab_radio_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="消费" />
+
+        <RadioButton
+            android:id="@+id/rbTab3"
+            style="@style/tab_radio_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="积分" />
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_lighter" />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/lvData"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+</LinearLayout>

@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"/> -->
+    
+    <item
+        android:id="@+id/menu_delete"
+        android:icon="@android:drawable/ic_menu_delete"
+        android:showAsAction="ifRoom"
+        android:title="删除查询历史"/>
+    <!-- <item
+        android:id="@+id/back_to_main"
+        android:showAsAction="ifRoom"
+        android:title="回到首页"/> -->
+
+</menu>

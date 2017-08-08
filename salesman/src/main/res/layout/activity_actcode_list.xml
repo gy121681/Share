@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_style_two" />
+
+    <ListView
+        android:id="@+id/sub_agt_list"
+        android:layout_width="fill_parent"
+        android:divider="#00000000"
+        android:layout_height="fill_parent"
+        android:listSelector="#00000000" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/null_datas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:enabled="false"
+        android:gravity="center_horizontal"
+        android:text="您还没有生成可用激活码!"
+        android:textSize="15dp"
+        android:visibility="gone" />
+
+</LinearLayout>
